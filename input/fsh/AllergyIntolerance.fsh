@@ -103,8 +103,8 @@ InstanceOf: BeAllergyIntolerance
 Usage: #example
 Description: ""
 Title:    ""
-* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = #active
+* verificationStatus = #confirmed
 * type = #allergy
 * category = #food
 * criticality = #high
@@ -130,8 +130,8 @@ Usage: #example
 Description: ""
 Title:    ""
 * contained[0] = example-encounter-uzgent-contained
-* clinicalStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical#active
-* verificationStatus = http://hl7.org/fhir/ValueSet/allergyintolerance-verification#confirmed
+* clinicalStatus = #active
+* verificationStatus = #confirmed
 * type = #allergy
 * category = #food
 * criticality = #higher
