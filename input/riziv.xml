@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+   <id value="hl7.fhir.be.riziv" />
+   <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/riziv" />
+   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+   <version value="0.1.0" />
+   <name value="RIZIV_INAMI" />
+   <title value="RIZIV-INAMI Patient Record" />
+   <status value="draft" />
+   <experimental value="false" />
+   <publisher value="RIZIV-INAMI" />
+   <contact>
+      <telecom>
+         <!-- Or whatever URL and/or email address(es) are appropriate -->
+         <system value="url" />
+         <value value="http://somewhere.org" />
+      </telecom>
+   </contact>
+   <description value="RIZIV-INAMI - Patient Summary Record Implementation Guide" />
+   <jurisdiction>
+      <!-- This will drive SNOMED release used -->
+      <coding>
+         <!-- This is the code for universal -->
+         <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+         <code value="056" />
+      </coding>
+      <coding>
+         <system value="urn:iso:std:iso:3166" />
+         <code value="BE" />
+      </coding>
+   </jurisdiction>
+   <packageId value="hl7.fhir.be.riziv" />
+   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
+   <license value="CC0-1.0" />
+   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+   <fhirVersion value="4.0.1" />
+   <!--
+  <dependsOn id="fedbecore">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed-be-core"/> 
+    <packageId value="fed.be.core"/>
+    <version value="dev"/>
+  </dependsOn> 
+-->
+   <definition>
+      <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+      <grouping id="allergyintolerance">
+         <name value="Allergy Intolerance" />
+         <description value="Allergy / Intolerance resources. These artefacts define the constraints and vocabulary necessary to record allergies and intolerances, suspected or confirmed. 
+A few example resources and scenario demonstrate the use of these resources." />
+      </grouping>
+      <grouping id="patientwill">
+         <name value="Patient Will" />
+         <description value="Patient Will profile and vocabulary. The Patient Will captures a patient's expressed preferences related to care provision.  
+The Logical Data Model defines the functional data needs.  
+An example demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="addiction">
+         <name value="Addiction" />
+         <description value="The profile for Addiction, intended to capture known or suspected substance or other addictions.   
+The Logical Data Model defines the functional data needs.  
+An example demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="vaccination">
+         <name value="Vaccination" />
+         <description value="Vaccination related resources.  These artefacts define the constraints and vocabulary necessary to record the administration of vaccine administrations, including the reference to a vaccination schema or protocol, and eventual immediate reactions. 
+The Logical Data Model defines the functional data needs.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile and extensions define the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="problem">
+         <name value="Problem" />
+         <description value="The Problem resources are intended to capture a short description of a patient's clinical condition.  
+The Logical Data Model defines the functional data needs.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile and extensions define the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="scoreresults">
+         <name value="Score Results" />
+         <description value="The Score Results resource captures an overal assessment score about a health indicator associated with a patient.  
+The vocabulary resources help ensure conformity and data consistency.  
+The profile defines the technical specifications.  
+A set of examples demonstrates the use of the profile." />
+      </grouping>
+      <grouping id="referral">
+         <name value="Referral Prescription" />
+         <description value="The Referral Prescription defines the exchange when ordering services such as nursing care, physiotherapy, or diagnostic procedures such as lab, imaging" />
+      </grouping>
+      <!-- Addiction -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-addiction" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Addiction" />
+         <description value="Addiction record logical model" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-addiction" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction BE profile" />
+         <description value="Belgian Profile to capture Addictions (on substances or others)" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-addiction-quantifier" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Quantifier extension" />
+         <description value="Belgian Extension to allow quantification of addictions (on substances or others) - for example 10 packs per week, 1 bottle per day" />
+         <groupingId value="addiction" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Condition/addiction-smoking" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Patient Smoking addiction" />
+         <description value="Patient Smoking addiction" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-addiction-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Categories" />
+         <description value="Addiction Category value set" />
+         <groupingId value="addiction" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-addiction-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Addiction Codes" />
+         <description value="Addiction Code value set" />
+         <groupingId value="addiction" />
+      </resource>
+
+
+
+
+
+      <!-- -->
+      <!-- Patient Will-->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-patientwill" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Patient Will" />
+         <description value="Patient Will logical model" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-patientwill" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will core BE profile" />
+         <description value="The Core BE profile for Patient Will" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-patientwill-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will Categories" />
+         <description value="Patient Will Category code system" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-patientwill-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will Categories" />
+         <description value="Patient Will Category value set" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-patientwill-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will codes" />
+         <description value="Patient Will directive code system" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-patientwill-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Patient Will directives" />
+         <description value="Patient Will directive value set" />
+         <groupingId value="patientwill" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Consent/patientwill-example" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Patient Will" />
+         <description value="Patient Will" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill" />
+         <groupingId value="patientwill" />
+      </resource>
+      <!-- -->
+      <!-- Vaccination -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-vaccination" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Vaccination" />
+         <description value="Vaccination logical model" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-vaccination" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Vaccination core BE profile" />
+         <description value="The Core BE profile for Vaccination (event)" />
+         <groupingId value="vaccination" />
+      </resource>
+      
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/be-ext-vaccination-location"/>
+        </reference>
+        <fhirVersion value="4.0.1"/>
+        <name value="Location of the vaccination event"/>
+        <description value="Location of the vaccination event"/>
+        <groupingId value="vaccination"/>
+      </resource>
+  
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-care-location" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - Care location" />
+         <description value="The location of the care event" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-vaccination-confirmation-status" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - vaccination confirmation status" />
+         <description value="The list of vaccination confirmation status" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-vaccination-status-reason" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - vaccination status-reason" />
+         <description value="The list of vaccination status reason" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-vaccination-administration-route" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - Vaccine Administration Route" />
+         <description value="The list of administration routes for vaccines" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-care-location" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - Care location" />
+         <description value="The list of Care locations" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-vaccination-administration-route" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - Vaccine Administration Route" />
+         <description value="The list of administration routes for vaccines" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-vaccination-confirmation-status" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - vaccination confirmation status" />
+         <description value="The list of vaccination confirmation status" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-vaccination-status-reason" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - vaccination status reason" />
+         <description value="The list of vaccination status reason" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-administeredProduct" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Administered Product" />
+         <description value="Administered Product" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-vaccination-originalorder" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination original order" />
+         <description value="Vaccination original order  (e.g. prescription)" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-recorder" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination recorder" />
+         <description value="Vaccination recorder" />
+         <groupingId value="vaccination" />
+      </resource>
+
+
+
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-vaccination-confirmationStatus" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Vaccination confirmation status" />
+         <description value="Vaccination confirmation status" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-cnk-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem - CNK Code" />
+         <description value="" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-organization" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem - NIHDI Organization" />
+         <description value="NamingSystem - NIHDI Organization number" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-nihdi-professional" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem - NIHDI Professional" />
+         <description value="NamingSystem - NIHDI Professional numbers" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-one-vaccination" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem - ONE Vaccination Id" />
+         <description value="NamingSystem for ONE vaccination ID" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="NamingSystem/be-ns-product-manufacturer" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="NamingSystem - Product Manufacturer" />
+         <description value="NamingSystem - Product Manufacturer" />
+         <groupingId value="vaccination" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - First hexavalent vaccination" />
+         <description value="Toto - First hexavalent vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa2" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 2nd hexavalent vaccination" />
+         <description value="Toto - 2nd hexavalent vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 3rd hexavalent vaccination" />
+         <description value="Toto - 3rd hexavalent vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa4-skipped" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 4th hexavalent vaccination - skipped (fever)" />
+         <description value="Toto - 4th hexavalent vaccination - skipped (fever)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/toto-hexa4-swelling" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto - 4th hexavalent vaccination" />
+         <description value="Toto - 4th hexavalent vaccination" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa1-reported" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 1st hexa (reported)" />
+         <description value="Juan - 1st hexa (reported)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa2-reported-hospital" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 2nd hexa (hospital)" />
+         <description value="Juan - 2nd hexa (hospital)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa3-skipped" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 3rd hexa (not done)" />
+         <description value="Juan - 3rd hexa (not done)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/juan-hexa4" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Juan - 3rd hexa (effective)" />
+         <description value="Juan - 3rd hexa (effective)" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/eva-hpv1-school" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Eva - HPV 1st dose" />
+         <description value="Eva - HPV 1st dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/eva-hpv2-school" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Eva - HPV 2nd dose" />
+         <description value="Eva - HPV 2nd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/julia-refuse-hpv" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Julia - refuse HPV" />
+         <description value="Julia - refuse HPV" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-gabriel-flu" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Gabriel - Flu vaccine prescription" />
+         <description value="Gabriel - flu vacccine prescription" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/order-simon-hpv" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Simon - HPV vaccine prescription" />
+         <description value="Simon - HPV vacccine prescription" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/erythema" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto reaction - erythema" />
+         <description value="Toto - example of reaction (erythema)" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Observation/fever" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Toto finding - fever" />
+         <description value="Toto - example of finding that prevents vaccination (fever)" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/simon-hpv-at-work" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Simon HPV - work" />
+         <description value="Simon HPV - work" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ImmunizationRecommendation/aymeric-rota" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus prescription" />
+         <description value="Aymeric - rotavirus prescription" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 1st dose" />
+         <description value="Aymeric - rotavirus 1st dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota2" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 2nd dose" />
+         <description value="Aymeric - rotavirus 2nd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/aymeric-rota3" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Aymeric - rotavirus 3rd dose" />
+         <description value="Aymeric - rotavirus 3rd dose" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Immunization/gabriel-flu" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Gabriel - influenza vaccine" />
+         <description value="Gabriel - influenza vaccine" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination" />
+         <groupingId value="vaccination" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Observation/observation-swelling" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Observation - swelling reaction" />
+         <description value="Observation - swelling reaction" />
+         <groupingId value="vaccination" />
+      </resource>
+
+
+
+      <!-- Problem -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-problem" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Problem" />
+         <description value="Problem logical model" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-problem" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Problem core BE profile" />
+         <description value="The Core BE profile for Problem" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-laterality" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Laterality extension" />
+         <description value="Laterality" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-ext-problem-origin-type" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Extension - Problem origin type" />
+         <description value="Extension for Problem origin type" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-problem-origin-type" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ValueSet - Problem origin type" />
+         <description value="Set of values for problem origin type" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-problem-origin-type" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="CodeSystem - Problem origin type" />
+         <description value="Codes for Problem origin type" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-problem-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Code System Problem Category" />
+         <description value="Code System Problem Category" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-problem-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Value Set Problem Category" />
+         <description value="Value Set Problem Category" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-problem-code" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Problem Codes Value Set" />
+         <description value="Problem Code Value Set" />
+         <groupingId value="problem" />
+      </resource>
+<!--
+         <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-laterality" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Code System Laterality" />
+         <description value="Code System Laterality" />
+         <groupingId value="problem" />
+      </resource>
+-->      
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-laterality" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Value Set Laterality" />
+         <description value="Value Set Laterality" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-bodysite" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Code System Body Site" />
+         <description value="Code System Body Site" />
+         <groupingId value="problem" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-bodysite" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Value Set Body Site" />
+         <description value="Value Set Body Site" />
+         <groupingId value="problem" />
+      </resource>
+      <!-- AllergyIntolerance -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-allergyintolerance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="AllergyIntolerance"/>
+      <description value="Allergy Intolerance profile"/>
+      <groupingId value="allergyintolerance"/>
+    </resource>	
+<!--
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-allergyintolerancecode" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSAllergyIntoleranceCode" />
+         <description value="ValueSet - Allergy Intolerance Code" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-exposureroute" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSExposureRoute" />
+         <description value="ValueSet - Allergy Intolerance exposure route" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-riskmanifestation" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="BeVSRiskManifestation" />
+         <description value="ValueSet - Allergy manifestation" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+-->
+      <resource>
+         <reference>
+            <reference value="Practitioner/durant" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example Practitioner - Dr Durant (GP)" />
+         <description value="Dr. Paul Durant (GP)" />
+         <exampleBoolean value="true" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Practitioner/lenoir" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example practitioner - Dr Lenoir" />
+         <description value="Lr François Lenoir" />
+         <exampleBoolean value="true" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="Patient/noel" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example Patient - Noel Joyeux" />
+         <description value="Patient Noel Joyeux" />
+         <exampleBoolean value="true" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="AllergyIntolerance/noel-allergy.v0" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Suspected Allergy" />
+         <description value="Suspected Allergy to Penicillin" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="AllergyIntolerance/noel-allergy.v1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Refuted Allergy" />
+         <description value="Allergy has been refuted - confirmed as non-existent" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="AllergyIntolerance/allergyintolerance1" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Allergy 1 - peanut allergy" />
+         <description value="Allergy to peanut" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="AllergyIntolerance/allergyintolerance2" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - Allergy 2 - Pollen allergy" />
+         <description value="Allergy to pollen" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ExampleScenario/scenario-allergy" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="ExampleScenario - Suspected Allergy" />
+         <description value="Suspected Allergy, then refuted" />
+         <groupingId value="allergyintolerance" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-scoreresult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Logical Model" />
+         <description value = "Score Result Logical Model" />
+         <groupingId value="scoreresults" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-scoreresult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Profile" />
+         <description value = "Score Result Observation profile" />
+         <groupingId value="scoreresults" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="Observation/example-findRisc-screeningScoreResult" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Example - FINDRISC score result" />
+         <description value="FIDNRISC score result example, obtained from a QuestionnaireResponse" />
+         <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult" />
+         <groupingId value="scoreresults" />
+      </resource>
+ 
+
+
+
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-score" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Code system" />
+         <description value = "Score Result codes" />
+         <groupingId value="scoreresults" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="CodeSystem/be-cs-score-category" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Category Code system" />
+         <description value = "Score Result Category" />
+         <groupingId value="scoreresults" />
+      </resource>
+
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-score" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Result Value Set" />
+         <description value = "Score Result value set" />
+         <groupingId value="scoreresults" />
+      </resource>
+      <resource>
+         <reference>
+            <reference value="ValueSet/be-vs-scorecategory" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Score Category Value Set" />
+         <description value = "Score Category value set" />
+         <groupingId value="scoreresults" />
+      </resource>      
+
+
+
+      <!-- Problem -->
+      <resource>
+         <reference>
+            <reference value="StructureDefinition/be-model-referralprescription" />
+         </reference>
+         <fhirVersion value="4.0.1" />
+         <name value="Logical Model Referral Prescription" />
+         <description value="Referral Prescription logical model" />
+         <groupingId value="referral" />
+      </resource>
+
+
+
+
+
+
+
+
+
+
+
+      <page>
+         <!-- The root will always be toc.html - the template will force it if you don't do it -->
+         <nameUrl value="toc.html" />
+         <title value="Table of Contents" />
+         <generation value="html" />
+         <page>
+            <nameUrl value="index.html" />
+            <title value="MyIG Home Page" />
+            <generation value="html" />
+         </page>
+         <page>
+            <nameUrl value="project.html" />
+            <title value="Project Description" />
+            <generation value="html" />
+         </page>
+         <page>
+            <nameUrl value="usecases.html" />
+            <title value="Use Cases" />
+            <generation value="html" />
+         </page>
+         <page>
+            <nameUrl value="downloads.html" />
+            <title value="Useful Downloads" />
+            <generation value="html" />
+         </page>
+         <page>
+            <nameUrl value="changes.html" />
+            <title value="IG Change History" />
+            <generation value="html" />
+         </page>
+      </page>
+      <!-- copyright year is a mandatory parameter -->
+      <parameter>
+         <code value="copyrightyear" />
+         <value value="2019+" />
+      </parameter>
+      <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+      <parameter>
+         <code value="releaselabel" />
+         <value value="CI Build" />
+      </parameter>
+      <parameter>
+         <code value="find-other-resources" />
+         <value value="true" />
+      </parameter>
+      <parameter>
+         <code value="path-binary" />
+         <value value="input\cql" />
+      </parameter>
+      <parameter>
+         <code value="path-resource" />
+         <value value="input/examples/Vaccination" />
+      </parameter>
+      <parameter>
+         <code value="path-resource" />
+         <value value="input/scenarios" />
+      </parameter>      <parameter>
+         <code value="excludettl"/>
+         <value value="true"/>
+      </parameter>
+      <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="logging"/>
+      <value value="generate"/>
+    </parameter>
+    <parameter>
+      <code value="logging"/>
+      <value value="progress"/>
+    </parameter>
+
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+   </definition>
+</ImplementationGuide>

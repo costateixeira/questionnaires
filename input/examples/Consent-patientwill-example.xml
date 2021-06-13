@@ -1,0 +1,54 @@
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="patientwill-example" />
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill" />
+  </meta>
+  <status value="active" />
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope" />
+      <code value="treatment" />
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category" />
+      <code value="treatment" />
+      <display value="Treatment" />
+    </coding>
+  </category>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" />
+      <value value="123456789" />
+    </identifier>
+    <display value="Jane Fhirwoman" />
+  </patient>
+  <dateTime value="2015-11-18" />
+  <performer>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi" />
+      <value value="11530231003" />
+    </identifier>
+  </performer>
+  <policyRule>
+    <text value="Belgian policy" />
+  </policyRule>
+
+  <provision> 
+    <period> 
+        <start value="2020-10-06" />
+    </period> 
+    
+    <code> 
+      <coding>
+        <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code" />
+        <code value="dnr1" />
+        <display value="Dnr1" />
+      </coding>
+      <text value="No resuscitation" />
+    </code> 
+
+  </provision> 
+
+</Consent>

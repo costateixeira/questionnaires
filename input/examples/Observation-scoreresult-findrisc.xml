@@ -1,0 +1,117 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-findRisc-screeningScoreResult"/>
+  <meta>
+    <profile
+             value="https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>         
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category"/>
+      <code value="risk"/>
+      <display value="Risk score"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="763117005"/>
+      <display value="FINDRISC (Finnish Diabetes Risk Score) score"/>
+    </coding>
+  </code>
+  <subject>
+    <identifier>
+      <system
+              value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="111a-222b-333d"/>
+    </identifier>
+    <display value="Jane AAA"/>
+  </subject>
+  <effectivePeriod>
+  <start value="2020-10-06T13:28:17.239+02:00"/>
+  </effectivePeriod>
+  <issued value="2020-10-06T13:28:17.239+02:00"/>
+  <performer>
+    <identifier>
+      <system
+              value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+      <value value="111a-22b-33c"/>
+    </identifier>
+    <display value="AAAA BBBB"/>
+  </performer>
+  <valueInteger value="18"/>
+  <interpretation>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="H"/>
+      <display value="High"/>
+    </coding>
+    <text value="Score is high. The patient should be advised on mitigating the risk."/>
+  </interpretation>
+  <note>
+    <time value="2020-10-06T13:28:17.239+02:00"/>
+    <text value="Remark: The patient&#39;s score has been high since 3 months."/>
+  </note>
+  <referenceRange>
+    <low>
+      <value value="0"/>
+    </low>
+    <high>
+      <value value="3"/>
+    </high>
+    <type>
+      <text value="Very low"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="4"/>
+    </low>
+    <high>
+      <value value="8"/>
+    </high>
+    <type>
+      <text value="Low"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="9"/>
+    </low>
+    <high>
+      <value value="12"/>
+    </high>
+    <type>
+      <text value="Moderate"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="13"/>
+    </low>
+    <high>
+      <value value="20"/>
+    </high>
+    <type>
+      <text value="High"/>
+    </type>
+  </referenceRange>
+  <referenceRange>
+    <low>
+      <value value="21"/>
+    </low>
+    <high>
+      <value value="26"/>
+    </high>
+    <type>
+      <text value="Very high"/>
+    </type>
+  </referenceRange>
+  <derivedFrom>
+    <identifier>
+      <system
+              value="https://www.manzana.be/fhir/QuestionnaireResponse/9d07a557-65df-4f4e-b869-1571f4b6c639"/>
+    </identifier>
+  </derivedFrom>
+</Observation>

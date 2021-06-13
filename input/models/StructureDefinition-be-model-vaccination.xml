@@ -1,0 +1,290 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="be-model-vaccination" />
+  <url value="https://www.hl7belgium.org/fhir/StructureDefinition/be-model-vaccination" />
+  <name value="BEVaccination" />
+  <status value="draft" />
+  <description value="This is the logical model of the patient's vaccination entries in an immunization or vaccination record. The patient vaccination record of several entries as modeled here." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="BEVaccination" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Resource" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BEVaccination">
+      <path value="BEVaccination" />
+      <short value="A record of an immunization or vaccination" />
+      <definition value="A record of an immunization or vaccination" />
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="BEVaccination.identifier">
+      <path value="BEVaccination.identifier" />
+      <short value="The business identifier(s) for the vaccination entry" />
+      <definition value="The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="BEVaccination.status">
+      <path value="BEVaccination.status" />
+      <short value="The status of this vaccination record entry" />
+      <definition value="The status of the vaccination record entry - whether it is active, entered in error, etc." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BEVaccination.statusReason">
+      <path value="BEVaccination.statusReason" />
+      <short value="The reason for the status e.g. 'not completed because...'" />
+      <definition value="Supporting reason for status information." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine" />
+        <valueSet value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason" />
+      </binding>
+    </element>
+	
+    <element id="BEVaccination.patient">
+      <path value="BEVaccination.patient" />
+      <short value="The patient that received vaccination." />
+      <definition value="The patient that has received the vaccination." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
+      </type>
+    </element>
+
+
+
+    <element id="BEVaccination.vaccineCode">
+      <path value="BEVaccination.vaccineCode" />
+      <short value="The vaccine code, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa" />
+      <definition value="The vaccine code - a type of vaccine, typically identified by the disease(s) it covers. For example MMR, HPV, Tetanus, DTPa. This should be a coded value." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+  
+    </element>
+
+	
+    <element id="BEVaccination.vaccinationDate[x]">
+      <path value="BEVaccination.vaccinationDate[x]" />
+      <short value="The date and time when the vaccination has been administered" />
+      <definition value="The date and/or time when the vaccine administration has been administered or presumed to be administered" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+<!--
+    <element id="BEVaccination.dateTimeString">
+      <path value="BEVaccination.dateTimeString" />
+      <short value="A free-text indication of the time when the vaccination has been administered" />
+      <definition value="The date and/or time when the immunization administration has been administered or presumed to be administered, in free text format" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+-->		
+    <element id="BEVaccination.vaccinationRequest">
+      <path value="BEVaccination.vaccinationRequest" />
+      <short value="The patient-specific order or recommendation for the vaccination" />
+      <definition value="The patient-specific order or recommendation for the vaccination, for example a prescription or a request for vaccination for a patient by a physician, for example for optional vaccines." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+
+    <element id="BEVaccination.protocol">
+      <path value="BEVaccination.protocol" />
+      <short value="The vaccination plan or protocol (not patient-specific) that this vaccination is fulfilling" />
+      <definition value="The vaccination plan or protocol (not patient-specific) that this vaccination is fulfilling. For example 'Basisvaccinatieschema'" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+
+
+    <element id="BEVaccination.type">
+      <path value="BEVaccination.type" />
+      <short value="The type of vaccination action - for example first dose or reinforcement." />
+      <definition value="The type of vaccination action - for example first dose or reinforcement." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+
+    <element id="BEVaccination.sequenceNumber">
+      <path value="BEVaccination.sequenceNumber" />
+      <short value="The sequence number of an immunization - whether it is the first dose, or second dose..." />
+      <definition value="The sequence number of an immunization when part of a protocol - if it is the first dose, or second dose..." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+
+	
+    <element id="BEVaccination.reporter">
+      <path value="BEVaccination.reporter" />
+      <short value="The professional that recorded the administration of the vaccine" />
+      <definition value="The professional that recorded the administration of the vaccine." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+
+    <element id="BEVaccination.recorded">
+      <path value="BEVaccination.recorded" />
+      <short value="The date and time when the administration of the vaccine was recorded" />
+      <definition value="The date and time when the administration of the vaccine was recorded - typically used when the vaccine event is recorded a posteriori." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+	
+    <element id="BEVaccination.performer">
+      <path value="BEVaccination.performer" />
+      <short value="The professional that administered the medication" />
+      <definition value="The professional that administered the medication. Use code &quot;unknown&quot; if not known." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+	
+
+
+    <element id="BEVaccination.route">
+      <path value="BEVaccination.route" />
+      <short value="The route of administration." />
+      <definition value="The route of administration for the vaccine. This can be free text (not desired) or a code" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+
+
+
+    <element id="BEVaccination.administeredProduct">
+      <path value="BEVaccination.administeredProduct" />
+      <short value="The details of the product that was administered." />
+      <definition value="The details of the product that was administered" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+
+
+    <element id="BEVaccination.administeredProduct.product">
+      <path value="BEVaccination.administeredProduct.product" />
+      <short value="The actual product that was administered. This should be a produc code or a reference to an actual Medication resource" />
+      <definition value="The actual product that was administered. This can be just text (not desired), or a code (e.g. 1696392 = Neisvac C Dos 0,5ml) or a reference to an actual Medication product (e.g. http://server/Medication/1696392)" />
+      <comment value="In the case where the product is not known, use code &quot;unknown&quot;" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <code value="Reference" />
+      </type>
+    </element>
+
+
+    <element id="BEVaccination.administeredProduct.lotNumber">
+      <path value="BEVaccination.administeredProduct.lotNumber" />
+      <short value="The lot number" />
+      <definition value="The lot number" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+
+    <element id="BEVaccination.administeredProduct.expirationDate">
+      <path value="BEVaccination.administeredProduct.expirationDate" />
+      <short value="The expiration date of the product." />
+      <definition value="The expiration date of the product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+
+
+
+    <element id="BEVaccination.location">
+      <path value="BEVaccination.location" />
+      <short value="The location where the immunization is performed." />
+      <definition value="The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home' or a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' " />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <code value="Reference" />
+      </type>
+    </element>
+
+
+
+
+    <element id="BEVaccination.note">
+      <path value="BEVaccination.note" />
+      <short value="Additional notes for the vaccination." />
+      <definition value="Additional notes for the vaccination" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+      </type>
+    </element>
+
+
+
+
+
+
+  </differential>
+</StructureDefinition>

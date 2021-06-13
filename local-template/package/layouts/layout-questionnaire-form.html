@@ -1,0 +1,52 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+
+  {% include fragment-quest-navtabs.html type='{{[type]}}' id='{{[id]}}' active='form' %}
+
+
+  <a name="root"> </a>
+  <h2 id="root">Form: {{site.data.pages[page.path].title}}</h2>
+
+  <br/>
+
+<div id=formContainer></div>
+<br> </br>
+
+    <button onclick="showQR()">
+    Show QuestionnaireResponse
+    </button>
+    <br> </br>
+    
+    <script src="{{site.data.info.assets}}assets/js/lforms.min.js"></script>
+    <script src="{{site.data.info.assets}}assets/js/lformsFHIR.min.js"></script>
+    
+ 
+    <script>
+    // Define a FHIR Questionnaire
+    var fhirQ = {% include {{[type]}}-{{[id]}}.json %}
+    
+     
+    // Add the form to the page
+    LForms.Util.addFormToPage(fhirQ, 'formContainer');
+    
+    
+    // Define the function for showing the QuestionnaireResponse
+    function showQR() {
+      var qr = LForms.Util.getFormFHIRData('QuestionnaireResponse', 'R4');
+      window.alert(JSON.stringify(qr, null, 2));
+    }
+    
+    
+    </script>
+    
+
+
+
+
+
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}
