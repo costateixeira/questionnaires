@@ -1,10 +1,4 @@
 
-RuleSet: Question(context, linkId, text, type, repeats)
-* {context}item[+].linkId = "{linkId}"
-* {context}item[=].text = "{text}"
-* {context}item[=].type = #{type}
-* {context}item[=].repeats = {repeats}
-
 
 /*
 Instance: cs-mkatz

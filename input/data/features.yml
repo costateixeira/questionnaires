@@ -12,3 +12,8 @@ feedback:
       value: encodeURIComponent($(document).attr('title'))
     - name: "'entry.247644557'"
       value: document.getElementById(id).textContent
+languages:
+  - en
+  - nl-BE
+  - fr-BE
+  - de-BE

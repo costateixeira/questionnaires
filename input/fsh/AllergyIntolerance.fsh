@@ -164,6 +164,10 @@ Description: "Exposure Risk"
 
 
 
+
+
+
+
 Instance: allergy-intolerance-questionnaire
 InstanceOf: Questionnaire
 Description: "Questionnaire for Allergy / Intolerance reporting"
@@ -178,8 +182,18 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 
 
 * insert Question(,patient,Patient,group,false)
+
+// to check if indentation is supposed to work here - add an item in the group
+//    * insert Question(,status,IndentedStatus,display,false)
+
+* insert AddTranslation(item[=].text,nl-BE,Patiënt)
+* insert AddTranslation(item[=].text,fr-BE,Patient)
+
 * item[=].required = true
 * insert Question(item[=].,patient-name,Patient Name,string,false)
+* insert AddTranslation(item[=].item[=].text,nl-BE,Naam van de patiënt)
+* insert AddTranslation(item[=].item[=].text,fr-BE,Nom du patient)
+
 * insert Question(item[=].,patient-id,Patient ID (SSIN\),string,false)
 * item[=].item[=].required = true
 
@@ -187,13 +201,29 @@ Title: "Questionnaire for Allergy / Intolerance reporting"
 
 * insert Question(item[=].,clinical-status,Clinical Status,string,false)
 * item[=].item[=].answerOption[+].valueCoding = #active "Active"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Active)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Actieve)
+
 * item[=].item[=].answerOption[+].valueCoding = #inactive "Inactive"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Inactive)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Inactieve)
 * item[=].item[=].answerOption[+].valueCoding = #resolved "Resolved"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Résolue)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Opgelost)
+
 * insert Question(item[=].,patient-id,Verification Status,string,false)
 * item[=].item[=].answerOption[+].valueCoding = #unconfirmed "Unconfirmed"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Non confirmée)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Onbevestigde)
 * item[=].item[=].answerOption[+].valueCoding = #confirmed "Confirmed"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Confirmée)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Bevestigde)
 * item[=].item[=].answerOption[+].valueCoding = #refuted "Refuted"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Réfutée)
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Weerlegde)
 * item[=].item[=].answerOption[+].valueCoding = #entered-in-error "entered-in-error"
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,fr-BE,Saisie par erreur )
+* insert AddTranslation(item[=].item[=].answerOption[=].valueCoding.display,nl-BE,Foutief ingevoerde)
 
 * insert Question(,allergyintolerance,Allergy or Intolerance?,choice,false)
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"

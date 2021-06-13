@@ -119,3 +119,18 @@ Description:  "Score Category Value Set"
 * codes from system BeCSScoreCategory
 * include http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH
 
+
+Extension: BeLaterality
+Id: be-ext-laterality
+Title: "Laterality extension"
+Description: "An explicit statement of laterality of a lesion, or a treatment, etc."
+* value[x] only Coding
+* valueCoding from BeVSLaterality
+
+
+ValueSet: BeVSLaterality
+Id: be-vs-laterality
+Title: "Laterality"
+Description:  "Laterality"
+* ^status = #draft
+* include codes from valueset http://hl7.org/fhir/ValueSet/bodystructure-relative-location //BeCSLaterality
