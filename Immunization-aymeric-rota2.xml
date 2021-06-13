@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="aymeric-rota2"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Immunization Order, prescription or request</b>: <a href="ImmunizationRecommendation-aymeric-rota.html">Generated Summary: date: 2020-04-06</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://hl7.org/fhir/sid/cvx 116}">rotavirus, pentavalent</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-05-04</p><p><b>recorded</b>: 2020-05-04</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>2</td><td>3</td></tr></table></div>
+  </text>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder">
+    <valueReference>
+      <reference value="ImmunizationRecommendation/aymeric-rota"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus">
+    <valueCode value="confirmed"/>
+  </extension>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="116"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="20020142173"/>
+    </identifier>
+  </patient>
+  <occurrenceDateTime value="2020-05-04"/>
+  <recorded value="2020-05-04"/>
+  <doseQuantity>
+    <value value="1"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <identifier>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"/>
+        <value value="NIHDI_GP1"/>
+      </identifier>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberPositiveInt value="2"/>
+    <seriesDosesPositiveInt value="3"/>
+  </protocolApplied>
+</Immunization>

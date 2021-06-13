@@ -1,0 +1,73 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-score-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">risk<a name=\"be-cs-score-category-risk\"> </a></td><td>Risk score</td><td>Risk score</td></tr><tr><td style=\"white-space:nowrap\">pain<a name=\"be-cs-score-category-pain\"> </a></td><td>Pain score</td><td>Pain score</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>risk</td><td>Risk score</td><td>Risk score</td></tr><tr><td>pain</td><td>Pain Score</td><td>Pain Score</td></tr></table></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category",
+  "version": "0.1.0",
+  "name": "BeCSScoreCategory",
+  "title": "Score Category",
+  "status": "draft",
+  "date": "2021-06-13T09:32:51+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Score Category",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "risk",
+      "display": "Risk score",
+      "definition": "Risk score",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Risk score"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Risk score"
+        }
+      ]
+    },
+    {
+      "code": "pain",
+      "display": "Pain score",
+      "definition": "Pain score",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pain Score"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Pain Score"
+        }
+      ]
+    }
+  ]
+}

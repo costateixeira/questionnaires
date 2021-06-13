@@ -1,0 +1,262 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-cs-patientwill-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">euthanasia-request<a name=\"be-cs-patientwill-code-euthanasia-request\"> </a></td><td>Euthanasia Request</td><td>Euthanasia request</td></tr><tr><td style=\"white-space:nowrap\">intubation-refusal<a name=\"be-cs-patientwill-code-intubation-refusal\"> </a></td><td>Intubation Refusal</td><td>Intubation refusal</td></tr><tr><td style=\"white-space:nowrap\">organ-donation-consent<a name=\"be-cs-patientwill-code-organ-donation-consent\"> </a></td><td>Organ Donation Consent</td><td>Organ donation consent</td></tr><tr><td style=\"white-space:nowrap\">vaccination-refusal<a name=\"be-cs-patientwill-code-vaccination-refusal\"> </a></td><td>Vaccination Refusal</td><td>Vaccination refusal</td></tr><tr><td style=\"white-space:nowrap\">omission-medical-data<a name=\"be-cs-patientwill-code-omission-medical-data\"> </a></td><td>Omission Of Medical Data</td><td>Omission of medical data (crf annexes)</td></tr><tr><td style=\"white-space:nowrap\">blood-transfusion-tefusal<a name=\"be-cs-patientwill-code-blood-transfusion-tefusal\"> </a></td><td>Blood Transfusion Refusal</td><td>Refusal of blood transfusion</td></tr><tr><td style=\"white-space:nowrap\">clinical-participation-consent<a name=\"be-cs-patientwill-code-clinical-participation-consent\"> </a></td><td>clinical Participation Consent</td><td>Consent to participate in clinical trials</td></tr><tr><td style=\"white-space:nowrap\">datareuse-clinicalresearch<a name=\"be-cs-patientwill-code-datareuse-clinicalresearch\"> </a></td><td>Data reuse for clinical research consent</td><td>Consent for data reuse for clinical research</td></tr><tr><td style=\"white-space:nowrap\">datareuse-clinicaltrials<a name=\"be-cs-patientwill-code-datareuse-clinicaltrials\"> </a></td><td>Data reuse for clinical trials consent</td><td>Consent for data reuse for clinical trials</td></tr><tr><td style=\"white-space:nowrap\">dnr0<a name=\"be-cs-patientwill-code-dnr0\"> </a></td><td>Dnr0</td><td>No therapeutic limitations</td></tr><tr><td style=\"white-space:nowrap\">dnr1<a name=\"be-cs-patientwill-code-dnr1\"> </a></td><td>Dnr1</td><td>Do not resuscitate</td></tr><tr><td style=\"white-space:nowrap\">dnr2<a name=\"be-cs-patientwill-code-dnr2\"> </a></td><td>Dnr2</td><td>Do not resuscitate or extend therapy</td></tr><tr><td style=\"white-space:nowrap\">dnr3<a name=\"be-cs-patientwill-code-dnr3\"> </a></td><td>Dnr3</td><td>Do not resuscitate and progressively reduce the therapy</td></tr><tr><td style=\"white-space:nowrap\">hos1<a name=\"be-cs-patientwill-code-hos1\"> </a></td><td>Hos1</td><td>No hospitalization</td></tr><tr><td style=\"white-space:nowrap\">hos2<a name=\"be-cs-patientwill-code-hos2\"> </a></td><td>Hos2</td><td>Hospitalization only in specific situations (cfr annexes)</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>euthanasia-request</td><td>Euthanasie</td><td>TO DO</td></tr><tr><td>intubation-refusal</td><td>Pas d’intubation</td><td>TO DO</td></tr><tr><td>organ-donation-consent</td><td>Consentement aux dons d’organes</td><td>TO DO</td></tr><tr><td>vaccination-refusal</td><td>Pas de vaccination</td><td>TO DO</td></tr><tr><td>omission-medical-data</td><td>Omission de données médicales (cfr annexes)</td><td>TO DO</td></tr><tr><td>blood-transfusion-tefusal</td><td>Pas de transfusion sanguine</td><td>TO DO</td></tr><tr><td>clinical-participation-consent</td><td>Consentement à la participation à des essais cliniques</td><td>TO DO</td></tr><tr><td>datareuse-clinicalresearch</td><td>Consentement à la réutilisation des données à la recherche clinique</td><td>TO DO</td></tr><tr><td>datareuse-clinicaltrials</td><td>Consentement de réutilisation des données à des essais cliniques</td><td>TO DO</td></tr><tr><td>dnr0</td><td>Pas de limitations thérapeutiques</td><td>TO DO</td></tr><tr><td>dnr1</td><td>Pas de réanimation</td><td>TO DO</td></tr><tr><td>dnr2</td><td>Pas de réanimation et ne pas étendre la thérapie en cours</td><td>TO DO</td></tr><tr><td>dnr3</td><td>Pas de réanimation et diminuer progressivement la thérapie en cours</td><td>TO DO</td></tr><tr><td>hos1</td><td>Pas d’hospitalisation</td><td>TO DO</td></tr><tr><td>hos2</td><td>Hospitalisation uniquement dans des situations spécifiques (cfr annexes)</td><td>TO DO</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BeCSPAtientWillCode"];
+  fhir:CodeSystem.title [ fhir:value "Patient Will Directive CodeSystem"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Patient Will Directive CodeSystem"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "euthanasia-request" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Euthanasia Request" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Euthanasia request" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Euthanasie" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "intubation-refusal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intubation Refusal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Intubation refusal" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas d’intubation" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "organ-donation-consent" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Organ Donation Consent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Organ donation consent" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consentement aux dons d’organes" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "vaccination-refusal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaccination Refusal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaccination refusal" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de vaccination" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "omission-medical-data" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Omission Of Medical Data" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Omission of medical data (crf annexes)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Omission de données médicales (cfr annexes)" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "blood-transfusion-tefusal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood Transfusion Refusal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Refusal of blood transfusion" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de transfusion sanguine" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "clinical-participation-consent" ];
+     fhir:CodeSystem.concept.display [ fhir:value "clinical Participation Consent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consent to participate in clinical trials" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consentement à la participation à des essais cliniques" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "datareuse-clinicalresearch" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data reuse for clinical research consent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consent for data reuse for clinical research" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consentement à la réutilisation des données à la recherche clinique" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "datareuse-clinicaltrials" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data reuse for clinical trials consent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consent for data reuse for clinical trials" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consentement de réutilisation des données à des essais cliniques" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "dnr0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dnr0" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "No therapeutic limitations" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de limitations thérapeutiques" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "dnr1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dnr1" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Do not resuscitate" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de réanimation" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "dnr2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dnr2" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Do not resuscitate or extend therapy" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de réanimation et ne pas étendre la thérapie en cours" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "dnr3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dnr3" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Do not resuscitate and progressively reduce the therapy" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de réanimation et diminuer progressivement la thérapie en cours" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "hos1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hos1" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "No hospitalization" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas d’hospitalisation" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "hos2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hos2" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Hospitalization only in specific situations (cfr annexes)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Hospitalisation uniquement dans des situations spécifiques (cfr annexes)" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "TO DO" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

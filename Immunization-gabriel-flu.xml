@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="gabriel-flu"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Immunization Order, prescription or request</b>: <a href="ImmunizationRecommendation-order-gabriel-flu.html">Generated Summary: date: 2019-09-02</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://hl7.org/fhir/sid/cvx 141}">Influenza, seasonal, injectable</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2019-10-11</p><p><b>recorded</b>: 2019-10-11</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>2020</td><td>Yearly</td></tr></table></div>
+  </text>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder">
+    <valueReference>
+      <reference value="ImmunizationRecommendation/order-gabriel-flu"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus">
+    <valueCode value="confirmed"/>
+  </extension>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="141"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="55011779911"/>
+    </identifier>
+  </patient>
+  <occurrenceDateTime value="2019-10-11"/>
+  <recorded value="2019-10-11"/>
+  <doseQuantity>
+    <value value="1"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <identifier>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"/>
+        <value value="NIHDI_GP2"/>
+      </identifier>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberString value="2020"/>
+    <seriesDosesString value="Yearly"/>
+  </protocolApplied>
+</Immunization>

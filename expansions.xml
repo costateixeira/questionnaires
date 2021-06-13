@@ -1,9 +1,4147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="848ada33-eb20-41d7-af3d-1b94f1fede3b"/>
+  <id value="3d58c94d-3a6d-48a9-a567-6a06064c4692"/>
   <meta>
-    <lastUpdated value="2021-06-13T08:14:09.248+00:00"/>
+    <lastUpdated value="2021-06-13T09:32:51.299+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-patientwill-category"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-patientwill-category.html">Patient Will Category CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-patientwill-category.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-advanced-care-directive"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-advanced-care-directive">advanced-care-directive</a>
+                </td>
+                <td>Advanced Care Directive</td>
+                <td>General directives expressed voluntarily by the patient</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-research"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-research">research</a>
+                </td>
+                <td>Research</td>
+                <td>Consent to participate in research protocols and / or share results</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-treatment"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-treatment">treatment</a>
+                </td>
+                <td>Treatment</td>
+                <td>Specific treatments in the context of resuscitation and / or during hospitalization</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category"/>
+        <version value="0.1.0"/>
+        <name value="BeVSPatientWillCategory"/>
+        <title value="Patient Will Category"/>
+        <status value="draft"/>
+        <date value="2020-10-01T11:01:09+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Score Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1b4db5e3-b903-464f-83f3-5807b588185c"/>
+          <timestamp value="2021-06-13T09:33:20+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"/>
+            <code value="advanced-care-directive"/>
+            <display value="Advanced Care Directive"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"/>
+            <code value="research"/>
+            <display value="Research"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"/>
+            <code value="treatment"/>
+            <display value="Treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-patientwill-code"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 15 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-patientwill-code.html">Patient Will Directive CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-patientwill-code.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-euthanasia-request"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-euthanasia-request">euthanasia-request</a>
+                </td>
+                <td>Euthanasia Request</td>
+                <td>Euthanasia request</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-intubation-refusal"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-intubation-refusal">intubation-refusal</a>
+                </td>
+                <td>Intubation Refusal</td>
+                <td>Intubation refusal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-organ-donation-consent"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-organ-donation-consent">organ-donation-consent</a>
+                </td>
+                <td>Organ Donation Consent</td>
+                <td>Organ donation consent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-vaccination-refusal"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-vaccination-refusal">vaccination-refusal</a>
+                </td>
+                <td>Vaccination Refusal</td>
+                <td>Vaccination refusal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-omission-medical-data"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-omission-medical-data">omission-medical-data</a>
+                </td>
+                <td>Omission Of Medical Data</td>
+                <td>Omission of medical data (crf annexes)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-blood-transfusion-tefusal"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-blood-transfusion-tefusal">blood-transfusion-tefusal</a>
+                </td>
+                <td>Blood Transfusion Refusal</td>
+                <td>Refusal of blood transfusion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-clinical-participation-consent"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-clinical-participation-consent">clinical-participation-consent</a>
+                </td>
+                <td>clinical Participation Consent</td>
+                <td>Consent to participate in clinical trials</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-datareuse-clinicalresearch"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-datareuse-clinicalresearch">datareuse-clinicalresearch</a>
+                </td>
+                <td>Data reuse for clinical research consent</td>
+                <td>Consent for data reuse for clinical research</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-datareuse-clinicaltrials"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-datareuse-clinicaltrials">datareuse-clinicaltrials</a>
+                </td>
+                <td>Data reuse for clinical trials consent</td>
+                <td>Consent for data reuse for clinical trials</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr0"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr0">dnr0</a>
+                </td>
+                <td>Dnr0</td>
+                <td>No therapeutic limitations</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr1"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr1">dnr1</a>
+                </td>
+                <td>Dnr1</td>
+                <td>Do not resuscitate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr2"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr2">dnr2</a>
+                </td>
+                <td>Dnr2</td>
+                <td>Do not resuscitate or extend therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr3"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr3">dnr3</a>
+                </td>
+                <td>Dnr3</td>
+                <td>Do not resuscitate and progressively reduce the therapy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-hos1"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-hos1">hos1</a>
+                </td>
+                <td>Hos1</td>
+                <td>No hospitalization</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-hos2"> </a>
+                  <a href="CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-hos2">hos2</a>
+                </td>
+                <td>Hos2</td>
+                <td>Hospitalization only in specific situations (cfr annexes)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code"/>
+        <version value="0.1.0"/>
+        <name value="BeVSScore"/>
+        <title value="Patient Will directives Value Set"/>
+        <status value="draft"/>
+        <date value="2020-10-01T11:01:09+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Score Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f1bcc666-5bd3-4bff-80f6-9d86067f578a"/>
+          <timestamp value="2021-06-13T09:33:20+00:00"/>
+          <total value="15"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="euthanasia-request"/>
+            <display value="Euthanasia Request"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="intubation-refusal"/>
+            <display value="Intubation Refusal"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="organ-donation-consent"/>
+            <display value="Organ Donation Consent"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="vaccination-refusal"/>
+            <display value="Vaccination Refusal"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="omission-medical-data"/>
+            <display value="Omission Of Medical Data"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="blood-transfusion-tefusal"/>
+            <display value="Blood Transfusion Refusal"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="clinical-participation-consent"/>
+            <display value="clinical Participation Consent"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="datareuse-clinicalresearch"/>
+            <display value="Data reuse for clinical research consent"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="datareuse-clinicaltrials"/>
+            <display value="Data reuse for clinical trials consent"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="dnr0"/>
+            <display value="Dnr0"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="dnr1"/>
+            <display value="Dnr1"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="dnr2"/>
+            <display value="Dnr2"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="dnr3"/>
+            <display value="Dnr3"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="hos1"/>
+            <display value="Hos1"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+            <code value="hos2"/>
+            <display value="Hos2"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-score"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-score"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 33 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-be-cs-score.html">Score Code System v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jan 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-763117005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763117005">763117005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>FINDRISC (Finnish Diabetes Risk Score) score</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-446661009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=446661009">446661009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Visual Analogic Scale for pain assessment</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-273531005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273531005">273531005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Index of Independence in Activities of Daily Living</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-447316007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=447316007">447316007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mini-Mental State Examination</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-444297006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444297006">444297006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malnutrition Universal Screening</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-443133008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443133008">443133008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Norton Pressure Sore Risk-Assessment Scale Scoring System</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-7121000122100"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7121000122100">7121000122100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pain Assessment in Advanced Dementia Scale</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-273849003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273849003">273849003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Subjective Global Assessment</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-450738001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450738001">450738001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Timed Chair Stand</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-444680009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444680009">444680009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Timed Up&amp;Go : évalue le risque de chute chez une personne</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-278897004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278897004">278897004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Waterlow pressure ulcer risk assessment</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-763259004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763259004">763259004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disease Activity Score</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-273364009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273364009">273364009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical Disease Activity Index</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-443318007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443318007">443318007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tinetti balance and gait scale</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-719124004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=719124004">719124004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Arthritis Impact Measurement Scales 2 (AIMS2)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-ADBB"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-ADBB">ADBB</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Alarm distress baby scale</td>
+                <td>Alarm distress baby scale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-BRANDEN"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-BRANDEN">BRANDEN</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Branden</td>
+                <td>Branden</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-DOLOPLUS2"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-DOLOPLUS2">DOLOPLUS2</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Doloplus 2 score</td>
+                <td>Pain assessment for people with verbal communication impairment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-EAT-10"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-EAT-10">EAT-10</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Eating Assessment Tool</td>
+                <td>Dysphagia Assessment scale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-EDIN"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-EDIN">EDIN</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Neonatal pain and discomfort scale</td>
+                <td>Neonatal pain and discomfort scale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-HEDEN"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-HEDEN">HEDEN</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>HEDEN Pain Scale</td>
+                <td>HEDEN (Hétéro-Evaluation de la Douleur chez l&#39;Enfant) Pain Scale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-MNA-complete"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-MNA-complete">MNA-complete</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Mini Nutritional Assessment - complete</td>
+                <td>Mini Nutritional Assessment - complete</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-MNA-simplified"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-MNA-simplified">MNA-simplified</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Mini Nutritional Assessment - simplified</td>
+                <td>Mini Nutritional Assessment - simplified</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-PAL"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-PAL">PAL</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Level of Physical Activity</td>
+                <td>Level of Physical Activity (NAP - Niveau d&#39;Activité Physique)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-NRS2002"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-NRS2002">NRS2002</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Nutritional Risk Screening</td>
+                <td>Nutritional Risk Screening</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SCORE"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-SCORE">SCORE</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Systemic Coronary Risk Estimation</td>
+                <td>Systemic Coronary Risk Estimation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SNAQ"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-SNAQ">SNAQ</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Short Nutritional Assessment Questionnaire</td>
+                <td>Short Nutritional Assessment Questionnaire</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-TIMED-CHAIR-STAND"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-TIMED-CHAIR-STAND">TIMED-CHAIR-STAND</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Timed Chair Stand</td>
+                <td>Timed Chair Stand</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-TUG"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-TUG">TUG</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Timed Up&amp;Go</td>
+                <td>Timed Up&amp;Go</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-WECKX"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-WECKX">WECKX</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>SCORE INZAKE ZORGBEHOEVENDHEID</td>
+                <td>WECKX SCORE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SDAI"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-SDAI">SDAI</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>SDAI ou Simplified Disease Activity Index</td>
+                <td>SDAI ou Simplified Disease Activity Index</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-GARS"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-GARS">GARS</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Groningen Activity Restriction Scale</td>
+                <td>Groningen Activity Restriction Scale</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-other"> </a>
+                  <a href="CodeSystem-be-cs-score.html#be-cs-score-other">other</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td>
+                <td>Other</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-score"/>
+        <version value="0.1.0"/>
+        <name value="BeVSScore"/>
+        <title value="Score Value Set"/>
+        <status value="draft"/>
+        <date value="2020-10-01T11:01:09+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Score Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2dedc312-9f91-4773-9d17-c11cb3561da3"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="33"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="763117005"/>
+            <display value="FINDRISC (Finnish Diabetes Risk Score) score"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="446661009"/>
+            <display value="Visual Analogic Scale for pain assessment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273531005"/>
+            <display value="Index of Independence in Activities of Daily Living"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="447316007"/>
+            <display value="Mini-Mental State Examination"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444297006"/>
+            <display value="Malnutrition Universal Screening"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443133008"/>
+            <display value="Norton Pressure Sore Risk-Assessment Scale Scoring System"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="7121000122100"/>
+            <display value="Pain Assessment in Advanced Dementia Scale"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273849003"/>
+            <display value="Subjective Global Assessment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="450738001"/>
+            <display value="Timed Chair Stand"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="444680009"/>
+            <display value="Timed Up&amp;Go&#xA0;: &#xE9;value le risque de chute chez une personne"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="278897004"/>
+            <display value="Waterlow pressure ulcer risk assessment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="763259004"/>
+            <display value="Disease Activity Score"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273364009"/>
+            <display value="Clinical Disease Activity Index"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443318007"/>
+            <display value="Tinetti balance and gait scale"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="719124004"/>
+            <display value="Arthritis Impact Measurement Scales 2 (AIMS2)"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="ADBB"/>
+            <display value="Alarm distress baby scale"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="BRANDEN"/>
+            <display value="Branden"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="DOLOPLUS2"/>
+            <display value="Doloplus 2 score"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="EAT-10"/>
+            <display value="Eating Assessment Tool"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="EDIN"/>
+            <display value="Neonatal pain and discomfort scale"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="HEDEN"/>
+            <display value="HEDEN Pain Scale"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="MNA-complete"/>
+            <display value="Mini Nutritional Assessment - complete"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="MNA-simplified"/>
+            <display value="Mini Nutritional Assessment - simplified"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="PAL"/>
+            <display value="Level of Physical Activity"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="NRS2002"/>
+            <display value="Nutritional Risk Screening"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="SCORE"/>
+            <display value="Systemic Coronary Risk Estimation"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="SNAQ"/>
+            <display value="Short Nutritional Assessment Questionnaire"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="TIMED-CHAIR-STAND"/>
+            <display value="Timed Chair Stand"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="TUG"/>
+            <display value="Timed Up&amp;Go"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="WECKX"/>
+            <display value="SCORE INZAKE ZORGBEHOEVENDHEID"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="SDAI"/>
+            <display value="SDAI ou Simplified Disease Activity Index"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="GARS"/>
+            <display value="Groningen Activity Restriction Scale"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category"/>
+    <resource>
+      <ValueSet>
+        <id value="be-referral-category"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-363679005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005">363679005</a>
+                </td>
+                <td>Imaging</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91251008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91251008">91251008</a>
+                </td>
+                <td>Physical therapy procedure</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-9632001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9632001">9632001</a>
+                </td>
+                <td>Nursing procedure</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-15220000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000">15220000</a>
+                </td>
+                <td>Laboratory test</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category"/>
+        <version value="0.1.0"/>
+        <name value="BeReferralCategory"/>
+        <status value="draft"/>
+        <date value="2021-02-08T13:26:39+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fca486cd-db69-4f29-9d72-3f7eb626b40c"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363679005"/>
+            <display value="Imaging"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91251008"/>
+            <display value="Physical therapy procedure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9632001"/>
+            <display value="Nursing procedure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="15220000"/>
+            <display value="Laboratory test"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status"/>
+    <resource>
+      <ValueSet>
+        <id value="be-reason-referral-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: maroon 1px solid; background-color: #FFCCCC; padding: 8px">
+              <p>Warning: this expansion is generated from a fragment of the code system 
+                <a href="CodeSystem-be-status-reason.html">BeStatusReason</a> and may be missing codes, or include codes that are not valid
+              </p>
+            </div>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-status-reason.html">BeStatusReason v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-status-reason.html">
+                <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-created"> </a>created
+                </td>
+                <td>created</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-not-used-by-patient"> </a>not-used-by-patient
+                </td>
+                <td>not-used-by-patient</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status"/>
+        <version value="0.1.0"/>
+        <name value="BeReasonReferralStatus"/>
+        <status value="active"/>
+        <date value="2021-02-08T13:26:39+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes to explain the current status of a referral prescription."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
+          </extension>
+          <identifier value="urn:uuid:e126a060-0c43-4a87-899d-9b5d904add0c"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
+            <code value="created"/>
+            <display value="created"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
+            <code value="not-used-by-patient"/>
+            <display value="not-used-by-patient"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-vaccination-confirmation-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-vaccination-confirmation-status.html">Vaccination status Code System. v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-vaccination-confirmation-status.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-unconfirmed"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-unconfirmed">unconfirmed</a>
+                </td>
+                <td>unconfirmed</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-confirmed"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-confirmed">confirmed</a>
+                </td>
+                <td>confirmed</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-other"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-other">other</a>
+                </td>
+                <td>other</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status"/>
+        <version value="0.1.0"/>
+        <name value="BeVSVaccinationConfirmationStatus"/>
+        <title value="Vaccination status Value Set"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Vaccination status Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c81d01a6-08ba-42e7-826d-692500db3dab"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status"/>
+            <code value="unconfirmed"/>
+            <display value="unconfirmed"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status"/>
+            <code value="confirmed"/>
+            <display value="confirmed"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status"/>
+            <code value="other"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-care-location"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-care-location"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 23 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-care-location.html">Care Location Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-care-location.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-hospital"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-hospital">hospital</a>
+                </td>
+                <td>Hospital</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-patient-home"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-patient-home">patient-home</a>
+                </td>
+                <td>Patient home</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-nursing-home"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-nursing-home">nursing-home</a>
+                </td>
+                <td>Nursing home</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-recovery-home"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-recovery-home">recovery-home</a>
+                </td>
+                <td>Recovery home</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-workplace"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-workplace">workplace</a>
+                </td>
+                <td>Workplace</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-medical-center"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-medical-center">medical-center</a>
+                </td>
+                <td>Medical center</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-clinic"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-clinic">clinic</a>
+                </td>
+                <td>Clinic</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-pediatric-ic"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-pediatric-ic">pediatric-ic</a>
+                </td>
+                <td>Pediatric ic</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-neonatal-ic"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-neonatal-ic">neonatal-ic</a>
+                </td>
+                <td>Neonatal ic</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-prenatal-consult"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-prenatal-consult">prenatal-consult</a>
+                </td>
+                <td>Prenatal consult</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-m-accueil"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-m-accueil">m-accueil</a>
+                </td>
+                <td>m-accueil</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-child-consult"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-child-consult">child-consult</a>
+                </td>
+                <td>Child consult</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-one"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-one">one</a>
+                </td>
+                <td>ONE</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-kind-gezin"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-kind-gezin">kind-gezin</a>
+                </td>
+                <td>Kind en gezin</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-ambulance"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-ambulance">ambulance</a>
+                </td>
+                <td>Ambulance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-school"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-school">school</a>
+                </td>
+                <td>School</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-school-health-serv"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-school-health-serv">school-health-serv</a>
+                </td>
+                <td>School health services</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-pharmacy"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-pharmacy">pharmacy</a>
+                </td>
+                <td>Pharmacy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-med-monde"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-med-monde">med-monde</a>
+                </td>
+                <td>Med monde</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-ngo"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-ngo">ngo</a>
+                </td>
+                <td>Non-Governmental Organization</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-family-planning"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-family-planning">family-planning</a>
+                </td>
+                <td>Family planning</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-abroad"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-abroad">abroad</a>
+                </td>
+                <td>Abroad</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-other"> </a>
+                  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-other">other</a>
+                </td>
+                <td>other</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-care-location"/>
+        <version value="0.1.0"/>
+        <name value="BeVSCareLocation"/>
+        <title value="Care Location Value Set"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Care Location Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:aeb8326f-8bb0-4aa8-9ab8-af7b8ba906ea"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="23"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="hospital"/>
+            <display value="Hospital"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="patient-home"/>
+            <display value="Patient home"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="nursing-home"/>
+            <display value="Nursing home"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="recovery-home"/>
+            <display value="Recovery home"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="workplace"/>
+            <display value="Workplace"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="medical-center"/>
+            <display value="Medical center"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="clinic"/>
+            <display value="Clinic"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="pediatric-ic"/>
+            <display value="Pediatric ic"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="neonatal-ic"/>
+            <display value="Neonatal ic"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="prenatal-consult"/>
+            <display value="Prenatal consult"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="m-accueil"/>
+            <display value="m-accueil"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="child-consult"/>
+            <display value="Child consult"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="one"/>
+            <display value="ONE"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="kind-gezin"/>
+            <display value="Kind en gezin"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="ambulance"/>
+            <display value="Ambulance"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="school"/>
+            <display value="School"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="school-health-serv"/>
+            <display value="School health services"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="pharmacy"/>
+            <display value="Pharmacy"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="med-monde"/>
+            <display value="Med monde"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="ngo"/>
+            <display value="Non-Governmental Organization"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="family-planning"/>
+            <display value="Family planning"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="abroad"/>
+            <display value="Abroad"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+            <code value="other"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-administration-route"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-vaccination-administration-route"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html">Vaccine Administration Route v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-IM"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-IM">IM</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Instramuscular</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-SC"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-SC">SC</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Subcutaneous</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-IV"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-IV">IV</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Intravenous</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-ID"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-ID">ID</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Intradermal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-Oral"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-Oral">Oral</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Oral</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-Nasal"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-Nasal">Nasal</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Nasal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-unknown"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-unknown">unknown</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+
+**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+
+With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-administration-route"/>
+        <version value="0.1.0"/>
+        <name value="BeVSVaccineAdministrationRoute"/>
+        <title value="Vaccine Administration Route"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Vaccine Administration Route"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c63015e4-2e9a-4637-95fa-b5c3aac58b5a"/>
+          <timestamp value="2021-06-13T09:33:21+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="IM"/>
+            <display value="Instramuscular"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="SC"/>
+            <display value="Subcutaneous"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="IV"/>
+            <display value="Intravenous"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="ID"/>
+            <display value="Intradermal"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="Oral"/>
+            <display value="Oral"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="Nasal"/>
+            <display value="Nasal"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-vaccination-status-reason"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-be-cs-vaccination-status-reason.html">Vaccination status reason Code System. v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html">ActReason v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-OTHER"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-OTHER">OTHER</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td>
+                <td>Other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-ALLERGY"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-ALLERGY">ALLERGY</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td>
+                <td>Allergy to vaccine ingredient</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-OSTOCK"> </a>
+                  <a href="CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-OSTOCK">OSTOCK</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td>
+                <td>Out of stock or no vaccine available</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-IMMUNE"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-IMMUNE">IMMUNE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>Immune</td>
+                <td>**Definition:**Testing has shown that the patient already has immunity to the agent targeted by the immunization.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MEDPREC"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEDPREC">MEDPREC</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>Medical Precaution</td>
+                <td>**Definition:**The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OSTOCK"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-OSTOCK">OSTOCK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>Out of Stock</td>
+                <td>**Definition:**There was no supply of the product on hand to perform the service.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATOBJ"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATOBJ">PATOBJ</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+                <td>Patient Objection</td>
+                <td>**Definition:**The patient or their guardian objects to receiving the vaccine.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason"/>
+        <version value="0.1.0"/>
+        <name value="BeVSVaccinationStatusReason"/>
+        <title value="Vaccination status reason Value Set"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fc7ca5ce-4bab-4c3c-95d1-d145d4c02a63"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActReason|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason"/>
+            <code value="OTHER"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason"/>
+            <code value="ALLERGY"/>
+            <display value="Allergy to vaccine ingredient"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason"/>
+            <code value="OSTOCK"/>
+            <display value="Out of stock or no vaccine available"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="IMMUNE"/>
+            <display value="Immune"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="MEDPREC"/>
+            <display value="Medical Precaution"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="OSTOCK"/>
+            <display value="Out of Stock"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="PATOBJ"/>
+            <display value="Patient Objection"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-bodysite"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-bodysite.html">Body Site CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-bodysite.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-bodysite-IM"> </a>
+                  <a href="CodeSystem-be-cs-bodysite.html#be-cs-bodysite-IM">IM</a>
+                </td>
+                <td>Intramuscular</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite"/>
+        <version value="0.1.0"/>
+        <name value="BeVSBodySite"/>
+        <title value="Body Site"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Body Site"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:50cc0c1d-e61b-4acc-8bca-a8b63a671a93"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite"/>
+            <code value="IM"/>
+            <display value="Intramuscular"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-problem-origin-type"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-problem-origin-type.html">Problem Origin Type v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-problem-origin-type.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-referral"> </a>
+                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-referral">referral</a>
+                </td>
+                <td>Referral order</td>
+                <td>Following a referral order</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-own-initiative"> </a>
+                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-own-initiative">own-initiative</a>
+                </td>
+                <td>Patient&#39;s own initiative</td>
+                <td>The patient has arrived on their own initiative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-counsel"> </a>
+                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-counsel">counsel</a>
+                </td>
+                <td>Advice or recommendation from another provider (no prescription)</td>
+                <td>From an advice or recommendation of a health professional (without prescription)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-other"> </a>
+                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-other">other</a>
+                </td>
+                <td>other</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type"/>
+        <version value="0.1.0"/>
+        <name value="BeVSProblemOriginType"/>
+        <title value="Problem Origin Type"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Problem Origin Type"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:69fa550b-330e-48ed-bd0b-ac646670dfc1"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
+            <code value="referral"/>
+            <display value="Referral order"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
+            <code value="own-initiative"/>
+            <display value="Patient&#39;s own initiative"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
+            <code value="counsel"/>
+            <display value="Advice or recommendation from another provider (no prescription)"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
+            <code value="other"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-addiction-code"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+        <version value="0.1.0"/>
+        <name value="BeVSAddictionCode"/>
+        <title value="Addiction Code"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Addiction code"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-problem-category"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-cs-problem-category.html">Problem Category v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-be-cs-problem-category.html">
+                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-diagnosis"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-diagnosis">diagnosis</a>
+                </td>
+                <td>Diagnosis</td>
+                <td>A disease identified from a clinical reasoning, based on pathological and physiological ascertainments</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-problem"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-problem">problem</a>
+                </td>
+                <td>Problem</td>
+                <td>Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-risk"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-risk">risk</a>
+                </td>
+                <td>Risk</td>
+                <td>Identification of a health problem or situation that may require ongoing monitoring or management</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-antecedent"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-antecedent">antecedent</a>
+                </td>
+                <td>Antecedent</td>
+                <td>Information about a problem that has been resolved</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-congenital"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-congenital">congenital</a>
+                </td>
+                <td>Congenital anomaly</td>
+                <td>Congenital anomaly</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-conclusion"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-conclusion">conclusion</a>
+                </td>
+                <td>Conclusion</td>
+                <td>Informations about a conclusion from anamnesis performed by a professional other than a physician</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-other"> </a>
+                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-other">other</a>
+                </td>
+                <td>Other</td>
+                <td>Other</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category"/>
+        <version value="0.1.0"/>
+        <name value="BeVSProblemCategory"/>
+        <title value="Problem Category"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Problem Category"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:155432a7-f6b3-4e24-9dd2-3930756d4a2d"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="diagnosis"/>
+            <display value="Diagnosis"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="problem"/>
+            <display value="Problem"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="risk"/>
+            <display value="Risk"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="antecedent"/>
+            <display value="Antecedent"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="congenital"/>
+            <display value="Congenital anomaly"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="conclusion"/>
+            <display value="Conclusion"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-scorecategory"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-be-cs-score-category.html">Score Category v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-category-risk"> </a>
+                  <a href="CodeSystem-be-cs-score-category.html#be-cs-score-category-risk">risk</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category</td>
+                <td>Risk score</td>
+                <td>Risk score</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-category-pain"> </a>
+                  <a href="CodeSystem-be-cs-score-category.html#be-cs-score-category-pain">pain</a>
+                </td>
+                <td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category</td>
+                <td>Pain score</td>
+                <td>Pain score</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>other</td>
+                <td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+
+**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+
+With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory"/>
+        <version value="0.1.0"/>
+        <name value="BeVSScoreCategory"/>
+        <title value="Score Category Value Set"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Score Category Value Set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a72b1e01-00a3-4dae-994d-f51ca6c0510e"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category"/>
+            <code value="risk"/>
+            <display value="Risk score"/>
+          </contains>
+          <contains>
+            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category"/>
+            <code value="pain"/>
+            <display value="Pain score"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-bathing-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-bathing-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-bathing-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-0">bathing-dep-0</a>
+                </td>
+                <td>Le patient est capable de se laver complètement sans aucune aide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-bathing-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-1">bathing-dep-1</a>
+                </td>
+                <td>Le patient a besoin d&#39;une aide partielle pour se laver au dessus ou en dessous de la ceinture</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-bathing-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-2">bathing-dep-2</a>
+                </td>
+                <td>Le patient a besoin d&#39;un aide partielle pour se laver tant au-dessus qu&#39;en-dessous de la ceinture</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-bathing-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-3">bathing-dep-3</a>
+                </td>
+                <td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu&#39;en-dessous de la ceinture</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-bathing-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleBathing"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:18d8c455-bc3f-4d45-bc0e-4b87677725b3"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="bathing-dep-0"/>
+            <display value="Le patient est capable de se laver compl&#xE8;tement sans aucune aide"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="bathing-dep-1"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour se laver au dessus ou en dessous de la ceinture"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="bathing-dep-2"/>
+            <display value="Le patient a besoin d&#39;un aide partielle pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="bathing-dep-3"/>
+            <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-dressing-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-dressing-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-dressing-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-0">dressing-dep-0</a>
+                </td>
+                <td>Le patient est capable de s&#39;habiller et de se déshabiller complètement sans aucune aide</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-dressing-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-1">dressing-dep-1</a>
+                </td>
+                <td>Le patient a besoin d&#39;une aide partielle pour s&#39;habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-dressing-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-2">dressing-dep-2</a>
+                </td>
+                <td>Le patient a besoin d&#39;une aide partielle pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-dressing-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-3">dressing-dep-3</a>
+                </td>
+                <td>Le patient doit être entièrement aidé pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-dressing-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleDressing"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:5c97c1ad-4c77-44cb-823f-38acadfaf9a2"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="dressing-dep-0"/>
+            <display value="Le patient est capable de s&#39;habiller et de se d&#xE9;shabiller compl&#xE8;tement sans aucune aide"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="dressing-dep-1"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="dressing-dep-2"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="dressing-dep-3"/>
+            <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-transferring-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-transferring-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-transferring-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-0">transferring-dep-0</a>
+                </td>
+                <td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-transferring-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-1">transferring-dep-1</a>
+                </td>
+                <td>Le patient est autonome pour le transfert et ses déplacements moyennant l&#39;utilisation d&#39;auxiliaires mécaniques (béquilles, chaise roulante, …)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-transferring-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-2">transferring-dep-2</a>
+                </td>
+                <td>Le patient a absolument besoin de l&#39;aide d&#39;un tiers pour au moins un des transferts et/ou ses déplacements</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-transferring-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-3">transferring-dep-3</a>
+                </td>
+                <td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-transferring-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleTransferring"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:6384cdbb-cbfd-4e85-b1c3-69eaec94434c"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="transferring-dep-0"/>
+            <display value="Le patient est autonome pour le transfert et se d&#xE9;place de fa&#xE7;on enti&#xE8;rement ind&#xE9;pendante, sans auxiliaires m&#xE9;caniques, ni aide de tiers"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="transferring-dep-1"/>
+            <display value="Le patient est autonome pour le transfert et ses d&#xE9;placements moyennant l&#39;utilisation d&#39;auxiliaires m&#xE9;caniques (b&#xE9;quilles, chaise roulante, &#x2026;)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="transferring-dep-2"/>
+            <display value="Le patient a absolument besoin de l&#39;aide d&#39;un tiers pour au moins un des transferts et/ou ses d&#xE9;placements"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="transferring-dep-3"/>
+            <display value="Le patient est grabataire ou en chaise roulante et d&#xE9;pend enti&#xE8;rement des autres pour se d&#xE9;placer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-toileting-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-toileting-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-toileting-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-0">toileting-dep-0</a>
+                </td>
+                <td>Le patient est capable d&#39;aller seul à la toilette, de s&#39;habiller ou de s&#39;essuyer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-toileting-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-1">toileting-dep-1</a>
+                </td>
+                <td>Le patient a besoin d&#39;aide pour 1 des 3 items : se déplacer ou s&#39;habiller ou se s&#39;essuyer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-toileting-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-2">toileting-dep-2</a>
+                </td>
+                <td>Le patient a besoin d&#39;aide pour 2 des 3 items : se déplacer ou s&#39;habiller ou se s&#39;essuyer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-toileting-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-3">toileting-dep-3</a>
+                </td>
+                <td>Le patient a besoin d&#39;aide pour les 3 items : se déplacer ou s&#39;habiller ou se s&#39;essuyer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-toileting-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleToileting"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:68b78f2d-8845-4bee-83a5-0893499ac257"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="toileting-dep-0"/>
+            <display value="Le patient est capable d&#39;aller seul &#xE0; la toilette, de s&#39;habiller ou de s&#39;essuyer"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="toileting-dep-1"/>
+            <display value="Le patient a besoin d&#39;aide pour 1 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="toileting-dep-2"/>
+            <display value="Le patient a besoin d&#39;aide pour 2 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="toileting-dep-3"/>
+            <display value="Le patient a besoin d&#39;aide pour les 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-continence-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-continence-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-continence-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-0">continence-dep-0</a>
+                </td>
+                <td>Le patient est continent pour l&#39;urine et les selles</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-continence-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-1">continence-dep-1</a>
+                </td>
+                <td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-continence-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-2">continence-dep-2</a>
+                </td>
+                <td>Le patient est incontinent pour l&#39;urine (y compris exercices de miction) ou les selles</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-continence-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-3">continence-dep-3</a>
+                </td>
+                <td>Le patient est incontinent pour les urines et les selles</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-continence-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleContinence"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:8ba87f88-307a-4e81-be6f-7c1d14fcc4fc"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="continence-dep-0"/>
+            <display value="Le patient est continent pour l&#39;urine et les selles"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="continence-dep-1"/>
+            <display value="Le patient est accidentellement incontinent pour les urines et les selles (sonde v&#xE9;sicale ou anus artificiel compris)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="continence-dep-2"/>
+            <display value="Le patient est incontinent pour l&#39;urine (y compris exercices de miction) ou les selles"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="continence-dep-3"/>
+            <display value="Le patient est incontinent pour les urines et les selles"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-feeding-dep"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mkatz-feeding-dep"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mkatz.html">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mkatz.html">
+                <code>http://example.org/cs-mkatz</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-feeding-dep-0"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-0">feeding-dep-0</a>
+                </td>
+                <td>Le patient est capable de manger et boire seul</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-feeding-dep-1"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-1">feeding-dep-1</a>
+                </td>
+                <td>Le patient besoin d&#39;une aide préalable pour manger ou boire</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-feeding-dep-2"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-2">feeding-dep-2</a>
+                </td>
+                <td>Le patient a besoin d&#39;une aide partielle pendant qu&#39;il mange ou boit</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mkatz-feeding-dep-3"> </a>
+                  <a href="CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-3">feeding-dep-3</a>
+                </td>
+                <td>Le patient est totalement dépendant pour manger et boire</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-feeding-dep"/>
+        <version value="0.1.0"/>
+        <name value="ModifiedKatzScaleFeeding"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:f12e3436-2812-43de-a6d6-ca4ca6f3969f"/>
+          <timestamp value="2021-06-13T09:33:23+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mkatz|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="feeding-dep-0"/>
+            <display value="Le patient est capable de manger et boire seul"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="feeding-dep-1"/>
+            <display value="Le patient besoin d&#39;une aide pr&#xE9;alable pour manger ou boire"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="feeding-dep-2"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pendant qu&#39;il mange ou boit"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mkatz"/>
+            <code value="feeding-dep-3"/>
+            <display value="Le patient est totalement d&#xE9;pendant pour manger et boire"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-addiction-code"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+        <version value="0.1.0"/>
+        <name value="BeVSAddictionCode"/>
+        <title value="Addiction Code"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Addiction code"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-addiction-code"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
+        <version value="0.1.0"/>
+        <name value="BeVSAddictionCode"/>
+        <title value="Addiction Code"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Addiction code"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5"/>
+          <timestamp value="2021-06-13T09:33:22+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-food-intake"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-food-intake"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-food-intake-0"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-food-intake-0">food-intake-0</a>
+                </td>
+                <td>Baisse sévère des prises alimentaires</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-food-intake-1"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-food-intake-1">food-intake-1</a>
+                </td>
+                <td>Légère baisse des prises alimentaires</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-food-intake-2"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-food-intake-2">food-intake-2</a>
+                </td>
+                <td>Pas de baisse des prises alimentaires</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-food-intake"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentFoodIntake"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:10f23468-43ea-4a4d-beb9-ab435b522f3f"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="food-intake-0"/>
+            <display value="Baisse s&#xE9;v&#xE8;re des prises alimentaires"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="food-intake-1"/>
+            <display value="L&#xE9;g&#xE8;re baisse des prises alimentaires"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="food-intake-2"/>
+            <display value="Pas de baisse des prises alimentaires"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-weight-loss"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-weight-loss"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-weight-loss-0"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-weight-loss-0">weight-loss-0</a>
+                </td>
+                <td>Perte de poids supérieure à 3 kg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-weight-loss-1"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-weight-loss-1">weight-loss-1</a>
+                </td>
+                <td>Ne sait pas</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-weight-loss-2"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-weight-loss-2">weight-loss-2</a>
+                </td>
+                <td>Perte de poids entre 1 et 3 kg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-weight-loss-3"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-weight-loss-3">weight-loss-3</a>
+                </td>
+                <td>Pas de perte de poids</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-weight-loss"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentWeightLoss"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:dfb9f262-c374-49f2-8562-9334b2ee3b7e"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="weight-loss-0"/>
+            <display value="Perte de poids sup&#xE9;rieure &#xE0; 3 kg"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="weight-loss-1"/>
+            <display value="Ne sait pas"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="weight-loss-2"/>
+            <display value="Perte de poids entre 1 et 3 kg"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="weight-loss-3"/>
+            <display value="Pas de perte de poids"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-mobility"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-mobility"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-mobility-0"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-mobility-0">mobility-0</a>
+                </td>
+                <td>Alité ou au fauteuil</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-mobility-1"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-mobility-1">mobility-1</a>
+                </td>
+                <td>Autonome à l&#39;intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-mobility-2"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-mobility-2">mobility-2</a>
+                </td>
+                <td>Sort du domicile</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-mobility"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentMobility"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:5e6e9dc0-9762-4cb3-9f72-4860dbc1b6a6"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="mobility-0"/>
+            <display value="Alit&#xE9; ou au fauteuil"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="mobility-1"/>
+            <display value="Autonome &#xE0; l&#39;int&#xE9;rieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="mobility-2"/>
+            <display value="Sort du domicile"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-stress"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-stress"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-stress-no"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-stress-no">stress-no</a>
+                </td>
+                <td>Oui</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-stress-yes"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-stress-yes">stress-yes</a>
+                </td>
+                <td>Non</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-stress"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentStress"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:a535de0f-df3b-439d-8dba-e6062797f349"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="stress-no"/>
+            <display value="Oui"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="stress-yes"/>
+            <display value="Non"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-neuropsychological"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-neuropsychological"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-neuropsych-0"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-neuropsych-0">neuropsych-0</a>
+                </td>
+                <td>Démence ou dépression sévère</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-neuropsych-1"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-neuropsych-1">neuropsych-1</a>
+                </td>
+                <td>Démence légère</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-neuropsych-2"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-neuropsych-2">neuropsych-2</a>
+                </td>
+                <td>Pas de problème psychologique</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-neuropsychological"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentNeuropsychological"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:d7834d50-fb59-4b6f-9186-d4af6b479a6f"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="neuropsych-0"/>
+            <display value="D&#xE9;mence ou d&#xE9;pression s&#xE9;v&#xE8;re"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="neuropsych-1"/>
+            <display value="D&#xE9;mence l&#xE9;g&#xE8;re"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="neuropsych-2"/>
+            <display value="Pas de probl&#xE8;me psychologique"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-bmi"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-mna-bmi"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-mna.html">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-mna.html">
+                <code>http://example.org/cs-mna</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-bmi-0"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-bmi-0">bmi-0</a>
+                </td>
+                <td>IMC &lt; 19 = Score 0</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-bmi-1"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-bmi-1">bmi-1</a>
+                </td>
+                <td>19 &lt;= IMC &lt; 21 = Score 1</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-bmi-2"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-bmi-2">bmi-2</a>
+                </td>
+                <td>21 &lt;= IMC &lt; 23 = Score 2</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---example.org-cs-mna-bmi-3"> </a>
+                  <a href="CodeSystem-cs-mna.html#cs-mna-bmi-3">bmi-3</a>
+                </td>
+                <td>IMC &gt;= 23 = Score 3</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-bmi"/>
+        <version value="0.1.0"/>
+        <name value="MiniNutritionalAssessmentBMI"/>
+        <status value="draft"/>
+        <expansion>
+          <identifier value="urn:uuid:0452857c-9522-4883-9a49-589d0d22d85f"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://example.org/cs-mna|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="bmi-0"/>
+            <display value="IMC &lt; 19 = Score 0"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="bmi-1"/>
+            <display value="19 &lt;= IMC &lt; 21 = Score 1"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="bmi-2"/>
+            <display value="21 &lt;= IMC &lt; 23 = Score 2"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/cs-mna"/>
+            <code value="bmi-3"/>
+            <display value="IMC &gt;= 23 = Score 3"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-laterality"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 12 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html">Bodystructure Location Qualifier v4.0.1 (ValueSet)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jan 2021</li>
+              </ul>
+            </div>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419161000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419161000">419161000</a>
+                </td>
+                <td>Unilateral left</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419465000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419465000">419465000</a>
+                </td>
+                <td>Unilateral right</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-51440002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51440002">51440002</a>
+                </td>
+                <td>Bilateral</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261183002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261183002">261183002</a>
+                </td>
+                <td>Upper</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261122009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261122009">261122009</a>
+                </td>
+                <td>Lower</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255561001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255561001">255561001</a>
+                </td>
+                <td>Medial</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49370004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49370004">49370004</a>
+                </td>
+                <td>Lateral</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264217000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264217000">264217000</a>
+                </td>
+                <td>Superior</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261089000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261089000">261089000</a>
+                </td>
+                <td>Inferior</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255551008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255551008">255551008</a>
+                </td>
+                <td>Posterior</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-351726001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=351726001">351726001</a>
+                </td>
+                <td>Below</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-352730000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=352730000">352730000</a>
+                </td>
+                <td>Above</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality"/>
+        <version value="0.1.0"/>
+        <name value="BeVSLaterality"/>
+        <title value="Laterality"/>
+        <status value="draft"/>
+        <date value="2021-06-13T09:32:51+00:00"/>
+        <publisher value="RIZIV-INAMI"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://somewhere.org"/>
+          </telecom>
+        </contact>
+        <description value="Laterality"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c9dc8e7d-d1b5-460b-85d0-98f51cc1f492"/>
+          <timestamp value="2021-06-13T09:33:25+00:00"/>
+          <total value="12"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/ValueSet/bodystructure-relative-location|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="419161000"/>
+            <display value="Unilateral left"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="419465000"/>
+            <display value="Unilateral right"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="51440002"/>
+            <display value="Bilateral"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="261183002"/>
+            <display value="Upper"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="261122009"/>
+            <display value="Lower"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="255561001"/>
+            <display value="Medial"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="49370004"/>
+            <display value="Lateral"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="264217000"/>
+            <display value="Superior"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="261089000"/>
+            <display value="Inferior"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="255551008"/>
+            <display value="Posterior"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="351726001"/>
+            <display value="Below"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
+            <code value="352730000"/>
+            <display value="Above"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

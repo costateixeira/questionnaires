@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="covid-jan-3"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href="Organization/org-vub-brussels">Organization/org-vub-brussels</a></p><p><b>Product administered</b>: <a name="pfizer-s0003"> </a></p><blockquote><p><b>identifier</b>: id: ?ngen-9?</p><p><b>code</b>: <span title="Codes: {http://ehealth.fgov.be/cnk-codes 19013168}">19013168</span></p><h3>Batches</h3><table class="grid"><tr><td>-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td>*</td><td>B037477</td><td>2020-09-30</td></tr></table></blockquote><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>identifier</b>: id: 134c357c-745b-4a55-43b5-3856240bc740</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes covid19}">covid19</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-03-24</p><p><b>recorded</b>: 2020-03-24</p><p><b>manufacturer</b>: <a href="Organization/org-pfizer">Organization/org-pfizer</a></p><p><b>lotNumber</b>: B037477</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>Huisarts 1</span></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>1</td><td>2</td></tr></table></div>
+  </text>
+  <contained>
+    <Medication>
+      <id value="pfizer-s0003"/>
+      <identifier>
+        <system value="https://covid-vaccine-tracking.be/serialnumbers#034753633003"/>
+      </identifier>
+      <code>
+        <coding>
+          <system value="http://ehealth.fgov.be/cnk-codes"/>
+          <code value="19013168"/>
+        </coding>
+      </code>
+      <batch>
+        <lotNumber value="B037477"/>
+        <expirationDate value="2020-09-30"/>
+      </batch>
+    </Medication>
+  </contained>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location">
+    <valueReference>
+      <reference value="Organization/org-vub-brussels"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct">
+    <valueReference>
+      <reference value="#pfizer-s0003"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus">
+    <valueCode value="confirmed"/>
+  </extension>
+  <identifier>
+    <system value="https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"/>
+    <value value="134c357c-745b-4a55-43b5-3856240bc740"/>
+  </identifier>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes"/>
+      <code value="covid19"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="70072376921"/>
+    </identifier>
+  </patient>
+  <occurrenceDateTime value="2020-03-24"/>
+  <recorded value="2020-03-24"/>
+  <manufacturer>
+    <reference value="Organization/org-pfizer"/>
+  </manufacturer>
+  <lotNumber value="B037477"/>
+  <doseQuantity>
+    <value value="1"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <identifier>
+        <use value="official"/>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"/>
+        <value value="4605123"/>
+      </identifier>
+      <display value="Huisarts 1"/>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberPositiveInt value="1"/>
+    <seriesDosesPositiveInt value="2"/>
+  </protocolApplied>
+</Immunization>

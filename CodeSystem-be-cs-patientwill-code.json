@@ -1,0 +1,268 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-patientwill-code",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">euthanasia-request<a name=\"be-cs-patientwill-code-euthanasia-request\"> </a></td><td>Euthanasia Request</td><td>Euthanasia request</td></tr><tr><td style=\"white-space:nowrap\">intubation-refusal<a name=\"be-cs-patientwill-code-intubation-refusal\"> </a></td><td>Intubation Refusal</td><td>Intubation refusal</td></tr><tr><td style=\"white-space:nowrap\">organ-donation-consent<a name=\"be-cs-patientwill-code-organ-donation-consent\"> </a></td><td>Organ Donation Consent</td><td>Organ donation consent</td></tr><tr><td style=\"white-space:nowrap\">vaccination-refusal<a name=\"be-cs-patientwill-code-vaccination-refusal\"> </a></td><td>Vaccination Refusal</td><td>Vaccination refusal</td></tr><tr><td style=\"white-space:nowrap\">omission-medical-data<a name=\"be-cs-patientwill-code-omission-medical-data\"> </a></td><td>Omission Of Medical Data</td><td>Omission of medical data (crf annexes)</td></tr><tr><td style=\"white-space:nowrap\">blood-transfusion-tefusal<a name=\"be-cs-patientwill-code-blood-transfusion-tefusal\"> </a></td><td>Blood Transfusion Refusal</td><td>Refusal of blood transfusion</td></tr><tr><td style=\"white-space:nowrap\">clinical-participation-consent<a name=\"be-cs-patientwill-code-clinical-participation-consent\"> </a></td><td>clinical Participation Consent</td><td>Consent to participate in clinical trials</td></tr><tr><td style=\"white-space:nowrap\">datareuse-clinicalresearch<a name=\"be-cs-patientwill-code-datareuse-clinicalresearch\"> </a></td><td>Data reuse for clinical research consent</td><td>Consent for data reuse for clinical research</td></tr><tr><td style=\"white-space:nowrap\">datareuse-clinicaltrials<a name=\"be-cs-patientwill-code-datareuse-clinicaltrials\"> </a></td><td>Data reuse for clinical trials consent</td><td>Consent for data reuse for clinical trials</td></tr><tr><td style=\"white-space:nowrap\">dnr0<a name=\"be-cs-patientwill-code-dnr0\"> </a></td><td>Dnr0</td><td>No therapeutic limitations</td></tr><tr><td style=\"white-space:nowrap\">dnr1<a name=\"be-cs-patientwill-code-dnr1\"> </a></td><td>Dnr1</td><td>Do not resuscitate</td></tr><tr><td style=\"white-space:nowrap\">dnr2<a name=\"be-cs-patientwill-code-dnr2\"> </a></td><td>Dnr2</td><td>Do not resuscitate or extend therapy</td></tr><tr><td style=\"white-space:nowrap\">dnr3<a name=\"be-cs-patientwill-code-dnr3\"> </a></td><td>Dnr3</td><td>Do not resuscitate and progressively reduce the therapy</td></tr><tr><td style=\"white-space:nowrap\">hos1<a name=\"be-cs-patientwill-code-hos1\"> </a></td><td>Hos1</td><td>No hospitalization</td></tr><tr><td style=\"white-space:nowrap\">hos2<a name=\"be-cs-patientwill-code-hos2\"> </a></td><td>Hos2</td><td>Hospitalization only in specific situations (cfr annexes)</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>euthanasia-request</td><td>Euthanasie</td><td>TO DO</td></tr><tr><td>intubation-refusal</td><td>Pas d’intubation</td><td>TO DO</td></tr><tr><td>organ-donation-consent</td><td>Consentement aux dons d’organes</td><td>TO DO</td></tr><tr><td>vaccination-refusal</td><td>Pas de vaccination</td><td>TO DO</td></tr><tr><td>omission-medical-data</td><td>Omission de données médicales (cfr annexes)</td><td>TO DO</td></tr><tr><td>blood-transfusion-tefusal</td><td>Pas de transfusion sanguine</td><td>TO DO</td></tr><tr><td>clinical-participation-consent</td><td>Consentement à la participation à des essais cliniques</td><td>TO DO</td></tr><tr><td>datareuse-clinicalresearch</td><td>Consentement à la réutilisation des données à la recherche clinique</td><td>TO DO</td></tr><tr><td>datareuse-clinicaltrials</td><td>Consentement de réutilisation des données à des essais cliniques</td><td>TO DO</td></tr><tr><td>dnr0</td><td>Pas de limitations thérapeutiques</td><td>TO DO</td></tr><tr><td>dnr1</td><td>Pas de réanimation</td><td>TO DO</td></tr><tr><td>dnr2</td><td>Pas de réanimation et ne pas étendre la thérapie en cours</td><td>TO DO</td></tr><tr><td>dnr3</td><td>Pas de réanimation et diminuer progressivement la thérapie en cours</td><td>TO DO</td></tr><tr><td>hos1</td><td>Pas d’hospitalisation</td><td>TO DO</td></tr><tr><td>hos2</td><td>Hospitalisation uniquement dans des situations spécifiques (cfr annexes)</td><td>TO DO</td></tr></table></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+  "version": "0.1.0",
+  "name": "BeCSPAtientWillCode",
+  "title": "Patient Will Directive CodeSystem",
+  "status": "draft",
+  "date": "2021-06-13T09:32:51+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Patient Will Directive CodeSystem",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "euthanasia-request",
+      "display": "Euthanasia Request",
+      "definition": "Euthanasia request",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Euthanasie"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "intubation-refusal",
+      "display": "Intubation Refusal",
+      "definition": "Intubation refusal",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas d’intubation"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "organ-donation-consent",
+      "display": "Organ Donation Consent",
+      "definition": "Organ donation consent",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Consentement aux dons d’organes"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "vaccination-refusal",
+      "display": "Vaccination Refusal",
+      "definition": "Vaccination refusal",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de vaccination"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "omission-medical-data",
+      "display": "Omission Of Medical Data",
+      "definition": "Omission of medical data (crf annexes)",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Omission de données médicales (cfr annexes)"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "blood-transfusion-tefusal",
+      "display": "Blood Transfusion Refusal",
+      "definition": "Refusal of blood transfusion",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de transfusion sanguine"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "clinical-participation-consent",
+      "display": "clinical Participation Consent",
+      "definition": "Consent to participate in clinical trials",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Consentement à la participation à des essais cliniques"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "datareuse-clinicalresearch",
+      "display": "Data reuse for clinical research consent",
+      "definition": "Consent for data reuse for clinical research",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Consentement à la réutilisation des données à la recherche clinique"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "datareuse-clinicaltrials",
+      "display": "Data reuse for clinical trials consent",
+      "definition": "Consent for data reuse for clinical trials",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Consentement de réutilisation des données à des essais cliniques"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "dnr0",
+      "display": "Dnr0",
+      "definition": "No therapeutic limitations",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de limitations thérapeutiques"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "dnr1",
+      "display": "Dnr1",
+      "definition": "Do not resuscitate",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de réanimation"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "dnr2",
+      "display": "Dnr2",
+      "definition": "Do not resuscitate or extend therapy",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de réanimation et ne pas étendre la thérapie en cours"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "dnr3",
+      "display": "Dnr3",
+      "definition": "Do not resuscitate and progressively reduce the therapy",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas de réanimation et diminuer progressivement la thérapie en cours"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "hos1",
+      "display": "Hos1",
+      "definition": "No hospitalization",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Pas d’hospitalisation"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    },
+    {
+      "code": "hos2",
+      "display": "Hos2",
+      "definition": "Hospitalization only in specific situations (cfr annexes)",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Hospitalisation uniquement dans des situations spécifiques (cfr annexes)"
+        },
+        {
+          "language": "nl-BE",
+          "value": "TO DO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImmunizationRecommendation xmlns="http://hl7.org/fhir">
+  <id value="aymeric-rota"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>patient</b>: <span></span></p><p><b>date</b>: 2020-04-06</p><h3>Recommendations</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>ForecastStatus</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 64694002}">Human rotavirus</span></td><td><span title="Codes: ">Recommended</span></td></tr></table></div>
+  </text>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="20020142173"/>
+    </identifier>
+  </patient>
+  <date value="2020-04-06"/>
+  <recommendation>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="64694002"/>
+      </coding>
+    </targetDisease>
+    <forecastStatus>
+      <text value="Recommended"/>
+    </forecastStatus>
+  </recommendation>
+</ImmunizationRecommendation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-confirmation-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">unconfirmed<a name="be-cs-vaccination-confirmation-status-unconfirmed"> </a></td><td>unconfirmed</td></tr><tr><td style="white-space:nowrap">confirmed<a name="be-cs-vaccination-confirmation-status-confirmed"> </a></td><td>confirmed</td></tr><tr><td style="white-space:nowrap">other<a name="be-cs-vaccination-confirmation-status-other"> </a></td><td>other</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>unconfirmed</td><td>non confirmé</td><td>niet bevestigd</td></tr><tr><td>confirmed</td><td>confirmé</td><td>bevestigd</td></tr><tr><td>other</td><td>autre</td><td>andere</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status"/>
+  <version value="0.1.0"/>
+  <name value="BeCSVaccinationConfirmationStatus"/>
+  <title value="Vaccination status Code System."/>
+  <status value="draft"/>
+  <date value="2021-06-13T09:32:51+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination status Code System."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="unconfirmed"/>
+    <display value="unconfirmed"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="non confirm&#xE9;"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="niet bevestigd"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="confirmed"/>
+    <display value="confirmed"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="confirm&#xE9;"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="bevestigd"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Practitioner/lenoir> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "lenoir"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 60010112355 (OFFICIAL), id: 17535484332 (OFFICIAL)</p><p><b>name</b>: Katherine François (OFFICIAL)</p><p><b>telecom</b>: ph: 022675198(WORK), <a href=\"mailto:katherine.pulaski@enterprisehospital.be\">katherine.pulaski@enterprisehospital.be</a></p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+     fhir:Identifier.value [ fhir:value "60010112355" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi" ];
+     fhir:Identifier.value [ fhir:value "17535484332" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "François" ];
+     fhir:HumanName.given [
+       fhir:value "Katherine";
+       fhir:index 0
+     ];
+     fhir:HumanName.suffix [
+       fhir:value "MD";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "022675198" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "katherine.pulaski@enterprisehospital.be" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.text [ fhir:value "Jupiterlaan 5, 1853 Grimbergen" ];
+     fhir:Address.line [
+       fhir:value "Jupiterlaan 5";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Jupiterlaan" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "5" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "Grimbergen" ];
+     fhir:Address.postalCode [ fhir:value "1853" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "female"];
+  fhir:Practitioner.birthDate [ fhir:value "1979-12-11"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Practitioner/lenoir.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

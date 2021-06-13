@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy> a fhir:ExampleScenario;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "scenario-allergy"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AllergyScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: RIZIV-INAMI</p><p><b>contact</b>: <a href=\"http://somewhere.org\">http://somewhere.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}, {urn:iso:std:iso:3166 BE}\">Belgium (BEL)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant\\n(GP)</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: SPEC</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Lenoir\\n(Specialist)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v0</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Allergy Record</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v1</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Updated Allergy Record</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Allergy Intolerance Use Case</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient.</p><p><b>postConditions</b>: The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record).</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Create new Allergy record entry</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Update Allergy record</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:ExampleScenario.url [ fhir:value "https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy"];
+  fhir:ExampleScenario.version [ fhir:value "0.1.0"];
+  fhir:ExampleScenario.name [ fhir:value "AllergyScenario"];
+  fhir:ExampleScenario.status [ fhir:value "draft"];
+  fhir:ExampleScenario.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ExampleScenario.date [ fhir:value "2019-09-11T00:00:00.000+01:00"^^xsd:dateTime];
+  fhir:ExampleScenario.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:ExampleScenario.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:ExampleScenario.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:ExampleScenario.actor [
+     fhir:index 0;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "GP" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Dr. Durant\\n(GP)" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "VAULT" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Vault" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "SPEC" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Dr. Lenoir\\n(Specialist)" ]
+  ];
+  fhir:ExampleScenario.instance [
+     fhir:index 0;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "noel-allergy.v0" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "AllergyIntolerance" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Allergy Record" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "EB" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Empty Bundle" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "noel-allergy.v1" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "AllergyIntolerance" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Updated Allergy Record" ]
+  ];
+  fhir:ExampleScenario.process [
+     fhir:index 0;
+     fhir:ExampleScenario.process.title [ fhir:value "Allergy Intolerance Use Case" ];
+     fhir:ExampleScenario.process.description [ fhir:value "description" ];
+     fhir:ExampleScenario.process.preConditions [ fhir:value "The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient." ];
+     fhir:ExampleScenario.process.postConditions [ fhir:value "The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record)." ];
+     fhir:ExampleScenario.process.step [
+       fhir:index 0;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get patient's allergies" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "EB" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new Allergy record entry" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "noel-allergy.v0" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get patient's allergies" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "SPEC" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "noel-allergy.v0" ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update Allergy record" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "SPEC" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "noel-allergy.v1" ]
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "5" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Get patient's allergies" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "GP" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "noel-allergy.v1" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

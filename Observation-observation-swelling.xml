@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-swelling"/>
+  <language value="nl-BE"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 65124004}">Swelling (finding)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="65124004"/>
+      <display value="Swelling (finding)"/>
+    </coding>
+  </code>
+</Observation>

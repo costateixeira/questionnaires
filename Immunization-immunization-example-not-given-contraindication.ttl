@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/immunization-example-not-given-contraindication> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "immunization-example-not-given-contraindication"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "nl-BE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><p><b>Who recorded the information</b>: <a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>identifier</b>: id: 6021840732</p><p><b>status</b>: not-done</p><p><b>statusReason</b>: <span title=\"Codes: \">Contra-indicatie</span></p><p><b>vaccineCode</b>: <span title=\"Codes: \">Hepatitis B</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-03-12</p><p><b>recorded</b>: 2020-05-26</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></td></tr></table><p><b>note</b>: Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.hl7belgium.org/fhir/Organization/org-kind-en-gezin>;
+       fhir:Reference.reference [ fhir:value "Organization/org-kind-en-gezin" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.hl7belgium.org/fhir/Organization/org-kind-en-gezin>;
+       fhir:Reference.reference [ fhir:value "Organization/org-kind-en-gezin" ]
+     ]
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.kindengezin.be/vaccinatie/vaccination-register" ];
+     fhir:Identifier.value [ fhir:value "6021840732" ]
+  ];
+  fhir:Immunization.status [ fhir:value "not-done"];
+  fhir:Immunization.statusReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "MEDPREC" ];
+       fhir:Coding.display [ fhir:value "Contra-indicatie" ]
+     ]
+  ];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "HBV" ];
+       fhir:Coding.display [ fhir:value "Hepatitis B" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "59050937740" ]
+     ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2020-03-12"^^xsd:date];
+  fhir:Immunization.recorded [ fhir:value "2020-05-26"^^xsd:date];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://www.hl7belgium.org/fhir/Organization/org-kind-en-gezin>;
+       fhir:Reference.reference [ fhir:value "Organization/org-kind-en-gezin" ]
+     ]
+  ];
+  fhir:Immunization.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/immunization-example-not-given-contraindication.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

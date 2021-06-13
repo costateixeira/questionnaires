@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="noel-allergy.v0"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}">Unconfirmed</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 373270004}">Allergic to Penicillin antibacterial</span></p><p><b>patient</b>: <a href="Patient-noel.html">Generated Summary: Social Beneficiary Identifier: 80010112344 (OFFICIAL); active; Noël Joyeux (OFFICIAL); noel.joyeux@belgium.be, Phone: +322476792981, Phone: +3226718655; gender: male; birthDate: 1980-01-10; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate 20}">Married</span></a></p><p><b>onset</b>: 2020</p><p><b>recordedDate</b>: Feb 20, 2020, 3:58:00 AM</p><p><b>recorder</b>: <a href="Practitioner-durant.html">Generated Summary: id: 50010112345 (OFFICIAL), id: 18749704355 (OFFICIAL); Paul Durant (OFFICIAL); Phone: 023544117, paul.durant@durantclinique.be; gender: male</a></p><p><b>note</b>: to be confirmed by tests.</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="medication"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373270004"/>
+      <display value="Penicillin antibacterial"/>
+    </coding>
+    <text value="Allergic to Penicillin antibacterial"/>
+  </code>
+  <patient>
+    <reference value="Patient/noel"/>
+  </patient>
+  <onsetDateTime value="2020"/>
+  <recordedDate value="2020-02-20T14:58:00+11:00"/>
+  <recorder>
+    <reference value="Practitioner/durant"/>
+  </recorder>
+  <note>
+    <text value="to be confirmed by tests."/>
+  </note>
+</AllergyIntolerance>

@@ -1,0 +1,67 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-example-reaction-swelling",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "language": "nl-BE",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><p><b>Who recorded the information</b>: <a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>identifier</b>: id: 26877583455</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 05}\">Measles</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-05-12</p><p><b>recorded</b>: 2020-05-12</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-org-kind-en-gezin.html\">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></td></tr></table><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Date</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>2020-05-12</td><td><a href=\"Observation-observation-swelling.html\">Generated Summary: language: nl-BE; <span title=\"Codes: {http://snomed.info/sct 65124004}\">Swelling (finding)</span></a></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder",
+      "valueReference": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    },
+    {
+      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location",
+      "valueReference": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.kindengezin.be/vaccinatie/vaccination-register",
+      "value": "26877583455"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "05",
+        "display": "Measles"
+      }
+    ]
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "59050937740"
+    }
+  },
+  "occurrenceDateTime": "2020-05-12",
+  "recorded": "2020-05-12",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/org-kind-en-gezin"
+      }
+    }
+  ],
+  "reaction": [
+    {
+      "date": "2020-05-12",
+      "detail": {
+        "reference": "Observation/observation-swelling"
+      }
+    }
+  ]
+}

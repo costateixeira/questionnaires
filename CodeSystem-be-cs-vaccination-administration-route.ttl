@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-cs-vaccination-administration-route"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"be-cs-vaccination-administration-route-IM\"> </a></td><td>Instramuscular</td></tr><tr><td style=\"white-space:nowrap\">SC<a name=\"be-cs-vaccination-administration-route-SC\"> </a></td><td>Subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"be-cs-vaccination-administration-route-IV\"> </a></td><td>Intravenous</td></tr><tr><td style=\"white-space:nowrap\">ID<a name=\"be-cs-vaccination-administration-route-ID\"> </a></td><td>Intradermal</td></tr><tr><td style=\"white-space:nowrap\">Oral<a name=\"be-cs-vaccination-administration-route-Oral\"> </a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">Nasal<a name=\"be-cs-vaccination-administration-route-Nasal\"> </a></td><td>Nasal</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"be-cs-vaccination-administration-route-unknown\"> </a></td><td>Unknown</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>IM</td><td>Intramusculaire</td><td>Intramusculaire</td></tr><tr><td>SC</td><td>Sous-cutanée</td><td>Subcutane</td></tr><tr><td>IV</td><td>intraveineuse</td><td>intraveneus</td></tr><tr><td>ID</td><td>Intradermique</td><td>Intradermale</td></tr><tr><td>Oral</td><td>Orale</td><td>Mondeling</td></tr><tr><td>Nasal</td><td>Nasal</td><td>Nasaal</td></tr><tr><td>unknown</td><td>Inconnu</td><td>onbekend</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BeCSVaccineAdministrationRoute"];
+  fhir:CodeSystem.title [ fhir:value "Vaccine Administration Route"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Vaccine Administration Route"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "IM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Instramuscular" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Intramusculaire" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Intramusculaire" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "SC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subcutaneous" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Sous-cutanée" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Subcutane" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "IV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravenous" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "intraveineuse" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "intraveneus" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "ID" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intradermal" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Intradermique" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Intradermale" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "Oral" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orale" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mondeling" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "Nasal" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nasal" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Nasaal" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Inconnu" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "onbekend" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

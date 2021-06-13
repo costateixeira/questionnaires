@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="juan-hexa1-reported"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href="Organization-org-one-brussels.html">Generated Summary: id: 457213512; active; name: ONE Brussels; https://www.one.be</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: unconfirmed</p><p><b>identifier</b>: id: 9fa7c8fd-318e-45ff-9373-5cdbe8e0f778</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://hl7.org/fhir/sid/cvx 146}">DTaP,IPV,Hib,HepB</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2016-05-30</p><p><b>recorded</b>: 2016-05-30</p><p><b>manufacturer</b>: <a href="Organization-org-sanofi.html">Generated Summary: id: 111111111122; active; name: Sanofi France</a></p><p><b>lotNumber</b>: NA</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>1</td><td>3</td></tr></table></div>
+  </text>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location">
+    <valueReference>
+      <reference value="Organization/org-one-brussels"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus">
+    <valueCode value="unconfirmed"/>
+  </extension>
+  <identifier>
+    <system value="https://www.one.be/vaccination/immunisation-register"/>
+    <value value="9fa7c8fd-318e-45ff-9373-5cdbe8e0f778"/>
+  </identifier>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="146"/>
+    </coding>
+    <coding>
+      <code value="3050176"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-patientid"/>
+      <value value="3564564568"/>
+    </identifier>
+  </patient>
+  <occurrenceDateTime value="2016-05-30"/>
+  <recorded value="2016-05-30"/>
+  <manufacturer>
+    <reference value="Organization/org-sanofi"/>
+  </manufacturer>
+  <lotNumber value="NA"/>
+  <doseQuantity>
+    <value value="1"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <identifier>
+        <value value="Reference(Spain)"/>
+      </identifier>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberPositiveInt value="1"/>
+    <seriesDosesPositiveInt value="3"/>
+  </protocolApplied>
+</Immunization>

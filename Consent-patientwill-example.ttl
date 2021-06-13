@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Consent/patientwill-example> a fhir:Consent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patientwill-example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>scope</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/consentscope treatment}\">Treatment</span></p><p><b>category</b>: <span title=\"Codes: {https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category treatment}\">Treatment</span></p><p><b>patient</b>: <span>Jane Fhirwoman</span></p><p><b>dateTime</b>: 2015-11-18</p><p><b>performer</b>: <span></span></p><p><b>policyRule</b>: <span title=\"Codes: \">Belgian policy</span></p><h3>Provisions</h3><table class=\"grid\"><tr><td>-</td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>2020-10-06 --&gt; (ongoing)</td><td><span title=\"Codes: {https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code dnr1}\">No resuscitation</span></td></tr></table></div>"
+  ];
+  fhir:Consent.status [ fhir:value "active"];
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ];
+       fhir:Coding.code [ fhir:value "treatment" ]
+     ]
+  ];
+  fhir:Consent.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category" ];
+       fhir:Coding.code [ fhir:value "treatment" ];
+       fhir:Coding.display [ fhir:value "Treatment" ]
+     ]
+  ];
+  fhir:Consent.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "123456789" ]
+     ];
+     fhir:Reference.display [ fhir:value "Jane Fhirwoman" ]
+  ];
+  fhir:Consent.dateTime [ fhir:value "2015-11-18"^^xsd:date];
+  fhir:Consent.performer [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi" ];
+       fhir:Identifier.value [ fhir:value "11530231003" ]
+     ]
+  ];
+  fhir:Consent.policyRule [
+     fhir:CodeableConcept.text [ fhir:value "Belgian policy" ]
+  ];
+  fhir:Consent.provision [
+     fhir:Consent.provision.period [
+       fhir:Period.start [ fhir:value "2020-10-06"^^xsd:date ]
+     ];
+     fhir:Consent.provision.code [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code" ];
+         fhir:Coding.code [ fhir:value "dnr1" ];
+         fhir:Coding.display [ fhir:value "Dnr1" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "No resuscitation" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Consent/patientwill-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

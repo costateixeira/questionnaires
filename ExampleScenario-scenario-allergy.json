@@ -1,0 +1,138 @@
+{
+  "resourceType": "ExampleScenario",
+  "id": "scenario-allergy",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AllergyScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: RIZIV-INAMI</p><p><b>contact</b>: <a href=\"http://somewhere.org\">http://somewhere.org</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}, {urn:iso:std:iso:3166 BE}\">Belgium (BEL)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant\\n(GP)</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: SPEC</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Lenoir\\n(Specialist)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v0</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Allergy Record</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v1</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Updated Allergy Record</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Allergy Intolerance Use Case</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient.</p><p><b>postConditions</b>: The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record).</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Create new Allergy record entry</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Update Allergy record</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote></blockquote></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy",
+  "version": "0.1.0",
+  "name": "AllergyScenario",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-09-11T00:00:00.000+01:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "actor": [
+    {
+      "actorId": "GP",
+      "type": "person",
+      "name": "Dr. Durant\\n(GP)"
+    },
+    {
+      "actorId": "VAULT",
+      "type": "entity",
+      "name": "Vault"
+    },
+    {
+      "actorId": "SPEC",
+      "type": "person",
+      "name": "Dr. Lenoir\\n(Specialist)"
+    }
+  ],
+  "instance": [
+    {
+      "resourceId": "noel-allergy.v0",
+      "resourceType": "AllergyIntolerance",
+      "name": "Allergy Record"
+    },
+    {
+      "resourceId": "EB",
+      "resourceType": "Bundle",
+      "name": "Empty Bundle"
+    },
+    {
+      "resourceId": "noel-allergy.v1",
+      "resourceType": "AllergyIntolerance",
+      "name": "Updated Allergy Record"
+    }
+  ],
+  "process": [
+    {
+      "title": "Allergy Intolerance Use Case",
+      "description": "description",
+      "preConditions": "The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient.",
+      "postConditions": "The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record).",
+      "step": [
+        {
+          "operation": {
+            "number": "1",
+            "name": "Get patient's allergies",
+            "initiator": "GP",
+            "receiver": "VAULT",
+            "response": {
+              "resourceId": "EB"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "2",
+            "name": "Create new Allergy record entry",
+            "initiator": "GP",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "noel-allergy.v0"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "3",
+            "name": "Get patient's allergies",
+            "initiator": "SPEC",
+            "receiver": "VAULT",
+            "response": {
+              "resourceId": "noel-allergy.v0"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "4",
+            "name": "Update Allergy record",
+            "initiator": "SPEC",
+            "receiver": "VAULT",
+            "request": {
+              "resourceId": "noel-allergy.v1"
+            }
+          }
+        },
+        {
+          "operation": {
+            "number": "5",
+            "name": "Get patient's allergies",
+            "initiator": "GP",
+            "receiver": "VAULT",
+            "response": {
+              "resourceId": "noel-allergy.v1"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "resourceType": "Immunization",
+  "id": "covid-jan-3",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href=\"Organization/org-vub-brussels\">Organization/org-vub-brussels</a></p><p><b>Product administered</b>: <a name=\"pfizer-s0003\"> </a></p><blockquote><p><b>identifier</b>: id: ?ngen-9?</p><p><b>code</b>: <span title=\"Codes: {http://ehealth.fgov.be/cnk-codes 19013168}\">19013168</span></p><h3>Batches</h3><table class=\"grid\"><tr><td>-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td>*</td><td>B037477</td><td>2020-09-30</td></tr></table></blockquote><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>identifier</b>: id: 134c357c-745b-4a55-43b5-3856240bc740</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes covid19}\">covid19</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-03-24</p><p><b>recorded</b>: 2020-03-24</p><p><b>manufacturer</b>: <a href=\"Organization/org-pfizer\">Organization/org-pfizer</a></p><p><b>lotNumber</b>: B037477</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>Huisarts 1</span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>1</td><td>2</td></tr></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "pfizer-s0003",
+      "identifier": [
+        {
+          "system": "https://covid-vaccine-tracking.be/serialnumbers#034753633003"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://ehealth.fgov.be/cnk-codes",
+            "code": "19013168"
+          }
+        ]
+      },
+      "batch": {
+        "lotNumber": "B037477",
+        "expirationDate": "2020-09-30"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location",
+      "valueReference": {
+        "reference": "Organization/org-vub-brussels"
+      }
+    },
+    {
+      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct",
+      "valueReference": {
+        "reference": "#pfizer-s0003"
+      }
+    },
+    {
+      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus",
+      "valueCode": "confirmed"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register",
+      "value": "134c357c-745b-4a55-43b5-3856240bc740"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes",
+        "code": "covid19"
+      }
+    ]
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "70072376921"
+    }
+  },
+  "occurrenceDateTime": "2020-03-24",
+  "recorded": "2020-03-24",
+  "manufacturer": {
+    "reference": "Organization/org-pfizer"
+  },
+  "lotNumber": "B037477",
+  "doseQuantity": {
+    "value": 1
+  },
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "use": "official",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "4605123"
+        },
+        "display": "Huisarts 1"
+      }
+    }
+  ],
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 2
+    }
+  ]
+}

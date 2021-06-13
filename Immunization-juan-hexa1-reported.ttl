@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/juan-hexa1-reported> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "juan-hexa1-reported"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href=\"Organization-org-one-brussels.html\">Generated Summary: id: 457213512; active; name: ONE Brussels; https://www.one.be</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: unconfirmed</p><p><b>identifier</b>: id: 9fa7c8fd-318e-45ff-9373-5cdbe8e0f778</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 146}\">DTaP,IPV,Hib,HepB</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2016-05-30</p><p><b>recorded</b>: 2016-05-30</p><p><b>manufacturer</b>: <a href=\"Organization-org-sanofi.html\">Generated Summary: id: 111111111122; active; name: Sanofi France</a></p><p><b>lotNumber</b>: NA</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>1</td><td>3</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.hl7belgium.org/fhir/Organization/org-one-brussels>;
+       fhir:Reference.reference [ fhir:value "Organization/org-one-brussels" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus" ];
+     fhir:Extension.valueCode [ fhir:value "unconfirmed" ]
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.one.be/vaccination/immunisation-register" ];
+     fhir:Identifier.value [ fhir:value "9fa7c8fd-318e-45ff-9373-5cdbe8e0f778" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "146" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.code [ fhir:value "3050176" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-patientid" ];
+       fhir:Identifier.value [ fhir:value "3564564568" ]
+     ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2016-05-30"^^xsd:date];
+  fhir:Immunization.recorded [ fhir:value "2016-05-30"^^xsd:date];
+  fhir:Immunization.manufacturer [
+     fhir:link <https://www.hl7belgium.org/fhir/Organization/org-sanofi>;
+     fhir:Reference.reference [ fhir:value "Organization/org-sanofi" ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "NA"];
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "Reference(Spain)" ]
+       ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "3"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/juan-hexa1-reported.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

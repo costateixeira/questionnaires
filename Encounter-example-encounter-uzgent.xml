@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="example-encounter-uzgent"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode OBSENC}">observation encounter</span></p><p><b>period</b>: 2020-10-12 --&gt; 2020-10-15</p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href="Location/uz-gent">Location/uz-gent</a></td></tr></table></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="OBSENC"/>
+  </class>
+  <period>
+    <start value="2020-10-12"/>
+    <end value="2020-10-15"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/uz-gent"/>
+    </location>
+  </location>
+</Encounter>

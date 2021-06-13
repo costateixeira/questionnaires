@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0-test",
+  "version": "0.1.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20210613081319",
-  "name": "xxxexample.fhir.uv.myig"
+  "date": "20210613093210",
+  "name": "hl7.fhir.be.riziv"
 }

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/iex1> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "iex1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "fr-BE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-BE\" lang=\"fr-BE\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 036a5f82-cad8-4b79-ae2b-a5f20374b60a</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 165}, {http://hl7.org/fhir/sid/cvx 165}\">HPV9</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-05-17</p><p><b>recorded</b>: 2020-05-17</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table></div>"
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.kindengezin.be/vaccinatie/vaccination-register" ];
+     fhir:Identifier.value [ fhir:value "036a5f82-cad8-4b79-ae2b-a5f20374b60a" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "165" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "165" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "16032367159" ]
+     ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2020-05-17"^^xsd:date];
+  fhir:Immunization.recorded [ fhir:value "2020-05-17"^^xsd:date];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.use [ fhir:value "official" ];
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+         fhir:Identifier.value [ fhir:value "79121137740" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/iex1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

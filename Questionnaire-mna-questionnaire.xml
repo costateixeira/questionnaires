@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="mna-questionnaire"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> MNAQuestionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> food-intake</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le patient a-t-il moins mangé ces trois derniers mois en raison d'un perte d'appétit, de problèmes digestifs ou de difficultés de mastication ou de déglutition?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-food-intake.html">MiniNutritionalAssessmentFoodIntake</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> weight-loss</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le patient a-t-il perdu du poids involontairement au cours des trois derniers mois?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-weight-loss.html">MiniNutritionalAssessmentWeightLoss</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> mobility</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Qu'en est-il de la mobilité du patient?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-mobility.html">MiniNutritionalAssessmentMobility</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> stress</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le patient a-t-il souffert de stress psychologique ou d'une maladie aigüe au cours des trois derniers mois?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-stress.html">MiniNutritionalAssessmentStress</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> neuropsych</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le patient présente-t-il des problèmes neuropsychologiques ?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-neuropsychological.html">MiniNutritionalAssessmentNeuropsychological</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> imc</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quel est l'indice de masse corporelle (IMC) du patient?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mna-questionnaire_vs-mna-bmi.html">MiniNutritionalAssessmentBMI</a></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-food-intake"/>
+      <name value="MiniNutritionalAssessmentFoodIntake"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="food-intake-0"/>
+            <display value="Baisse s&#xE9;v&#xE8;re des prises alimentaires"/>
+          </concept>
+          <concept>
+            <code value="food-intake-1"/>
+            <display value="L&#xE9;g&#xE8;re baisse des prises alimentaires"/>
+          </concept>
+          <concept>
+            <code value="food-intake-2"/>
+            <display value="Pas de baisse des prises alimentaires"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-weight-loss"/>
+      <name value="MiniNutritionalAssessmentWeightLoss"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="weight-loss-0"/>
+            <display value="Perte de poids sup&#xE9;rieure &#xE0; 3 kg"/>
+          </concept>
+          <concept>
+            <code value="weight-loss-1"/>
+            <display value="Ne sait pas"/>
+          </concept>
+          <concept>
+            <code value="weight-loss-2"/>
+            <display value="Perte de poids entre 1 et 3 kg"/>
+          </concept>
+          <concept>
+            <code value="weight-loss-3"/>
+            <display value="Pas de perte de poids"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-mobility"/>
+      <name value="MiniNutritionalAssessmentMobility"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="mobility-0"/>
+            <display value="Alit&#xE9; ou au fauteuil"/>
+          </concept>
+          <concept>
+            <code value="mobility-1"/>
+            <display value="Autonome &#xE0; l&#39;int&#xE9;rieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)"/>
+          </concept>
+          <concept>
+            <code value="mobility-2"/>
+            <display value="Sort du domicile"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-stress"/>
+      <name value="MiniNutritionalAssessmentStress"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="stress-no"/>
+            <display value="Oui"/>
+          </concept>
+          <concept>
+            <code value="stress-yes"/>
+            <display value="Non"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-neuropsychological"/>
+      <name value="MiniNutritionalAssessmentNeuropsychological"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="neuropsych-0"/>
+            <display value="D&#xE9;mence ou d&#xE9;pression s&#xE9;v&#xE8;re"/>
+          </concept>
+          <concept>
+            <code value="neuropsych-1"/>
+            <display value="D&#xE9;mence l&#xE9;g&#xE8;re"/>
+          </concept>
+          <concept>
+            <code value="neuropsych-2"/>
+            <display value="Pas de probl&#xE8;me psychologique"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mna-bmi"/>
+      <name value="MiniNutritionalAssessmentBMI"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mna"/>
+          <concept>
+            <code value="bmi-0"/>
+            <display value="IMC &lt; 19 = Score 0"/>
+          </concept>
+          <concept>
+            <code value="bmi-1"/>
+            <display value="19 &lt;= IMC &lt; 21 = Score 1"/>
+          </concept>
+          <concept>
+            <code value="bmi-2"/>
+            <display value="21 &lt;= IMC &lt; 23 = Score 2"/>
+          </concept>
+          <concept>
+            <code value="bmi-3"/>
+            <display value="IMC &gt;= 23 = Score 3"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <url value="https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire"/>
+  <version value="0.1.0"/>
+  <name value="MNAQuestionnaire"/>
+  <title value="Mini Nutritional Assessment Questionnaire"/>
+  <status value="draft"/>
+  <subjectType value="Patient"/>
+  <date value="2021-06-13T09:32:51+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="food-intake"/>
+    <text value="Le patient a-t-il moins mang&#xE9; ces trois derniers mois en raison d&#39;un perte d&#39;app&#xE9;tit, de probl&#xE8;mes digestifs ou de difficult&#xE9;s de mastication ou de d&#xE9;glutition?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-food-intake"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="weight-loss"/>
+    <text value="Le patient a-t-il perdu du poids involontairement au cours des trois derniers mois?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-weight-loss"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="mobility"/>
+    <text value="Qu&#39;en est-il de la mobilit&#xE9; du patient?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-mobility"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="stress"/>
+    <text value="Le patient a-t-il souffert de stress psychologique ou d&#39;une maladie aig&#xFC;e au cours des trois derniers mois?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-stress"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="neuropsych"/>
+    <text value="Le patient pr&#xE9;sente-t-il des probl&#xE8;mes neuropsychologiques ?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-neuropsychological"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="imc"/>
+    <text value="Quel est l&#39;indice de masse corporelle (IMC) du patient?"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mna-bmi"/>
+  </item>
+</Questionnaire>

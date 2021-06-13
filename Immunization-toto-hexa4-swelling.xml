@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="toto-hexa4-swelling"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href="Organization-org-one-brussels.html">Generated Summary: id: 457213512; active; name: ONE Brussels; https://www.one.be</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>identifier</b>: id: 1c4feb6a-275d-4029-9466-31b353710f84</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://hl7.org/fhir/sid/cvx 146}">DTaP,IPV,Hib,HepB</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2017-06-23</p><p><b>recorded</b>: 2017-06-23</p><p><b>manufacturer</b>: <a href="Organization-org-sanofi.html">Generated Summary: id: 111111111122; active; name: Sanofi France</a></p><p><b>lotNumber</b>: L16855</p><p><b>doseQuantity</b>: 1</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span></span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <span></span></p></blockquote><h3>Reactions</h3><table class="grid"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a name="erythema"> </a><blockquote><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 247441003}">Erythema</span></p><p><b>subject</b>: <span></span></p></blockquote></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>4</td><td>4</td></tr></table></div>
+  </text>
+  <contained>
+    <Observation>
+      <id value="erythema"/>
+      <status value="final"/>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="247441003"/>
+        </coding>
+      </code>
+      <subject>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+          <value value="16032376921"/>
+        </identifier>
+      </subject>
+    </Observation>
+  </contained>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location">
+    <valueReference>
+      <reference value="Organization/org-one-brussels"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus">
+    <valueCode value="confirmed"/>
+  </extension>
+  <identifier>
+    <system value="https://www.one.be/vaccination/immunisation-register"/>
+    <value value="1c4feb6a-275d-4029-9466-31b353710f84"/>
+  </identifier>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="146"/>
+    </coding>
+    <coding>
+      <code value="3050176"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="16032376921"/>
+    </identifier>
+  </patient>
+  <occurrenceDateTime value="2017-06-23"/>
+  <recorded value="2017-06-23"/>
+  <manufacturer>
+    <reference value="Organization/org-sanofi"/>
+  </manufacturer>
+  <lotNumber value="L16855"/>
+  <doseQuantity>
+    <value value="1"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <identifier>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"/>
+        <value value="NIHDI_ONE"/>
+      </identifier>
+    </actor>
+  </performer>
+  <performer>
+    <actor>
+      <identifier>
+        <value value="ONE Nurse  1"/>
+      </identifier>
+    </actor>
+  </performer>
+  <reaction>
+    <detail>
+      <reference value="#erythema"/>
+    </detail>
+  </reaction>
+  <protocolApplied>
+    <doseNumberPositiveInt value="4"/>
+    <seriesDosesPositiveInt value="4"/>
+  </protocolApplied>
+</Immunization>

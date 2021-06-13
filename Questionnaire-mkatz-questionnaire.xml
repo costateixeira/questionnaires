@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="mkatz-questionnaire"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> MKatzQuestionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> bathing</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Se laver</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html">ModifiedKatzScaleBathing</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> dressing</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">S'habiller</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html">ModifiedKatzScaleDressing</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> transferring</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Se déplacer</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html">ModifiedKatzScaleTransferring</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> toileting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Aller à la toilette</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html">ModifiedKatzScaleToileting</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> continence</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La continence</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html">ModifiedKatzScaleContinence</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> feeding</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Manger</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html">ModifiedKatzScaleFeeding</a></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-bathing-dep"/>
+      <name value="ModifiedKatzScaleBathing"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="bathing-dep-0"/>
+            <display value="Le patient est capable de se laver compl&#xE8;tement sans aucune aide"/>
+          </concept>
+          <concept>
+            <code value="bathing-dep-1"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour se laver au dessus ou en dessous de la ceinture"/>
+          </concept>
+          <concept>
+            <code value="bathing-dep-2"/>
+            <display value="Le patient a besoin d&#39;un aide partielle pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </concept>
+          <concept>
+            <code value="bathing-dep-3"/>
+            <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-dressing-dep"/>
+      <name value="ModifiedKatzScaleDressing"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="dressing-dep-0"/>
+            <display value="Le patient est capable de s&#39;habiller et de se d&#xE9;shabiller compl&#xE8;tement sans aucune aide"/>
+          </concept>
+          <concept>
+            <code value="dressing-dep-1"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)"/>
+          </concept>
+          <concept>
+            <code value="dressing-dep-2"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </concept>
+          <concept>
+            <code value="dressing-dep-3"/>
+            <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-transferring-dep"/>
+      <name value="ModifiedKatzScaleTransferring"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="transferring-dep-0"/>
+            <display value="Le patient est autonome pour le transfert et se d&#xE9;place de fa&#xE7;on enti&#xE8;rement ind&#xE9;pendante, sans auxiliaires m&#xE9;caniques, ni aide de tiers"/>
+          </concept>
+          <concept>
+            <code value="transferring-dep-1"/>
+            <display value="Le patient est autonome pour le transfert et ses d&#xE9;placements moyennant l&#39;utilisation d&#39;auxiliaires m&#xE9;caniques (b&#xE9;quilles, chaise roulante, &#x2026;)"/>
+          </concept>
+          <concept>
+            <code value="transferring-dep-2"/>
+            <display value="Le patient a absolument besoin de l&#39;aide d&#39;un tiers pour au moins un des transferts et/ou ses d&#xE9;placements"/>
+          </concept>
+          <concept>
+            <code value="transferring-dep-3"/>
+            <display value="Le patient est grabataire ou en chaise roulante et d&#xE9;pend enti&#xE8;rement des autres pour se d&#xE9;placer"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-toileting-dep"/>
+      <name value="ModifiedKatzScaleToileting"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="toileting-dep-0"/>
+            <display value="Le patient est capable d&#39;aller seul &#xE0; la toilette, de s&#39;habiller ou de s&#39;essuyer"/>
+          </concept>
+          <concept>
+            <code value="toileting-dep-1"/>
+            <display value="Le patient a besoin d&#39;aide pour 1 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </concept>
+          <concept>
+            <code value="toileting-dep-2"/>
+            <display value="Le patient a besoin d&#39;aide pour 2 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </concept>
+          <concept>
+            <code value="toileting-dep-3"/>
+            <display value="Le patient a besoin d&#39;aide pour les 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-continence-dep"/>
+      <name value="ModifiedKatzScaleContinence"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="continence-dep-0"/>
+            <display value="Le patient est continent pour l&#39;urine et les selles"/>
+          </concept>
+          <concept>
+            <code value="continence-dep-1"/>
+            <display value="Le patient est accidentellement incontinent pour les urines et les selles (sonde v&#xE9;sicale ou anus artificiel compris)"/>
+          </concept>
+          <concept>
+            <code value="continence-dep-2"/>
+            <display value="Le patient est incontinent pour l&#39;urine (y compris exercices de miction) ou les selles"/>
+          </concept>
+          <concept>
+            <code value="continence-dep-3"/>
+            <display value="Le patient est incontinent pour les urines et les selles"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet>
+      <id value="vs-mkatz-feeding-dep"/>
+      <name value="ModifiedKatzScaleFeeding"/>
+      <status value="draft"/>
+      <compose>
+        <include>
+          <system value="http://example.org/cs-mkatz"/>
+          <concept>
+            <code value="feeding-dep-0"/>
+            <display value="Le patient est capable de manger et boire seul"/>
+          </concept>
+          <concept>
+            <code value="feeding-dep-1"/>
+            <display value="Le patient besoin d&#39;une aide pr&#xE9;alable pour manger ou boire"/>
+          </concept>
+          <concept>
+            <code value="feeding-dep-2"/>
+            <display value="Le patient a besoin d&#39;une aide partielle pendant qu&#39;il mange ou boit"/>
+          </concept>
+          <concept>
+            <code value="feeding-dep-3"/>
+            <display value="Le patient est totalement d&#xE9;pendant pour manger et boire"/>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <url value="https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire"/>
+  <version value="0.1.0"/>
+  <name value="MKatzQuestionnaire"/>
+  <title value="Modified Katz scale evaluation Questionnaire"/>
+  <status value="draft"/>
+  <subjectType value="Patient"/>
+  <date value="2021-06-13T09:32:51+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="bathing"/>
+    <text value="Se laver"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-bathing-dep"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="dressing"/>
+    <text value="S&#39;habiller"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-dressing-dep"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="transferring"/>
+    <text value="Se d&#xE9;placer"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-transferring-dep"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="toileting"/>
+    <text value="Aller &#xE0; la toilette"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-toileting-dep"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="continence"/>
+    <text value="La continence"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-continence-dep"/>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+          <code value="radio-button"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <linkId value="feeding"/>
+    <text value="Manger"/>
+    <type value="choice"/>
+    <repeats value="false"/>
+    <answerValueSet value="#vs-mkatz-feeding-dep"/>
+  </item>
+</Questionnaire>

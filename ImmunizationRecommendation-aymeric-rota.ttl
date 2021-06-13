@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ImmunizationRecommendation/aymeric-rota> a fhir:ImmunizationRecommendation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "aymeric-rota"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <span></span></p><p><b>date</b>: 2020-04-06</p><h3>Recommendations</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>ForecastStatus</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 64694002}\">Human rotavirus</span></td><td><span title=\"Codes: \">Recommended</span></td></tr></table></div>"
+  ];
+  fhir:ImmunizationRecommendation.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "20020142173" ]
+     ]
+  ];
+  fhir:ImmunizationRecommendation.date [ fhir:value "2020-04-06"^^xsd:date];
+  fhir:ImmunizationRecommendation.recommendation [
+     fhir:index 0;
+     fhir:ImmunizationRecommendation.recommendation.targetDisease [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:64694002;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "64694002" ]
+       ]
+     ];
+     fhir:ImmunizationRecommendation.recommendation.forecastStatus [
+       fhir:CodeableConcept.text [ fhir:value "Recommended" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ImmunizationRecommendation/aymeric-rota.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

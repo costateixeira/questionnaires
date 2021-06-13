@@ -1,0 +1,28 @@
+{
+  "resourceType": "Organization",
+  "id": "org-one-brussels",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 457213512</p><p><b>active</b>: true</p><p><b>name</b>: ONE Brussels</p><p><b>telecom</b>: <a href=\"https://www.one.be\">https://www.one.be</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "value": "457213512"
+    }
+  ],
+  "active": true,
+  "name": "ONE Brussels",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "https://www.one.be",
+      "use": "work"
+    }
+  ]
+}

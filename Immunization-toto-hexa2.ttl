@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/toto-hexa2> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "toto-hexa2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href=\"Organization-org-one-brussels.html\">Generated Summary: id: 457213512; active; name: ONE Brussels; https://www.one.be</a></p><p><b>Product administered</b>: <span></span></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>identifier</b>: id: e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 146}\">DTaP,IPV,Hib,HepB</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2016-07-04</p><p><b>recorded</b>: 2016-07-04</p><p><b>manufacturer</b>: <a href=\"Organization-org-sanofi.html\">Generated Summary: id: 111111111122; active; name: Sanofi France</a></p><p><b>lotNumber</b>: L00156</p><p><b>doseQuantity</b>: 1</p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span></span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <span></span></p></blockquote><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>2</td><td>4</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.hl7belgium.org/fhir/Organization/org-one-brussels>;
+       fhir:Reference.reference [ fhir:value "Organization/org-one-brussels" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct" ];
+     fhir:Extension.valueReference [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Identifier.value [ fhir:value "3050176" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus" ];
+     fhir:Extension.valueCode [ fhir:value "confirmed" ]
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.one.be/vaccination/immunisation-register" ];
+     fhir:Identifier.value [ fhir:value "e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "146" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.code [ fhir:value "3050176" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "16032376921" ]
+     ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2016-07-04"^^xsd:date];
+  fhir:Immunization.recorded [ fhir:value "2016-07-04"^^xsd:date];
+  fhir:Immunization.manufacturer [
+     fhir:link <https://www.hl7belgium.org/fhir/Organization/org-sanofi>;
+     fhir:Reference.reference [ fhir:value "Organization/org-sanofi" ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "L00156"];
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization" ];
+         fhir:Identifier.value [ fhir:value "NIHDI_ONE" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "ONE Nurse  1" ]
+       ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "4"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/toto-hexa2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

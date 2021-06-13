@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-uz-gent"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4342357223509</p><p><b>active</b>: true</p><p><b>name</b>: UZ Gent</p><p><b>telecom</b>: <a href="https://www.uzgent.be/">https://www.uzgent.be/</a></p></div>
+  </text>
+  <identifier>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+    <value value="4342357223509"/>
+  </identifier>
+  <active value="true"/>
+  <name value="UZ Gent"/>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.uzgent.be/"/>
+    <use value="work"/>
+  </telecom>
+</Organization>

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Immunization",
+  "id": "iex1",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"
+    ]
+  },
+  "language": "fr-BE",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-BE\" lang=\"fr-BE\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 036a5f82-cad8-4b79-ae2b-a5f20374b60a</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 165}, {http://hl7.org/fhir/sid/cvx 165}\">HPV9</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-05-17</p><p><b>recorded</b>: 2020-05-17</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.kindengezin.be/vaccinatie/vaccination-register",
+      "value": "036a5f82-cad8-4b79-ae2b-a5f20374b60a"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "165"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "code": "165"
+      }
+    ]
+  },
+  "patient": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "16032367159"
+    }
+  },
+  "occurrenceDateTime": "2020-05-17",
+  "recorded": "2020-05-17",
+  "performer": [
+    {
+      "actor": {
+        "identifier": {
+          "use": "official",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+          "value": "79121137740"
+        }
+      }
+    }
+  ]
+}

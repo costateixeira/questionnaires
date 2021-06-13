@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-reason-referral-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-be-status-reason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason</code></a></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
+  "version": "0.1.0",
+  "name": "BeReasonReferralStatus",
+  "status": "active",
+  "date": "2021-02-08T13:26:39+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codes to explain the current status of a referral prescription.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"
+      }
+    ]
+  }
+}

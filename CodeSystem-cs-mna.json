@@ -1,0 +1,233 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-mna",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://example.org/cs-mna defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">food-intake-0<a name=\"cs-mna-food-intake-0\"> </a></td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td style=\"white-space:nowrap\">food-intake-1<a name=\"cs-mna-food-intake-1\"> </a></td><td>Légère baisse des prises alimentaires</td></tr><tr><td style=\"white-space:nowrap\">food-intake-2<a name=\"cs-mna-food-intake-2\"> </a></td><td>Pas de baisse des prises alimentaires</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-0<a name=\"cs-mna-weight-loss-0\"> </a></td><td>Perte de poids supérieure à 3 kg</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-1<a name=\"cs-mna-weight-loss-1\"> </a></td><td>Ne sait pas</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-2<a name=\"cs-mna-weight-loss-2\"> </a></td><td>Perte de poids entre 1 et 3 kg</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-3<a name=\"cs-mna-weight-loss-3\"> </a></td><td>Pas de perte de poids</td></tr><tr><td style=\"white-space:nowrap\">mobility-0<a name=\"cs-mna-mobility-0\"> </a></td><td>Alité ou au fauteuil</td></tr><tr><td style=\"white-space:nowrap\">mobility-1<a name=\"cs-mna-mobility-1\"> </a></td><td>Autonome a l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td></tr><tr><td style=\"white-space:nowrap\">mobility-2<a name=\"cs-mna-mobility-2\"> </a></td><td>Sort du domicile</td></tr><tr><td style=\"white-space:nowrap\">stress-no<a name=\"cs-mna-stress-no\"> </a></td><td>Oui</td></tr><tr><td style=\"white-space:nowrap\">stress-yes<a name=\"cs-mna-stress-yes\"> </a></td><td>Non</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-0<a name=\"cs-mna-neuropsych-0\"> </a></td><td>Démence ou dépression sévère</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-1<a name=\"cs-mna-neuropsych-1\"> </a></td><td>Démence légère</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-2<a name=\"cs-mna-neuropsych-2\"> </a></td><td>Pas de problème psychologique</td></tr><tr><td style=\"white-space:nowrap\">bmi-0<a name=\"cs-mna-bmi-0\"> </a></td><td>IMC &lt; 19 = Score 0</td></tr><tr><td style=\"white-space:nowrap\">bmi-1<a name=\"cs-mna-bmi-1\"> </a></td><td>19 &lt;= IMC &lt; 21 = Score 1</td></tr><tr><td style=\"white-space:nowrap\">bmi-2<a name=\"cs-mna-bmi-2\"> </a></td><td>21 &lt;= IMC &lt; 23 = Score 2</td></tr><tr><td style=\"white-space:nowrap\">bmi-3<a name=\"cs-mna-bmi-3\"> </a></td><td>IMC &gt;= 23 = Score 3</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (fr)</b></td></tr><tr><td>food-intake-0</td><td>Baisse sévère des prises alimentaires</td></tr><tr><td>food-intake-1</td><td>Légère baisse des prises alimentaires</td></tr><tr><td>food-intake-2</td><td>Pas de baisse des prises alimentaires</td></tr><tr><td>weight-loss-0</td><td>Perte de poids supérieure à 3 kg</td></tr><tr><td>weight-loss-1</td><td>Ne sait pas</td></tr><tr><td>weight-loss-2</td><td>Perte de poids entre 1 et 3 kg</td></tr><tr><td>weight-loss-3</td><td>Pas de perte de poids</td></tr><tr><td>mobility-0</td><td>Alité ou au fauteuil</td></tr><tr><td>mobility-1</td><td>Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td></tr><tr><td>mobility-2</td><td>Sort du domicile</td></tr><tr><td>stress-no</td><td>Oui</td></tr><tr><td>stress-yes</td><td>Non</td></tr><tr><td>neuropsych-0</td><td>Démence ou dépression sévère</td></tr><tr><td>neuropsych-1</td><td>Démence légère</td></tr><tr><td>neuropsych-2</td><td>Pas de problème psychologique</td></tr><tr><td>bmi-0</td><td>IMC &lt; 19 = Score 0</td></tr><tr><td>bmi-1</td><td>19 &lt;= IMC &lt; 21 = Score 1</td></tr><tr><td>bmi-2</td><td>21 &lt;= IMC &lt; 23 = Score 2</td></tr><tr><td>bmi-3</td><td>IMC &gt;= 23 = Score 3</td></tr></table></div>"
+  },
+  "url": "http://example.org/cs-mna",
+  "version": "0.1.0",
+  "name": "CSMNAScale",
+  "title": "CodeSystem Mini Nutritional Assessment scale",
+  "status": "active",
+  "date": "2021-02-12T12:13:57+01:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem Mini Nutritional Assessment.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "food-intake-0",
+      "display": "Le patient est capable de se laver complètement sans aucune aide",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Baisse sévère des prises alimentaires"
+        }
+      ]
+    },
+    {
+      "code": "food-intake-1",
+      "display": "Légère baisse des prises alimentaires",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Légère baisse des prises alimentaires"
+        }
+      ]
+    },
+    {
+      "code": "food-intake-2",
+      "display": "Pas de baisse des prises alimentaires",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Pas de baisse des prises alimentaires"
+        }
+      ]
+    },
+    {
+      "code": "weight-loss-0",
+      "display": "Perte de poids supérieure à 3 kg",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Perte de poids supérieure à 3 kg"
+        }
+      ]
+    },
+    {
+      "code": "weight-loss-1",
+      "display": "Ne sait pas",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Ne sait pas"
+        }
+      ]
+    },
+    {
+      "code": "weight-loss-2",
+      "display": "Perte de poids entre 1 et 3 kg",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Perte de poids entre 1 et 3 kg"
+        }
+      ]
+    },
+    {
+      "code": "weight-loss-3",
+      "display": "Pas de perte de poids",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Pas de perte de poids"
+        }
+      ]
+    },
+    {
+      "code": "mobility-0",
+      "display": "Alité ou au fauteuil",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Alité ou au fauteuil"
+        }
+      ]
+    },
+    {
+      "code": "mobility-1",
+      "display": "Autonome a l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)"
+        }
+      ]
+    },
+    {
+      "code": "mobility-2",
+      "display": "Sort du domicile",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Sort du domicile"
+        }
+      ]
+    },
+    {
+      "code": "stress-no",
+      "display": "Oui",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Oui"
+        }
+      ]
+    },
+    {
+      "code": "stress-yes",
+      "display": "Non",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Non"
+        }
+      ]
+    },
+    {
+      "code": "neuropsych-0",
+      "display": "Démence ou dépression sévère",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Démence ou dépression sévère"
+        }
+      ]
+    },
+    {
+      "code": "neuropsych-1",
+      "display": "Démence légère",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Démence légère"
+        }
+      ]
+    },
+    {
+      "code": "neuropsych-2",
+      "display": "Pas de problème psychologique",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "Pas de problème psychologique"
+        }
+      ]
+    },
+    {
+      "code": "bmi-0",
+      "display": "IMC < 19 = Score 0",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "IMC < 19 = Score 0"
+        }
+      ]
+    },
+    {
+      "code": "bmi-1",
+      "display": "19 <= IMC < 21 = Score 1",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "19 <= IMC < 21 = Score 1"
+        }
+      ]
+    },
+    {
+      "code": "bmi-2",
+      "display": "21 <= IMC < 23 = Score 2",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "21 <= IMC < 23 = Score 2"
+        }
+      ]
+    },
+    {
+      "code": "bmi-3",
+      "display": "IMC >= 23 = Score 3",
+      "designation": [
+        {
+          "language": "fr",
+          "value": "IMC >= 23 = Score 3"
+        }
+      ]
+    }
+  ]
+}

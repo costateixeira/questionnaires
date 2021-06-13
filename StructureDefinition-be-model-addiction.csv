@@ -1,0 +1,51 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeAddiction","","","",0,*,"","","","","A subject's addiction","A record of a patient's addiction.","","","","","","","","","",,,,,"",,,,"Resource",0,*,"","","Entity. Role, or Act"
+"BeAddiction.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"BeAddiction.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeAddiction.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeAddiction.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeAddiction.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the addiction condition","The business identifier(s) for the addiction condition - This is an optional attribute, used for example to track an addiction throughout its lifecycle, or across vaults.","","","","","","","","","",,,,,"",,,,"BeAddiction.identifier",0,1,"",""
+"BeAddiction.clinicalStatus","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","The clinical status of the addiction - whether it is active, resolved...","The clinical status of the addiction - whether it is active, resolved...","","","","","","","","","",,,,,"",,,,"BeAddiction.clinicalStatus",0,1,"",""
+"BeAddiction.verificationStatus","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","The verification status of the addiction - whether it is suspected, confirmed, etc.","The verification status of the addiction - whether it is suspected, confirmed, etc.","","","","","","","","","",,,,,"",,,,"BeAddiction.verificationStatus",0,1,"",""
+"BeAddiction.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
+","The person that has/had the addiction","The patient that has/had the addiction","","","","","","","","","",,,,,"",,,,"BeAddiction.subject",1,1,"",""
+"BeAddiction.type","","","",1,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The type of addiction","Here the type of addiction will be specified (e.g. alcohol, drugs, medication). 
+It SHOULD be expressed in a codified way (Valueset will be delivered by NIHDI).","","","","","","","","","",,,,,"",,,,"BeAddiction.type",1,1,"",""
+"BeAddiction.code","","","",0,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The specific addiction substance or activity","Here it is possible to further refine the addiction information e.g. when ""narcotics"" is indicated, this can specify the substance","","","","","","","","","",,,,,"",,,,"BeAddiction.code",0,1,"",""
+"BeAddiction.recordedDate","","","",1,1,"","","","dateTime {[CanonicalType[http://hl7.org/fhir/StructureDefinition/dateTime]]} {[]}
+","The date when the addiction is being recorded or updated","The date when the addiction is being recorded or updated","","","","","","","","","",,,,,"",,,,"BeAddiction.recordedDate",1,1,"",""
+"BeAddiction.period","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The time when the patient suffered or suffers from addiction","The actual period this addiction was true. (e.g. used when a patient used to abuse alcohol) - or the beginning of addiction in case the addiction is still active","","","","","","","","","",,,,,"",,,,"BeAddiction.period",0,1,"",""
+"BeAddiction.period.time","","","",0,1,"","","","Period {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Period]]} {[]}
+","The actual time period of the addiction, if it is known","The actual period of the addiction or the beginning of addiction in case the addiction is still active","","","","","","","","","",,,,,"",,,,"BeAddiction.period.time",0,1,"",""
+"BeAddiction.period.text","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A free text indication of the time period of addiction - e.g. ""teenager"", etc.","A free text indication of the time period of addiction - e.g. as ""teenager"", ""approx 5 years ago"", etc","","","","","","","","","",,,,,"",,,,"BeAddiction.period.text",0,1,"",""
+"BeAddiction.quantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Quantity]]} {[]}
+","Quantifier of addiction e.g. number of cigarettes per day","e.g. number of cigarettes per day","","","","","","","","","",,,,,"",,,,"BeAddiction.quantity",0,1,"",""
+"BeAddiction.inTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","Whether the addiction is known to be under treatment","Is this patient following a treatment for this addiction?","","","","","","","","","",,,,,"",,,,"BeAddiction.inTreatment",0,1,"",""
+"BeAddiction.treatment","","","",0,*,"","","","Reference {[]} {[]}
+","The links to the treatment(s) associated with this addition, if existing and known","Is this patient following a treatment for this addiction?
+(In technical reality, this will be actually a Procedure instance that refers to the Addiction instance)","","","","","","","","","",,,,,"",,,,"BeAddiction.treatment",0,*,"",""
+"BeAddiction.recorder","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Participants that report the addiction","Clinical parties or informers that participate in reporting the addiction","","","","","","","","","",,,,,"",,,,"BeAddiction.recorder",1,*,"",""
+"BeAddiction.recorder.performer","","","",1,1,"","","","Reference {[]} {[]}
+","Person that performed the recording or reporting","Who was responsible for asserting the observed value as ""true"".","","","","","","","","","",,,,,"",,,,"BeAddiction.recorder.performer",1,1,"",""
+"BeAddiction.recorder.performer.reference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner]]}
+","Reference to person that performed the recording or reporting","Who was responsible for asserting the observed value as ""true"". (Reference)","","","","","","","","","",,,,,"",,,,"BeAddiction.recorder.performer.reference",1,1,"",""
+"BeAddiction.recorder.performerCode","","","",0,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The role or action that the person took - for example informer, recorder, verifier..","To mark the performer as 'INF' (informer) - in case the addiction is reported by family","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/performer-function","",,,,"BeAddiction.recorder.performerCode",0,1,"",""
+"BeAddiction.note","","","",0,*,"","","","Annotation {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Annotation]]} {[]}
+","Additional information about the addiction","Additional information about the addiction - this can be relevant history, any remarks by the patient or professional, etc.","","","","","","","","","",,,,,"",,,,"BeAddiction.note",0,*,"",""

@@ -1,0 +1,28 @@
+{
+  "resourceType": "Organization",
+  "id": "org-kind-en-gezin",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 457223509</p><p><b>active</b>: true</p><p><b>name</b>: Kind en Gezin</p><p><b>telecom</b>: <a href=\"https://www.kindengezin.be/\">https://www.kindengezin.be/</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "value": "457223509"
+    }
+  ],
+  "active": true,
+  "name": "Kind en Gezin",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "https://www.kindengezin.be/",
+      "use": "work"
+    }
+  ]
+}

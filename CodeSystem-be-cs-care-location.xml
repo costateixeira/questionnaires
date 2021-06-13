@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-care-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">hospital<a name="be-cs-care-location-hospital"> </a></td><td>Hospital</td></tr><tr><td style="white-space:nowrap">patient-home<a name="be-cs-care-location-patient-home"> </a></td><td>Patient home</td></tr><tr><td style="white-space:nowrap">nursing-home<a name="be-cs-care-location-nursing-home"> </a></td><td>Nursing home</td></tr><tr><td style="white-space:nowrap">recovery-home<a name="be-cs-care-location-recovery-home"> </a></td><td>Recovery home</td></tr><tr><td style="white-space:nowrap">workplace<a name="be-cs-care-location-workplace"> </a></td><td>Workplace</td></tr><tr><td style="white-space:nowrap">medical-center<a name="be-cs-care-location-medical-center"> </a></td><td>Medical center</td></tr><tr><td style="white-space:nowrap">clinic<a name="be-cs-care-location-clinic"> </a></td><td>Clinic</td></tr><tr><td style="white-space:nowrap">pediatric-ic<a name="be-cs-care-location-pediatric-ic"> </a></td><td>Pediatric ic</td></tr><tr><td style="white-space:nowrap">neonatal-ic<a name="be-cs-care-location-neonatal-ic"> </a></td><td>Neonatal ic</td></tr><tr><td style="white-space:nowrap">prenatal-consult<a name="be-cs-care-location-prenatal-consult"> </a></td><td>Prenatal consult</td></tr><tr><td style="white-space:nowrap">m-accueil<a name="be-cs-care-location-m-accueil"> </a></td><td>m-accueil</td></tr><tr><td style="white-space:nowrap">child-consult<a name="be-cs-care-location-child-consult"> </a></td><td>Child consult</td></tr><tr><td style="white-space:nowrap">one<a name="be-cs-care-location-one"> </a></td><td>ONE</td></tr><tr><td style="white-space:nowrap">kind-gezin<a name="be-cs-care-location-kind-gezin"> </a></td><td>Kind en gezin</td></tr><tr><td style="white-space:nowrap">ambulance<a name="be-cs-care-location-ambulance"> </a></td><td>Ambulance</td></tr><tr><td style="white-space:nowrap">school<a name="be-cs-care-location-school"> </a></td><td>School</td></tr><tr><td style="white-space:nowrap">school-health-serv<a name="be-cs-care-location-school-health-serv"> </a></td><td>School health services</td></tr><tr><td style="white-space:nowrap">pharmacy<a name="be-cs-care-location-pharmacy"> </a></td><td>Pharmacy</td></tr><tr><td style="white-space:nowrap">med-monde<a name="be-cs-care-location-med-monde"> </a></td><td>Med monde</td></tr><tr><td style="white-space:nowrap">ngo<a name="be-cs-care-location-ngo"> </a></td><td>Non-Governmental Organization</td></tr><tr><td style="white-space:nowrap">family-planning<a name="be-cs-care-location-family-planning"> </a></td><td>Family planning</td></tr><tr><td style="white-space:nowrap">abroad<a name="be-cs-care-location-abroad"> </a></td><td>Abroad</td></tr><tr><td style="white-space:nowrap">other<a name="be-cs-care-location-other"> </a></td><td>other</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>hospital</td><td>A l’hôpital</td><td>Ziekenhuis</td></tr><tr><td>patient-home</td><td>A domicile</td><td>Thuis</td></tr><tr><td>nursing-home</td><td>En maison de repos</td><td>Rusthuis</td></tr><tr><td>recovery-home</td><td>En maison de revalidation</td><td>In huis van revalidatie</td></tr><tr><td>workplace</td><td>Au cabinet</td><td>In het kantoor</td></tr><tr><td>medical-center</td><td>En maison médicale</td><td>Medisch huis</td></tr><tr><td>clinic</td><td>A la clinique</td><td>Kliniek</td></tr><tr><td>pediatric-ic</td><td>En unité de soins intensive pédiatrique</td><td>Pediatrische intensive care</td></tr><tr><td>neonatal-ic</td><td>En unité de soins intensive pédiatrique néonatal</td><td>Neonatale pediatrische intensive care</td></tr><tr><td>prenatal-consult</td><td>Consultation prénatale</td><td>prenataal consult</td></tr><tr><td>m-accueil</td><td>Milieu d’accueil</td><td>kinderopvang</td></tr><tr><td>child-consult</td><td>Consultation pour enfant</td><td>kind consult</td></tr><tr><td>one</td><td>ONE</td><td>ONE</td></tr><tr><td>kind-gezin</td><td>Kind&amp;Gezin</td><td>Kind&amp;Gezin</td></tr><tr><td>ambulance</td><td>Ambulance</td><td>Ambulance</td></tr><tr><td>school</td><td>A l’école</td><td>School</td></tr><tr><td>school-health-serv</td><td>services de santé scolaire</td><td>gezondheidsdiensten op school</td></tr><tr><td>pharmacy</td><td>Pharmacie</td><td>Apotheek</td></tr><tr><td>med-monde</td><td>Médecin du monde</td><td>dokters van de wereld</td></tr><tr><td>ngo</td><td>ONG</td><td>NGO</td></tr><tr><td>family-planning</td><td>Centre planning familial</td><td>Centrum gezinsplanning</td></tr><tr><td>abroad</td><td>A l’étranger</td><td>Buitenland</td></tr><tr><td>other</td><td>Autre</td><td>Andere</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"/>
+  <version value="0.1.0"/>
+  <name value="BeCSCareLocation"/>
+  <title value="Care Location Code System"/>
+  <status value="draft"/>
+  <date value="2021-06-13T09:32:51+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Care Location Code System"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="A l&#x2019;h&#xF4;pital"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Ziekenhuis"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="patient-home"/>
+    <display value="Patient home"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="A domicile"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Thuis"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="nursing-home"/>
+    <display value="Nursing home"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="En maison de repos"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Rusthuis"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="recovery-home"/>
+    <display value="Recovery home"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="En maison de revalidation"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="In huis van revalidatie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="workplace"/>
+    <display value="Workplace"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Au cabinet"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="In het kantoor"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="medical-center"/>
+    <display value="Medical center"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="En maison m&#xE9;dicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Medisch huis"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="clinic"/>
+    <display value="Clinic"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="A la clinique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Kliniek"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="pediatric-ic"/>
+    <display value="Pediatric ic"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="En unit&#xE9; de soins intensive p&#xE9;diatrique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Pediatrische intensive care"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="neonatal-ic"/>
+    <display value="Neonatal ic"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="En unit&#xE9; de soins intensive p&#xE9;diatrique n&#xE9;onatal"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Neonatale pediatrische intensive care"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="prenatal-consult"/>
+    <display value="Prenatal consult"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consultation pr&#xE9;natale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="prenataal consult"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="m-accueil"/>
+    <display value="m-accueil"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Milieu d&#x2019;accueil"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="kinderopvang"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="child-consult"/>
+    <display value="Child consult"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consultation pour enfant"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="kind consult"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="one"/>
+    <display value="ONE"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="ONE"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="ONE"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="kind-gezin"/>
+    <display value="Kind en gezin"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Kind&amp;Gezin"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Kind&amp;Gezin"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ambulance"/>
+    <display value="Ambulance"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Ambulance"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Ambulance"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="school"/>
+    <display value="School"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="A l&#x2019;&#xE9;cole"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="School"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="school-health-serv"/>
+    <display value="School health services"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="services de sant&#xE9; scolaire"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="gezondheidsdiensten op school"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="pharmacy"/>
+    <display value="Pharmacy"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pharmacie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Apotheek"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="med-monde"/>
+    <display value="Med monde"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="M&#xE9;decin du monde"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="dokters van de wereld"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ngo"/>
+    <display value="Non-Governmental Organization"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="ONG"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="NGO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="family-planning"/>
+    <display value="Family planning"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Centre planning familial"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Centrum gezinsplanning"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="abroad"/>
+    <display value="Abroad"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="A l&#x2019;&#xE9;tranger"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Buitenland"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

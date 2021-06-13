@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-msd-belgium"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 111111111111</p><p><b>active</b>: true</p><p><b>name</b>: MSD Belgium</p></div>
+  </text>
+  <identifier>
+    <value value="111111111111"/>
+  </identifier>
+  <active value="true"/>
+  <name value="MSD Belgium"/>
+</Organization>

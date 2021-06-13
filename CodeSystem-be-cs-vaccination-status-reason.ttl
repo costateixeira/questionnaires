@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-cs-vaccination-status-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"be-cs-vaccination-status-reason-OTHER\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">ALLERGY<a name=\"be-cs-vaccination-status-reason-ALLERGY\"> </a></td><td>Allergy to vaccine ingredient</td></tr><tr><td style=\"white-space:nowrap\">OSTOCK<a name=\"be-cs-vaccination-status-reason-OSTOCK\"> </a></td><td>Out of stock or no vaccine available</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>OTHER</td><td>Autre</td><td>Andere</td></tr><tr><td>ALLERGY</td><td>Allergie</td><td>Allergie</td></tr><tr><td>OSTOCK</td><td>Hors Stock</td><td>Geen voorraad</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BeCSStatusReason"];
+  fhir:CodeSystem.title [ fhir:value "Vaccination status reason Code System."];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Vaccination reason status Code System."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "OTHER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Autre" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Andere" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "ALLERGY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy to vaccine ingredient" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Allergie" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Allergie" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "OSTOCK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Out of stock or no vaccine available" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Hors Stock" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Geen voorraad" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

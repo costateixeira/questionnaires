@@ -1,0 +1,28 @@
+{
+  "resourceType": "Organization",
+  "id": "org-uz-gent",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4342357223509</p><p><b>active</b>: true</p><p><b>name</b>: UZ Gent</p><p><b>telecom</b>: <a href=\"https://www.uzgent.be/\">https://www.uzgent.be/</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "value": "4342357223509"
+    }
+  ],
+  "active": true,
+  "name": "UZ Gent",
+  "telecom": [
+    {
+      "system": "url",
+      "value": "https://www.uzgent.be/",
+      "use": "work"
+    }
+  ]
+}

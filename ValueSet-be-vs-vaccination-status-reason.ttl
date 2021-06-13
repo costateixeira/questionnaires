@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-vs-vaccination-status-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-vaccination-status-reason.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</code></a></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActReason</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-IMMUNE\">IMMUNE</a></td><td>Immune</td><td>**Definition:**Testing has shown that the patient already has immunity to the agent targeted by the immunization.</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEDPREC\">MEDPREC</a></td><td>Medical Precaution</td><td>**Definition:**The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-OSTOCK\">OSTOCK</a></td><td>Out of Stock</td><td>**Definition:**There was no supply of the product on hand to perform the service.</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATOBJ\">PATOBJ</a></td><td>Patient Objection</td><td>**Definition:**The patient or their guardian objects to receiving the vaccine.</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "BeVSVaccinationStatusReason"];
+  fhir:ValueSet.title [ fhir:value "Vaccination status reason Value Set"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "IMMUNE" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immune" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MEDPREC" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Precaution" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "OSTOCK" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Out of Stock" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PATOBJ" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient Objection" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

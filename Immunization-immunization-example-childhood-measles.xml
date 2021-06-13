@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="immunization-example-childhood-measles"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <language value="nl-BE"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><p><b>Generated Narrative</b></p><p><b>Who recorded the information</b>: <a href="Organization-org-kind-en-gezin.html">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>Location (reference, code or text) of the vaccination</b>: <span title="Codes: ">In Spain</span></p><p><b>identifier</b>: id: 12345656523</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: ">mazelen</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: Wanneer de patiënt 20 jaar oud was</p><p><b>recorded</b>: 2020</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table></div>
+  </text>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder">
+    <valueReference>
+      <reference value="Organization/org-kind-en-gezin"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location">
+    <valueCodeableConcept>
+      <text value="In Spain"/>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://www.kindengezin.be/vaccinatie/vaccination-register"/>
+    <value value="12345656523"/>
+  </identifier>
+  <status value="completed"/>
+  <vaccineCode>
+    <text value="mazelen"/>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="59050937740"/>
+    </identifier>
+  </patient>
+  <occurrenceString value="Wanneer de pati&#xEB;nt 20 jaar oud was"/>
+  <recorded value="2020"/>
+  <performer>
+    <actor>
+      <identifier>
+        <use value="official"/>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+        <value value="79121137740"/>
+      </identifier>
+    </actor>
+  </performer>
+</Immunization>

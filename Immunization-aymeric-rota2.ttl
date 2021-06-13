@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/aymeric-rota2> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "aymeric-rota2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Immunization Order, prescription or request</b>: <a href=\"ImmunizationRecommendation-aymeric-rota.html\">Generated Summary: date: 2020-04-06</a></p><p><b>How certain is the vaccination information - confirmed, not confirmed</b>: confirmed</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 116}\">rotavirus, pentavalent</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: 2020-05-04</p><p><b>recorded</b>: 2020-05-04</p><p><b>doseQuantity</b>: 1</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span></span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td>2</td><td>3</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.hl7belgium.org/fhir/ImmunizationRecommendation/aymeric-rota>;
+       fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/aymeric-rota" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus" ];
+     fhir:Extension.valueCode [ fhir:value "confirmed" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "116" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "20020142173" ]
+     ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2020-05-04"^^xsd:date];
+  fhir:Immunization.recorded [ fhir:value "2020-05-04"^^xsd:date];
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization" ];
+         fhir:Identifier.value [ fhir:value "NIHDI_GP1" ]
+       ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "3"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Immunization/aymeric-rota2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-problem-origin-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-problem-origin-type.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type</code></a></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
+  "version": "0.1.0",
+  "name": "BeVSProblemOriginType",
+  "title": "Problem Origin Type",
+  "status": "draft",
+  "date": "2021-06-13T09:32:51+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Problem Origin Type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"
+      }
+    ]
+  }
+}

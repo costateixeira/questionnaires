@@ -1,8 +1,2043 @@
 {
   "resourceType" : "Bundle",
-  "id" : "848ada33-eb20-41d7-af3d-1b94f1fede3b",
+  "id" : "3d58c94d-3a6d-48a9-a567-6a06064c4692",
   "meta" : {
-    "lastUpdated" : "2021-06-13T08:14:09.248+00:00"
+    "lastUpdated" : "2021-06-13T09:32:51.299+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-patientwill-category",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-patientwill-category.html\">Patient Will Category CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-patientwill-category.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-advanced-care-directive\"> </a><a href=\"CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-advanced-care-directive\">advanced-care-directive</a></td><td>Advanced Care Directive</td><td>General directives expressed voluntarily by the patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-research\"> </a><a href=\"CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-research\">research</a></td><td>Research</td><td>Consent to participate in research protocols and / or share results</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-category-treatment\"> </a><a href=\"CodeSystem-be-cs-patientwill-category.html#be-cs-patientwill-category-treatment\">treatment</a></td><td>Treatment</td><td>Specific treatments in the context of resuscitation and / or during hospitalization</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category",
+      "version" : "0.1.0",
+      "name" : "BeVSPatientWillCategory",
+      "title" : "Patient Will Category",
+      "status" : "draft",
+      "date" : "2020-10-01T11:01:09+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Score Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1b4db5e3-b903-464f-83f3-5807b588185c",
+        "timestamp" : "2021-06-13T09:33:20+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category",
+          "code" : "advanced-care-directive",
+          "display" : "Advanced Care Directive"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category",
+          "code" : "research",
+          "display" : "Research"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category",
+          "code" : "treatment",
+          "display" : "Treatment"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-patientwill-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-patientwill-code.html\">Patient Will Directive CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-patientwill-code.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-euthanasia-request\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-euthanasia-request\">euthanasia-request</a></td><td>Euthanasia Request</td><td>Euthanasia request</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-intubation-refusal\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-intubation-refusal\">intubation-refusal</a></td><td>Intubation Refusal</td><td>Intubation refusal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-organ-donation-consent\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-organ-donation-consent\">organ-donation-consent</a></td><td>Organ Donation Consent</td><td>Organ donation consent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-vaccination-refusal\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-vaccination-refusal\">vaccination-refusal</a></td><td>Vaccination Refusal</td><td>Vaccination refusal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-omission-medical-data\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-omission-medical-data\">omission-medical-data</a></td><td>Omission Of Medical Data</td><td>Omission of medical data (crf annexes)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-blood-transfusion-tefusal\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-blood-transfusion-tefusal\">blood-transfusion-tefusal</a></td><td>Blood Transfusion Refusal</td><td>Refusal of blood transfusion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-clinical-participation-consent\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-clinical-participation-consent\">clinical-participation-consent</a></td><td>clinical Participation Consent</td><td>Consent to participate in clinical trials</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-datareuse-clinicalresearch\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-datareuse-clinicalresearch\">datareuse-clinicalresearch</a></td><td>Data reuse for clinical research consent</td><td>Consent for data reuse for clinical research</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-datareuse-clinicaltrials\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-datareuse-clinicaltrials\">datareuse-clinicaltrials</a></td><td>Data reuse for clinical trials consent</td><td>Consent for data reuse for clinical trials</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr0\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr0\">dnr0</a></td><td>Dnr0</td><td>No therapeutic limitations</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr1\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr1\">dnr1</a></td><td>Dnr1</td><td>Do not resuscitate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr2\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr2\">dnr2</a></td><td>Dnr2</td><td>Do not resuscitate or extend therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-dnr3\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-dnr3\">dnr3</a></td><td>Dnr3</td><td>Do not resuscitate and progressively reduce the therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-hos1\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-hos1\">hos1</a></td><td>Hos1</td><td>No hospitalization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-patientwill-code-hos2\"> </a><a href=\"CodeSystem-be-cs-patientwill-code.html#be-cs-patientwill-code-hos2\">hos2</a></td><td>Hos2</td><td>Hospitalization only in specific situations (cfr annexes)</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
+      "version" : "0.1.0",
+      "name" : "BeVSScore",
+      "title" : "Patient Will directives Value Set",
+      "status" : "draft",
+      "date" : "2020-10-01T11:01:09+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Score Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f1bcc666-5bd3-4bff-80f6-9d86067f578a",
+        "timestamp" : "2021-06-13T09:33:20+00:00",
+        "total" : 15,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "euthanasia-request",
+          "display" : "Euthanasia Request"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "intubation-refusal",
+          "display" : "Intubation Refusal"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "organ-donation-consent",
+          "display" : "Organ Donation Consent"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "vaccination-refusal",
+          "display" : "Vaccination Refusal"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "omission-medical-data",
+          "display" : "Omission Of Medical Data"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "blood-transfusion-tefusal",
+          "display" : "Blood Transfusion Refusal"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "clinical-participation-consent",
+          "display" : "clinical Participation Consent"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "datareuse-clinicalresearch",
+          "display" : "Data reuse for clinical research consent"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "datareuse-clinicaltrials",
+          "display" : "Data reuse for clinical trials consent"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "dnr0",
+          "display" : "Dnr0"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "dnr1",
+          "display" : "Dnr1"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "dnr2",
+          "display" : "Dnr2"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "dnr3",
+          "display" : "Dnr3"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "hos1",
+          "display" : "Hos1"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+          "code" : "hos2",
+          "display" : "Hos2"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-score",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-score",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 33 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-be-cs-score.html\">Score Code System v0.1.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jan 2021</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-763117005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763117005\">763117005</a></td><td>http://snomed.info/sct</td><td>FINDRISC (Finnish Diabetes Risk Score) score</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-446661009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=446661009\">446661009</a></td><td>http://snomed.info/sct</td><td>Visual Analogic Scale for pain assessment</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-273531005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273531005\">273531005</a></td><td>http://snomed.info/sct</td><td>Index of Independence in Activities of Daily Living</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-447316007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=447316007\">447316007</a></td><td>http://snomed.info/sct</td><td>Mini-Mental State Examination</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-444297006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444297006\">444297006</a></td><td>http://snomed.info/sct</td><td>Malnutrition Universal Screening</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-443133008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443133008\">443133008</a></td><td>http://snomed.info/sct</td><td>Norton Pressure Sore Risk-Assessment Scale Scoring System</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-7121000122100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7121000122100\">7121000122100</a></td><td>http://snomed.info/sct</td><td>Pain Assessment in Advanced Dementia Scale</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-273849003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273849003\">273849003</a></td><td>http://snomed.info/sct</td><td>Subjective Global Assessment</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-450738001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=450738001\">450738001</a></td><td>http://snomed.info/sct</td><td>Timed Chair Stand</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-444680009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=444680009\">444680009</a></td><td>http://snomed.info/sct</td><td>Timed Up&amp;Go : évalue le risque de chute chez une personne</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-278897004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=278897004\">278897004</a></td><td>http://snomed.info/sct</td><td>Waterlow pressure ulcer risk assessment</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-763259004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=763259004\">763259004</a></td><td>http://snomed.info/sct</td><td>Disease Activity Score</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-273364009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=273364009\">273364009</a></td><td>http://snomed.info/sct</td><td>Clinical Disease Activity Index</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-443318007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=443318007\">443318007</a></td><td>http://snomed.info/sct</td><td>Tinetti balance and gait scale</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-719124004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=719124004\">719124004</a></td><td>http://snomed.info/sct</td><td>Arthritis Impact Measurement Scales 2 (AIMS2)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-ADBB\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-ADBB\">ADBB</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Alarm distress baby scale</td><td>Alarm distress baby scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-BRANDEN\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-BRANDEN\">BRANDEN</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Branden</td><td>Branden</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-DOLOPLUS2\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-DOLOPLUS2\">DOLOPLUS2</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Doloplus 2 score</td><td>Pain assessment for people with verbal communication impairment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-EAT-10\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-EAT-10\">EAT-10</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Eating Assessment Tool</td><td>Dysphagia Assessment scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-EDIN\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-EDIN\">EDIN</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Neonatal pain and discomfort scale</td><td>Neonatal pain and discomfort scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-HEDEN\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-HEDEN\">HEDEN</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>HEDEN Pain Scale</td><td>HEDEN (Hétéro-Evaluation de la Douleur chez l'Enfant) Pain Scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-MNA-complete\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-MNA-complete\">MNA-complete</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Mini Nutritional Assessment - complete</td><td>Mini Nutritional Assessment - complete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-MNA-simplified\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-MNA-simplified\">MNA-simplified</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Mini Nutritional Assessment - simplified</td><td>Mini Nutritional Assessment - simplified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-PAL\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-PAL\">PAL</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Level of Physical Activity</td><td>Level of Physical Activity (NAP - Niveau d'Activité Physique)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-NRS2002\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-NRS2002\">NRS2002</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Nutritional Risk Screening</td><td>Nutritional Risk Screening</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SCORE\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-SCORE\">SCORE</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Systemic Coronary Risk Estimation</td><td>Systemic Coronary Risk Estimation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SNAQ\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-SNAQ\">SNAQ</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Short Nutritional Assessment Questionnaire</td><td>Short Nutritional Assessment Questionnaire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-TIMED-CHAIR-STAND\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-TIMED-CHAIR-STAND\">TIMED-CHAIR-STAND</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Timed Chair Stand</td><td>Timed Chair Stand</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-TUG\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-TUG\">TUG</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Timed Up&amp;Go</td><td>Timed Up&amp;Go</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-WECKX\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-WECKX\">WECKX</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>SCORE INZAKE ZORGBEHOEVENDHEID</td><td>WECKX SCORE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-SDAI\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-SDAI\">SDAI</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>SDAI ou Simplified Disease Activity Index</td><td>SDAI ou Simplified Disease Activity Index</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-GARS\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-GARS\">GARS</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Groningen Activity Restriction Scale</td><td>Groningen Activity Restriction Scale</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-other\"> </a><a href=\"CodeSystem-be-cs-score.html#be-cs-score-other\">other</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score</td><td>Other</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-score",
+      "version" : "0.1.0",
+      "name" : "BeVSScore",
+      "title" : "Score Value Set",
+      "status" : "draft",
+      "date" : "2020-10-01T11:01:09+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Score Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2dedc312-9f91-4773-9d17-c11cb3561da3",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 33,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "763117005",
+          "display" : "FINDRISC (Finnish Diabetes Risk Score) score"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "446661009",
+          "display" : "Visual Analogic Scale for pain assessment"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "273531005",
+          "display" : "Index of Independence in Activities of Daily Living"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447316007",
+          "display" : "Mini-Mental State Examination"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "444297006",
+          "display" : "Malnutrition Universal Screening"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "443133008",
+          "display" : "Norton Pressure Sore Risk-Assessment Scale Scoring System"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "7121000122100",
+          "display" : "Pain Assessment in Advanced Dementia Scale"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "273849003",
+          "display" : "Subjective Global Assessment"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "450738001",
+          "display" : "Timed Chair Stand"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "444680009",
+          "display" : "Timed Up&Go : évalue le risque de chute chez une personne"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "278897004",
+          "display" : "Waterlow pressure ulcer risk assessment"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "763259004",
+          "display" : "Disease Activity Score"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "273364009",
+          "display" : "Clinical Disease Activity Index"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "443318007",
+          "display" : "Tinetti balance and gait scale"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "719124004",
+          "display" : "Arthritis Impact Measurement Scales 2 (AIMS2)"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "ADBB",
+          "display" : "Alarm distress baby scale"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "BRANDEN",
+          "display" : "Branden"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "DOLOPLUS2",
+          "display" : "Doloplus 2 score"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "EAT-10",
+          "display" : "Eating Assessment Tool"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "EDIN",
+          "display" : "Neonatal pain and discomfort scale"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "HEDEN",
+          "display" : "HEDEN Pain Scale"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "MNA-complete",
+          "display" : "Mini Nutritional Assessment - complete"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "MNA-simplified",
+          "display" : "Mini Nutritional Assessment - simplified"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "PAL",
+          "display" : "Level of Physical Activity"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "NRS2002",
+          "display" : "Nutritional Risk Screening"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "SCORE",
+          "display" : "Systemic Coronary Risk Estimation"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "SNAQ",
+          "display" : "Short Nutritional Assessment Questionnaire"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "TIMED-CHAIR-STAND",
+          "display" : "Timed Chair Stand"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "TUG",
+          "display" : "Timed Up&Go"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "WECKX",
+          "display" : "SCORE INZAKE ZORGBEHOEVENDHEID"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "SDAI",
+          "display" : "SDAI ou Simplified Disease Activity Index"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "GARS",
+          "display" : "Groningen Activity Restriction Scale"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-referral-category",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-363679005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005\">363679005</a></td><td>Imaging</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91251008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91251008\">91251008</a></td><td>Physical therapy procedure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-9632001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9632001\">9632001</a></td><td>Nursing procedure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory test</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category",
+      "version" : "0.1.0",
+      "name" : "BeReferralCategory",
+      "status" : "draft",
+      "date" : "2021-02-08T13:26:39+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fca486cd-db69-4f29-9d72-3f7eb626b40c",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "363679005",
+          "display" : "Imaging"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "91251008",
+          "display" : "Physical therapy procedure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "9632001",
+          "display" : "Nursing procedure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "15220000",
+          "display" : "Laboratory test"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-reason-referral-status",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: maroon 1px solid; background-color: #FFCCCC; padding: 8px\"><p>Warning: this expansion is generated from a fragment of the code system <a href=\"CodeSystem-be-status-reason.html\">BeStatusReason</a> and may be missing codes, or include codes that are not valid</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-status-reason.html\">BeStatusReason v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-status-reason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-created\"> </a>created</td><td>created</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-not-used-by-patient\"> </a>not-used-by-patient</td><td>not-used-by-patient</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
+      "version" : "0.1.0",
+      "name" : "BeReasonReferralStatus",
+      "status" : "active",
+      "date" : "2021-02-08T13:26:39+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Codes to explain the current status of a referral prescription.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"
+        }],
+        "identifier" : "urn:uuid:e126a060-0c43-4a87-899d-9b5d904add0c",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason",
+          "code" : "created",
+          "display" : "created"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason",
+          "code" : "not-used-by-patient",
+          "display" : "not-used-by-patient"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-vaccination-confirmation-status",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html\">Vaccination status Code System. v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-unconfirmed\"> </a><a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-unconfirmed\">unconfirmed</a></td><td>unconfirmed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-confirmed\"> </a><a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-confirmed\">confirmed</a></td><td>confirmed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-confirmation-status-other\"> </a><a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html#be-cs-vaccination-confirmation-status-other\">other</a></td><td>other</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status",
+      "version" : "0.1.0",
+      "name" : "BeVSVaccinationConfirmationStatus",
+      "title" : "Vaccination status Value Set",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Vaccination status Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c81d01a6-08ba-42e7-826d-692500db3dab",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status",
+          "code" : "unconfirmed",
+          "display" : "unconfirmed"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status",
+          "code" : "confirmed",
+          "display" : "confirmed"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status",
+          "code" : "other",
+          "display" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-care-location",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-care-location",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 23 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-care-location.html\">Care Location Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-care-location.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-hospital\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-hospital\">hospital</a></td><td>Hospital</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-patient-home\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-patient-home\">patient-home</a></td><td>Patient home</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-nursing-home\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-nursing-home\">nursing-home</a></td><td>Nursing home</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-recovery-home\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-recovery-home\">recovery-home</a></td><td>Recovery home</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-workplace\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-workplace\">workplace</a></td><td>Workplace</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-medical-center\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-medical-center\">medical-center</a></td><td>Medical center</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-clinic\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-clinic\">clinic</a></td><td>Clinic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-pediatric-ic\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-pediatric-ic\">pediatric-ic</a></td><td>Pediatric ic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-neonatal-ic\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-neonatal-ic\">neonatal-ic</a></td><td>Neonatal ic</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-prenatal-consult\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-prenatal-consult\">prenatal-consult</a></td><td>Prenatal consult</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-m-accueil\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-m-accueil\">m-accueil</a></td><td>m-accueil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-child-consult\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-child-consult\">child-consult</a></td><td>Child consult</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-one\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-one\">one</a></td><td>ONE</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-kind-gezin\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-kind-gezin\">kind-gezin</a></td><td>Kind en gezin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-ambulance\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-ambulance\">ambulance</a></td><td>Ambulance</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-school\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-school\">school</a></td><td>School</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-school-health-serv\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-school-health-serv\">school-health-serv</a></td><td>School health services</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-pharmacy\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-pharmacy\">pharmacy</a></td><td>Pharmacy</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-med-monde\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-med-monde\">med-monde</a></td><td>Med monde</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-ngo\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-ngo\">ngo</a></td><td>Non-Governmental Organization</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-family-planning\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-family-planning\">family-planning</a></td><td>Family planning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-abroad\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-abroad\">abroad</a></td><td>Abroad</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-care-location-other\"> </a><a href=\"CodeSystem-be-cs-care-location.html#be-cs-care-location-other\">other</a></td><td>other</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-care-location",
+      "version" : "0.1.0",
+      "name" : "BeVSCareLocation",
+      "title" : "Care Location Value Set",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Care Location Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:aeb8326f-8bb0-4aa8-9ab8-af7b8ba906ea",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 23,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "hospital",
+          "display" : "Hospital"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "patient-home",
+          "display" : "Patient home"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "nursing-home",
+          "display" : "Nursing home"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "recovery-home",
+          "display" : "Recovery home"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "workplace",
+          "display" : "Workplace"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "medical-center",
+          "display" : "Medical center"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "clinic",
+          "display" : "Clinic"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "pediatric-ic",
+          "display" : "Pediatric ic"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "neonatal-ic",
+          "display" : "Neonatal ic"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "prenatal-consult",
+          "display" : "Prenatal consult"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "m-accueil",
+          "display" : "m-accueil"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "child-consult",
+          "display" : "Child consult"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "one",
+          "display" : "ONE"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "kind-gezin",
+          "display" : "Kind en gezin"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "ambulance",
+          "display" : "Ambulance"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "school",
+          "display" : "School"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "school-health-serv",
+          "display" : "School health services"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "pharmacy",
+          "display" : "Pharmacy"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "med-monde",
+          "display" : "Med monde"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "ngo",
+          "display" : "Non-Governmental Organization"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "family-planning",
+          "display" : "Family planning"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "abroad",
+          "display" : "Abroad"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+          "code" : "other",
+          "display" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-administration-route",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-vaccination-administration-route",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-be-cs-vaccination-administration-route.html\">Vaccine Administration Route v0.1.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor v2.0.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-IM\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-IM\">IM</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Instramuscular</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-SC\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-SC\">SC</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Subcutaneous</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-IV\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-IV\">IV</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Intravenous</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-ID\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-ID\">ID</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Intradermal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-Oral\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-Oral\">Oral</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Oral</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-Nasal\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-Nasal\">Nasal</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Nasal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-administration-route-unknown\"> </a><a href=\"CodeSystem-be-cs-vaccination-administration-route.html#be-cs-vaccination-administration-route-unknown\">unknown</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route</td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).\r\n\r\n**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.\r\n\r\nWith coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-administration-route",
+      "version" : "0.1.0",
+      "name" : "BeVSVaccineAdministrationRoute",
+      "title" : "Vaccine Administration Route",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Vaccine Administration Route",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c63015e4-2e9a-4637-95fa-b5c3aac58b5a",
+        "timestamp" : "2021-06-13T09:33:21+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "IM",
+          "display" : "Instramuscular"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "SC",
+          "display" : "Subcutaneous"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "IV",
+          "display" : "Intravenous"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "ID",
+          "display" : "Intradermal"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "Oral",
+          "display" : "Oral"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "Nasal",
+          "display" : "Nasal"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+          "code" : "unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "OTH",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-vaccination-status-reason",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-be-cs-vaccination-status-reason.html\">Vaccination status reason Code System. v0.1.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html\">ActReason v2.0.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-OTHER\"> </a><a href=\"CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-OTHER\">OTHER</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td><td>Other</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-ALLERGY\"> </a><a href=\"CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-ALLERGY\">ALLERGY</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td><td>Allergy to vaccine ingredient</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-vaccination-status-reason-OSTOCK\"> </a><a href=\"CodeSystem-be-cs-vaccination-status-reason.html#be-cs-vaccination-status-reason-OSTOCK\">OSTOCK</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason</td><td>Out of stock or no vaccine available</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-IMMUNE\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-IMMUNE\">IMMUNE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>Immune</td><td>**Definition:**Testing has shown that the patient already has immunity to the agent targeted by the immunization.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-MEDPREC\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEDPREC\">MEDPREC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>Medical Precaution</td><td>**Definition:**The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-OSTOCK\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-OSTOCK\">OSTOCK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>Out of Stock</td><td>**Definition:**There was no supply of the product on hand to perform the service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-ActReason-PATOBJ\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATOBJ\">PATOBJ</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>Patient Objection</td><td>**Definition:**The patient or their guardian objects to receiving the vaccine.</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason",
+      "version" : "0.1.0",
+      "name" : "BeVSVaccinationStatusReason",
+      "title" : "Vaccination status reason Value Set",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fc7ca5ce-4bab-4c3c-95d1-d145d4c02a63",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-ActReason|2.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
+          "code" : "OTHER",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
+          "code" : "ALLERGY",
+          "display" : "Allergy to vaccine ingredient"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
+          "code" : "OSTOCK",
+          "display" : "Out of stock or no vaccine available"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "IMMUNE",
+          "display" : "Immune"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "MEDPREC",
+          "display" : "Medical Precaution"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "OSTOCK",
+          "display" : "Out of Stock"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "PATOBJ",
+          "display" : "Patient Objection"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-bodysite",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-bodysite.html\">Body Site CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-bodysite.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-bodysite-IM\"> </a><a href=\"CodeSystem-be-cs-bodysite.html#be-cs-bodysite-IM\">IM</a></td><td>Intramuscular</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite",
+      "version" : "0.1.0",
+      "name" : "BeVSBodySite",
+      "title" : "Body Site",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Body Site",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:50cc0c1d-e61b-4acc-8bca-a8b63a671a93",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite",
+          "code" : "IM",
+          "display" : "Intramuscular"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-problem-origin-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-problem-origin-type.html\">Problem Origin Type v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-problem-origin-type.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-referral\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-referral\">referral</a></td><td>Referral order</td><td>Following a referral order</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-own-initiative\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-own-initiative\">own-initiative</a></td><td>Patient's own initiative</td><td>The patient has arrived on their own initiative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-counsel\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-counsel\">counsel</a></td><td>Advice or recommendation from another provider (no prescription)</td><td>From an advice or recommendation of a health professional (without prescription)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-other\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-other\">other</a></td><td>other</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
+      "version" : "0.1.0",
+      "name" : "BeVSProblemOriginType",
+      "title" : "Problem Origin Type",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Problem Origin Type",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:69fa550b-330e-48ed-bd0b-ac646670dfc1",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
+          "code" : "referral",
+          "display" : "Referral order"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
+          "code" : "own-initiative",
+          "display" : "Patient's own initiative"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
+          "code" : "counsel",
+          "display" : "Advice or recommendation from another provider (no prescription)"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
+          "code" : "other",
+          "display" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-addiction-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+      "version" : "0.1.0",
+      "name" : "BeVSAddictionCode",
+      "title" : "Addiction Code",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Addiction code",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-problem-category",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-problem-category.html\">Problem Category v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-problem-category.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-diagnosis\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-diagnosis\">diagnosis</a></td><td>Diagnosis</td><td>A disease identified from a clinical reasoning, based on pathological and physiological ascertainments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-problem\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-problem\">problem</a></td><td>Problem</td><td>Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-risk\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-risk\">risk</a></td><td>Risk</td><td>Identification of a health problem or situation that may require ongoing monitoring or management</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-antecedent\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-antecedent\">antecedent</a></td><td>Antecedent</td><td>Information about a problem that has been resolved</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-congenital\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-congenital\">congenital</a></td><td>Congenital anomaly</td><td>Congenital anomaly</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-conclusion\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-conclusion\">conclusion</a></td><td>Conclusion</td><td>Informations about a conclusion from anamnesis performed by a professional other than a physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-other\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-other\">other</a></td><td>Other</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category",
+      "version" : "0.1.0",
+      "name" : "BeVSProblemCategory",
+      "title" : "Problem Category",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Problem Category",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:155432a7-f6b3-4e24-9dd2-3930756d4a2d",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "diagnosis",
+          "display" : "Diagnosis"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "problem",
+          "display" : "Problem"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "risk",
+          "display" : "Risk"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "antecedent",
+          "display" : "Antecedent"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "congenital",
+          "display" : "Congenital anomaly"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "conclusion",
+          "display" : "Conclusion"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-scorecategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-be-cs-score-category.html\">Score Category v0.1.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor v2.0.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-category-risk\"> </a><a href=\"CodeSystem-be-cs-score-category.html#be-cs-score-category-risk\">risk</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category</td><td>Risk score</td><td>Risk score</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-score-category-pain\"> </a><a href=\"CodeSystem-be-cs-score-category.html#be-cs-score-category-pain\">pain</a></td><td>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category</td><td>Pain score</td><td>Pain score</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH\"> </a><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).\r\n\r\n**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.\r\n\r\nWith coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory",
+      "version" : "0.1.0",
+      "name" : "BeVSScoreCategory",
+      "title" : "Score Category Value Set",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Score Category Value Set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a72b1e01-00a3-4dae-994d-f51ca6c0510e",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category",
+          "code" : "risk",
+          "display" : "Risk score"
+        },
+        {
+          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category",
+          "code" : "pain",
+          "display" : "Pain score"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "OTH",
+          "display" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-bathing-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-bathing-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-bathing-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-0\">bathing-dep-0</a></td><td>Le patient est capable de se laver complètement sans aucune aide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-bathing-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-1\">bathing-dep-1</a></td><td>Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-bathing-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-2\">bathing-dep-2</a></td><td>Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-bathing-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-bathing-dep-3\">bathing-dep-3</a></td><td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-bathing-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleBathing",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:18d8c455-bc3f-4d45-bc0e-4b87677725b3",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "bathing-dep-0",
+          "display" : "Le patient est capable de se laver complètement sans aucune aide"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "bathing-dep-1",
+          "display" : "Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "bathing-dep-2",
+          "display" : "Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "bathing-dep-3",
+          "display" : "Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-dressing-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-dressing-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-dressing-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-0\">dressing-dep-0</a></td><td>Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-dressing-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-1\">dressing-dep-1</a></td><td>Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-dressing-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-2\">dressing-dep-2</a></td><td>Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-dressing-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-dressing-dep-3\">dressing-dep-3</a></td><td>Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-dressing-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleDressing",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:5c97c1ad-4c77-44cb-823f-38acadfaf9a2",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "dressing-dep-0",
+          "display" : "Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "dressing-dep-1",
+          "display" : "Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "dressing-dep-2",
+          "display" : "Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "dressing-dep-3",
+          "display" : "Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-transferring-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-transferring-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-transferring-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-0\">transferring-dep-0</a></td><td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-transferring-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-1\">transferring-dep-1</a></td><td>Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-transferring-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-2\">transferring-dep-2</a></td><td>Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-transferring-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-transferring-dep-3\">transferring-dep-3</a></td><td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-transferring-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleTransferring",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:6384cdbb-cbfd-4e85-b1c3-69eaec94434c",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "transferring-dep-0",
+          "display" : "Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "transferring-dep-1",
+          "display" : "Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "transferring-dep-2",
+          "display" : "Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "transferring-dep-3",
+          "display" : "Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-toileting-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-toileting-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-toileting-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-0\">toileting-dep-0</a></td><td>Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-toileting-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-1\">toileting-dep-1</a></td><td>Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-toileting-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-2\">toileting-dep-2</a></td><td>Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-toileting-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-toileting-dep-3\">toileting-dep-3</a></td><td>Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-toileting-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleToileting",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:68b78f2d-8845-4bee-83a5-0893499ac257",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "toileting-dep-0",
+          "display" : "Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "toileting-dep-1",
+          "display" : "Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "toileting-dep-2",
+          "display" : "Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "toileting-dep-3",
+          "display" : "Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-continence-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-continence-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-continence-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-0\">continence-dep-0</a></td><td>Le patient est continent pour l'urine et les selles</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-continence-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-1\">continence-dep-1</a></td><td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-continence-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-2\">continence-dep-2</a></td><td>Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-continence-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-continence-dep-3\">continence-dep-3</a></td><td>Le patient est incontinent pour les urines et les selles</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-continence-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleContinence",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:8ba87f88-307a-4e81-be6f-7c1d14fcc4fc",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "continence-dep-0",
+          "display" : "Le patient est continent pour l'urine et les selles"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "continence-dep-1",
+          "display" : "Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "continence-dep-2",
+          "display" : "Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "continence-dep-3",
+          "display" : "Le patient est incontinent pour les urines et les selles"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-feeding-dep",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mkatz-feeding-dep",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mkatz.html\">CodeSystem Modified Katz assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mkatz.html\"><code>http://example.org/cs-mkatz</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-feeding-dep-0\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-0\">feeding-dep-0</a></td><td>Le patient est capable de manger et boire seul</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-feeding-dep-1\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-1\">feeding-dep-1</a></td><td>Le patient besoin d'une aide préalable pour manger ou boire</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-feeding-dep-2\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-2\">feeding-dep-2</a></td><td>Le patient a besoin d'une aide partielle pendant qu'il mange ou boit</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mkatz-feeding-dep-3\"> </a><a href=\"CodeSystem-cs-mkatz.html#cs-mkatz-feeding-dep-3\">feeding-dep-3</a></td><td>Le patient est totalement dépendant pour manger et boire</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire#vs-mkatz-feeding-dep",
+      "version" : "0.1.0",
+      "name" : "ModifiedKatzScaleFeeding",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:f12e3436-2812-43de-a6d6-ca4ca6f3969f",
+        "timestamp" : "2021-06-13T09:33:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mkatz|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "feeding-dep-0",
+          "display" : "Le patient est capable de manger et boire seul"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "feeding-dep-1",
+          "display" : "Le patient besoin d'une aide préalable pour manger ou boire"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "feeding-dep-2",
+          "display" : "Le patient a besoin d'une aide partielle pendant qu'il mange ou boit"
+        },
+        {
+          "system" : "http://example.org/cs-mkatz",
+          "code" : "feeding-dep-3",
+          "display" : "Le patient est totalement dépendant pour manger et boire"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-addiction-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+      "version" : "0.1.0",
+      "name" : "BeVSAddictionCode",
+      "title" : "Addiction Code",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Addiction code",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-addiction-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
+      "version" : "0.1.0",
+      "name" : "BeVSAddictionCode",
+      "title" : "Addiction Code",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Addiction code",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ff5ec02a-7cf1-4343-9ed4-492bc17bc2f5",
+        "timestamp" : "2021-06-13T09:33:22+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-food-intake",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-food-intake",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-food-intake-0\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-food-intake-0\">food-intake-0</a></td><td>Baisse sévère des prises alimentaires</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-food-intake-1\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-food-intake-1\">food-intake-1</a></td><td>Légère baisse des prises alimentaires</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-food-intake-2\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-food-intake-2\">food-intake-2</a></td><td>Pas de baisse des prises alimentaires</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-food-intake",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentFoodIntake",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:10f23468-43ea-4a4d-beb9-ab435b522f3f",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "food-intake-0",
+          "display" : "Baisse sévère des prises alimentaires"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "food-intake-1",
+          "display" : "Légère baisse des prises alimentaires"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "food-intake-2",
+          "display" : "Pas de baisse des prises alimentaires"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-weight-loss",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-weight-loss",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-weight-loss-0\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-weight-loss-0\">weight-loss-0</a></td><td>Perte de poids supérieure à 3 kg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-weight-loss-1\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-weight-loss-1\">weight-loss-1</a></td><td>Ne sait pas</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-weight-loss-2\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-weight-loss-2\">weight-loss-2</a></td><td>Perte de poids entre 1 et 3 kg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-weight-loss-3\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-weight-loss-3\">weight-loss-3</a></td><td>Pas de perte de poids</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-weight-loss",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentWeightLoss",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:dfb9f262-c374-49f2-8562-9334b2ee3b7e",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "weight-loss-0",
+          "display" : "Perte de poids supérieure à 3 kg"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "weight-loss-1",
+          "display" : "Ne sait pas"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "weight-loss-2",
+          "display" : "Perte de poids entre 1 et 3 kg"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "weight-loss-3",
+          "display" : "Pas de perte de poids"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-mobility",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-mobility",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-mobility-0\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-mobility-0\">mobility-0</a></td><td>Alité ou au fauteuil</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-mobility-1\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-mobility-1\">mobility-1</a></td><td>Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-mobility-2\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-mobility-2\">mobility-2</a></td><td>Sort du domicile</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-mobility",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentMobility",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:5e6e9dc0-9762-4cb3-9f72-4860dbc1b6a6",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "mobility-0",
+          "display" : "Alité ou au fauteuil"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "mobility-1",
+          "display" : "Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "mobility-2",
+          "display" : "Sort du domicile"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-stress",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-stress",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-stress-no\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-stress-no\">stress-no</a></td><td>Oui</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-stress-yes\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-stress-yes\">stress-yes</a></td><td>Non</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-stress",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentStress",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:a535de0f-df3b-439d-8dba-e6062797f349",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "stress-no",
+          "display" : "Oui"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "stress-yes",
+          "display" : "Non"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-neuropsychological",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-neuropsychological",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-neuropsych-0\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-neuropsych-0\">neuropsych-0</a></td><td>Démence ou dépression sévère</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-neuropsych-1\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-neuropsych-1\">neuropsych-1</a></td><td>Démence légère</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-neuropsych-2\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-neuropsych-2\">neuropsych-2</a></td><td>Pas de problème psychologique</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-neuropsychological",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentNeuropsychological",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:d7834d50-fb59-4b6f-9186-d4af6b479a6f",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "neuropsych-0",
+          "display" : "Démence ou dépression sévère"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "neuropsych-1",
+          "display" : "Démence légère"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "neuropsych-2",
+          "display" : "Pas de problème psychologique"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-bmi",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-mna-bmi",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-mna.html\">CodeSystem Mini Nutritional Assessment scale v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-mna.html\"><code>http://example.org/cs-mna</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-bmi-0\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-bmi-0\">bmi-0</a></td><td>IMC &lt; 19 = Score 0</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-bmi-1\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-bmi-1\">bmi-1</a></td><td>19 &lt;= IMC &lt; 21 = Score 1</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-bmi-2\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-bmi-2\">bmi-2</a></td><td>21 &lt;= IMC &lt; 23 = Score 2</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-cs-mna-bmi-3\"> </a><a href=\"CodeSystem-cs-mna.html#cs-mna-bmi-3\">bmi-3</a></td><td>IMC &gt;= 23 = Score 3</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-bmi",
+      "version" : "0.1.0",
+      "name" : "MiniNutritionalAssessmentBMI",
+      "status" : "draft",
+      "expansion" : {
+        "identifier" : "urn:uuid:0452857c-9522-4883-9a49-589d0d22d85f",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.org/cs-mna|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/cs-mna",
+          "code" : "bmi-0",
+          "display" : "IMC < 19 = Score 0"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "bmi-1",
+          "display" : "19 <= IMC < 21 = Score 1"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "bmi-2",
+          "display" : "21 <= IMC < 23 = Score 2"
+        },
+        {
+          "system" : "http://example.org/cs-mna",
+          "code" : "bmi-3",
+          "display" : "IMC >= 23 = Score 3"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-vs-laterality",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html\">Bodystructure Location Qualifier v4.0.1 (ValueSet)</a></li><li>SNOMED CT International edition 31-Jan 2021</li></ul></div><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419161000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419161000\">419161000</a></td><td>Unilateral left</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419465000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419465000\">419465000</a></td><td>Unilateral right</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-51440002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51440002\">51440002</a></td><td>Bilateral</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261183002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261183002\">261183002</a></td><td>Upper</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261122009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261122009\">261122009</a></td><td>Lower</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255561001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255561001\">255561001</a></td><td>Medial</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-49370004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49370004\">49370004</a></td><td>Lateral</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-264217000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264217000\">264217000</a></td><td>Superior</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261089000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261089000\">261089000</a></td><td>Inferior</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255551008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255551008\">255551008</a></td><td>Posterior</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-351726001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=351726001\">351726001</a></td><td>Below</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-352730000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=352730000\">352730000</a></td><td>Above</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality",
+      "version" : "0.1.0",
+      "name" : "BeVSLaterality",
+      "title" : "Laterality",
+      "status" : "draft",
+      "date" : "2021-06-13T09:32:51+00:00",
+      "publisher" : "RIZIV-INAMI",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://somewhere.org"
+        }]
+      }],
+      "description" : "Laterality",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c9dc8e7d-d1b5-460b-85d0-98f51cc1f492",
+        "timestamp" : "2021-06-13T09:33:25+00:00",
+        "total" : 12,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/ValueSet/bodystructure-relative-location|4.0.1"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "419161000",
+          "display" : "Unilateral left"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "419465000",
+          "display" : "Unilateral right"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "51440002",
+          "display" : "Bilateral"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "261183002",
+          "display" : "Upper"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "261122009",
+          "display" : "Lower"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "255561001",
+          "display" : "Medial"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "49370004",
+          "display" : "Lateral"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "264217000",
+          "display" : "Superior"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "261089000",
+          "display" : "Inferior"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "255551008",
+          "display" : "Posterior"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "351726001",
+          "display" : "Below"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "abstract" : false,
+          "inactive" : false,
+          "code" : "352730000",
+          "display" : "Above"
+        }]
+      }
+    }
+  }]
 }

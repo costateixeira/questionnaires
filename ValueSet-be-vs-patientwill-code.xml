@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-patientwill-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-be-cs-patientwill-code.html"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code</code></a></li></ul></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code"/>
+  <version value="0.1.0"/>
+  <name value="BeVSScore"/>
+  <title value="Patient Will directives Value Set"/>
+  <status value="draft"/>
+  <date value="2020-10-01T11:01:09+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Score Value Set"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+    </include>
+  </compose>
+</ValueSet>

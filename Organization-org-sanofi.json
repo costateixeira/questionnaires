@@ -1,0 +1,20 @@
+{
+  "resourceType": "Organization",
+  "id": "org-sanofi",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 111111111122</p><p><b>active</b>: true</p><p><b>name</b>: Sanofi France</p></div>"
+  },
+  "identifier": [
+    {
+      "value": "111111111122"
+    }
+  ],
+  "active": true,
+  "name": "Sanofi France"
+}

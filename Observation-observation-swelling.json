@@ -1,0 +1,19 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-swelling",
+  "language": "nl-BE",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 65124004}\">Swelling (finding)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "65124004",
+        "display": "Swelling (finding)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,351 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-cs-care-location"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"be-cs-care-location-hospital\"> </a></td><td>Hospital</td></tr><tr><td style=\"white-space:nowrap\">patient-home<a name=\"be-cs-care-location-patient-home\"> </a></td><td>Patient home</td></tr><tr><td style=\"white-space:nowrap\">nursing-home<a name=\"be-cs-care-location-nursing-home\"> </a></td><td>Nursing home</td></tr><tr><td style=\"white-space:nowrap\">recovery-home<a name=\"be-cs-care-location-recovery-home\"> </a></td><td>Recovery home</td></tr><tr><td style=\"white-space:nowrap\">workplace<a name=\"be-cs-care-location-workplace\"> </a></td><td>Workplace</td></tr><tr><td style=\"white-space:nowrap\">medical-center<a name=\"be-cs-care-location-medical-center\"> </a></td><td>Medical center</td></tr><tr><td style=\"white-space:nowrap\">clinic<a name=\"be-cs-care-location-clinic\"> </a></td><td>Clinic</td></tr><tr><td style=\"white-space:nowrap\">pediatric-ic<a name=\"be-cs-care-location-pediatric-ic\"> </a></td><td>Pediatric ic</td></tr><tr><td style=\"white-space:nowrap\">neonatal-ic<a name=\"be-cs-care-location-neonatal-ic\"> </a></td><td>Neonatal ic</td></tr><tr><td style=\"white-space:nowrap\">prenatal-consult<a name=\"be-cs-care-location-prenatal-consult\"> </a></td><td>Prenatal consult</td></tr><tr><td style=\"white-space:nowrap\">m-accueil<a name=\"be-cs-care-location-m-accueil\"> </a></td><td>m-accueil</td></tr><tr><td style=\"white-space:nowrap\">child-consult<a name=\"be-cs-care-location-child-consult\"> </a></td><td>Child consult</td></tr><tr><td style=\"white-space:nowrap\">one<a name=\"be-cs-care-location-one\"> </a></td><td>ONE</td></tr><tr><td style=\"white-space:nowrap\">kind-gezin<a name=\"be-cs-care-location-kind-gezin\"> </a></td><td>Kind en gezin</td></tr><tr><td style=\"white-space:nowrap\">ambulance<a name=\"be-cs-care-location-ambulance\"> </a></td><td>Ambulance</td></tr><tr><td style=\"white-space:nowrap\">school<a name=\"be-cs-care-location-school\"> </a></td><td>School</td></tr><tr><td style=\"white-space:nowrap\">school-health-serv<a name=\"be-cs-care-location-school-health-serv\"> </a></td><td>School health services</td></tr><tr><td style=\"white-space:nowrap\">pharmacy<a name=\"be-cs-care-location-pharmacy\"> </a></td><td>Pharmacy</td></tr><tr><td style=\"white-space:nowrap\">med-monde<a name=\"be-cs-care-location-med-monde\"> </a></td><td>Med monde</td></tr><tr><td style=\"white-space:nowrap\">ngo<a name=\"be-cs-care-location-ngo\"> </a></td><td>Non-Governmental Organization</td></tr><tr><td style=\"white-space:nowrap\">family-planning<a name=\"be-cs-care-location-family-planning\"> </a></td><td>Family planning</td></tr><tr><td style=\"white-space:nowrap\">abroad<a name=\"be-cs-care-location-abroad\"> </a></td><td>Abroad</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"be-cs-care-location-other\"> </a></td><td>other</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>hospital</td><td>A l’hôpital</td><td>Ziekenhuis</td></tr><tr><td>patient-home</td><td>A domicile</td><td>Thuis</td></tr><tr><td>nursing-home</td><td>En maison de repos</td><td>Rusthuis</td></tr><tr><td>recovery-home</td><td>En maison de revalidation</td><td>In huis van revalidatie</td></tr><tr><td>workplace</td><td>Au cabinet</td><td>In het kantoor</td></tr><tr><td>medical-center</td><td>En maison médicale</td><td>Medisch huis</td></tr><tr><td>clinic</td><td>A la clinique</td><td>Kliniek</td></tr><tr><td>pediatric-ic</td><td>En unité de soins intensive pédiatrique</td><td>Pediatrische intensive care</td></tr><tr><td>neonatal-ic</td><td>En unité de soins intensive pédiatrique néonatal</td><td>Neonatale pediatrische intensive care</td></tr><tr><td>prenatal-consult</td><td>Consultation prénatale</td><td>prenataal consult</td></tr><tr><td>m-accueil</td><td>Milieu d’accueil</td><td>kinderopvang</td></tr><tr><td>child-consult</td><td>Consultation pour enfant</td><td>kind consult</td></tr><tr><td>one</td><td>ONE</td><td>ONE</td></tr><tr><td>kind-gezin</td><td>Kind&amp;Gezin</td><td>Kind&amp;Gezin</td></tr><tr><td>ambulance</td><td>Ambulance</td><td>Ambulance</td></tr><tr><td>school</td><td>A l’école</td><td>School</td></tr><tr><td>school-health-serv</td><td>services de santé scolaire</td><td>gezondheidsdiensten op school</td></tr><tr><td>pharmacy</td><td>Pharmacie</td><td>Apotheek</td></tr><tr><td>med-monde</td><td>Médecin du monde</td><td>dokters van de wereld</td></tr><tr><td>ngo</td><td>ONG</td><td>NGO</td></tr><tr><td>family-planning</td><td>Centre planning familial</td><td>Centrum gezinsplanning</td></tr><tr><td>abroad</td><td>A l’étranger</td><td>Buitenland</td></tr><tr><td>other</td><td>Autre</td><td>Andere</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BeCSCareLocation"];
+  fhir:CodeSystem.title [ fhir:value "Care Location Code System"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Care Location Code System"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "hospital" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospital" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "A l’hôpital" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ziekenhuis" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-home" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patient home" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "A domicile" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Thuis" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "nursing-home" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nursing home" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "En maison de repos" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rusthuis" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "recovery-home" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Recovery home" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "En maison de revalidation" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "In huis van revalidatie" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "workplace" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Workplace" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Au cabinet" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "In het kantoor" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "medical-center" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical center" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "En maison médicale" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Medisch huis" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "clinic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clinic" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "A la clinique" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kliniek" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "pediatric-ic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pediatric ic" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "En unité de soins intensive pédiatrique" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pediatrische intensive care" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "neonatal-ic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neonatal ic" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "En unité de soins intensive pédiatrique néonatal" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Neonatale pediatrische intensive care" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "prenatal-consult" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prenatal consult" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consultation prénatale" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "prenataal consult" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "m-accueil" ];
+     fhir:CodeSystem.concept.display [ fhir:value "m-accueil" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Milieu d’accueil" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "kinderopvang" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "child-consult" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Child consult" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consultation pour enfant" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "kind consult" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "one" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ONE" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "ONE" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "ONE" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "kind-gezin" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kind en gezin" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kind&Gezin" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kind&Gezin" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "ambulance" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulance" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ambulance" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ambulance" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "school" ];
+     fhir:CodeSystem.concept.display [ fhir:value "School" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "A l’école" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "School" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "school-health-serv" ];
+     fhir:CodeSystem.concept.display [ fhir:value "School health services" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "services de santé scolaire" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "gezondheidsdiensten op school" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "pharmacy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pharmacy" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pharmacie" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Apotheek" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "med-monde" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Med monde" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Médecin du monde" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "dokters van de wereld" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "ngo" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Governmental Organization" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "ONG" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "NGO" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "family-planning" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Family planning" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Centre planning familial" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Centrum gezinsplanning" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "abroad" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Abroad" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "A l’étranger" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Buitenland" ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "other" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Autre" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Andere" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

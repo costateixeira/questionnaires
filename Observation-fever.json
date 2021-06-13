@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "fever",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 386661006}\">Fever (finding)</span></p><p><b>subject</b>: <span></span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "386661006"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "16032376921"
+    }
+  }
+}

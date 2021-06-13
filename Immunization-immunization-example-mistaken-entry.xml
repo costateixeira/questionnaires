@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="immunization-example-mistaken-entry"/>
+  <meta>
+    <profile value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+  </meta>
+  <language value="nl-BE"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><p><b>Generated Narrative</b></p><p><b>Who recorded the information</b>: <a href="Organization-org-kind-en-gezin.html">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>Location (reference, code or text) of the vaccination</b>: <a href="Organization-org-kind-en-gezin.html">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></p><p><b>identifier</b>: id: 2687758923</p><p><b>status</b>: entered-in-error</p><p><b>vaccineCode</b>: <span title="Codes: {http://hl7.org/fhir/sid/cvx 05}">Measles</span></p><p><b>patient</b>: <span></span></p><p><b>occurrence</b>: Summer 2018</p><p><b>recorded</b>: 2020</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Organization-org-kind-en-gezin.html">Generated Summary: id: 457223509; active; name: Kind en Gezin; https://www.kindengezin.be/</a></td></tr></table></div>
+  </text>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder">
+    <valueReference>
+      <reference value="Organization/org-kind-en-gezin"/>
+    </valueReference>
+  </extension>
+  <extension url="https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location">
+    <valueReference>
+      <reference value="Organization/org-kind-en-gezin"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="https://www.kindengezin.be/vaccinatie/vaccination-register"/>
+    <value value="2687758923"/>
+  </identifier>
+  <status value="entered-in-error"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="05"/>
+      <display value="Measles"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="59050937740"/>
+    </identifier>
+  </patient>
+  <occurrenceString value="Summer 2018"/>
+  <recorded value="2020"/>
+  <performer>
+    <actor>
+      <reference value="Organization/org-kind-en-gezin"/>
+    </actor>
+  </performer>
+</Immunization>
