@@ -1,98 +1,38 @@
 ﻿RIZIV_INAMI : Validation Results
 =========================================
 
-err = 75, warn = 112, info = 15
+err = 61, warn = 77, info = 3
 IG Publisher Version: 1.1.73
-Generated Sun Jun 13 09:41:53 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+Generated Sun Jun 13 14:02:47 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
 
- Build Errors : 112 / 30 / 0
+ Build Errors : 106 / 10 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained : 7 / 4 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-be-status-reason : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-mna : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-addiction-smoking : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-aymeric-rota1 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-aymeric-rota2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-aymeric-rota3 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-covid-jan-1 : 2 / 0 / 5
- /github/workspace/fsh-generated/resources/Immunization-covid-jan-2-discarded : 3 / 1 / 5
- /github/workspace/fsh-generated/resources/Immunization-covid-jan-3 : 2 / 0 / 5
- /github/workspace/fsh-generated/resources/Immunization-eva-hpv1-school : 0 / 0 / 4
- /github/workspace/fsh-generated/resources/Immunization-eva-hpv2-school : 0 / 0 / 4
- /github/workspace/fsh-generated/resources/Immunization-gabriel-flu : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-iex1 : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-iex2 : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-iex3 : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-1-hpv : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-childhood-measles : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-mistaken-entry : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-mistaken-entry-update : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-contraindication : 1 / 2 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-refusal : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-stock : 1 / 2 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-prescribed-vaccination : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-reaction-swelling : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Immunization-immunization-example-tetanus-cautious-reinforcement : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Immunization-juan-hexa1-reported : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-juan-hexa2-reported-hospital : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-juan-hexa3-skipped : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-juan-hexa4 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-julia-refuse-hpv : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-simon-hpv-at-work : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-toto-hexa1 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-toto-hexa2 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-toto-hexa3 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Immunization-toto-hexa4-skipped : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-toto-hexa4-swelling : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/ImmunizationRecommendation-aymeric-rota : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImmunizationRecommendation-order-gabriel-flu : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ImmunizationRecommendation-order-simon-hpv : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Immunization-toto-hexa1 : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-one-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-erythema : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-fever : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-observation-swelling : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Organization-org-kind-en-gezin : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Organization-org-msd-belgium : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Organization-org-one-brussels : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Organization-org-sanofi : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Organization-org-uz-gent : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire : 4 / 13 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-mkatz-questionnaire : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/Questionnaire-mna-questionnaire : 0 / 0 / 7
- /github/workspace/fsh-generated/resources/StructureDefinition-be-addiction : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance : 0 / 6 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-addiction-quantifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-administeredProduct : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-inform-party : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-problem-origin-type : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-confirmationStatus : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-location : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-measure : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-problem : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-referralprescription : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-scoreresult : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-reason-referral-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-referral-category : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-addiction-category : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-addiction-code : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-bodysite : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-care-location : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-laterality : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-category : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-code : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-origin-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-scorecategory : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status : 0 / 0 / 1
@@ -108,17 +48,17 @@ Generated Sun Jun 13 09:41:53 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/input/examples/Practitioner-lenoir : 0 / 0 / 2
  /github/workspace/input/models/StructureDefinition-be-model-addiction : 0 / 0 / 1
  /github/workspace/input/models/StructureDefinition-be-model-patientwill : 0 / 0 / 1
- /github/workspace/input/models/StructureDefinition-be-model-problem : 1 / 6 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-problem : 1 / 8 / 1
  /github/workspace/input/models/StructureDefinition-be-model-referralprescription : 4 / 9 / 1
  /github/workspace/input/models/StructureDefinition-be-model-scoreresult : 0 / 0 / 1
  /github/workspace/input/models/StructureDefinition-be-model-vaccination : 0 / 0 / 1
  /github/workspace/input/profiles/StructureDefinition-be-patient : 2 / 3 / 1
- /github/workspace/input/profiles/StructureDefinition-be-patientwill : 1 / 0 / 1
+ /github/workspace/input/profiles/StructureDefinition-be-patientwill : 1 / 1 / 1
  /github/workspace/input/profiles/StructureDefinition-be-practitioner : 2 / 0 / 1
  /github/workspace/input/profiles/StructureDefinition-be-practitionerrole : 2 / 1 / 1
- /github/workspace/input/resources/StructureDefinition-be-organization : 2 / 0 / 1
+ /github/workspace/input/resources/StructureDefinition-be-organization : 2 / 1 / 1
  /github/workspace/input/resources/be-address : 2 / 1 / 1
- /github/workspace/input/riziv : 0 / 0 / 1
+ /github/workspace/input/riziv : 1 / 0 / 1
  /github/workspace/input/scenarios/ExampleScenario-scenario-allergy : 0 / 0 / 1
  /github/workspace/input/vocabulary/CodeSystem-be-cs-bodysite : 0 / 0 / 1
  /github/workspace/input/vocabulary/CodeSystem-be-cs-care-location : 0 / 0 / 1
@@ -137,50 +77,28 @@ Generated Sun Jun 13 09:41:53 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Consent/patientwill-example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/patientwill-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-patientwill.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-scoreresult.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-problem.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-referralprescription.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-addiction.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitionerrole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-organization.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-address.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/be-referral-category.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/org-msd-belgium.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-msd-belgium.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/iex3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/be-reason-referral-status.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/exposure-risk.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-1-hpv.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/org-sanofi.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-sanofi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/iex1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-tetanus-cautious-reinforcement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-not-given-refusal.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-not-given-contraindication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/org-uz-gent.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-uz-gent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/covid-jan-2-discarded.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mkatz-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-reaction-swelling.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-referralprescription.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-not-given-stock.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/org-kind-en-gezin.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-kind-en-gezin.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-mistaken-entry-update.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/org-one-brussels.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-one-brussels.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/covid-jan-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mna-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/allergy-intolerance-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-childhood-measles.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/covid-jan-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-mistaken-entry.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/iex2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent-contained.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/immunization-example-prescribed-vaccination.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-mna-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 145
 ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 161
 ERROR: /github/workspace/output/Questionnaire-mkatz-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 147
@@ -217,12 +135,8 @@ ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.htm
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 205, column 33: The link './Bundle-EB.html' for "Empty Bundle" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ExampleScenario-scenario-allergy.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ExampleScenario-scenario-allergy.json.html' for "JSON" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'Organization/org-vub-brussels' for "Organization/org-vub-brussels" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1076: The link 'Organization/org-pfizer' for "Organization/org-pfizer" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-2-discarded.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'Organization/org-vub-brussels' for "Organization/org-vub-brussels" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-2-discarded.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1139: The link 'Organization/org-pfizer' for "Organization/org-pfizer" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-3.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'Organization/org-vub-brussels' for "Organization/org-vub-brussels" cannot be resolved
-ERROR: /github/workspace/output/Immunization-covid-jan-3.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1076: The link 'Organization/org-pfizer' for "Organization/org-pfizer" cannot be resolved
+ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'org-one-brussels' for "org-one-brussels" cannot be resolved
+ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 659: The link 'org-sanofi' for "org-sanofi" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 209, column 1433: The link 'null#item.clinical-status' for "3 options" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 210, column 1422: The link 'null#item.patient-id' for "4 options" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 211, column 1357: The link 'null#item.allergyintolerance' for "2 options" cannot be resolved
@@ -307,10 +221,6 @@ ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: Aller
 INFORMATION: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance - listed in meta
 WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
 WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
-== /github/workspace/fsh-generated/resources/CodeSystem-be-status-reason.json ==
-ERROR: CodeSystem.where(url = 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-be-status-reason.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/be-status-reason) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason)
-INFORMATION: CodeSystem/be-status-reason: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-be-status-reason: URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/be-status-reason vs https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json ==
 ERROR: CodeSystem.where(url = 'http://example.org/cs-mkatz'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz) does not match the URL (http://example.org/cs-mkatz)
 INFORMATION: CodeSystem/cs-mkatz: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
@@ -319,146 +229,17 @@ ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz: URL Mismat
 ERROR: CodeSystem.where(url = 'http://example.org/cs-mna'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mna) does not match the URL (http://example.org/cs-mna)
 INFORMATION: CodeSystem/cs-mna: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-mna: URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/cs-mna vs http://example.org/cs-mna
-== /github/workspace/fsh-generated/resources/Condition-addiction-smoking.json ==
-INFORMATION: Condition/addiction-smoking: Condition: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction
 == /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent.json ==
 INFORMATION: Encounter/example-encounter-uzgent: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
 ERROR: Encounter/example-encounter-uzgent: Encounter.location[0].location: Unable to resolve resource 'Location/uz-gent'
 == /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained.json ==
 INFORMATION: Encounter/example-encounter-uzgent-contained: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
 ERROR: Encounter/example-encounter-uzgent-contained: Encounter.location[0].location: Unable to resolve resource 'Location/uz-gent'
-== /github/workspace/fsh-generated/resources/Immunization-aymeric-rota1.json ==
-INFORMATION: Immunization/aymeric-rota1: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-aymeric-rota2.json ==
-INFORMATION: Immunization/aymeric-rota2: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-aymeric-rota3.json ==
-INFORMATION: Immunization/aymeric-rota3: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-covid-jan-1.json ==
-INFORMATION: Immunization/covid-jan-1: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/covid-jan-1: Immunization.contained.ofType(Medication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Medication
-INFORMATION: Immunization/covid-jan-1: Immunization.contained.ofType(Medication).code.coding[0]: Code System URI 'http://ehealth.fgov.be/cnk-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-1: Immunization.extension[0].value.ofType(Reference): Unable to resolve resource 'Organization/org-vub-brussels'
-INFORMATION: Immunization/covid-jan-1: Immunization.vaccineCode.coding[0]: Code System URI 'http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-1: Immunization.manufacturer: Unable to resolve resource 'Organization/org-pfizer'
-INFORMATION: Immunization/covid-jan-1: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-covid-jan-2-discarded.json ==
-INFORMATION: Immunization/covid-jan-2-discarded: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/covid-jan-2-discarded: Immunization.contained.ofType(Medication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Medication
-INFORMATION: Immunization/covid-jan-2-discarded: Immunization.contained.ofType(Medication).code.coding[0]: Code System URI 'http://ehealth.fgov.be/cnk-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-2-discarded: Immunization.extension[0].value.ofType(Reference): Unable to resolve resource 'Organization/org-vub-brussels'
-WARNING: Immunization/covid-jan-2-discarded: Immunization.statusReason.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Immunization/covid-jan-2-discarded: Immunization.vaccineCode.coding[0]: Code System URI 'http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-2-discarded: Immunization.manufacturer: Unable to resolve resource 'Organization/org-pfizer'
-INFORMATION: Immunization/covid-jan-2-discarded: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-ERROR: Immunization/covid-jan-2-discarded: Immunization.statusReason: None of the codings provided are in the value set https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason (https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason), and a coding from this value set is required) (codes = null#DAMAGED)
-== /github/workspace/fsh-generated/resources/Immunization-covid-jan-3.json ==
-INFORMATION: Immunization/covid-jan-3: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/covid-jan-3: Immunization.contained.ofType(Medication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Medication
-INFORMATION: Immunization/covid-jan-3: Immunization.contained.ofType(Medication).code.coding[0]: Code System URI 'http://ehealth.fgov.be/cnk-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-3: Immunization.extension[0].value.ofType(Reference): Unable to resolve resource 'Organization/org-vub-brussels'
-INFORMATION: Immunization/covid-jan-3: Immunization.vaccineCode.coding[0]: Code System URI 'http://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccine-codes' is unknown so the code cannot be validated
-ERROR: Immunization/covid-jan-3: Immunization.manufacturer: Unable to resolve resource 'Organization/org-pfizer'
-INFORMATION: Immunization/covid-jan-3: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-eva-hpv1-school.json ==
-INFORMATION: Immunization/eva-hpv1-school: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-INFORMATION: Immunization/eva-hpv1-school: Immunization.contained.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Immunization/eva-hpv1-school: Immunization.contained.ofType(Organization): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-INFORMATION: Immunization/eva-hpv1-school: Immunization.contained.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
-== /github/workspace/fsh-generated/resources/Immunization-eva-hpv2-school.json ==
-INFORMATION: Immunization/eva-hpv2-school: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-INFORMATION: Immunization/eva-hpv2-school: Immunization.contained.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Immunization/eva-hpv2-school: Immunization.contained.ofType(Organization): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-INFORMATION: Immunization/eva-hpv2-school: Immunization.contained.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
-== /github/workspace/fsh-generated/resources/Immunization-gabriel-flu.json ==
-INFORMATION: Immunization/gabriel-flu: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-iex1.json ==
-INFORMATION: Immunization/iex1: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/iex1: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-iex2.json ==
-INFORMATION: Immunization/iex2: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/iex2: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-iex3.json ==
-INFORMATION: Immunization/iex3: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/iex3: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-1-hpv.json ==
-INFORMATION: Immunization/immunization-example-1-hpv: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/immunization-example-1-hpv: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-childhood-measles.json ==
-INFORMATION: Immunization/immunization-example-childhood-measles: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/immunization-example-childhood-measles: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-mistaken-entry.json ==
-INFORMATION: Immunization/immunization-example-mistaken-entry: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-mistaken-entry: Immunization.vaccineCode.coding[0]: The display "Measles" is not a valid display for the code {http://hl7.org/fhir/sid/cvx}05 - should be one of ["measles virus vaccine"] (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#05'
-INFORMATION: Immunization/immunization-example-mistaken-entry: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-mistaken-entry-update.json ==
-INFORMATION: Immunization/immunization-example-mistaken-entry-update: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-mistaken-entry-update: Immunization.vaccineCode.coding[0]: The display "Rubella" is not a valid display for the code {http://hl7.org/fhir/sid/cvx}06 - should be one of ["rubella virus vaccine"] (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#06'
-INFORMATION: Immunization/immunization-example-mistaken-entry-update: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-contraindication.json ==
-INFORMATION: Immunization/immunization-example-not-given-contraindication: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-not-given-contraindication: Immunization.statusReason.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Immunization/immunization-example-not-given-contraindication: Immunization.vaccineCode.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Immunization/immunization-example-not-given-contraindication: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-ERROR: Immunization/immunization-example-not-given-contraindication: Immunization.statusReason: None of the codings provided are in the value set https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason (https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason), and a coding from this value set is required) (codes = null#MEDPREC)
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-refusal.json ==
-INFORMATION: Immunization/immunization-example-not-given-refusal: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-not-given-refusal: Immunization.vaccineCode.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Immunization/immunization-example-not-given-refusal: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-not-given-stock.json ==
-INFORMATION: Immunization/immunization-example-not-given-stock: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-not-given-stock: Immunization.statusReason.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Immunization/immunization-example-not-given-stock: Immunization.vaccineCode.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Immunization/immunization-example-not-given-stock: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-ERROR: Immunization/immunization-example-not-given-stock: Immunization.statusReason: None of the codings provided are in the value set https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason (https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason), and a coding from this value set is required) (codes = null#OSTOCK)
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-prescribed-vaccination.json ==
-INFORMATION: Immunization/immunization-example-prescribed-vaccination: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-prescribed-vaccination: Immunization.vaccineCode.coding[0]: The display "Rubella" is not a valid display for the code {http://hl7.org/fhir/sid/cvx}06 - should be one of ["rubella virus vaccine"] (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#06'
-INFORMATION: Immunization/immunization-example-prescribed-vaccination: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-reaction-swelling.json ==
-INFORMATION: Immunization/immunization-example-reaction-swelling: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-WARNING: Immunization/immunization-example-reaction-swelling: Immunization.vaccineCode.coding[0]: The display "Measles" is not a valid display for the code {http://hl7.org/fhir/sid/cvx}05 - should be one of ["measles virus vaccine"] (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#05'
-INFORMATION: Immunization/immunization-example-reaction-swelling: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-immunization-example-tetanus-cautious-reinforcement.json ==
-INFORMATION: Immunization/immunization-example-tetanus-cautious-reinforcement: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-INFORMATION: Immunization/immunization-example-tetanus-cautious-reinforcement: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination - listed in meta
-== /github/workspace/fsh-generated/resources/Immunization-juan-hexa1-reported.json ==
-INFORMATION: Immunization/juan-hexa1-reported: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-WARNING: Immunization/juan-hexa1-reported: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-juan-hexa2-reported-hospital.json ==
-INFORMATION: Immunization/juan-hexa2-reported-hospital: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-WARNING: Immunization/juan-hexa2-reported-hospital: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-juan-hexa3-skipped.json ==
-INFORMATION: Immunization/juan-hexa3-skipped: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-WARNING: Immunization/juan-hexa3-skipped: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-juan-hexa4.json ==
-INFORMATION: Immunization/juan-hexa4: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-julia-refuse-hpv.json ==
-INFORMATION: Immunization/julia-refuse-hpv: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-simon-hpv-at-work.json ==
-INFORMATION: Immunization/simon-hpv-at-work: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
 == /github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json ==
 INFORMATION: Immunization/toto-hexa1: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
+ERROR: Immunization/toto-hexa1: Immunization.extension[0].value.ofType(Reference): Unable to resolve resource 'org-one-brussels'
 WARNING: Immunization/toto-hexa1: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-toto-hexa2.json ==
-INFORMATION: Immunization/toto-hexa2: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-WARNING: Immunization/toto-hexa2: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-toto-hexa3.json ==
-INFORMATION: Immunization/toto-hexa3: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-WARNING: Immunization/toto-hexa3: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Immunization-toto-hexa4-skipped.json ==
-INFORMATION: Immunization/toto-hexa4-skipped: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-== /github/workspace/fsh-generated/resources/Immunization-toto-hexa4-swelling.json ==
-INFORMATION: Immunization/toto-hexa4-swelling: Immunization: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination
-INFORMATION: Immunization/toto-hexa4-swelling: Immunization.contained.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-WARNING: Immunization/toto-hexa4-swelling: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/ImmunizationRecommendation-aymeric-rota.json ==
-INFORMATION: ImmunizationRecommendation/aymeric-rota: ImmunizationRecommendation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
-== /github/workspace/fsh-generated/resources/ImmunizationRecommendation-order-gabriel-flu.json ==
-INFORMATION: ImmunizationRecommendation/order-gabriel-flu: ImmunizationRecommendation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
-INFORMATION: ImmunizationRecommendation/order-gabriel-flu: ImmunizationRecommendation.recommendation[0].forecastStatus.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/vaccination-recommendation-status' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/ImmunizationRecommendation-order-simon-hpv.json ==
-INFORMATION: ImmunizationRecommendation/order-simon-hpv: ImmunizationRecommendation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
-INFORMATION: ImmunizationRecommendation/order-simon-hpv: ImmunizationRecommendation.recommendation[0].forecastStatus.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/vaccination-recommendation-status' is unknown so the code cannot be validated
+ERROR: Immunization/toto-hexa1: Immunization.manufacturer: Unable to resolve resource 'org-sanofi'
 == /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-code.json ==
 INFORMATION: NamingSystem/be-ns-cnk-code: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization.json ==
@@ -469,29 +250,6 @@ INFORMATION: NamingSystem/be-ns-nihdi-professional: NamingSystem: Validate resou
 INFORMATION: NamingSystem/be-ns-one-vaccination: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer.json ==
 INFORMATION: NamingSystem/be-ns-product-manufacturer: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
-== /github/workspace/fsh-generated/resources/Observation-erythema.json ==
-INFORMATION: Observation/erythema: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-== /github/workspace/fsh-generated/resources/Observation-fever.json ==
-INFORMATION: Observation/fever: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-== /github/workspace/fsh-generated/resources/Observation-observation-swelling.json ==
-INFORMATION: Observation/observation-swelling: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-== /github/workspace/fsh-generated/resources/Organization-org-kind-en-gezin.json ==
-INFORMATION: Organization/org-kind-en-gezin: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Organization/org-kind-en-gezin: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-== /github/workspace/fsh-generated/resources/Organization-org-msd-belgium.json ==
-INFORMATION: Organization/org-msd-belgium: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Organization/org-msd-belgium: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-INFORMATION: Organization/org-msd-belgium: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
-== /github/workspace/fsh-generated/resources/Organization-org-one-brussels.json ==
-INFORMATION: Organization/org-one-brussels: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Organization/org-one-brussels: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-== /github/workspace/fsh-generated/resources/Organization-org-sanofi.json ==
-INFORMATION: Organization/org-sanofi: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Organization/org-sanofi: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
-INFORMATION: Organization/org-sanofi: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
-== /github/workspace/fsh-generated/resources/Organization-org-uz-gent.json ==
-INFORMATION: Organization/org-uz-gent: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-INFORMATION: Organization/org-uz-gent: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
 == /github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json ==
 INFORMATION: Questionnaire/allergy-intolerance-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 ERROR: Questionnaire/allergy-intolerance-questionnaire: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed
@@ -527,8 +285,6 @@ INFORMATION: Questionnaire/mna-questionnaire: Questionnaire.contained[2].ofType(
 INFORMATION: Questionnaire/mna-questionnaire: Questionnaire.contained[3].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/mna-questionnaire: Questionnaire.contained[4].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/mna-questionnaire: Questionnaire.contained[5].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-addiction.json ==
-INFORMATION: StructureDefinition/be-addiction: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance.json ==
 INFORMATION: StructureDefinition/be-allergyintolerance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.differential.element[5].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved
@@ -537,38 +293,21 @@ WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.differen
 WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[15].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved
 WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[29].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation on element AllergyIntolerance.reaction.manifestation could not be resolved
 WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[33].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute on element AllergyIntolerance.reaction.exposureRoute could not be resolved
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-addiction-quantifier.json ==
-INFORMATION: StructureDefinition/be-ext-addiction-quantifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-administeredProduct.json ==
 INFORMATION: StructureDefinition/be-ext-administeredProduct: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-inform-party.json ==
-INFORMATION: StructureDefinition/be-ext-inform-party: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-inform-party'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality.json ==
 INFORMATION: StructureDefinition/be-ext-laterality: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality'): The Implementation Guide contains no examples for this extension
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-problem-origin-type.json ==
-INFORMATION: StructureDefinition/be-ext-problem-origin-type: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-problem-origin-type'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder.json ==
 INFORMATION: StructureDefinition/be-ext-recorder: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-confirmationStatus.json ==
 INFORMATION: StructureDefinition/be-ext-vaccination-confirmationStatus: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-location.json ==
 INFORMATION: StructureDefinition/be-ext-vaccination-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder.json ==
 INFORMATION: StructureDefinition/be-ext-vaccination-originalorder: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-measure.json ==
-INFORMATION: StructureDefinition/be-measure: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-measure'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-problem.json ==
-INFORMATION: StructureDefinition/be-problem: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-problem'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-be-referralprescription.json ==
-ERROR: BeReferralPrescription.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/request-statusReason]]].ServiceRequest.extension: Element ServiceRequest.extension: derived max (*) cannot be greater than base max (1)
-INFORMATION: StructureDefinition/be-referralprescription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/be-referralprescription: StructureDefinition: Element ServiceRequest.extension: derived max (*) cannot be greater than base max (1)
-WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-referralprescription'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-scoreresult.json ==
 INFORMATION: StructureDefinition/be-scoreresult: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-be-vaccination.json ==
@@ -576,28 +315,10 @@ INFORMATION: StructureDefinition/be-vaccination: StructureDefinition: Validate r
 == /github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk.json ==
 INFORMATION: StructureDefinition/exposure-risk: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk'): The Implementation Guide contains no examples for this extension
-== /github/workspace/fsh-generated/resources/ValueSet-be-reason-referral-status.json ==
-INFORMATION: ValueSet/be-reason-referral-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-referral-category.json ==
-ERROR: ValueSet.where(url = 'https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-be-referral-category.json - the canonical URL (https://www.hl7belgium.org/fhir/ValueSet/be-referral-category) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category)
-INFORMATION: ValueSet/be-referral-category: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-be-referral-category: URL Mismatch https://www.hl7belgium.org/fhir/ValueSet/be-referral-category vs https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-addiction-category.json ==
-INFORMATION: ValueSet/be-vs-addiction-category: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-addiction-code.json ==
-INFORMATION: ValueSet/be-vs-addiction-code: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-bodysite.json ==
-INFORMATION: ValueSet/be-vs-bodysite: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-care-location.json ==
 INFORMATION: ValueSet/be-vs-care-location: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-laterality.json ==
 INFORMATION: ValueSet/be-vs-laterality: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-category.json ==
-INFORMATION: ValueSet/be-vs-problem-category: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-code.json ==
-INFORMATION: ValueSet/be-vs-problem-code: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-be-vs-problem-origin-type.json ==
-INFORMATION: ValueSet/be-vs-problem-origin-type: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-scorecategory.json ==
 INFORMATION: ValueSet/be-vs-scorecategory: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route.json ==
@@ -629,7 +350,7 @@ INFORMATION: AllergyIntolerance/noel-allergy.v1: AllergyIntolerance: Validate re
 WARNING: AllergyIntolerance/noel-allergy.v1: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
 WARNING: AllergyIntolerance/noel-allergy.v1: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
 == /github/workspace/input/examples/Consent-patientwill-example.xml ==
-INFORMATION: Consent/patientwill-example: Consent: Validate resource against profile https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill
+INFORMATION: Consent/patientwill-example: Consent: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Consent
 WARNING: Consent/patientwill-example: Consent.policyRule: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/consent-policy (http://hl7.org/fhir/ValueSet/consent-policy)
 WARNING: Consent/patientwill-example: Consent.meta.profile[0]: Profile reference 'https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == /github/workspace/input/examples/Observation-scoreresult-findrisc.xml ==
@@ -656,9 +377,11 @@ ERROR: StructureDefinition/be-model-problem: StructureDefinition.snapshot: sdf-3
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[7].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[9].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[11].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[15].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[9].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved
 WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[13].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[17].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved
 == /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json ==
 ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription'): Conformance resource /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription)
 INFORMATION: StructureDefinition/be-model-referralprescription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -688,6 +411,7 @@ ERROR: /github/workspace/input/profiles/StructureDefinition-be-patient: URL Mism
 == /github/workspace/input/profiles/StructureDefinition-be-patientwill.json ==
 INFORMATION: StructureDefinition/be-patientwill: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/be-patientwill: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/profiles/StructureDefinition-be-practitioner.json ==
 ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner'): Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitioner.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner)
 INFORMATION: StructureDefinition/be-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -700,6 +424,7 @@ ERROR: /github/workspace/input/profiles/StructureDefinition-be-practitionerrole:
 == /github/workspace/input/resources/StructureDefinition-be-organization.json ==
 ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization'): Conformance resource /github/workspace/input/resources/StructureDefinition-be-organization.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-organization) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization)
 INFORMATION: StructureDefinition/be-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/input/resources/StructureDefinition-be-organization: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-organization vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
 == /github/workspace/input/resources/be-address.json ==
 ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address'): Conformance resource /github/workspace/input/resources/be-address.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-address) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address)
@@ -708,6 +433,7 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 ERROR: /github/workspace/input/resources/be-address: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-address vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
 == /github/workspace/input/riziv.xml ==
 INFORMATION: ImplementationGuide/hl7.fhir.be.riziv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+ERROR: ImplementationGuide/hl7.fhir.be.riziv: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
 == /github/workspace/input/scenarios/ExampleScenario-scenario-allergy.xml ==
 INFORMATION: ExampleScenario/scenario-allergy: ExampleScenario: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExampleScenario
 == /github/workspace/input/vocabulary/CodeSystem-be-cs-bodysite.json ==

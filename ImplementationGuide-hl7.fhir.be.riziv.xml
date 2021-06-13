@@ -12,7 +12,7 @@
   <title value="RIZIV-INAMI Patient Record"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-13T09:41:04+00:00"/>
+  <date value="2021-06-13T14:02:07+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>
@@ -211,192 +211,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="allergyintolerance">
-      <name value="Allergy Intolerance"/>
-      <description value="Allergy / Intolerance resources. These artefacts define the constraints and vocabulary necessary to record allergies and intolerances, suspected or confirmed.  A few example resources and scenario demonstrate the use of these resources."/>
-    </grouping>
-    <grouping id="patientwill">
-      <name value="Patient Will"/>
-      <description value="Patient Will profile and vocabulary. The Patient Will captures a patient&#39;s expressed preferences related to care provision.   The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile."/>
-    </grouping>
-    <grouping id="addiction">
-      <name value="Addiction"/>
-      <description value="The profile for Addiction, intended to capture known or suspected substance or other addictions.    The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile."/>
-    </grouping>
-    <grouping id="vaccination">
-      <name value="Vaccination"/>
-      <description value="Vaccination related resources.  These artefacts define the constraints and vocabulary necessary to record the administration of vaccine administrations, including the reference to a vaccination schema or protocol, and eventual immediate reactions.  The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile."/>
-    </grouping>
-    <grouping id="problem">
-      <name value="Problem"/>
-      <description value="The Problem resources are intended to capture a short description of a patient&#39;s clinical condition.   The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile."/>
-    </grouping>
-    <grouping id="scoreresults">
-      <name value="Score Results"/>
-      <description value="The Score Results resource captures an overal assessment score about a health indicator associated with a patient.   The vocabulary resources help ensure conformity and data consistency.   The profile defines the technical specifications.   A set of examples demonstrates the use of the profile."/>
-    </grouping>
-    <grouping id="referral">
-      <name value="Referral Prescription"/>
-      <description value="The Referral Prescription defines the exchange when ordering services such as nursing care, physiotherapy, or diagnostic procedures such as lab, imaging"/>
-    </grouping>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-addiction"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Addiction"/>
-      <description value="Addiction record logical model"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-addiction"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Addiction BE profile"/>
-      <description value="Belgian Profile to capture Addictions (on substances or others)"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-ext-addiction-quantifier"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Addiction Quantifier extension"/>
-      <description value="Belgian Extension to allow quantification of addictions (on substances or others) - for example 10 packs per week, 1 bottle per day"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/addiction-smoking"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example - Patient Smoking addiction"/>
-      <description value="Patient Smoking addiction"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-addiction-category"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Addiction Categories"/>
-      <description value="Addiction Category value set"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-addiction-code"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Addiction Codes"/>
-      <description value="Addiction Code value set"/>
-      <groupingId value="addiction"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-patientwill"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Patient Will"/>
-      <description value="Patient Will logical model"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-patientwill"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Patient Will core BE profile"/>
-      <description value="The Core BE profile for Patient Will"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-patientwill-category"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Patient Will Categories"/>
-      <description value="Patient Will Category code system"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-patientwill-category"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Patient Will Categories"/>
-      <description value="Patient Will Category value set"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-patientwill-code"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Patient Will codes"/>
-      <description value="Patient Will directive code system"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-patientwill-code"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Patient Will directives"/>
-      <description value="Patient Will directive value set"/>
-      <groupingId value="patientwill"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/patientwill-example"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example - Patient Will"/>
-      <description value="Patient Will"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill"/>
-      <groupingId value="patientwill"/>
-    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
@@ -652,430 +466,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/toto-hexa2"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto - 2nd hexavalent vaccination"/>
-      <description value="Toto - 2nd hexavalent vaccination"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/toto-hexa3"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto - 3rd hexavalent vaccination"/>
-      <description value="Toto - 3rd hexavalent vaccination"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/toto-hexa4-skipped"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto - 4th hexavalent vaccination - skipped (fever)"/>
-      <description value="Toto - 4th hexavalent vaccination - skipped (fever)"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/toto-hexa4-swelling"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto - 4th hexavalent vaccination"/>
-      <description value="Toto - 4th hexavalent vaccination"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/juan-hexa1-reported"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Juan - 1st hexa (reported)"/>
-      <description value="Juan - 1st hexa (reported)"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/juan-hexa2-reported-hospital"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Juan - 2nd hexa (hospital)"/>
-      <description value="Juan - 2nd hexa (hospital)"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/juan-hexa3-skipped"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Juan - 3rd hexa (not done)"/>
-      <description value="Juan - 3rd hexa (not done)"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/juan-hexa4"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Juan - 3rd hexa (effective)"/>
-      <description value="Juan - 3rd hexa (effective)"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/eva-hpv1-school"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Eva - HPV 1st dose"/>
-      <description value="Eva - HPV 1st dose"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/eva-hpv2-school"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Eva - HPV 2nd dose"/>
-      <description value="Eva - HPV 2nd dose"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/julia-refuse-hpv"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Julia - refuse HPV"/>
-      <description value="Julia - refuse HPV"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ImmunizationRecommendation"/>
-      </extension>
-      <reference>
-        <reference value="ImmunizationRecommendation/order-gabriel-flu"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Gabriel - Flu vaccine prescription"/>
-      <description value="Gabriel - flu vacccine prescription"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ImmunizationRecommendation"/>
-      </extension>
-      <reference>
-        <reference value="ImmunizationRecommendation/order-simon-hpv"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Simon - HPV vaccine prescription"/>
-      <description value="Simon - HPV vacccine prescription"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/erythema"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto reaction - erythema"/>
-      <description value="Toto - example of reaction (erythema)"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/fever"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Toto finding - fever"/>
-      <description value="Toto - example of finding that prevents vaccination (fever)"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/simon-hpv-at-work"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Simon HPV - work"/>
-      <description value="Simon HPV - work"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ImmunizationRecommendation"/>
-      </extension>
-      <reference>
-        <reference value="ImmunizationRecommendation/aymeric-rota"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Aymeric - rotavirus prescription"/>
-      <description value="Aymeric - rotavirus prescription"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/aymeric-rota1"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Aymeric - rotavirus 1st dose"/>
-      <description value="Aymeric - rotavirus 1st dose"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/aymeric-rota2"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Aymeric - rotavirus 2nd dose"/>
-      <description value="Aymeric - rotavirus 2nd dose"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/aymeric-rota3"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Aymeric - rotavirus 3rd dose"/>
-      <description value="Aymeric - rotavirus 3rd dose"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/gabriel-flu"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Gabriel - influenza vaccine"/>
-      <description value="Gabriel - influenza vaccine"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/observation-swelling"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Observation - swelling reaction"/>
-      <description value="Observation - swelling reaction"/>
-      <groupingId value="vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-problem"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Problem"/>
-      <description value="Problem logical model"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-problem"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Problem core BE profile"/>
-      <description value="The Core BE profile for Problem"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-ext-laterality"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Laterality extension"/>
-      <description value="Laterality"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-ext-problem-origin-type"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Extension - Problem origin type"/>
-      <description value="Extension for Problem origin type"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-problem-origin-type"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="ValueSet - Problem origin type"/>
-      <description value="Set of values for problem origin type"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-problem-origin-type"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="CodeSystem - Problem origin type"/>
-      <description value="Codes for Problem origin type"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-problem-category"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Code System Problem Category"/>
-      <description value="Code System Problem Category"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-problem-category"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Value Set Problem Category"/>
-      <description value="Value Set Problem Category"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-problem-code"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Problem Codes Value Set"/>
-      <description value="Problem Code Value Set"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-laterality"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Value Set Laterality"/>
-      <description value="Value Set Laterality"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-bodysite"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Code System Body Site"/>
-      <description value="Code System Body Site"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-vs-bodysite"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Value Set Body Site"/>
-      <description value="Value Set Body Site"/>
-      <groupingId value="problem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1191,30 +581,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-scoreresult"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Score Result Logical Model"/>
-      <description value="Score Result Logical Model"/>
-      <groupingId value="scoreresults"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-scoreresult"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Score Result Profile"/>
-      <description value="Score Result Observation profile"/>
-      <groupingId value="scoreresults"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1276,15 +642,56 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/patientwill-example"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-patientwill"/>
+      </reference>
+      <description value="This is the logical model of the patient will for a patient - in fact, each entry of the patient&#39;s will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.&#xD;&#xA;The Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-scoreresult"/>
+      </reference>
+      <description value="This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-problem"/>
+      </reference>
+      <description value="This is the logical model of the patient&#39;s problem entries in a record."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/be-model-referralprescription"/>
       </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Referral Prescription"/>
-      <description value="Referral Prescription logical model"/>
-      <groupingId value="referral"/>
+      <description value="Logical model describing the model for the prescription referral. This draft is used in the HL7 Belgian workgroup for referral."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-addiction"/>
+      </reference>
+      <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1294,6 +701,16 @@
         <reference value="StructureDefinition/be-patient"/>
       </reference>
       <description value="Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. If needed, an extension can be defined in a future iteration of these specifications: the &#39;deathlocation&#39; (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.), the &#39;insurancystatus&#39; (covered in a seperate FHIR resource: Coverage), &#39;insurancymembership&#39; (covered in a seperate FHIR resource: Coverage) and &#39;profession&#39; (covered in a possible future FHIR resource: OccupationalData.)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-patientwill"/>
+      </reference>
+      <name value="BEPatientWill"/>
+      <description value="****!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI **** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1336,46 +753,70 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/be-referral-category"/>
+        <reference value="ValueSet/be-vs-patientwill-category"/>
       </reference>
-      <description value="Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/org-msd-belgium"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/iex3"/>
-      </reference>
-      <name value="Example Immunization - iex3"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-reason-referral-status"/>
-      </reference>
-      <description value="Codes to explain the current status of a referral prescription."/>
+      <name value="Patient Will Category"/>
+      <description value="Score Value Set"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/be-status-reason"/>
+        <reference value="CodeSystem/be-cs-problem-category"/>
       </reference>
-      <name value="BeStatusReason"/>
-      <description value="Status reason in Belgium. Initially defined as supporting CodeSystem for the referral prescription."/>
+      <name value="Problem Category"/>
+      <description value="Problem Category"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-problem-origin-type"/>
+      </reference>
+      <name value="Problem Origin Type"/>
+      <description value="Problem Origin Type"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-patientwill-code"/>
+      </reference>
+      <name value="Patient Will directives Value Set"/>
+      <description value="Score Value Set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-patientwill-code"/>
+      </reference>
+      <name value="Patient Will Directive CodeSystem"/>
+      <description value="Patient Will Directive CodeSystem"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-bodysite"/>
+      </reference>
+      <name value="Body Site CodeSystem"/>
+      <description value="Body Site CodeSystem"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-patientwill-category"/>
+      </reference>
+      <name value="Patient Will Category CodeSystem"/>
+      <description value="Body Site CodeSystem"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1398,34 +839,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-1-hpv"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-1-hpv"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/org-sanofi"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-ext-inform-party"/>
-      </reference>
-      <name value="BeInformParty"/>
-      <description value="Extra parties that need to be informed of the outcome, besides the prescriber."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
@@ -1433,26 +846,6 @@
       </reference>
       <name value="Example AllergyIntolerance - allergyintolerance-encounterReference"/>
       <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/iex1"/>
-      </reference>
-      <name value="Example Immunization - iex1"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-tetanus-cautious-reinforcement"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-tetanus-cautious-reinforcement"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1466,41 +859,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Immunization/immunization-example-not-given-refusal"/>
+        <reference value="StructureDefinition/be-ext-laterality"/>
       </reference>
-      <name value="Example Immunization - immunization-example-not-given-refusal"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-not-given-contraindication"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-not-given-contraindication"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/org-uz-gent"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/covid-jan-2-discarded"/>
-      </reference>
-      <name value="Example Immunization - covid-jan-2-discarded"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+      <name value="Laterality extension"/>
+      <description value="An explicit statement of laterality of a lesion, or a treatment, etc."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1521,32 +886,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-reaction-swelling"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-reaction-swelling"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-referralprescription"/>
+        <reference value="StructureDefinition/be-scoreresult"/>
       </reference>
-      <description value="The common structure for referral prescription."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-not-given-stock"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-not-given-stock"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+      <name value="BEScoreResult"/>
+      <description value="Defines a patient&#39;s known problem, a diagnostic or antecedent that deserves attention."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1557,42 +903,6 @@
       </reference>
       <name value="CodeSystem Mini Nutritional Assessment scale"/>
       <description value="CodeSystem Mini Nutritional Assessment."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/org-kind-en-gezin"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-mistaken-entry-update"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-mistaken-entry-update"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/org-one-brussels"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/covid-jan-3"/>
-      </reference>
-      <name value="Example Immunization - covid-jan-3"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1614,53 +924,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Immunization/immunization-example-childhood-measles"/>
+        <reference value="ValueSet/be-vs-laterality"/>
       </reference>
-      <name value="Example Immunization - immunization-example-childhood-measles"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-measure"/>
-      </reference>
-      <name value="BeMEasure"/>
-      <description value="A record of an observation made by the patient or a professional, with or without a measurement device. This is the preferred profile to be used in specified cases like glucose monitoring, BMI, etc.&#xA;The list of cases that are supported by this profile (and for which this profile is preferred) is evolving, but for those cases that are included, this profile should be used, instead of a generic Observation."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/covid-jan-1"/>
-      </reference>
-      <name value="Example Immunization - covid-jan-1"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-mistaken-entry"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-mistaken-entry"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/iex2"/>
-      </reference>
-      <name value="Example Immunization - iex2"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
+      <name value="Laterality"/>
+      <description value="Laterality"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1669,16 +939,6 @@
       <reference>
         <reference value="Encounter/example-encounter-uzgent-contained"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization-example-prescribed-vaccination"/>
-      </reference>
-      <name value="Example Immunization - immunization-example-prescribed-vaccination"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -166,49 +166,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Allergy Intolerance</a>
+         <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Patient Will</a>
+         <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Addiction</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Vaccination</a>
+         <a href="#4">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#5">Problem</a>
+         <a href="#5">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#6">Score Results</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Referral Prescription</a>
+         <a href="#7">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#8">Structures: Questionnaires</a>
+         <a href="#8">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#9">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#10">Structures: Data Type Profiles</a>
-      </li>
-      <li>
-         <a href="#11">Structures: Extension Definitions</a>
-      </li>
-      <li>
-         <a href="#12">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#13">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#14">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#15">Other</a>
+         <a href="#9">Other</a>
       </li>
    </ul>
 </div>
@@ -217,99 +199,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Allergy Intolerance </h3>
+   <h3>Structures: Logical Models </h3>
    <p>
-    <p>Allergy / Intolerance resources. These artefacts define the constraints and vocabulary necessary to record allergies and intolerances, suspected or confirmed.  A few example resources and scenario demonstrate the use of these resources.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-allergyintolerance.html"
-                     title="StructureDefinition/be-allergyintolerance">AllergyIntolerance</a>
-               </td>
-               <td>
-<p>Allergy Intolerance profile</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-durant.html" title="Practitioner/durant">Example Practitioner - Dr Durant (GP)</a>
-               </td>
-               <td>
-<p>Dr. Paul Durant (GP)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-lenoir.html" title="Practitioner/lenoir">Example practitioner - Dr Lenoir</a>
-               </td>
-               <td>
-<p>Lr François Lenoir</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-noel.html" title="Patient/noel">Example Patient - Noel Joyeux</a>
-               </td>
-               <td>
-<p>Patient Noel Joyeux</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-noel-allergy.v0.html"
-                     title="AllergyIntolerance/noel-allergy.v0">Example - Suspected Allergy</a>
-               </td>
-               <td>
-<p>Suspected Allergy to Penicillin</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-noel-allergy.v1.html"
-                     title="AllergyIntolerance/noel-allergy.v1">Example - Refuted Allergy</a>
-               </td>
-               <td>
-<p>Allergy has been refuted - confirmed as non-existent</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-allergyintolerance1.html"
-                     title="AllergyIntolerance/allergyintolerance1">Example - Allergy 1 - peanut allergy</a>
-               </td>
-               <td>
-<p>Allergy to peanut</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-allergyintolerance2.html"
-                     title="AllergyIntolerance/allergyintolerance2">Example - Allergy 2 - Pollen allergy</a>
-               </td>
-               <td>
-<p>Allergy to pollen</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ExampleScenario-scenario-allergy.html"
-                     title="ExampleScenario/scenario-allergy">ExampleScenario - Suspected Allergy</a>
-               </td>
-               <td>
-<p>Suspected Allergy, then refuted</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Patient Will </h3>
-   <p>
-    <p>Patient Will profile and vocabulary. The Patient Will captures a patient’s expressed preferences related to care provision.   The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile.</p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 </p>
    <p>
       <table class="grid">
@@ -318,739 +210,54 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-be-model-patientwill.html"
-                     title="StructureDefinition/be-model-patientwill">Logical Model Patient Will</a>
+                     title="StructureDefinition/be-model-patientwill">StructureDefinition/be-model-patientwill</a>
                </td>
                <td>
-<p>Patient Will logical model</p>
+<p>This is the logical model of the patient will for a patient - in fact, each entry of the patient’s will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.
+The Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model.</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-patientwill.html"
-                     title="StructureDefinition/be-patientwill">Patient Will core BE profile</a>
-               </td>
-               <td>
-<p>The Core BE profile for Patient Will</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-patientwill-category.html"
-                     title="CodeSystem/be-cs-patientwill-category">Patient Will Categories</a>
-               </td>
-               <td>
-<p>Patient Will Category code system</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-patientwill-category.html"
-                     title="ValueSet/be-vs-patientwill-category">Patient Will Categories</a>
-               </td>
-               <td>
-<p>Patient Will Category value set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-patientwill-code.html"
-                     title="CodeSystem/be-cs-patientwill-code">Patient Will codes</a>
-               </td>
-               <td>
-<p>Patient Will directive code system</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-patientwill-code.html"
-                     title="ValueSet/be-vs-patientwill-code">Patient Will directives</a>
-               </td>
-               <td>
-<p>Patient Will directive value set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Consent-patientwill-example.html"
-                     title="Consent/patientwill-example">Example - Patient Will</a>
-               </td>
-               <td>
-<p>Patient Will</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Addiction </h3>
-   <p>
-    <p>The profile for Addiction, intended to capture known or suspected substance or other addictions.    The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-model-addiction.html"
-                     title="StructureDefinition/be-model-addiction">Logical Model Addiction</a>
-               </td>
-               <td>
-<p>Addiction record logical model</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-addiction.html"
-                     title="StructureDefinition/be-addiction">Addiction BE profile</a>
-               </td>
-               <td>
-<p>Belgian Profile to capture Addictions (on substances or others)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-addiction-quantifier.html"
-                     title="StructureDefinition/be-ext-addiction-quantifier">Addiction Quantifier extension</a>
-               </td>
-               <td>
-<p>Belgian Extension to allow quantification of addictions (on substances or others) - for example 10 packs per week, 1 bottle per day</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-addiction-smoking.html"
-                     title="Condition/addiction-smoking">Example - Patient Smoking addiction</a>
-               </td>
-               <td>
-<p>Patient Smoking addiction</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-addiction-category.html"
-                     title="ValueSet/be-vs-addiction-category">Addiction Categories</a>
-               </td>
-               <td>
-<p>Addiction Category value set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-addiction-code.html"
-                     title="ValueSet/be-vs-addiction-code">Addiction Codes</a>
-               </td>
-               <td>
-<p>Addiction Code value set</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
-   <h3>Vaccination </h3>
-   <p>
-    <p>Vaccination related resources.  These artefacts define the constraints and vocabulary necessary to record the administration of vaccine administrations, including the reference to a vaccination schema or protocol, and eventual immediate reactions.  The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-model-vaccination.html"
-                     title="StructureDefinition/be-model-vaccination">Logical Model Vaccination</a>
-               </td>
-               <td>
-<p>Vaccination logical model</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-vaccination.html"
-                     title="StructureDefinition/be-vaccination">Vaccination core BE profile</a>
-               </td>
-               <td>
-<p>The Core BE profile for Vaccination (event)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-vaccination-location.html"
-                     title="StructureDefinition/be-ext-vaccination-location">Location of the vaccination event</a>
-               </td>
-               <td>
-<p>Location of the vaccination event</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-care-location.html"
-                     title="CodeSystem/be-cs-care-location">CodeSystem - Care location</a>
-               </td>
-               <td>
-<p>The location of the care event</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-vaccination-confirmation-status.html"
-                     title="CodeSystem/be-cs-vaccination-confirmation-status">CodeSystem - vaccination confirmation status</a>
-               </td>
-               <td>
-<p>The list of vaccination confirmation status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-vaccination-status-reason.html"
-                     title="CodeSystem/be-cs-vaccination-status-reason">CodeSystem - vaccination status-reason</a>
-               </td>
-               <td>
-<p>The list of vaccination status reason</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-vaccination-administration-route.html"
-                     title="CodeSystem/be-cs-vaccination-administration-route">CodeSystem - Vaccine Administration Route</a>
-               </td>
-               <td>
-<p>The list of administration routes for vaccines</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-care-location.html"
-                     title="ValueSet/be-vs-care-location">ValueSet - Care location</a>
-               </td>
-               <td>
-<p>The list of Care locations</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-vaccination-administration-route.html"
-                     title="ValueSet/be-vs-vaccination-administration-route">ValueSet - Vaccine Administration Route</a>
-               </td>
-               <td>
-<p>The list of administration routes for vaccines</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-vaccination-confirmation-status.html"
-                     title="ValueSet/be-vs-vaccination-confirmation-status">ValueSet - vaccination confirmation status</a>
-               </td>
-               <td>
-<p>The list of vaccination confirmation status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-vaccination-status-reason.html"
-                     title="ValueSet/be-vs-vaccination-status-reason">ValueSet - vaccination status reason</a>
-               </td>
-               <td>
-<p>The list of vaccination status reason</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-administeredProduct.html"
-                     title="StructureDefinition/be-ext-administeredProduct">Extension - Administered Product</a>
-               </td>
-               <td>
-<p>Administered Product</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-vaccination-originalorder.html"
-                     title="StructureDefinition/be-ext-vaccination-originalorder">Extension - Vaccination original order</a>
-               </td>
-               <td>
-<p>Vaccination original order  (e.g. prescription)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-recorder.html"
-                     title="StructureDefinition/be-ext-recorder">Extension - Vaccination recorder</a>
-               </td>
-               <td>
-<p>Vaccination recorder</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-vaccination-confirmationStatus.html"
-                     title="StructureDefinition/be-ext-vaccination-confirmationStatus">Extension - Vaccination confirmation status</a>
-               </td>
-               <td>
-<p>Vaccination confirmation status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-cnk-code.html"
-                     title="NamingSystem/be-ns-cnk-code">NamingSystem - CNK Code</a>
-               </td>
-               <td>
-<p>Naming System - CNK Product Codes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-nihdi-organization.html"
-                     title="NamingSystem/be-ns-nihdi-organization">NamingSystem - NIHDI Organization</a>
-               </td>
-               <td>
-<p>NamingSystem - NIHDI Organization number</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-nihdi-professional.html"
-                     title="NamingSystem/be-ns-nihdi-professional">NamingSystem - NIHDI Professional</a>
-               </td>
-               <td>
-<p>NamingSystem - NIHDI Professional numbers</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-one-vaccination.html"
-                     title="NamingSystem/be-ns-one-vaccination">NamingSystem - ONE Vaccination Id</a>
-               </td>
-               <td>
-<p>NamingSystem for ONE vaccination ID</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-product-manufacturer.html"
-                     title="NamingSystem/be-ns-product-manufacturer">NamingSystem - Product Manufacturer</a>
-               </td>
-               <td>
-<p>NamingSystem - Product Manufacturer</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-toto-hexa1.html" title="Immunization/toto-hexa1">Toto - First hexavalent vaccination</a>
-               </td>
-               <td>
-<p>Toto - First hexavalent vaccination</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-toto-hexa2.html" title="Immunization/toto-hexa2">Toto - 2nd hexavalent vaccination</a>
-               </td>
-               <td>
-<p>Toto - 2nd hexavalent vaccination</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-toto-hexa3.html" title="Immunization/toto-hexa3">Toto - 3rd hexavalent vaccination</a>
-               </td>
-               <td>
-<p>Toto - 3rd hexavalent vaccination</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-toto-hexa4-skipped.html"
-                     title="Immunization/toto-hexa4-skipped">Toto - 4th hexavalent vaccination - skipped (fever)</a>
-               </td>
-               <td>
-<p>Toto - 4th hexavalent vaccination - skipped (fever)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-toto-hexa4-swelling.html"
-                     title="Immunization/toto-hexa4-swelling">Toto - 4th hexavalent vaccination</a>
-               </td>
-               <td>
-<p>Toto - 4th hexavalent vaccination</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-juan-hexa1-reported.html"
-                     title="Immunization/juan-hexa1-reported">Juan - 1st hexa (reported)</a>
-               </td>
-               <td>
-<p>Juan - 1st hexa (reported)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-juan-hexa2-reported-hospital.html"
-                     title="Immunization/juan-hexa2-reported-hospital">Juan - 2nd hexa (hospital)</a>
-               </td>
-               <td>
-<p>Juan - 2nd hexa (hospital)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-juan-hexa3-skipped.html"
-                     title="Immunization/juan-hexa3-skipped">Juan - 3rd hexa (not done)</a>
-               </td>
-               <td>
-<p>Juan - 3rd hexa (not done)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-juan-hexa4.html" title="Immunization/juan-hexa4">Juan - 3rd hexa (effective)</a>
-               </td>
-               <td>
-<p>Juan - 3rd hexa (effective)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-eva-hpv1-school.html"
-                     title="Immunization/eva-hpv1-school">Eva - HPV 1st dose</a>
-               </td>
-               <td>
-<p>Eva - HPV 1st dose</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-eva-hpv2-school.html"
-                     title="Immunization/eva-hpv2-school">Eva - HPV 2nd dose</a>
-               </td>
-               <td>
-<p>Eva - HPV 2nd dose</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-julia-refuse-hpv.html"
-                     title="Immunization/julia-refuse-hpv">Julia - refuse HPV</a>
-               </td>
-               <td>
-<p>Julia - refuse HPV</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-order-gabriel-flu.html"
-                     title="ImmunizationRecommendation/order-gabriel-flu">Gabriel - Flu vaccine prescription</a>
-               </td>
-               <td>
-<p>Gabriel - flu vacccine prescription</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-order-simon-hpv.html"
-                     title="ImmunizationRecommendation/order-simon-hpv">Simon - HPV vaccine prescription</a>
-               </td>
-               <td>
-<p>Simon - HPV vacccine prescription</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-erythema.html" title="Observation/erythema">Toto reaction - erythema</a>
-               </td>
-               <td>
-<p>Toto - example of reaction (erythema)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-fever.html" title="Observation/fever">Toto finding - fever</a>
-               </td>
-               <td>
-<p>Toto - example of finding that prevents vaccination (fever)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-simon-hpv-at-work.html"
-                     title="Immunization/simon-hpv-at-work">Simon HPV - work</a>
-               </td>
-               <td>
-<p>Simon HPV - work</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-aymeric-rota.html"
-                     title="ImmunizationRecommendation/aymeric-rota">Aymeric - rotavirus prescription</a>
-               </td>
-               <td>
-<p>Aymeric - rotavirus prescription</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-aymeric-rota1.html"
-                     title="Immunization/aymeric-rota1">Aymeric - rotavirus 1st dose</a>
-               </td>
-               <td>
-<p>Aymeric - rotavirus 1st dose</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-aymeric-rota2.html"
-                     title="Immunization/aymeric-rota2">Aymeric - rotavirus 2nd dose</a>
-               </td>
-               <td>
-<p>Aymeric - rotavirus 2nd dose</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-aymeric-rota3.html"
-                     title="Immunization/aymeric-rota3">Aymeric - rotavirus 3rd dose</a>
-               </td>
-               <td>
-<p>Aymeric - rotavirus 3rd dose</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-gabriel-flu.html" title="Immunization/gabriel-flu">Gabriel - influenza vaccine</a>
-               </td>
-               <td>
-<p>Gabriel - influenza vaccine</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-observation-swelling.html"
-                     title="Observation/observation-swelling">Observation - swelling reaction</a>
-               </td>
-               <td>
-<p>Observation - swelling reaction</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
-   <h3>Problem </h3>
-   <p>
-    <p>The Problem resources are intended to capture a short description of a patient’s clinical condition.   The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-model-problem.html"
-                     title="StructureDefinition/be-model-problem">Logical Model Problem</a>
-               </td>
-               <td>
-<p>Problem logical model</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-problem.html"
-                     title="StructureDefinition/be-problem">Problem core BE profile</a>
-               </td>
-               <td>
-<p>The Core BE profile for Problem</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-laterality.html"
-                     title="StructureDefinition/be-ext-laterality">Laterality extension</a>
-               </td>
-               <td>
-<p>Laterality</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-problem-origin-type.html"
-                     title="StructureDefinition/be-ext-problem-origin-type">Extension - Problem origin type</a>
-               </td>
-               <td>
-<p>Extension for Problem origin type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-problem-origin-type.html"
-                     title="ValueSet/be-vs-problem-origin-type">ValueSet - Problem origin type</a>
-               </td>
-               <td>
-<p>Set of values for problem origin type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-problem-origin-type.html"
-                     title="CodeSystem/be-cs-problem-origin-type">CodeSystem - Problem origin type</a>
-               </td>
-               <td>
-<p>Codes for Problem origin type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-problem-category.html"
-                     title="CodeSystem/be-cs-problem-category">Code System Problem Category</a>
-               </td>
-               <td>
-<p>Code System Problem Category</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-problem-category.html"
-                     title="ValueSet/be-vs-problem-category">Value Set Problem Category</a>
-               </td>
-               <td>
-<p>Value Set Problem Category</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-problem-code.html"
-                     title="ValueSet/be-vs-problem-code">Problem Codes Value Set</a>
-               </td>
-               <td>
-<p>Problem Code Value Set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-laterality.html" title="ValueSet/be-vs-laterality">Value Set Laterality</a>
-               </td>
-               <td>
-<p>Value Set Laterality</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-bodysite.html" title="CodeSystem/be-cs-bodysite">Code System Body Site</a>
-               </td>
-               <td>
-<p>Code System Body Site</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-bodysite.html" title="ValueSet/be-vs-bodysite">Value Set Body Site</a>
-               </td>
-               <td>
-<p>Value Set Body Site</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="6"> </a>
-   <h3>Score Results </h3>
-   <p>
-    <p>The Score Results resource captures an overal assessment score about a health indicator associated with a patient.   The vocabulary resources help ensure conformity and data consistency.   The profile defines the technical specifications.   A set of examples demonstrates the use of the profile.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-be-model-scoreresult.html"
-                     title="StructureDefinition/be-model-scoreresult">Score Result Logical Model</a>
+                     title="StructureDefinition/be-model-scoreresult">StructureDefinition/be-model-scoreresult</a>
                </td>
                <td>
-<p>Score Result Logical Model</p>
+<p>This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score…</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-be-scoreresult.html"
-                     title="StructureDefinition/be-scoreresult">Score Result Profile</a>
+                  <a href="StructureDefinition-be-model-problem.html"
+                     title="StructureDefinition/be-model-problem">StructureDefinition/be-model-problem</a>
                </td>
                <td>
-<p>Score Result Observation profile</p>
+<p>This is the logical model of the patient’s problem entries in a record.</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-example-findRisc-screeningScoreResult.html"
-                     title="Observation/example-findRisc-screeningScoreResult">Example - FINDRISC score result</a>
-               </td>
-               <td>
-<p>FIDNRISC score result example, obtained from a QuestionnaireResponse</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-score.html" title="CodeSystem/be-cs-score">Score Result Code system</a>
-               </td>
-               <td>
-<p>Score Result codes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-score-category.html"
-                     title="CodeSystem/be-cs-score-category">Score Result Category Code system</a>
-               </td>
-               <td>
-<p>Score Result Category</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-score.html" title="ValueSet/be-vs-score">Score Result Value Set</a>
-               </td>
-               <td>
-<p>Score Result value set</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-scorecategory.html"
-                     title="ValueSet/be-vs-scorecategory">Score Category Value Set</a>
-               </td>
-               <td>
-<p>Score Category value set</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="7"> </a>
-   <h3>Referral Prescription </h3>
-   <p>
-    <p>The Referral Prescription defines the exchange when ordering services such as nursing care, physiotherapy, or diagnostic procedures such as lab, imaging</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-be-model-referralprescription.html"
-                     title="StructureDefinition/be-model-referralprescription">Logical Model Referral Prescription</a>
+                     title="StructureDefinition/be-model-referralprescription">StructureDefinition/be-model-referralprescription</a>
                </td>
                <td>
-<p>Referral Prescription logical model</p>
+<p>Logical model describing the model for the prescription referral. This draft is used in the HL7 Belgian workgroup for referral.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-model-addiction.html"
+                     title="StructureDefinition/be-model-addiction">StructureDefinition/be-model-addiction</a>
+               </td>
+               <td>
+<p>This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.
+ This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="8"> </a>
+   <a name="2"> </a>
    <h3>Structures: Questionnaires </h3>
    <p>
     <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
@@ -1080,7 +287,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -1096,6 +303,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. If needed, an extension can be defined in a future iteration of these specifications: the ‘deathlocation’ (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.), the ‘insurancystatus’ (covered in a seperate FHIR resource: Coverage), ‘insurancymembership’ (covered in a seperate FHIR resource: Coverage) and ‘profession’ (covered in a possible future FHIR resource: OccupationalData.)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-patientwill.html"
+                     title="StructureDefinition/be-patientwill">BEPatientWill</a>
+               </td>
+               <td>
+<p><strong>**!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI **</strong> Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile.</p>
 </td>
             </tr>
             <tr>
@@ -1127,27 +343,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-be-referralprescription.html"
-                     title="StructureDefinition/be-referralprescription">StructureDefinition/be-referralprescription</a>
+                  <a href="StructureDefinition-be-scoreresult.html"
+                     title="StructureDefinition/be-scoreresult">BEScoreResult</a>
                </td>
                <td>
-<p>The common structure for referral prescription.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-be-measure.html"
-                     title="StructureDefinition/be-measure">BeMEasure</a>
-               </td>
-               <td>
-<p>A record of an observation made by the patient or a professional, with or without a measurement device. This is the preferred profile to be used in specified cases like glucose monitoring, BMI, etc.
-The list of cases that are supported by this profile (and for which this profile is preferred) is evolving, but for those cases that are included, this profile should be used, instead of a generic Observation.</p>
+<p>Defines a patient’s known problem, a diagnostic or antecedent that deserves attention.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="10"> </a>
+   <a name="4"> </a>
    <h3>Structures: Data Type Profiles </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -1168,7 +374,7 @@ The list of cases that are supported by this profile (and for which this profile
          </tbody>
       </table>
    </p>
-   <a name="11"> </a>
+   <a name="5"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -1188,17 +394,17 @@ The list of cases that are supported by this profile (and for which this profile
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-be-ext-inform-party.html"
-                     title="StructureDefinition/be-ext-inform-party">BeInformParty</a>
+                  <a href="StructureDefinition-be-ext-laterality.html"
+                     title="StructureDefinition/be-ext-laterality">Laterality extension</a>
                </td>
                <td>
-<p>Extra parties that need to be informed of the outcome, besides the prescriber.</p>
+<p>An explicit statement of laterality of a lesion, or a treatment, etc.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="12"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -1209,26 +415,34 @@ The list of cases that are supported by this profile (and for which this profile
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-be-referral-category.html"
-                     title="ValueSet/be-referral-category">ValueSet/be-referral-category</a>
+                  <a href="ValueSet-be-vs-patientwill-category.html"
+                     title="ValueSet/be-vs-patientwill-category">Patient Will Category</a>
                </td>
                <td>
-<p>Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset.</p>
+<p>Score Value Set</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-be-reason-referral-status.html"
-                     title="ValueSet/be-reason-referral-status">ValueSet/be-reason-referral-status</a>
+                  <a href="ValueSet-be-vs-patientwill-code.html"
+                     title="ValueSet/be-vs-patientwill-code">Patient Will directives Value Set</a>
                </td>
                <td>
-<p>Codes to explain the current status of a referral prescription.</p>
+<p>Score Value Set</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-vs-laterality.html" title="ValueSet/be-vs-laterality">Laterality</a>
+               </td>
+               <td>
+<p>Laterality</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="13"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -1239,11 +453,46 @@ The list of cases that are supported by this profile (and for which this profile
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-be-status-reason.html"
-                     title="CodeSystem/be-status-reason">BeStatusReason</a>
+                  <a href="CodeSystem-be-cs-problem-category.html"
+                     title="CodeSystem/be-cs-problem-category">Problem Category</a>
                </td>
                <td>
-<p>Status reason in Belgium. Initially defined as supporting CodeSystem for the referral prescription.</p>
+<p>Problem Category</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-cs-problem-origin-type.html"
+                     title="CodeSystem/be-cs-problem-origin-type">Problem Origin Type</a>
+               </td>
+               <td>
+<p>Problem Origin Type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-cs-patientwill-code.html"
+                     title="CodeSystem/be-cs-patientwill-code">Patient Will Directive CodeSystem</a>
+               </td>
+               <td>
+<p>Patient Will Directive CodeSystem</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-cs-bodysite.html" title="CodeSystem/be-cs-bodysite">Body Site CodeSystem</a>
+               </td>
+               <td>
+<p>Body Site CodeSystem</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-be-cs-patientwill-category.html"
+                     title="CodeSystem/be-cs-patientwill-category">Patient Will Category CodeSystem</a>
+               </td>
+               <td>
+<p>Body Site CodeSystem</p>
 </td>
             </tr>
             <tr>
@@ -1265,7 +514,7 @@ The list of cases that are supported by this profile (and for which this profile
          </tbody>
       </table>
    </p>
-   <a name="14"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -1276,19 +525,8 @@ The list of cases that are supported by this profile (and for which this profile
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-iex3.html" title="Immunization/iex3">Example Immunization - iex3</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html"
                      title="AllergyIntolerance/allergyintolerance-encounterReference-contained">Example AllergyIntolerance - allergyintolerance-encounterReference-contained</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-1-hpv.html"
-                     title="Immunization/immunization-example-1-hpv">Example Immunization - immunization-example-1-hpv</a>
                </td>
             </tr>
             <tr>
@@ -1297,90 +535,10 @@ The list of cases that are supported by this profile (and for which this profile
                      title="AllergyIntolerance/allergyintolerance-encounterReference">Example AllergyIntolerance - allergyintolerance-encounterReference</a>
                </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-iex1.html" title="Immunization/iex1">Example Immunization - iex1</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-tetanus-cautious-reinforcement.html"
-                     title="Immunization/immunization-example-tetanus-cautious-reinforcement">Example Immunization - immunization-example-tetanus-cautious-reinforcement</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-not-given-refusal.html"
-                     title="Immunization/immunization-example-not-given-refusal">Example Immunization - immunization-example-not-given-refusal</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-not-given-contraindication.html"
-                     title="Immunization/immunization-example-not-given-contraindication">Example Immunization - immunization-example-not-given-contraindication</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-covid-jan-2-discarded.html"
-                     title="Immunization/covid-jan-2-discarded">Example Immunization - covid-jan-2-discarded</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-reaction-swelling.html"
-                     title="Immunization/immunization-example-reaction-swelling">Example Immunization - immunization-example-reaction-swelling</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-not-given-stock.html"
-                     title="Immunization/immunization-example-not-given-stock">Example Immunization - immunization-example-not-given-stock</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-mistaken-entry-update.html"
-                     title="Immunization/immunization-example-mistaken-entry-update">Example Immunization - immunization-example-mistaken-entry-update</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-covid-jan-3.html" title="Immunization/covid-jan-3">Example Immunization - covid-jan-3</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-childhood-measles.html"
-                     title="Immunization/immunization-example-childhood-measles">Example Immunization - immunization-example-childhood-measles</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-covid-jan-1.html" title="Immunization/covid-jan-1">Example Immunization - covid-jan-1</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-mistaken-entry.html"
-                     title="Immunization/immunization-example-mistaken-entry">Example Immunization - immunization-example-mistaken-entry</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-iex2.html" title="Immunization/iex2">Example Immunization - iex2</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization-example-prescribed-vaccination.html"
-                     title="Immunization/immunization-example-prescribed-vaccination">Example Immunization - immunization-example-prescribed-vaccination</a>
-               </td>
-            </tr>
          </tbody>
       </table>
    </p>
-   <a name="15"> </a>
+   <a name="9"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -1391,36 +549,14 @@ The list of cases that are supported by this profile (and for which this profile
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-org-msd-belgium.html"
-                     title="Organization/org-msd-belgium">Organization/org-msd-belgium</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-org-sanofi.html" title="Organization/org-sanofi">Organization/org-sanofi</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-org-uz-gent.html" title="Organization/org-uz-gent">Organization/org-uz-gent</a>
+                  <a href="Consent-patientwill-example.html"
+                     title="Consent/patientwill-example">Consent/patientwill-example</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Encounter-example-encounter-uzgent.html"
                      title="Encounter/example-encounter-uzgent">Encounter/example-encounter-uzgent</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-org-kind-en-gezin.html"
-                     title="Organization/org-kind-en-gezin">Organization/org-kind-en-gezin</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-org-one-brussels.html"
-                     title="Organization/org-one-brussels">Organization/org-one-brussels</a>
                </td>
             </tr>
             <tr>
@@ -1454,7 +590,7 @@ The list of cases that are supported by this profile (and for which this profile
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://somewhere.org">RIZIV-INAMI</a>.  Package hl7.fhir.be.riziv#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 13, 2021 09:41+0000">2021-06-13</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://somewhere.org">RIZIV-INAMI</a>.  Package hl7.fhir.be.riziv#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 13, 2021 14:02+0000">2021-06-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

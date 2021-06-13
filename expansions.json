@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d6b9bacc-3662-465c-a8ab-2bd5a787c1a9",
+  "id" : "7c6fbca0-d680-40bf-8a0f-b96b5092858b",
   "meta" : {
-    "lastUpdated" : "2021-06-13T09:41:04.600+00:00"
+    "lastUpdated" : "2021-06-13T14:02:07.387+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -39,8 +39,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e22a7309-f8bb-42b4-bea7-32f43fd8fb55",
-        "timestamp" : "2021-06-13T09:41:28+00:00",
+        "identifier" : "urn:uuid:4c18020e-d22b-4df5-8611-88a1997beef0",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -102,8 +102,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a095d03f-a6e1-4ada-a376-ce5e37c3c3af",
-        "timestamp" : "2021-06-13T09:41:28+00:00",
+        "identifier" : "urn:uuid:ec69dc4d-90f5-419f-85ab-a3cdd91a214d",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -225,8 +225,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd1e2e90-86a8-4baa-9833-9f85fa2f3800",
-        "timestamp" : "2021-06-13T09:41:28+00:00",
+        "identifier" : "urn:uuid:55200458-9a1b-4953-8854-45530cb8faa0",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 33,
         "parameter" : [{
           "name" : "excludeNested",
@@ -413,138 +413,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-referral-category",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2021</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-363679005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005\">363679005</a></td><td>Imaging</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91251008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91251008\">91251008</a></td><td>Physical therapy procedure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-9632001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9632001\">9632001</a></td><td>Nursing procedure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory test</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category",
-      "version" : "0.1.0",
-      "name" : "BeReferralCategory",
-      "status" : "draft",
-      "date" : "2021-02-08T13:26:39+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:29e28c56-f17e-4863-afaa-6a625e654cfc",
-        "timestamp" : "2021-06-13T09:41:28+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "363679005",
-          "display" : "Imaging"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "91251008",
-          "display" : "Physical therapy procedure"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "9632001",
-          "display" : "Nursing procedure"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "15220000",
-          "display" : "Laboratory test"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-reason-referral-status",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: maroon 1px solid; background-color: #FFCCCC; padding: 8px\"><p>Warning: this expansion is generated from a fragment of the code system <a href=\"CodeSystem-be-status-reason.html\">BeStatusReason</a> and may be missing codes, or include codes that are not valid</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-status-reason.html\">BeStatusReason v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-status-reason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-created\"> </a>created</td><td>created</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-not-used-by-patient\"> </a>not-used-by-patient</td><td>not-used-by-patient</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
-      "version" : "0.1.0",
-      "name" : "BeReasonReferralStatus",
-      "status" : "active",
-      "date" : "2021-02-08T13:26:39+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Codes to explain the current status of a referral prescription.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment",
-          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"
-        }],
-        "identifier" : "urn:uuid:e44453ee-5898-4b36-8004-98b328016209",
-        "timestamp" : "2021-06-13T09:41:29+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason",
-          "code" : "created",
-          "display" : "created"
-        },
-        {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason",
-          "code" : "not-used-by-patient",
-          "display" : "not-used-by-patient"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -558,7 +426,7 @@
       "name" : "BeVSVaccinationConfirmationStatus",
       "title" : "Vaccination status Value Set",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -578,8 +446,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6aca7877-6f83-4a78-b4a1-959d4f7cbc31",
-        "timestamp" : "2021-06-13T09:41:29+00:00",
+        "identifier" : "urn:uuid:6bbba8e8-0b03-4846-9a91-1339fb132e36",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -621,7 +489,7 @@
       "name" : "BeVSCareLocation",
       "title" : "Care Location Value Set",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -641,8 +509,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:29819c44-85de-4667-9d1b-dabe4f461592",
-        "timestamp" : "2021-06-13T09:41:29+00:00",
+        "identifier" : "urn:uuid:bacea1b5-0635-462d-afec-71a3153daa00",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 23,
         "parameter" : [{
           "name" : "excludeNested",
@@ -784,7 +652,7 @@
       "name" : "BeVSVaccineAdministrationRoute",
       "title" : "Vaccine Administration Route",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -804,8 +672,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fe3b54bb-2d65-4c29-b1ed-a6d70a11b1e1",
-        "timestamp" : "2021-06-13T09:41:29+00:00",
+        "identifier" : "urn:uuid:433c2296-a13c-4369-a73f-ad02d693002d",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -876,7 +744,7 @@
       "name" : "BeVSVaccinationStatusReason",
       "title" : "Vaccination status reason Value Set",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -896,8 +764,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:441ec9f6-c7f1-4763-9dbc-5339dc8114de",
-        "timestamp" : "2021-06-13T09:41:29+00:00",
+        "identifier" : "urn:uuid:45d25dd5-2b7f-4473-b5df-14bcc392dcc8",
+        "timestamp" : "2021-06-13T14:02:30+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -950,253 +818,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-bodysite",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-bodysite.html\">Body Site CodeSystem v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-bodysite.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-bodysite-IM\"> </a><a href=\"CodeSystem-be-cs-bodysite.html#be-cs-bodysite-IM\">IM</a></td><td>Intramuscular</td><td/></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite",
-      "version" : "0.1.0",
-      "name" : "BeVSBodySite",
-      "title" : "Body Site",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Body Site",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:ccecfa1d-3d2f-4b32-b4ac-c8ef7a72b6f4",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite",
-          "code" : "IM",
-          "display" : "Intramuscular"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-problem-origin-type",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-problem-origin-type.html\">Problem Origin Type v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-problem-origin-type.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-referral\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-referral\">referral</a></td><td>Referral order</td><td>Following a referral order</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-own-initiative\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-own-initiative\">own-initiative</a></td><td>Patient's own initiative</td><td>The patient has arrived on their own initiative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-counsel\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-counsel\">counsel</a></td><td>Advice or recommendation from another provider (no prescription)</td><td>From an advice or recommendation of a health professional (without prescription)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-other\"> </a><a href=\"CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-other\">other</a></td><td>other</td><td>Other</td></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
-      "version" : "0.1.0",
-      "name" : "BeVSProblemOriginType",
-      "title" : "Problem Origin Type",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Problem Origin Type",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:3efa59e3-a0d8-4365-bd00-3bc5bf38c114",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
-          "code" : "referral",
-          "display" : "Referral order"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
-          "code" : "own-initiative",
-          "display" : "Patient's own initiative"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
-          "code" : "counsel",
-          "display" : "Advice or recommendation from another provider (no prescription)"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
-          "code" : "other",
-          "display" : "other"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-addiction-code",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-      "version" : "0.1.0",
-      "name" : "BeVSAddictionCode",
-      "title" : "Addiction Code",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Addiction code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:106425dc-4554-4557-846b-30178464b627",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-problem-category",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-cs-problem-category.html\">Problem Category v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-be-cs-problem-category.html\"><code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-diagnosis\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-diagnosis\">diagnosis</a></td><td>Diagnosis</td><td>A disease identified from a clinical reasoning, based on pathological and physiological ascertainments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-problem\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-problem\">problem</a></td><td>Problem</td><td>Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-risk\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-risk\">risk</a></td><td>Risk</td><td>Identification of a health problem or situation that may require ongoing monitoring or management</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-antecedent\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-antecedent\">antecedent</a></td><td>Antecedent</td><td>Information about a problem that has been resolved</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-congenital\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-congenital\">congenital</a></td><td>Congenital anomaly</td><td>Congenital anomaly</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-conclusion\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-conclusion\">conclusion</a></td><td>Conclusion</td><td>Informations about a conclusion from anamnesis performed by a professional other than a physician</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-other\"> </a><a href=\"CodeSystem-be-cs-problem-category.html#be-cs-problem-category-other\">other</a></td><td>Other</td><td>Other</td></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category",
-      "version" : "0.1.0",
-      "name" : "BeVSProblemCategory",
-      "title" : "Problem Category",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Problem Category",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:68e0975c-1c17-4876-ad83-0ecc93e0af0f",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "total" : 7,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "diagnosis",
-          "display" : "Diagnosis"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "problem",
-          "display" : "Problem"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "risk",
-          "display" : "Risk"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "antecedent",
-          "display" : "Antecedent"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "congenital",
-          "display" : "Congenital anomaly"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "conclusion",
-          "display" : "Conclusion"
-        },
-        {
-          "system" : "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
-          "code" : "other",
-          "display" : "Other"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1210,7 +831,7 @@
       "name" : "BeVSScoreCategory",
       "title" : "Score Category Value Set",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1230,8 +851,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c7de6195-1eec-4350-bc80-bc5c66a1970b",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:aa6499ac-feeb-45ec-b30b-4858d897ef65",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1277,8 +898,8 @@
       "name" : "ModifiedKatzScaleBathing",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:ed367f43-5d86-41b0-b498-efe1513c203f",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:16ef264a-0d67-4d07-a6db-a67ba42fadd4",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1325,8 +946,8 @@
       "name" : "ModifiedKatzScaleDressing",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:fc7f608a-0635-434e-a44e-fe70f36480aa",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:8fca8410-b77c-439f-a47f-d677890777f1",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1373,8 +994,8 @@
       "name" : "ModifiedKatzScaleTransferring",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:83d23de9-5696-45f4-926e-5552602f387f",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:3def9bf7-7c2d-4082-8d2f-0e612ac745f5",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1421,8 +1042,8 @@
       "name" : "ModifiedKatzScaleToileting",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:b7ae8071-68d3-41c1-ade1-29a7aec88c69",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:cb9c5a19-84ce-4991-8e10-7f3953766a1b",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1469,8 +1090,8 @@
       "name" : "ModifiedKatzScaleContinence",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:a51f2b20-4661-49a7-89af-268d733f5959",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:4a247b52-8007-4838-ad87-e836efc70a6d",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1517,8 +1138,8 @@
       "name" : "ModifiedKatzScaleFeeding",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:961c1ab7-825f-4fa4-ac10-5d115485b0ea",
-        "timestamp" : "2021-06-13T09:41:31+00:00",
+        "identifier" : "urn:uuid:65f9c3ae-60be-406f-85f8-ec6d86f5c01b",
+        "timestamp" : "2021-06-13T14:02:31+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1552,92 +1173,6 @@
     }
   },
   {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-addiction-code",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-      "version" : "0.1.0",
-      "name" : "BeVSAddictionCode",
-      "title" : "Addiction Code",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Addiction code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:106425dc-4554-4557-846b-30178464b627",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "be-vs-addiction-code",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-      "version" : "0.1.0",
-      "name" : "BeVSAddictionCode",
-      "title" : "Addiction Code",
-      "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
-      "publisher" : "RIZIV-INAMI",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://somewhere.org"
-        }]
-      }],
-      "description" : "Addiction code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "056"
-        },
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:106425dc-4554-4557-846b-30178464b627",
-        "timestamp" : "2021-06-13T09:41:30+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire#vs-mna-food-intake",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1651,8 +1186,8 @@
       "name" : "MiniNutritionalAssessmentFoodIntake",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:35aeb61c-f7eb-4810-a7ac-6fda4d29b67b",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:e9292903-a4f9-427a-95e4-011498bf4376",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1694,8 +1229,8 @@
       "name" : "MiniNutritionalAssessmentWeightLoss",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:6f969c83-c0f2-445f-854d-0309675bae8a",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:1bb74130-1072-4b1c-9c91-d76a88bcd379",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1742,8 +1277,8 @@
       "name" : "MiniNutritionalAssessmentMobility",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:50556b0f-1945-4b44-868c-e1a1a2ab20cc",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:609dae89-d101-4f43-9328-f411bdc7065d",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1785,8 +1320,8 @@
       "name" : "MiniNutritionalAssessmentStress",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:f8e00208-e62b-47b1-aaca-0353443a7791",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:0b9d0b98-5117-499f-bbf4-f55b10bfa561",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1823,8 +1358,8 @@
       "name" : "MiniNutritionalAssessmentNeuropsychological",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:07128a5b-e271-4451-87d8-fd8d2e10c9bf",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:a1c29e8f-f100-47a2-8cac-ecbd9fac122f",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1866,8 +1401,8 @@
       "name" : "MiniNutritionalAssessmentBMI",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:39525b83-1c92-4d74-bf64-70711680b5c1",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:3654cafa-ad74-464c-ab90-73073e859d92",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1914,7 +1449,7 @@
       "name" : "BeVSLaterality",
       "title" : "Laterality",
       "status" : "draft",
-      "date" : "2021-06-13T09:41:04+00:00",
+      "date" : "2021-06-13T14:02:07+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1934,8 +1469,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:311b4559-c03a-41c6-9ffd-5672d07a7f71",
-        "timestamp" : "2021-06-13T09:41:32+00:00",
+        "identifier" : "urn:uuid:4aae0e2c-ff84-4562-bc89-a155a838e91b",
+        "timestamp" : "2021-06-13T14:02:32+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",

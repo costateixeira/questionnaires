@@ -22,7 +22,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-06-13T09:41:04+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-06-13T14:02:07+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:Questionnaire.contact [
      fhir:index 0;
@@ -47,14 +47,68 @@
   fhir:Questionnaire.item [
      fhir:index 0;
      fhir:Questionnaire.item.linkId [ fhir:value "patient" ];
-     fhir:Questionnaire.item.text [ fhir:value "Patient" ];
+     fhir:Questionnaire.item.text [
+       fhir:value "Patient";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "lang" ];
+           fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "content" ];
+           fhir:Extension.valueString [ fhir:value "Patiënt" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "lang" ];
+           fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "content" ];
+           fhir:Extension.valueString [ fhir:value "Patient" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+       ]
+     ];
      fhir:Questionnaire.item.type [ fhir:value "group" ];
      fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
      fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
      fhir:Questionnaire.item.item [
        fhir:index 0;
        fhir:Questionnaire.item.linkId [ fhir:value "patient-name" ];
-       fhir:Questionnaire.item.text [ fhir:value "Patient Name" ];
+       fhir:Questionnaire.item.text [
+         fhir:value "Patient Name";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "Naam van de patiënt" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ], [
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "Nom du patient" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ]
+       ];
        fhir:Questionnaire.item.type [ fhir:value "string" ];
        fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -81,19 +135,100 @@
          fhir:index 0;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "active" ];
-           fhir:Coding.display [ fhir:value "Active" ]
+           fhir:Coding.display [
+             fhir:value "Active";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Active" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Actieve" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ], [
          fhir:index 1;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "inactive" ];
-           fhir:Coding.display [ fhir:value "Inactive" ]
+           fhir:Coding.display [
+             fhir:value "Inactive";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Inactive" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Inactieve" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ], [
          fhir:index 2;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "resolved" ];
-           fhir:Coding.display [ fhir:value "Resolved" ]
+           fhir:Coding.display [
+             fhir:value "Resolved";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Résolue" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Opgelost" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ]
      ], [
@@ -106,25 +241,133 @@
          fhir:index 0;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "unconfirmed" ];
-           fhir:Coding.display [ fhir:value "Unconfirmed" ]
+           fhir:Coding.display [
+             fhir:value "Unconfirmed";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Non confirmée" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Onbevestigde" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ], [
          fhir:index 1;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "confirmed" ];
-           fhir:Coding.display [ fhir:value "Confirmed" ]
+           fhir:Coding.display [
+             fhir:value "Confirmed";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Confirmée" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Bevestigde" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ], [
          fhir:index 2;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "refuted" ];
-           fhir:Coding.display [ fhir:value "Refuted" ]
+           fhir:Coding.display [
+             fhir:value "Refuted";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Réfutée" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Weerlegde" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ], [
          fhir:index 3;
          fhir:Questionnaire.item.answerOption.valueCoding [
            fhir:Coding.code [ fhir:value "entered-in-error" ];
-           fhir:Coding.display [ fhir:value "entered-in-error" ]
+           fhir:Coding.display [
+             fhir:value "entered-in-error";
+             fhir:Element.extension [
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Saisie par erreur" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ], [
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "lang" ];
+                 fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+               ], [
+                 fhir:index 1;
+                 fhir:Extension.url [ fhir:value "content" ];
+                 fhir:Extension.valueString [ fhir:value "Foutief ingevoerde" ]
+               ];
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+             ]
+           ]
          ]
        ]
      ]

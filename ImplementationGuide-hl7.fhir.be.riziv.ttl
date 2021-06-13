@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "RIZIV-INAMI Patient Record"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-13T09:41:04+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-13T14:02:07+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -313,286 +313,8 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ];
-     fhir:ImplementationGuide.definition.grouping [
-       fhir:index 0;
-       fhir:Element.id [ fhir:value "allergyintolerance" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Allergy Intolerance" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Allergy / Intolerance resources. These artefacts define the constraints and vocabulary necessary to record allergies and intolerances, suspected or confirmed.  A few example resources and scenario demonstrate the use of these resources." ]
-     ], [
-       fhir:index 1;
-       fhir:Element.id [ fhir:value "patientwill" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Patient Will" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Patient Will profile and vocabulary. The Patient Will captures a patient's expressed preferences related to care provision.   The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile." ]
-     ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "addiction" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Addiction" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "The profile for Addiction, intended to capture known or suspected substance or other addictions.    The Logical Data Model defines the functional data needs.   An example demonstrates the use of the profile." ]
-     ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "vaccination" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Vaccination" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Vaccination related resources.  These artefacts define the constraints and vocabulary necessary to record the administration of vaccine administrations, including the reference to a vaccination schema or protocol, and eventual immediate reactions.  The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile." ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "problem" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Problem" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "The Problem resources are intended to capture a short description of a patient's clinical condition.   The Logical Data Model defines the functional data needs.   The vocabulary resources help ensure conformity and data consistency.   The profile and extensions define the technical specifications.   A set of examples demonstrates the use of the profile." ]
-     ], [
-       fhir:index 5;
-       fhir:Element.id [ fhir:value "scoreresults" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Score Results" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "The Score Results resource captures an overal assessment score about a health indicator associated with a patient.   The vocabulary resources help ensure conformity and data consistency.   The profile defines the technical specifications.   A set of examples demonstrates the use of the profile." ]
-     ], [
-       fhir:index 6;
-       fhir:Element.id [ fhir:value "referral" ];
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Referral Prescription" ];
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "The Referral Prescription defines the exchange when ordering services such as nursing care, physiotherapy, or diagnostic procedures such as lab, imaging" ]
-     ];
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-addiction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Addiction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Addiction record logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-addiction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Addiction BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian Profile to capture Addictions (on substances or others)" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-addiction-quantifier>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-addiction-quantifier" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Addiction Quantifier extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian Extension to allow quantification of addictions (on substances or others) - for example 10 packs per week, 1 bottle per day" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Condition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Condition/addiction-smoking>;
-         fhir:Reference.reference [ fhir:value "Condition/addiction-smoking" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example - Patient Smoking addiction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Smoking addiction" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-addiction-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Addiction Categories" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Addiction Category value set" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-addiction-code" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Addiction Codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Addiction Code value set" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "addiction" ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-patientwill" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Patient Will" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-patientwill" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Core BE profile for Patient Will" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Categories" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will Category code system" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Categories" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will Category value set" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-code" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will directive code system" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 11;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-code" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will directives" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will directive value set" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Consent" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Consent/patientwill-example>;
-         fhir:Reference.reference [ fhir:value "Consent/patientwill-example" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example - Patient Will" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "patientwill" ]
-     ], [
-       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -610,7 +332,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination logical model" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 14;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -628,7 +350,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Core BE profile for Vaccination (event)" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 15;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -646,7 +368,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location of the vaccination event" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 16;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -664,7 +386,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The location of the care event" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 17;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -682,7 +404,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of vaccination confirmation status" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 18;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -700,7 +422,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of vaccination status reason" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 19;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -718,7 +440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of administration routes for vaccines" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 20;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -736,7 +458,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of Care locations" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 21;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -754,7 +476,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of administration routes for vaccines" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 22;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -772,7 +494,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of vaccination confirmation status" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 23;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -790,7 +512,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The list of vaccination status reason" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 24;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -808,7 +530,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administered Product" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 25;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -826,7 +548,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination original order  (e.g. prescription)" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 26;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -844,7 +566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination recorder" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 27;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -862,7 +584,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination confirmation status" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 28;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -880,7 +602,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - CNK Product Codes" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 29;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -898,7 +620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NamingSystem - NIHDI Organization number" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 30;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -916,7 +638,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NamingSystem - NIHDI Professional numbers" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 31;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -934,7 +656,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NamingSystem for ONE vaccination ID" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 32;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -952,7 +674,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NamingSystem - Product Manufacturer" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 33;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -974,683 +696,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
      ], [
-       fhir:index 34;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/toto-hexa2>;
-         fhir:Reference.reference [ fhir:value "Immunization/toto-hexa2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto - 2nd hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - 2nd hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/toto-hexa3>;
-         fhir:Reference.reference [ fhir:value "Immunization/toto-hexa3" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto - 3rd hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - 3rd hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 36;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/toto-hexa4-skipped>;
-         fhir:Reference.reference [ fhir:value "Immunization/toto-hexa4-skipped" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto - 4th hexavalent vaccination - skipped (fever)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - 4th hexavalent vaccination - skipped (fever)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 37;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/toto-hexa4-swelling>;
-         fhir:Reference.reference [ fhir:value "Immunization/toto-hexa4-swelling" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto - 4th hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - 4th hexavalent vaccination" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 38;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/juan-hexa1-reported>;
-         fhir:Reference.reference [ fhir:value "Immunization/juan-hexa1-reported" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juan - 1st hexa (reported)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Juan - 1st hexa (reported)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 39;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/juan-hexa2-reported-hospital>;
-         fhir:Reference.reference [ fhir:value "Immunization/juan-hexa2-reported-hospital" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juan - 2nd hexa (hospital)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Juan - 2nd hexa (hospital)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/juan-hexa3-skipped>;
-         fhir:Reference.reference [ fhir:value "Immunization/juan-hexa3-skipped" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juan - 3rd hexa (not done)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Juan - 3rd hexa (not done)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/juan-hexa4>;
-         fhir:Reference.reference [ fhir:value "Immunization/juan-hexa4" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juan - 3rd hexa (effective)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Juan - 3rd hexa (effective)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 42;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/eva-hpv1-school>;
-         fhir:Reference.reference [ fhir:value "Immunization/eva-hpv1-school" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Eva - HPV 1st dose" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eva - HPV 1st dose" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 43;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/eva-hpv2-school>;
-         fhir:Reference.reference [ fhir:value "Immunization/eva-hpv2-school" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Eva - HPV 2nd dose" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eva - HPV 2nd dose" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 44;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/julia-refuse-hpv>;
-         fhir:Reference.reference [ fhir:value "Immunization/julia-refuse-hpv" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Julia - refuse HPV" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Julia - refuse HPV" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 45;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ImmunizationRecommendation/order-gabriel-flu>;
-         fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/order-gabriel-flu" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gabriel - Flu vaccine prescription" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gabriel - flu vacccine prescription" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 46;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ImmunizationRecommendation/order-simon-hpv>;
-         fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/order-simon-hpv" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simon - HPV vaccine prescription" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Simon - HPV vacccine prescription" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 47;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Observation/erythema>;
-         fhir:Reference.reference [ fhir:value "Observation/erythema" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto reaction - erythema" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - example of reaction (erythema)" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 48;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Observation/fever>;
-         fhir:Reference.reference [ fhir:value "Observation/fever" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Toto finding - fever" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Toto - example of finding that prevents vaccination (fever)" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 49;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/simon-hpv-at-work>;
-         fhir:Reference.reference [ fhir:value "Immunization/simon-hpv-at-work" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simon HPV - work" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Simon HPV - work" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 50;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ImmunizationRecommendation/aymeric-rota>;
-         fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/aymeric-rota" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aymeric - rotavirus prescription" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aymeric - rotavirus prescription" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 51;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/aymeric-rota1>;
-         fhir:Reference.reference [ fhir:value "Immunization/aymeric-rota1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aymeric - rotavirus 1st dose" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aymeric - rotavirus 1st dose" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 52;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/aymeric-rota2>;
-         fhir:Reference.reference [ fhir:value "Immunization/aymeric-rota2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aymeric - rotavirus 2nd dose" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aymeric - rotavirus 2nd dose" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/aymeric-rota3>;
-         fhir:Reference.reference [ fhir:value "Immunization/aymeric-rota3" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aymeric - rotavirus 3rd dose" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aymeric - rotavirus 3rd dose" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 54;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/gabriel-flu>;
-         fhir:Reference.reference [ fhir:value "Immunization/gabriel-flu" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gabriel - influenza vaccine" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gabriel - influenza vaccine" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 55;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Observation/observation-swelling>;
-         fhir:Reference.reference [ fhir:value "Observation/observation-swelling" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - swelling reaction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation - swelling reaction" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "vaccination" ]
-     ], [
-       fhir:index 56;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-problem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Problem" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problem logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 57;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-problem>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-problem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Problem core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Core BE profile for Problem" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 58;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-laterality" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laterality" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 59;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-problem-origin-type>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-problem-origin-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension - Problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension for Problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 60;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-problem-origin-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet - Problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Set of values for problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 61;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-problem-origin-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem - Problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Problem origin type" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 62;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-problem-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Code System Problem Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System Problem Category" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 63;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-problem-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set Problem Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set Problem Category" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 64;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-code>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-problem-code" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Problem Codes Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problem Code Value Set" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 65;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-laterality" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set Laterality" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set Laterality" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 66;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-bodysite" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Code System Body Site" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System Body Site" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 67;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-bodysite" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set Body Site" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set Body Site" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "problem" ]
-     ], [
-       fhir:index 68;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1668,7 +714,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allergy Intolerance profile" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 69;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1687,7 +733,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 70;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1706,7 +752,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 71;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1725,7 +771,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 72;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1747,7 +793,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 73;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1769,7 +815,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 74;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1791,7 +837,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 75;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1813,7 +859,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 76;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1831,43 +877,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suspected Allergy, then refuted" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "allergyintolerance" ]
      ], [
-       fhir:index 77;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-scoreresult" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Score Result Logical Model" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Result Logical Model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
-     ], [
-       fhir:index 78;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-scoreresult" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Score Result Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Result Observation profile" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
-     ], [
-       fhir:index 79;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1889,7 +899,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
      ], [
-       fhir:index 80;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1907,7 +917,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Result codes" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
      ], [
-       fhir:index 81;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1925,7 +935,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Result Category" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
      ], [
-       fhir:index 82;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1943,7 +953,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Result value set" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
      ], [
-       fhir:index 83;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1961,7 +971,54 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Category value set" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "scoreresults" ]
      ], [
-       fhir:index 84;
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Consent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/Consent/patientwill-example>;
+         fhir:Reference.reference [ fhir:value "Consent/patientwill-example" ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-patientwill" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.\r\nThe Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model." ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-scoreresult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..." ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-problem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient's problem entries in a record." ]
+     ], [
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1971,15 +1028,21 @@
          fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-referralprescription" ]
        ];
-       fhir:ImplementationGuide.definition.resource.fhirVersion [
-         fhir:value "4.0.1";
-         fhir:index 0
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model Referral Prescription" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Referral Prescription logical model" ];
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "referral" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model describing the model for the prescription referral. This draft is used in the HL7 Belgian workgroup for referral." ]
      ], [
-       fhir:index 85;
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-addiction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.\r\n This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation." ]
+     ], [
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1991,7 +1054,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. If needed, an extension can be defined in a future iteration of these specifications: the 'deathlocation' (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.), the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insurancymembership' (covered in a seperate FHIR resource: Coverage) and 'profession' (covered in a possible future FHIR resource: OccupationalData.)" ]
      ], [
-       fhir:index 86;
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-patientwill" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BEPatientWill" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "****!DRAFT!DRAFT!DRAFT! VALUESETS STILL TO BE DELIVERED FOR THIS PROFILE BY THE NIHDI **** Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This profile will in the future be also used to record agreement to participate in clinical trials etc. Any usecase around informed consent is out of scope for this profile." ]
+     ], [
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2003,7 +1079,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BePractitioner" ]
      ], [
-       fhir:index 87;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2015,7 +1091,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BePractitionerRole" ]
      ], [
-       fhir:index 88;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2027,7 +1103,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for an organization. Initially based on the functional description of the NIHDI." ]
      ], [
-       fhir:index 89;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2039,71 +1115,98 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately." ]
      ], [
-       fhir:index 90;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-referral-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-referral-category" ]
+         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-category" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Value Set" ]
      ], [
-       fhir:index 91;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Organization/org-msd-belgium>;
-         fhir:Reference.reference [ fhir:value "Organization/org-msd-belgium" ]
-       ]
-     ], [
-       fhir:index 92;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/iex3>;
-         fhir:Reference.reference [ fhir:value "Immunization/iex3" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - iex3" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 93;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-reason-referral-status" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to explain the current status of a referral prescription." ]
-     ], [
-       fhir:index 94;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-status-reason>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-status-reason" ]
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-problem-category" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeStatusReason" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Status reason in Belgium. Initially defined as supporting CodeSystem for the referral prescription." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Problem Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problem Category" ]
      ], [
-       fhir:index 95;
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-problem-origin-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Problem Origin Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problem Origin Type" ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will directives Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Value Set" ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Directive CodeSystem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Will Directive CodeSystem" ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-bodysite" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Site CodeSystem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Site CodeSystem" ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category CodeSystem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Site CodeSystem" ]
+     ], [
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2119,7 +1222,7 @@
          fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance>
        ]
      ], [
-       fhir:index 96;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2131,47 +1234,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exposure Risk" ]
      ], [
-       fhir:index 97;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-1-hpv>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-1-hpv" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-1-hpv" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 98;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Organization/org-sanofi>;
-         fhir:Reference.reference [ fhir:value "Organization/org-sanofi" ]
-       ]
-     ], [
-       fhir:index 99;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-inform-party>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-inform-party" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeInformParty" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extra parties that need to be informed of the outcome, besides the prescriber." ]
-     ], [
-       fhir:index 100;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2187,39 +1250,7 @@
          fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance>
        ]
      ], [
-       fhir:index 101;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/iex1>;
-         fhir:Reference.reference [ fhir:value "Immunization/iex1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - iex1" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 102;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-tetanus-cautious-reinforcement>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-tetanus-cautious-reinforcement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-tetanus-cautious-reinforcement" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 103;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2232,66 +1263,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Modified Katz assessment scale" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem Modified Katz assessment scale for independent living." ]
      ], [
-       fhir:index 104;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-not-given-refusal>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-not-given-refusal" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-laterality" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-not-given-refusal" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An explicit statement of laterality of a lesion, or a treatment, etc." ]
      ], [
-       fhir:index 105;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-not-given-contraindication>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-not-given-contraindication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-not-given-contraindication" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 106;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Organization/org-uz-gent>;
-         fhir:Reference.reference [ fhir:value "Organization/org-uz-gent" ]
-       ]
-     ], [
-       fhir:index 107;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/covid-jan-2-discarded>;
-         fhir:Reference.reference [ fhir:value "Immunization/covid-jan-2-discarded" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - covid-jan-2-discarded" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 108;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2302,7 +1287,7 @@
          fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2314,51 +1299,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modified Katz scale evaluation Questionnaire" ]
      ], [
-       fhir:index 110;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-reaction-swelling>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-reaction-swelling" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-reaction-swelling" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 111;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-referralprescription>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-referralprescription" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-scoreresult" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The common structure for referral prescription." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BEScoreResult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines a patient's known problem, a diagnostic or antecedent that deserves attention." ]
      ], [
-       fhir:index 112;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-not-given-stock>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-not-given-stock" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-not-given-stock" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 113;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2371,61 +1325,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Mini Nutritional Assessment scale" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem Mini Nutritional Assessment." ]
      ], [
-       fhir:index 114;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Organization/org-kind-en-gezin>;
-         fhir:Reference.reference [ fhir:value "Organization/org-kind-en-gezin" ]
-       ]
-     ], [
-       fhir:index 115;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-mistaken-entry-update>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-mistaken-entry-update" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-mistaken-entry-update" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 116;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Organization/org-one-brussels>;
-         fhir:Reference.reference [ fhir:value "Organization/org-one-brussels" ]
-       ]
-     ], [
-       fhir:index 117;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/covid-jan-3>;
-         fhir:Reference.reference [ fhir:value "Immunization/covid-jan-3" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - covid-jan-3" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 118;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2437,7 +1337,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mini Nutritional Assessment Questionnaire" ]
      ], [
-       fhir:index 119;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2449,84 +1349,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergy / Intolerance reporting Questionnaire" ]
      ], [
-       fhir:index 120;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-childhood-measles>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-childhood-measles" ]
+         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-laterality" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-childhood-measles" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laterality" ]
      ], [
-       fhir:index 121;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-measure>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-measure" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeMEasure" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A record of an observation made by the patient or a professional, with or without a measurement device. This is the preferred profile to be used in specified cases like glucose monitoring, BMI, etc.\nThe list of cases that are supported by this profile (and for which this profile is preferred) is evolving, but for those cases that are included, this profile should be used, instead of a generic Observation." ]
-     ], [
-       fhir:index 122;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/covid-jan-1>;
-         fhir:Reference.reference [ fhir:value "Immunization/covid-jan-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - covid-jan-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 123;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-mistaken-entry>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-mistaken-entry" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-mistaken-entry" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 124;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/iex2>;
-         fhir:Reference.reference [ fhir:value "Immunization/iex2" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - iex2" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
-       ]
-     ], [
-       fhir:index 125;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2535,22 +1371,6 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.hl7belgium.org/fhir/Encounter/example-encounter-uzgent-contained>;
          fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent-contained" ]
-       ]
-     ], [
-       fhir:index 126;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Immunization/immunization-example-prescribed-vaccination>;
-         fhir:Reference.reference [ fhir:value "Immunization/immunization-example-prescribed-vaccination" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - immunization-example-prescribed-vaccination" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination>
        ]
      ];
      fhir:ImplementationGuide.definition.page [

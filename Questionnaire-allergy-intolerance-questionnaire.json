@@ -14,7 +14,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2021-06-13T09:41:04+00:00",
+  "date": "2021-06-13T14:02:07+00:00",
   "publisher": "RIZIV-INAMI",
   "contact": [
     {
@@ -44,6 +44,36 @@
     {
       "linkId": "patient",
       "text": "Patient",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "nl-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "Patiënt"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          },
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "Patient"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
       "type": "group",
       "required": true,
       "repeats": false,
@@ -51,6 +81,36 @@
         {
           "linkId": "patient-name",
           "text": "Patient Name",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "nl-BE"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Naam van de patiënt"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "fr-BE"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Nom du patient"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
           "type": "string",
           "repeats": false
         },
@@ -78,19 +138,109 @@
             {
               "valueCoding": {
                 "code": "active",
-                "display": "Active"
+                "display": "Active",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Active"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Actieve"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             },
             {
               "valueCoding": {
                 "code": "inactive",
-                "display": "Inactive"
+                "display": "Inactive",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inactive"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inactieve"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             },
             {
               "valueCoding": {
                 "code": "resolved",
-                "display": "Resolved"
+                "display": "Resolved",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Résolue"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Opgelost"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             }
           ]
@@ -104,25 +254,145 @@
             {
               "valueCoding": {
                 "code": "unconfirmed",
-                "display": "Unconfirmed"
+                "display": "Unconfirmed",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Non confirmée"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Onbevestigde"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             },
             {
               "valueCoding": {
                 "code": "confirmed",
-                "display": "Confirmed"
+                "display": "Confirmed",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Confirmée"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Bevestigde"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             },
             {
               "valueCoding": {
                 "code": "refuted",
-                "display": "Refuted"
+                "display": "Refuted",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Réfutée"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weerlegde"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             },
             {
               "valueCoding": {
                 "code": "entered-in-error",
-                "display": "entered-in-error"
+                "display": "entered-in-error",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fr-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Saisie par erreur"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "nl-BE"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Foutief ingevoerde"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
               }
             }
           ]

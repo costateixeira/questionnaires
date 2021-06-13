@@ -31,7 +31,7 @@
   <title value="Allergy / Intolerance reporting Questionnaire"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2021-06-13T09:41:04+00:00"/>
+  <date value="2021-06-13T14:02:07+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>
@@ -51,13 +51,47 @@
   </jurisdiction>
   <item>
     <linkId value="patient"/>
-    <text value="Patient"/>
+    <text value="Patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="nl-BE"/>
+        </extension>
+        <extension url="content">
+          <valueString value="Pati&#xEB;nt"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr-BE"/>
+        </extension>
+        <extension url="content">
+          <valueString value="Patient"/>
+        </extension>
+      </extension>
+    </text>
     <type value="group"/>
     <required value="true"/>
     <repeats value="false"/>
     <item>
       <linkId value="patient-name"/>
-      <text value="Patient Name"/>
+      <text value="Patient Name">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="nl-BE"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Naam van de pati&#xEB;nt"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr-BE"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Nom du patient"/>
+          </extension>
+        </extension>
+      </text>
       <type value="string"/>
       <repeats value="false"/>
     </item>
@@ -82,19 +116,70 @@
       <answerOption>
         <valueCoding>
           <code value="active"/>
-          <display value="Active"/>
+          <display value="Active">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Active"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Actieve"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
       <answerOption>
         <valueCoding>
           <code value="inactive"/>
-          <display value="Inactive"/>
+          <display value="Inactive">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Inactive"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Inactieve"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
       <answerOption>
         <valueCoding>
           <code value="resolved"/>
-          <display value="Resolved"/>
+          <display value="Resolved">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="R&#xE9;solue"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Opgelost"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
     </item>
@@ -106,25 +191,93 @@
       <answerOption>
         <valueCoding>
           <code value="unconfirmed"/>
-          <display value="Unconfirmed"/>
+          <display value="Unconfirmed">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Non confirm&#xE9;e"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Onbevestigde"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
       <answerOption>
         <valueCoding>
           <code value="confirmed"/>
-          <display value="Confirmed"/>
+          <display value="Confirmed">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Confirm&#xE9;e"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Bevestigde"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
       <answerOption>
         <valueCoding>
           <code value="refuted"/>
-          <display value="Refuted"/>
+          <display value="Refuted">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="R&#xE9;fut&#xE9;e"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Weerlegde"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
       <answerOption>
         <valueCoding>
           <code value="entered-in-error"/>
-          <display value="entered-in-error"/>
+          <display value="entered-in-error">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Saisie par erreur"/>
+              </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="nl-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Foutief ingevoerde"/>
+              </extension>
+            </extension>
+          </display>
         </valueCoding>
       </answerOption>
     </item>

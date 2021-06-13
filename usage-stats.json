@@ -5,24 +5,10 @@
   "jurisdiction": "056",
   "extensions": [
     {
-      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-addiction-quantifier",
-      "title": "Addiction Quantifier",
-      "types": [
-        "Ratio"
-      ]
-    },
-    {
       "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct",
       "title": "Product administered",
       "types": [
         "Reference",
-        "Reference"
-      ]
-    },
-    {
-      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-inform-party",
-      "title": "BeInformParty",
-      "types": [
         "Reference"
       ]
     },
@@ -32,14 +18,6 @@
       "types": [
         "Coding",
         "Coding"
-      ]
-    },
-    {
-      "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-problem-origin-type",
-      "title": "Problem Origin Type",
-      "types": [
-        "code",
-        "code"
       ]
     },
     {
@@ -109,22 +87,10 @@
         "title": "BePractitionerRole"
       }
     ],
-    "Condition": [
-      {
-        "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-problem",
-        "title": "BEProblem"
-      }
-    ],
     "AllergyIntolerance": [
       {
         "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance",
         "title": "Allergy Intolerance core BE profile"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult",
-        "title": "BEScoreResult"
       }
     ],
     "Consent": [
@@ -133,10 +99,10 @@
         "title": "BEPatientWill"
       }
     ],
-    "ServiceRequest": [
+    "Observation": [
       {
-        "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-referralprescription",
-        "title": "BeReferralPrescription"
+        "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult",
+        "title": "BEScoreResult"
       }
     ],
     "Immunization": [
@@ -154,7 +120,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -198,9 +163,6 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
-      "ServiceRequest"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -222,27 +184,22 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Questionnaire.item.item.answerOption.valueCoding.display",
+      "Questionnaire.item.item.text",
+      "Questionnaire.item.text"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-addiction-quantifier": [
-      "Condition"
-    ],
     "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct": [
       "Immunization"
     ],
-    "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-inform-party": [
-      "ServiceRequest"
-    ],
     "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality": [
-      "Condition.bodySite",
       "Observation.bodySite"
-    ],
-    "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-problem-origin-type": [
-      "Condition"
     ],
     "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder": [
       "Immunization"

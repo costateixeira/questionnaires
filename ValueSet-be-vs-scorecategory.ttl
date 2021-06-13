@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BeVSScoreCategory"];
   fhir:ValueSet.title [ fhir:value "Score Category Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-06-13T09:41:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-06-13T14:02:07+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -14,13 +14,6 @@
     "name": "CSMNAScale"
   },
   {
-    "id": "be-status-reason",
-    "type": "CodeSystem",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason",
-    "version": "0.1.0",
-    "name": "BeStatusReason"
-  },
-  {
     "id": "be-address",
     "type": "StructureDefinition",
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address",
@@ -61,13 +54,6 @@
     "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
     "version": "0.1.0",
     "name": "BePractitionerRole"
-  },
-  {
-    "id": "be-referral-category",
-    "type": "ValueSet",
-    "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category",
-    "version": "0.1.0",
-    "name": "BeReferralCategory"
   },
   {
     "id": "be-cs-bodysite",
@@ -217,25 +203,11 @@
     "name": "MNAQuestionnaire"
   },
   {
-    "id": "be-addiction",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-addiction",
-    "version": "0.1.0",
-    "name": "BeAddiction"
-  },
-  {
     "id": "be-allergyintolerance",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance",
     "version": "0.1.0",
     "name": "BeAllergyIntolerance"
-  },
-  {
-    "id": "be-ext-addiction-quantifier",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-addiction-quantifier",
-    "version": "0.1.0",
-    "name": "BeExtAddictionQuantifier"
   },
   {
     "id": "be-ext-administeredProduct",
@@ -245,25 +217,11 @@
     "name": "BeAdministeredProduct"
   },
   {
-    "id": "be-ext-inform-party",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-inform-party",
-    "version": "0.1.0",
-    "name": "BeInformParty"
-  },
-  {
     "id": "be-ext-laterality",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality",
     "version": "0.1.0",
     "name": "BeLaterality"
-  },
-  {
-    "id": "be-ext-problem-origin-type",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-problem-origin-type",
-    "version": "0.1.0",
-    "name": "BeExtProblemOriginType"
   },
   {
     "id": "be-ext-recorder",
@@ -292,13 +250,6 @@
     "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder",
     "version": "0.1.0",
     "name": "BeVaccinationOriginalOrder"
-  },
-  {
-    "id": "be-measure",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-measure",
-    "version": "0.1.0",
-    "name": "BeMeasure"
   },
   {
     "id": "be-model-addiction",
@@ -343,20 +294,6 @@
     "name": "BEPatientWill"
   },
   {
-    "id": "be-problem",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-problem",
-    "version": "0.1.0",
-    "name": "BeProblem"
-  },
-  {
-    "id": "be-referralprescription",
-    "type": "StructureDefinition",
-    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-referralprescription",
-    "version": "0.1.0",
-    "name": "BeReferralPrescription"
-  },
-  {
     "id": "be-scoreresult",
     "type": "StructureDefinition",
     "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult",
@@ -376,34 +313,6 @@
     "url": "https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk",
     "version": "0.1.0",
     "name": "ExposureRisk"
-  },
-  {
-    "id": "be-reason-referral-status",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status",
-    "version": "0.1.0",
-    "name": "BeReasonReferralStatus"
-  },
-  {
-    "id": "be-vs-addiction-category",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-category",
-    "version": "0.1.0",
-    "name": "BeVSAddictionCategory"
-  },
-  {
-    "id": "be-vs-addiction-code",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code",
-    "version": "0.1.0",
-    "name": "BeVSAddictionCode"
-  },
-  {
-    "id": "be-vs-bodysite",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite",
-    "version": "0.1.0",
-    "name": "BeVSBodySite"
   },
   {
     "id": "be-vs-care-location",
@@ -432,27 +341,6 @@
     "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
     "version": "0.1.0",
     "name": "BeVSScore"
-  },
-  {
-    "id": "be-vs-problem-category",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category",
-    "version": "0.1.0",
-    "name": "BeVSProblemCategory"
-  },
-  {
-    "id": "be-vs-problem-code",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-code",
-    "version": "0.1.0",
-    "name": "BeVSProblemCode"
-  },
-  {
-    "id": "be-vs-problem-origin-type",
-    "type": "ValueSet",
-    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type",
-    "version": "0.1.0",
-    "name": "BeVSProblemOriginType"
   },
   {
     "id": "be-vs-score",

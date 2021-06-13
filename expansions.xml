@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d6b9bacc-3662-465c-a8ab-2bd5a787c1a9"/>
+  <id value="7c6fbca0-d680-40bf-8a0f-b96b5092858b"/>
   <meta>
-    <lastUpdated value="2021-06-13T09:41:04.600+00:00"/>
+    <lastUpdated value="2021-06-13T14:02:07.387+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -87,8 +87,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e22a7309-f8bb-42b4-bea7-32f43fd8fb55"/>
-          <timestamp value="2021-06-13T09:41:28+00:00"/>
+          <identifier value="urn:uuid:4c18020e-d22b-4df5-8611-88a1997beef0"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -294,8 +294,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a095d03f-a6e1-4ada-a376-ce5e37c3c3af"/>
-          <timestamp value="2021-06-13T09:41:28+00:00"/>
+          <identifier value="urn:uuid:ec69dc4d-90f5-419f-85ab-a3cdd91a214d"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -742,8 +742,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd1e2e90-86a8-4baa-9833-9f85fa2f3800"/>
-          <timestamp value="2021-06-13T09:41:28+00:00"/>
+          <identifier value="urn:uuid:55200458-9a1b-4953-8854-45530cb8faa0"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -931,234 +931,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category"/>
-    <resource>
-      <ValueSet>
-        <id value="be-referral-category"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
-            <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-363679005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005">363679005</a>
-                </td>
-                <td>Imaging</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-91251008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91251008">91251008</a>
-                </td>
-                <td>Physical therapy procedure</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-9632001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=9632001">9632001</a>
-                </td>
-                <td>Nursing procedure</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-15220000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000">15220000</a>
-                </td>
-                <td>Laboratory test</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-referral-category"/>
-        <version value="0.1.0"/>
-        <name value="BeReferralCategory"/>
-        <status value="draft"/>
-        <date value="2021-02-08T13:26:39+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset."/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:29e28c56-f17e-4863-afaa-6a625e654cfc"/>
-          <timestamp value="2021-06-13T09:41:28+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="363679005"/>
-            <display value="Imaging"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="91251008"/>
-            <display value="Physical therapy procedure"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="9632001"/>
-            <display value="Nursing procedure"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="15220000"/>
-            <display value="Laboratory test"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status"/>
-    <resource>
-      <ValueSet>
-        <id value="be-reason-referral-status"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <div style="border: maroon 1px solid; background-color: #FFCCCC; padding: 8px">
-              <p>Warning: this expansion is generated from a fragment of the code system 
-                <a href="CodeSystem-be-status-reason.html">BeStatusReason</a> and may be missing codes, or include codes that are not valid
-              </p>
-            </div>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-status-reason.html">BeStatusReason v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-be-status-reason.html">
-                <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-created"> </a>created
-                </td>
-                <td>created</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-be-status-reason-not-used-by-patient"> </a>not-used-by-patient
-                </td>
-                <td>not-used-by-patient</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-reason-referral-status"/>
-        <version value="0.1.0"/>
-        <name value="BeReasonReferralStatus"/>
-        <status value="active"/>
-        <date value="2021-02-08T13:26:39+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Codes to explain the current status of a referral prescription."/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
-          </extension>
-          <identifier value="urn:uuid:e44453ee-5898-4b36-8004-98b328016209"/>
-          <timestamp value="2021-06-13T09:41:29+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
-            <code value="created"/>
-            <display value="created"/>
-          </contains>
-          <contains>
-            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-status-reason"/>
-            <code value="not-used-by-patient"/>
-            <display value="not-used-by-patient"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status"/>
     <resource>
       <ValueSet>
@@ -1219,7 +991,7 @@
         <name value="BeVSVaccinationConfirmationStatus"/>
         <title value="Vaccination status Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1239,8 +1011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6aca7877-6f83-4a78-b4a1-959d4f7cbc31"/>
-          <timestamp value="2021-06-13T09:41:29+00:00"/>
+          <identifier value="urn:uuid:6bbba8e8-0b03-4846-9a91-1339fb132e36"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1490,7 +1262,7 @@
         <name value="BeVSCareLocation"/>
         <title value="Care Location Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1510,8 +1282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29819c44-85de-4667-9d1b-dabe4f461592"/>
-          <timestamp value="2021-06-13T09:41:29+00:00"/>
+          <identifier value="urn:uuid:bacea1b5-0635-462d-afec-71a3153daa00"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="23"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1759,7 +1531,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSVaccineAdministrationRoute"/>
         <title value="Vaccine Administration Route"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1779,8 +1551,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fe3b54bb-2d65-4c29-b1ed-a6d70a11b1e1"/>
-          <timestamp value="2021-06-13T09:41:29+00:00"/>
+          <identifier value="urn:uuid:433c2296-a13c-4369-a73f-ad02d693002d"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1944,7 +1716,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSVaccinationStatusReason"/>
         <title value="Vaccination status reason Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1964,8 +1736,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:441ec9f6-c7f1-4763-9dbc-5339dc8114de"/>
-          <timestamp value="2021-06-13T09:41:29+00:00"/>
+          <identifier value="urn:uuid:45d25dd5-2b7f-4473-b5df-14bcc392dcc8"/>
+          <timestamp value="2021-06-13T14:02:30+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2013,437 +1785,6 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
             <code value="PATOBJ"/>
             <display value="Patient Objection"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-bodysite"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-bodysite.html">Body Site CodeSystem v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-be-cs-bodysite.html">
-                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-bodysite-IM"> </a>
-                  <a href="CodeSystem-be-cs-bodysite.html#be-cs-bodysite-IM">IM</a>
-                </td>
-                <td>Intramuscular</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite"/>
-        <version value="0.1.0"/>
-        <name value="BeVSBodySite"/>
-        <title value="Body Site"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Body Site"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:ccecfa1d-3d2f-4b32-b4ac-c8ef7a72b6f4"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite"/>
-            <code value="IM"/>
-            <display value="Intramuscular"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-problem-origin-type"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-problem-origin-type.html">Problem Origin Type v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-be-cs-problem-origin-type.html">
-                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-referral"> </a>
-                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-referral">referral</a>
-                </td>
-                <td>Referral order</td>
-                <td>Following a referral order</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-own-initiative"> </a>
-                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-own-initiative">own-initiative</a>
-                </td>
-                <td>Patient&#39;s own initiative</td>
-                <td>The patient has arrived on their own initiative</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-counsel"> </a>
-                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-counsel">counsel</a>
-                </td>
-                <td>Advice or recommendation from another provider (no prescription)</td>
-                <td>From an advice or recommendation of a health professional (without prescription)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-origin-type-other"> </a>
-                  <a href="CodeSystem-be-cs-problem-origin-type.html#be-cs-problem-origin-type-other">other</a>
-                </td>
-                <td>other</td>
-                <td>Other</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-origin-type"/>
-        <version value="0.1.0"/>
-        <name value="BeVSProblemOriginType"/>
-        <title value="Problem Origin Type"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Problem Origin Type"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:3efa59e3-a0d8-4365-bd00-3bc5bf38c114"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
-            <code value="referral"/>
-            <display value="Referral order"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
-            <code value="own-initiative"/>
-            <display value="Patient&#39;s own initiative"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
-            <code value="counsel"/>
-            <display value="Advice or recommendation from another provider (no prescription)"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type"/>
-            <code value="other"/>
-            <display value="other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-addiction-code"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-        <version value="0.1.0"/>
-        <name value="BeVSAddictionCode"/>
-        <title value="Addiction Code"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Addiction code"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:106425dc-4554-4557-846b-30178464b627"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-problem-category"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-be-cs-problem-category.html">Problem Category v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-be-cs-problem-category.html">
-                <code>https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-diagnosis"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-diagnosis">diagnosis</a>
-                </td>
-                <td>Diagnosis</td>
-                <td>A disease identified from a clinical reasoning, based on pathological and physiological ascertainments</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-problem"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-problem">problem</a>
-                </td>
-                <td>Problem</td>
-                <td>Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-risk"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-risk">risk</a>
-                </td>
-                <td>Risk</td>
-                <td>Identification of a health problem or situation that may require ongoing monitoring or management</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-antecedent"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-antecedent">antecedent</a>
-                </td>
-                <td>Antecedent</td>
-                <td>Information about a problem that has been resolved</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-congenital"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-congenital">congenital</a>
-                </td>
-                <td>Congenital anomaly</td>
-                <td>Congenital anomaly</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-conclusion"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-conclusion">conclusion</a>
-                </td>
-                <td>Conclusion</td>
-                <td>Informations about a conclusion from anamnesis performed by a professional other than a physician</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.hl7belgium.org-fhir-CodeSystem-be-cs-problem-category-other"> </a>
-                  <a href="CodeSystem-be-cs-problem-category.html#be-cs-problem-category-other">other</a>
-                </td>
-                <td>Other</td>
-                <td>Other</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-problem-category"/>
-        <version value="0.1.0"/>
-        <name value="BeVSProblemCategory"/>
-        <title value="Problem Category"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Problem Category"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:68e0975c-1c17-4876-ad83-0ecc93e0af0f"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <total value="7"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="diagnosis"/>
-            <display value="Diagnosis"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="problem"/>
-            <display value="Problem"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="risk"/>
-            <display value="Risk"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="antecedent"/>
-            <display value="Antecedent"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="congenital"/>
-            <display value="Congenital anomaly"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="conclusion"/>
-            <display value="Conclusion"/>
-          </contains>
-          <contains>
-            <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category"/>
-            <code value="other"/>
-            <display value="Other"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2523,7 +1864,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSScoreCategory"/>
         <title value="Score Category Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -2543,8 +1884,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c7de6195-1eec-4350-bc80-bc5c66a1970b"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:aa6499ac-feeb-45ec-b30b-4858d897ef65"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2646,8 +1987,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleBathing"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:ed367f43-5d86-41b0-b498-efe1513c203f"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:16ef264a-0d67-4d07-a6db-a67ba42fadd4"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2750,8 +2091,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleDressing"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:fc7f608a-0635-434e-a44e-fe70f36480aa"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:8fca8410-b77c-439f-a47f-d677890777f1"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2854,8 +2195,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleTransferring"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:83d23de9-5696-45f4-926e-5552602f387f"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:3def9bf7-7c2d-4082-8d2f-0e612ac745f5"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2958,8 +2299,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleToileting"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:b7ae8071-68d3-41c1-ade1-29a7aec88c69"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:cb9c5a19-84ce-4991-8e10-7f3953766a1b"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3062,8 +2403,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleContinence"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a51f2b20-4661-49a7-89af-268d733f5959"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:4a247b52-8007-4838-ad87-e836efc70a6d"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3166,8 +2507,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleFeeding"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:961c1ab7-825f-4fa4-ac10-5d115485b0ea"/>
-          <timestamp value="2021-06-13T09:41:31+00:00"/>
+          <identifier value="urn:uuid:65f9c3ae-60be-406f-85f8-ec6d86f5c01b"/>
+          <timestamp value="2021-06-13T14:02:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3197,124 +2538,6 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
             <code value="feeding-dep-3"/>
             <display value="Le patient est totalement d&#xE9;pendant pour manger et boire"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-addiction-code"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-        <version value="0.1.0"/>
-        <name value="BeVSAddictionCode"/>
-        <title value="Addiction Code"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Addiction code"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:106425dc-4554-4557-846b-30178464b627"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-    <resource>
-      <ValueSet>
-        <id value="be-vs-addiction-code"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-addiction-code"/>
-        <version value="0.1.0"/>
-        <name value="BeVSAddictionCode"/>
-        <title value="Addiction Code"/>
-        <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
-        <publisher value="RIZIV-INAMI"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://somewhere.org"/>
-          </telecom>
-        </contact>
-        <description value="Addiction code"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="056"/>
-          </coding>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="BE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:106425dc-4554-4557-846b-30178464b627"/>
-          <timestamp value="2021-06-13T09:41:30+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -3380,8 +2603,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentFoodIntake"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:35aeb61c-f7eb-4810-a7ac-6fda4d29b67b"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:e9292903-a4f9-427a-95e4-011498bf4376"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3479,8 +2702,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentWeightLoss"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:6f969c83-c0f2-445f-854d-0309675bae8a"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:1bb74130-1072-4b1c-9c91-d76a88bcd379"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3575,8 +2798,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentMobility"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:50556b0f-1945-4b44-868c-e1a1a2ab20cc"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:609dae89-d101-4f43-9328-f411bdc7065d"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3658,8 +2881,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentStress"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:f8e00208-e62b-47b1-aaca-0353443a7791"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:0b9d0b98-5117-499f-bbf4-f55b10bfa561"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3744,8 +2967,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentNeuropsychological"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:07128a5b-e271-4451-87d8-fd8d2e10c9bf"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:a1c29e8f-f100-47a2-8cac-ecbd9fac122f"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3843,8 +3066,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentBMI"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:39525b83-1c92-4d74-bf64-70711680b5c1"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:3654cafa-ad74-464c-ab90-73073e859d92"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4017,7 +3240,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSLaterality"/>
         <title value="Laterality"/>
         <status value="draft"/>
-        <date value="2021-06-13T09:41:04+00:00"/>
+        <date value="2021-06-13T14:02:07+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -4037,8 +3260,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:311b4559-c03a-41c6-9ffd-5672d07a7f71"/>
-          <timestamp value="2021-06-13T09:41:32+00:00"/>
+          <identifier value="urn:uuid:4aae0e2c-ff84-4562-bc89-a155a838e91b"/>
+          <timestamp value="2021-06-13T14:02:32+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
