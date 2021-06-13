@@ -3,7 +3,7 @@
   "name": "RIZIV_INAMI",
   "package-id": "hl7.fhir.be.riziv",
   "ig-ver": "0.1.0",
-  "date": "Sun, 13 Jun, 2021 09:32:51 +0000",
+  "date": "Sun, 13 Jun, 2021 09:41:04 +0000",
   "errs": 75,
   "warnings": 112,
   "hints": 15,

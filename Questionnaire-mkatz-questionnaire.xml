@@ -187,7 +187,7 @@
   <title value="Modified Katz scale evaluation Questionnaire"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2021-06-13T09:32:51+00:00"/>
+  <date value="2021-06-13T09:41:04+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>
@@ -206,14 +206,6 @@
     </coding>
   </jurisdiction>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="bathing"/>
     <text value="Se laver"/>
     <type value="choice"/>
@@ -221,14 +213,6 @@
     <answerValueSet value="#vs-mkatz-bathing-dep"/>
   </item>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="dressing"/>
     <text value="S&#39;habiller"/>
     <type value="choice"/>
@@ -236,14 +220,6 @@
     <answerValueSet value="#vs-mkatz-dressing-dep"/>
   </item>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="transferring"/>
     <text value="Se d&#xE9;placer"/>
     <type value="choice"/>
@@ -251,14 +227,6 @@
     <answerValueSet value="#vs-mkatz-transferring-dep"/>
   </item>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="toileting"/>
     <text value="Aller &#xE0; la toilette"/>
     <type value="choice"/>
@@ -266,14 +234,6 @@
     <answerValueSet value="#vs-mkatz-toileting-dep"/>
   </item>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="continence"/>
     <text value="La continence"/>
     <type value="choice"/>
@@ -281,14 +241,6 @@
     <answerValueSet value="#vs-mkatz-continence-dep"/>
   </item>
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
-      <valueCodeableConcept>
-        <coding>
-          <system value="http://hl7.org/fhir/questionnaire-item-control"/>
-          <code value="radio-button"/>
-        </coding>
-      </valueCodeableConcept>
-    </extension>
     <linkId value="feeding"/>
     <text value="Manger"/>
     <type value="choice"/>

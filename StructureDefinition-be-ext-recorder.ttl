@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeRecorder"];
   fhir:StructureDefinition.title [ fhir:value "Who recorded the information"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-13T09:41:04+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

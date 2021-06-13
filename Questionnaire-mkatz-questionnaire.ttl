@@ -197,7 +197,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-06-13T09:32:51+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-06-13T09:41:04+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:Questionnaire.contact [
      fhir:index 0;
@@ -221,17 +221,6 @@
   ];
   fhir:Questionnaire.item [
      fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "bathing" ];
      fhir:Questionnaire.item.text [ fhir:value "Se laver" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
@@ -239,17 +228,6 @@
      fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-bathing-dep" ]
   ], [
      fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "dressing" ];
      fhir:Questionnaire.item.text [ fhir:value "S'habiller" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
@@ -257,17 +235,6 @@
      fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-dressing-dep" ]
   ], [
      fhir:index 2;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "transferring" ];
      fhir:Questionnaire.item.text [ fhir:value "Se déplacer" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
@@ -275,17 +242,6 @@
      fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-transferring-dep" ]
   ], [
      fhir:index 3;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "toileting" ];
      fhir:Questionnaire.item.text [ fhir:value "Aller à la toilette" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
@@ -293,17 +249,6 @@
      fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-toileting-dep" ]
   ], [
      fhir:index 4;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "continence" ];
      fhir:Questionnaire.item.text [ fhir:value "La continence" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
@@ -311,17 +256,6 @@
      fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-continence-dep" ]
   ], [
      fhir:index 5;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
-           fhir:Coding.code [ fhir:value "radio-button" ]
-         ]
-       ]
-     ];
      fhir:Questionnaire.item.linkId [ fhir:value "feeding" ];
      fhir:Questionnaire.item.text [ fhir:value "Manger" ];
      fhir:Questionnaire.item.type [ fhir:value "choice" ];
