@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BeCSBodySite"];
   fhir:CodeSystem.title [ fhir:value "Body Site CodeSystem"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-06-13T14:02:07+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-06-15T08:34:51+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:CodeSystem.contact [
      fhir:index 0;

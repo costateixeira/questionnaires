@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7c6fbca0-d680-40bf-8a0f-b96b5092858b"/>
+  <id value="d594c9eb-9fb2-494a-851a-35b0b16f858d"/>
   <meta>
-    <lastUpdated value="2021-06-13T14:02:07.387+00:00"/>
+    <lastUpdated value="2021-06-15T08:34:51.880+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -87,8 +87,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c18020e-d22b-4df5-8611-88a1997beef0"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:66c5768e-5995-419c-b425-3709b25ca887"/>
+          <timestamp value="2021-06-15T08:35:16+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -294,8 +294,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec69dc4d-90f5-419f-85ab-a3cdd91a214d"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:8e137920-207a-4689-88e9-c363382d681a"/>
+          <timestamp value="2021-06-15T08:35:16+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -742,8 +742,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:55200458-9a1b-4953-8854-45530cb8faa0"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:0a7aecab-c709-4db4-8a1a-d47e2d8fa769"/>
+          <timestamp value="2021-06-15T08:35:17+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -991,7 +991,7 @@
         <name value="BeVSVaccinationConfirmationStatus"/>
         <title value="Vaccination status Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1011,8 +1011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6bbba8e8-0b03-4846-9a91-1339fb132e36"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:9f80ba38-7ed9-4413-9f3f-0a7e8b5e70e2"/>
+          <timestamp value="2021-06-15T08:35:17+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1262,7 +1262,7 @@
         <name value="BeVSCareLocation"/>
         <title value="Care Location Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1282,8 +1282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bacea1b5-0635-462d-afec-71a3153daa00"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:bb066739-6c9f-4d67-983a-c6c6bb3854f0"/>
+          <timestamp value="2021-06-15T08:35:17+00:00"/>
           <total value="23"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1531,7 +1531,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSVaccineAdministrationRoute"/>
         <title value="Vaccine Administration Route"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1551,8 +1551,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:433c2296-a13c-4369-a73f-ad02d693002d"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:8449bb73-b589-475c-b05a-f2dcc0f65a66"/>
+          <timestamp value="2021-06-15T08:35:17+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1716,7 +1716,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSVaccinationStatusReason"/>
         <title value="Vaccination status reason Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1736,8 +1736,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:45d25dd5-2b7f-4473-b5df-14bcc392dcc8"/>
-          <timestamp value="2021-06-13T14:02:30+00:00"/>
+          <identifier value="urn:uuid:54853539-ea47-4793-ac0c-ed5ff044bf8d"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1864,7 +1864,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSScoreCategory"/>
         <title value="Score Category Value Set"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -1884,8 +1884,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aa6499ac-feeb-45ec-b30b-4858d897ef65"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:9fcfbb93-45dc-4cbe-a88c-f5d066aa3af7"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1987,8 +1987,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleBathing"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:16ef264a-0d67-4d07-a6db-a67ba42fadd4"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:a4efd46b-7354-48e0-a6ab-9a3e9655c53a"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2091,8 +2091,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleDressing"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:8fca8410-b77c-439f-a47f-d677890777f1"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:759689e5-7ae8-44ac-8034-5a62cd3f9ab5"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2195,8 +2195,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleTransferring"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:3def9bf7-7c2d-4082-8d2f-0e612ac745f5"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:153f9e77-416d-468f-a596-f3bb172a1cf0"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2299,8 +2299,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleToileting"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:cb9c5a19-84ce-4991-8e10-7f3953766a1b"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:73797596-dec5-408a-b965-1787de33f05f"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2403,8 +2403,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleContinence"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:4a247b52-8007-4838-ad87-e836efc70a6d"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:3c5aaea6-82b5-4205-8e12-7f432124dc40"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2507,8 +2507,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="ModifiedKatzScaleFeeding"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:65f9c3ae-60be-406f-85f8-ec6d86f5c01b"/>
-          <timestamp value="2021-06-13T14:02:31+00:00"/>
+          <identifier value="urn:uuid:f95bc512-1ac1-4f40-add4-6365d1e511ea"/>
+          <timestamp value="2021-06-15T08:35:18+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2603,8 +2603,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentFoodIntake"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:e9292903-a4f9-427a-95e4-011498bf4376"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:9ad2faeb-14bc-4666-b799-9f0b5471c608"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2702,8 +2702,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentWeightLoss"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:1bb74130-1072-4b1c-9c91-d76a88bcd379"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:79f5d817-5645-4d3f-8e3f-020f36ac2eb0"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2798,8 +2798,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentMobility"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:609dae89-d101-4f43-9328-f411bdc7065d"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:b11e72e1-a72d-410c-b2e9-ae8803960d2e"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2881,8 +2881,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentStress"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:0b9d0b98-5117-499f-bbf4-f55b10bfa561"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:e7525c94-a5d8-438e-8f14-bff6e92e62dd"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2967,8 +2967,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentNeuropsychological"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:a1c29e8f-f100-47a2-8cac-ecbd9fac122f"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:5434eafb-7300-462a-9b50-13d1dcbee3a9"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3066,8 +3066,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="MiniNutritionalAssessmentBMI"/>
         <status value="draft"/>
         <expansion>
-          <identifier value="urn:uuid:3654cafa-ad74-464c-ab90-73073e859d92"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:21208ba9-b87c-4888-871f-b8c5e800dd6a"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3240,7 +3240,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="BeVSLaterality"/>
         <title value="Laterality"/>
         <status value="draft"/>
-        <date value="2021-06-13T14:02:07+00:00"/>
+        <date value="2021-06-15T08:34:51+00:00"/>
         <publisher value="RIZIV-INAMI"/>
         <contact>
           <telecom>
@@ -3260,8 +3260,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4aae0e2c-ff84-4562-bc89-a155a838e91b"/>
-          <timestamp value="2021-06-13T14:02:32+00:00"/>
+          <identifier value="urn:uuid:bb4a3cc8-2f89-46fd-8ae8-cc57b22eb7fe"/>
+          <timestamp value="2021-06-15T08:35:19+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
