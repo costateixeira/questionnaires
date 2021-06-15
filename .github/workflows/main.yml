@@ -37,7 +37,7 @@ jobs:
       - name: Create file
         run: |
           echo --- > input/data/github.yml
-          echo branch: ${GITHUB_REF##*/} >> input/data/github.yml
+          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
 #          echo \ \ ${GITHUB_REF##*/}  >> input/data/github.yml
 
 
