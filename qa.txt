@@ -3,7 +3,7 @@
 
 err = 61, warn = 77, info = 3
 IG Publisher Version: 1.1.73
-Generated Tue Jun 15 23:15:18 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+Generated Tue Jun 15 23:22:11 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
 
  Build Errors : 106 / 10 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2
@@ -137,10 +137,10 @@ ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ExampleScenario-scenario-allergy.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'org-one-brussels' for "org-one-brussels" cannot be resolved
 ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 659: The link 'org-sanofi' for "org-sanofi" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 209, column 1433: The link 'null#item.clinical-status' for "3 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 210, column 1422: The link 'null#item.patient-id' for "4 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 211, column 1357: The link 'null#item.allergyintolerance' for "2 options" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 212, column 1353: The link 'null#item.type' for "4 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 210, column 1433: The link 'null#item.clinical-status' for "3 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 211, column 1422: The link 'null#item.patient-id' for "4 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 212, column 1357: The link 'null#item.allergyintolerance' for "2 options" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 213, column 1353: The link 'null#item.type' for "4 options" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-be-address-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 226, column 249: The link 'location.html#' for "Location" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-be-organization-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 907, column 249: The link 'location.html#' for "Location" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-be-patient-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 716, column 249: The link 'location.html#' for "Location" cannot be resolved

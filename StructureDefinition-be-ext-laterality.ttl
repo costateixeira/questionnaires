@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeLaterality"];
   fhir:StructureDefinition.title [ fhir:value "Laterality extension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-15T23:14:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-15T23:21:31+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
