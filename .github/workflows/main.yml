@@ -43,16 +43,14 @@ jobs:
 
       - name: Create file
         run: |
-          echo First        > other.txt
-          echo Second Line >> other.txt
-          echo Third       >> other.txt
+          echo --- > input/data/github.yml
+          echo branch: >> input/data/github.yml
+          echo '   ${GITHUB_REF##*/}'  >> input/data/github.yml
 
 
       - name: Show file content
         run: |
-          pwd
-          ls -la
-          cat other.txt
+          cat input/data/github.yml
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
