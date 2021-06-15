@@ -36,9 +36,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Create file
         run: |
-          echo --- > input/data/github.yml
-#          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
-#          echo \ \ ${GITHUB_REF##*/}  >> input/data/github.yml
+          printf "---\n branch: ${GITHUB_REF##*/}" > input/data/github.yml
 
 
       - name: Show file content
