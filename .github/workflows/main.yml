@@ -40,6 +40,8 @@ jobs:
 
       - name: Create file
         run: |
+          mkdir input
+          mkdir input/data
           printf "---\n branch: ${GITHUB_REF##*/}" > input/data/github.yml
 
 
