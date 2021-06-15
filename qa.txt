@@ -3,7 +3,7 @@
 
 err = 61, warn = 77, info = 3
 IG Publisher Version: 1.1.73
-Generated Tue Jun 15 08:35:37 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+Generated Tue Jun 15 20:25:44 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
 
  Build Errors : 106 / 10 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2

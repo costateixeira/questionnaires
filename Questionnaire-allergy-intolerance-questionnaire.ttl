@@ -22,7 +22,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-06-15T08:34:51+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-06-15T20:25:03+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:Questionnaire.contact [
      fhir:index 0;
