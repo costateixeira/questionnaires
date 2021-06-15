@@ -41,6 +41,19 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
+      - name: Create file
+        run: |
+          echo First        > other.txt
+          echo Second Line >> other.txt
+          echo Third       >> other.txt
+
+
+      - name: Show file content
+        run: |
+          pwd
+          ls -la
+          cat other.txt
+
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
