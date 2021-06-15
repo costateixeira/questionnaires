@@ -7,7 +7,7 @@ This is an empty IG
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/<handle>/<repo>/branches/main/index.html__  
-Canonical / permanent URL: 
+Canonical / permanent URL:  
 <br> </br>
 
 ### Issues
