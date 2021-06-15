@@ -34,29 +34,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Show dir  content
-        run: |
-          ls
-
-      - name: Create folder
-        run: |
-          mkdir input
-          mkdir input/data
-#          printf "---\n branch: ${GITHUB_REF##*/}" > input/data/github.yml
-
-      - name: Create file
-        run: |
-          echo --- > input/data/github.yml
-          echo "branch: "  >> input/data/github.yml
-          echo \ \ ${GITHUB_REF##*/}  >> input/data/github.yml
-#          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
-
-
-
-      - name: Show file content
-        run: |
-          cat input/data/github.yml
-          
       - uses: actions/checkout@v2
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
@@ -64,6 +41,16 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
+      - name: Create file
+        run: |
+          echo --- > input/data/github.yml
+          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
+#          echo "branch: "  >> input/data/github.yml
+#          echo \ \ ${GITHUB_REF##*/}  >> input/data/github.yml
+
+      - name: Show file content
+        run: |
+          cat input/data/github.yml
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
