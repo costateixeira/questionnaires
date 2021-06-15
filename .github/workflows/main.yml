@@ -44,10 +44,10 @@ jobs:
       - name: Create file
         run: |
           brch=${GITHUB_REF##*/}
-          idt= "  "
+          idt = "  "
           echo --- > input/data/github.yml
-          echo branch: >> input/data/github.yml
-          echo $brch$idt  >> input/data/github.yml
+          echo branch: $brch >> input/data/github.yml
+#          echo $brch$idt  >> input/data/github.yml
 
 
       - name: Show file content
