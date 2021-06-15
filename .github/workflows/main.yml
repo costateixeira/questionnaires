@@ -38,11 +38,19 @@ jobs:
         run: |
           ls
 
-      - name: Create file
+      - name: Create folder
         run: |
           mkdir input
           mkdir input/data
-          printf "---\n branch: ${GITHUB_REF##*/}" > input/data/github.yml
+#          printf "---\n branch: ${GITHUB_REF##*/}" > input/data/github.yml
+
+      - name: Create file
+        run: |
+          echo --- > input/data/github.yml
+          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
+#          echo "branch: " ${GITHUB_REF##*/} >> input/data/github.yml
+#          echo \ \ ${GITHUB_REF##*/}  >> input/data/github.yml
+
 
 
       - name: Show file content
