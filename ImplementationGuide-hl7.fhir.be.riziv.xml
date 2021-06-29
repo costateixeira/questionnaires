@@ -12,7 +12,7 @@
   <title value="RIZIV-INAMI Patient Record"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-06-15T23:21:31+00:00"/>
+  <date value="2021-06-29T20:42:23+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>
@@ -653,27 +653,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/be-model-addiction"/>
+      </reference>
+      <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/be-model-patientwill"/>
       </reference>
       <description value="This is the logical model of the patient will for a patient - in fact, each entry of the patient&#39;s will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.&#xD;&#xA;The Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-scoreresult"/>
-      </reference>
-      <description value="This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-model-problem"/>
-      </reference>
-      <description value="This is the logical model of the patient&#39;s problem entries in a record."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -689,9 +680,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/be-model-addiction"/>
+        <reference value="StructureDefinition/be-model-problem"/>
       </reference>
-      <description value="This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.&#xD;&#xA; This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation."/>
+      <description value="This is the logical model of the patient&#39;s problem entries in a record."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-scoreresult"/>
+      </reference>
+      <description value="This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -750,13 +750,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/be-vs-patientwill-category"/>
+        <reference value="CodeSystem/be-cs-patientwill-category"/>
       </reference>
-      <name value="Patient Will Category"/>
-      <description value="Score Value Set"/>
+      <name value="Patient Will Category CodeSystem"/>
+      <description value="Body Site CodeSystem"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -783,9 +783,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/be-vs-patientwill-code"/>
+        <reference value="ValueSet/be-vs-patientwill-category"/>
       </reference>
-      <name value="Patient Will directives Value Set"/>
+      <name value="Patient Will Category"/>
       <description value="Score Value Set"/>
     </resource>
     <resource>
@@ -800,6 +800,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-patientwill-code"/>
+      </reference>
+      <name value="Patient Will directives Value Set"/>
+      <description value="Score Value Set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -807,82 +817,6 @@
       </reference>
       <name value="Body Site CodeSystem"/>
       <description value="Body Site CodeSystem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/be-cs-patientwill-category"/>
-      </reference>
-      <name value="Patient Will Category CodeSystem"/>
-      <description value="Body Site CodeSystem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/allergyintolerance-encounterReference-contained"/>
-      </reference>
-      <name value="Example AllergyIntolerance - allergyintolerance-encounterReference-contained"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/exposure-risk"/>
-      </reference>
-      <description value="Exposure Risk"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/allergyintolerance-encounterReference"/>
-      </reference>
-      <name value="Example AllergyIntolerance - allergyintolerance-encounterReference"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-mkatz"/>
-      </reference>
-      <name value="CodeSystem Modified Katz assessment scale"/>
-      <description value="CodeSystem Modified Katz assessment scale for independent living."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-ext-laterality"/>
-      </reference>
-      <name value="Laterality extension"/>
-      <description value="An explicit statement of laterality of a lesion, or a treatment, etc."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/example-encounter-uzgent"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/mkatz-questionnaire"/>
-      </reference>
-      <name value="Modified Katz scale evaluation Questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -896,16 +830,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-mna"/>
-      </reference>
-      <name value="CodeSystem Mini Nutritional Assessment scale"/>
-      <description value="CodeSystem Mini Nutritional Assessment."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -915,12 +839,40 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergyintolerance-encounterReference"/>
+      </reference>
+      <name value="Example AllergyIntolerance - allergyintolerance-encounterReference"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/example-encounter-uzgent-contained"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-mkatz"/>
+      </reference>
+      <name value="CodeSystem Modified Katz assessment scale"/>
+      <description value="CodeSystem Modified Katz assessment scale for independent living."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/allergy-intolerance-questionnaire"/>
+        <reference value="Questionnaire/mkatz-questionnaire"/>
       </reference>
-      <name value="Allergy / Intolerance reporting Questionnaire"/>
+      <name value="Modified Katz scale evaluation Questionnaire"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -934,11 +886,59 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergyintolerance-encounterReference-contained"/>
+      </reference>
+      <name value="Example AllergyIntolerance - allergyintolerance-encounterReference-contained"/>
+      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Encounter/example-encounter-uzgent-contained"/>
+        <reference value="Encounter/example-encounter-uzgent"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exposure-risk"/>
+      </reference>
+      <description value="Exposure Risk"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-ext-laterality"/>
+      </reference>
+      <name value="Laterality extension"/>
+      <description value="An explicit statement of laterality of a lesion, or a treatment, etc."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/allergy-intolerance-questionnaire"/>
+      </reference>
+      <name value="Allergy / Intolerance reporting Questionnaire"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-mna"/>
+      </reference>
+      <name value="CodeSystem Mini Nutritional Assessment scale"/>
+      <description value="CodeSystem Mini Nutritional Assessment."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

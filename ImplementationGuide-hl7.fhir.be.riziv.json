@@ -11,7 +11,7 @@
   "title": "RIZIV-INAMI Patient Record",
   "status": "draft",
   "experimental": false,
-  "date": "2021-06-15T23:21:31+00:00",
+  "date": "2021-06-29T20:42:23+00:00",
   "publisher": "RIZIV-INAMI",
   "contact": [
     {
@@ -956,33 +956,21 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/be-model-addiction"
+        },
+        "description": "This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.\r\n This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/be-model-patientwill"
         },
         "description": "This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.\r\nThe Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-model-scoreresult"
-        },
-        "description": "This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-model-problem"
-        },
-        "description": "This is the logical model of the patient's problem entries in a record."
       },
       {
         "extension": [
@@ -1004,9 +992,21 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/be-model-addiction"
+          "reference": "StructureDefinition/be-model-problem"
         },
-        "description": "This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.\r\n This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation."
+        "description": "This is the logical model of the patient's problem entries in a record."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-model-scoreresult"
+        },
+        "description": "This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..."
       },
       {
         "extension": [
@@ -1085,14 +1085,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "ValueSet/be-vs-patientwill-category"
+          "reference": "CodeSystem/be-cs-patientwill-category"
         },
-        "name": "Patient Will Category",
-        "description": "Score Value Set"
+        "name": "Patient Will Category CodeSystem",
+        "description": "Body Site CodeSystem"
       },
       {
         "extension": [
@@ -1128,9 +1128,9 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/be-vs-patientwill-code"
+          "reference": "ValueSet/be-vs-patientwill-category"
         },
-        "name": "Patient Will directives Value Set",
+        "name": "Patient Will Category",
         "description": "Score Value Set"
       },
       {
@@ -1150,6 +1150,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/be-vs-patientwill-code"
+        },
+        "name": "Patient Will directives Value Set",
+        "description": "Score Value Set"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -1158,106 +1171,6 @@
         },
         "name": "Body Site CodeSystem",
         "description": "Body Site CodeSystem"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/be-cs-patientwill-category"
-        },
-        "name": "Patient Will Category CodeSystem",
-        "description": "Body Site CodeSystem"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AllergyIntolerance"
-          }
-        ],
-        "reference": {
-          "reference": "AllergyIntolerance/allergyintolerance-encounterReference-contained"
-        },
-        "name": "Example AllergyIntolerance - allergyintolerance-encounterReference-contained",
-        "exampleCanonical": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/exposure-risk"
-        },
-        "description": "Exposure Risk"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AllergyIntolerance"
-          }
-        ],
-        "reference": {
-          "reference": "AllergyIntolerance/allergyintolerance-encounterReference"
-        },
-        "name": "Example AllergyIntolerance - allergyintolerance-encounterReference",
-        "exampleCanonical": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-mkatz"
-        },
-        "name": "CodeSystem Modified Katz assessment scale",
-        "description": "CodeSystem Modified Katz assessment scale for independent living."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-ext-laterality"
-        },
-        "name": "Laterality extension",
-        "description": "An explicit statement of laterality of a lesion, or a treatment, etc."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Encounter"
-          }
-        ],
-        "reference": {
-          "reference": "Encounter/example-encounter-uzgent"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
-          }
-        ],
-        "reference": {
-          "reference": "Questionnaire/mkatz-questionnaire"
-        },
-        "name": "Modified Katz scale evaluation Questionnaire"
       },
       {
         "extension": [
@@ -1276,19 +1189,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-mna"
-        },
-        "name": "CodeSystem Mini Nutritional Assessment scale",
-        "description": "CodeSystem Mini Nutritional Assessment."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Questionnaire"
           }
         ],
@@ -1301,13 +1201,50 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/allergyintolerance-encounterReference"
+        },
+        "name": "Example AllergyIntolerance - allergyintolerance-encounterReference",
+        "exampleCanonical": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/example-encounter-uzgent-contained"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-mkatz"
+        },
+        "name": "CodeSystem Modified Katz assessment scale",
+        "description": "CodeSystem Modified Katz assessment scale for independent living."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Questionnaire"
           }
         ],
         "reference": {
-          "reference": "Questionnaire/allergy-intolerance-questionnaire"
+          "reference": "Questionnaire/mkatz-questionnaire"
         },
-        "name": "Allergy / Intolerance reporting Questionnaire"
+        "name": "Modified Katz scale evaluation Questionnaire"
       },
       {
         "extension": [
@@ -1326,12 +1263,75 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/allergyintolerance-encounterReference-contained"
+        },
+        "name": "Example AllergyIntolerance - allergyintolerance-encounterReference-contained",
+        "exampleCanonical": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           }
         ],
         "reference": {
-          "reference": "Encounter/example-encounter-uzgent-contained"
+          "reference": "Encounter/example-encounter-uzgent"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/exposure-risk"
+        },
+        "description": "Exposure Risk"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-ext-laterality"
+        },
+        "name": "Laterality extension",
+        "description": "An explicit statement of laterality of a lesion, or a treatment, etc."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/allergy-intolerance-questionnaire"
+        },
+        "name": "Allergy / Intolerance reporting Questionnaire"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-mna"
+        },
+        "name": "CodeSystem Mini Nutritional Assessment scale",
+        "description": "CodeSystem Mini Nutritional Assessment."
       }
     ],
     "page": {

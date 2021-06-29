@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "RIZIV-INAMI Patient Record"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-15T23:21:31+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-29T20:42:23+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -989,10 +989,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-patientwill" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-addiction" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.\r\nThe Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.\r\n This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation." ]
      ], [
        fhir:index 37;
        fhir:Element.extension [
@@ -1001,24 +1001,12 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-scoreresult" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-patientwill" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient will for a patient - in fact, each entry of the patient's will assertions. The patient will consists of several entries as modeled here. Initially based on the input of the NIHDI.\r\nThe Belgian federal profile for a patient will ONLY in the context of the patient will in the context of limitations to treatment, DNR etc. Initially based on the functional description of the NIHDI. This might in the future be also used to record agreement to participate in clinical trials etc. Any use case around informed consent or data sharing is out of scope for this logical model." ]
      ], [
        fhir:index 38;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-problem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient's problem entries in a record." ]
-     ], [
-       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1030,6 +1018,18 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical model describing the model for the prescription referral. This draft is used in the HL7 Belgian workgroup for referral." ]
      ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-problem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of the patient's problem entries in a record." ]
+     ], [
        fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
@@ -1037,10 +1037,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-addiction" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-model-scoreresult" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of an addiction of a patient. Initially based on the input of the NIHDI.\r\n This model represents a known,  suspected or resolved addiction. This models does not intend to represent a point-in-time observation of substance intake or related event or behaviour. In other words, this logical model represents the addiction condition, not an addiction-related event or observation." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the logical model of a Score Result, the result of a scoring assessment by a person or a system. Examples are risk scores, or pain score..." ]
      ], [
        fhir:index 41;
        fhir:Element.extension [
@@ -1119,14 +1119,14 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-category" ]
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-category" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Value Set" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category CodeSystem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Site CodeSystem" ]
      ], [
        fhir:index 48;
        fhir:Element.extension [
@@ -1161,10 +1161,10 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code>;
-         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-code" ]
+         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-category" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will directives Value Set" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Value Set" ]
      ], [
        fhir:index 51;
@@ -1184,6 +1184,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-patientwill-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will directives Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Score Value Set" ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1193,46 +1206,30 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Site CodeSystem" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Site CodeSystem" ]
      ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-patientwill-category" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Will Category CodeSystem" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Site CodeSystem" ]
-     ], [
        fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/AllergyIntolerance/allergyintolerance-encounterReference-contained>;
-         fhir:Reference.reference [ fhir:value "AllergyIntolerance/allergyintolerance-encounterReference-contained" ]
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-scoreresult" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example AllergyIntolerance - allergyintolerance-encounterReference-contained" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance";
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BEScoreResult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines a patient's known problem, a diagnostic or antecedent that deserves attention." ]
      ], [
        fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/exposure-risk" ]
+         fhir:link <https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/mna-questionnaire" ]
        ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exposure Risk" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mini Nutritional Assessment Questionnaire" ]
      ], [
        fhir:index 56;
        fhir:Element.extension [
@@ -1254,6 +1251,17 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/Encounter/example-encounter-uzgent-contained>;
+         fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent-contained" ]
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1263,31 +1271,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Modified Katz assessment scale" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem Modified Katz assessment scale for independent living." ]
      ], [
-       fhir:index 58;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-laterality" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality extension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An explicit statement of laterality of a lesion, or a treatment, etc." ]
-     ], [
        fhir:index 59;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Encounter" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Encounter/example-encounter-uzgent>;
-         fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent" ]
-       ]
-     ], [
-       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1299,57 +1283,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modified Katz scale evaluation Questionnaire" ]
      ], [
-       fhir:index 61;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-scoreresult" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BEScoreResult" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines a patient's known problem, a diagnostic or antecedent that deserves attention." ]
-     ], [
-       fhir:index 62;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/cs-mna>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/cs-mna" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Mini Nutritional Assessment scale" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem Mini Nutritional Assessment." ]
-     ], [
-       fhir:index 63;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire>;
-         fhir:Reference.reference [ fhir:value "Questionnaire/mna-questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mini Nutritional Assessment Questionnaire" ]
-     ], [
-       fhir:index 64;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Questionnaire/allergy-intolerance-questionnaire>;
-         fhir:Reference.reference [ fhir:value "Questionnaire/allergy-intolerance-questionnaire" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergy / Intolerance reporting Questionnaire" ]
-     ], [
-       fhir:index 65;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1362,16 +1296,82 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laterality" ]
      ], [
-       fhir:index 66;
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/AllergyIntolerance/allergyintolerance-encounterReference-contained>;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/allergyintolerance-encounterReference-contained" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example AllergyIntolerance - allergyintolerance-encounterReference-contained" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance";
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance>
+       ]
+     ], [
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.hl7belgium.org/fhir/Encounter/example-encounter-uzgent-contained>;
-         fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent-contained" ]
+         fhir:link <https://www.hl7belgium.org/fhir/Encounter/example-encounter-uzgent>;
+         fhir:Reference.reference [ fhir:value "Encounter/example-encounter-uzgent" ]
        ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/exposure-risk" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exposure Risk" ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-laterality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An explicit statement of laterality of a lesion, or a treatment, etc." ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/Questionnaire/allergy-intolerance-questionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/allergy-intolerance-questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Allergy / Intolerance reporting Questionnaire" ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.hl7belgium.org/fhir/CodeSystem/cs-mna>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cs-mna" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem Mini Nutritional Assessment scale" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem Mini Nutritional Assessment." ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
