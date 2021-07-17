@@ -110,7 +110,7 @@
   <name value="BeReferralPrescription"/>
   <status value="draft"/>
   <date value="2020-05-12T13:07:15+00:00"/>
-  <publisher value="RIZIV-INAMI"/>
+  <publisher value="mmm"/>
   <contact>
     <telecom>
       <system value="url"/>

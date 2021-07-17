@@ -3,16 +3,16 @@
   "id": "hl7.fhir.be.riziv",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>RIZIV-INAMI - Patient Summary Record Implementation Guide</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>Patient RecordSandbox IG</p>\n</div></div>"
   },
   "url": "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv",
   "version": "0.1.0",
   "name": "RIZIV_INAMI",
-  "title": "RIZIV-INAMI Patient Record",
+  "title": "Sandbox content",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-17T12:04:48+00:00",
-  "publisher": "RIZIV-INAMI",
+  "date": "2021-07-17T12:10:51+00:00",
+  "publisher": "mmm",
   "contact": [
     {
       "telecom": [
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "RIZIV-INAMI - Patient Summary Record Implementation Guide",
+  "description": "Patient RecordSandbox IG",
   "jurisdiction": [
     {
       "coding": [

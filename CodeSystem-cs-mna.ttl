@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "CodeSystem Mini Nutritional Assessment scale"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.date [ fhir:value "2021-02-12T12:13:57+01:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.publisher [ fhir:value "mmm"];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

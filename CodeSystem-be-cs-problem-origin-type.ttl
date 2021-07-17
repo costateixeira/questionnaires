@@ -17,8 +17,8 @@
   fhir:CodeSystem.name [ fhir:value "BeCSProblemOriginType"];
   fhir:CodeSystem.title [ fhir:value "Problem Origin Type"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-07-17T12:04:48+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.date [ fhir:value "2021-07-17T12:10:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "mmm"];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

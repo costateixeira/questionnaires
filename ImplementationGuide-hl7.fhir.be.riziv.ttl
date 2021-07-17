@@ -10,16 +10,16 @@
   fhir:Resource.id [ fhir:value "hl7.fhir.be.riziv"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>RIZIV-INAMI - Patient Summary Record Implementation Guide</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>Patient RecordSandbox IG</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "RIZIV_INAMI"];
-  fhir:ImplementationGuide.title [ fhir:value "RIZIV-INAMI Patient Record"];
+  fhir:ImplementationGuide.title [ fhir:value "Sandbox content"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-17T12:04:48+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-07-17T12:10:51+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "mmm"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "RIZIV-INAMI - Patient Summary Record Implementation Guide"];
+  fhir:ImplementationGuide.description [ fhir:value "Patient RecordSandbox IG"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
