@@ -5,10 +5,10 @@
    <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
    <version value="0.1.0" />
    <name value="RIZIV_INAMI" />
-   <title value="RIZIV-INAMI Patient Record" />
+   <title value="Sandbox content" />
    <status value="draft" />
    <experimental value="false" />
-   <publisher value="RIZIV-INAMI" />
+   <publisher value="mmm" />
    <contact>
       <telecom>
          <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -16,7 +16,7 @@
          <value value="http://somewhere.org" />
       </telecom>
    </contact>
-   <description value="RIZIV-INAMI - Patient Summary Record Implementation Guide" />
+   <description value="Patient RecordSandbox IG" />
    <jurisdiction>
       <!-- This will drive SNOMED release used -->
       <coding>
