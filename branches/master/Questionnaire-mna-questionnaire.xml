@@ -167,8 +167,8 @@
   <title value="Mini Nutritional Assessment Questionnaire"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2021-07-17T12:04:48+00:00"/>
-  <publisher value="RIZIV-INAMI"/>
+  <date value="2021-07-17T12:10:51+00:00"/>
+  <publisher value="mmm"/>
   <contact>
     <telecom>
       <system value="url"/>

@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Score Code System"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.date [ fhir:value "2020-10-01T11:01:09+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.publisher [ fhir:value "mmm"];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

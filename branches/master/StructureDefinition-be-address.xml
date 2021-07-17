@@ -24,7 +24,7 @@ As that 2-letter format is also the standard in a KMEHR address, it is hence REC
   <name value="BeAddress"/>
   <status value="active"/>
   <date value="2021-02-08T13:26:39+00:00"/>
-  <publisher value="RIZIV-INAMI"/>
+  <publisher value="mmm"/>
   <contact>
     <telecom>
       <system value="url"/>

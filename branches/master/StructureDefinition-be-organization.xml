@@ -42,7 +42,7 @@ It is RECOMMENDED to include this when available">address</a><a name="Organizati
   <name value="BeOrganization"/>
   <status value="active"/>
   <date value="2021-02-08T13:26:39+00:00"/>
-  <publisher value="RIZIV-INAMI"/>
+  <publisher value="mmm"/>
   <contact>
     <telecom>
       <system value="url"/>

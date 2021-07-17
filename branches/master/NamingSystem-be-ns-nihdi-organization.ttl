@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "be-ns-nihdi-organization"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-organization</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>BeNSNIHDIOrganization</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Nihdi - Organization</p>\n</div></td></tr><tr><td>Publisher</td><td>RIZIV-INAMI</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-organization</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>BeNSNIHDIOrganization</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Nihdi - Organization</p>\n</div></td></tr><tr><td>Publisher</td><td>mmm</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization</td><td>true</td></tr></table></div>"
   ];
   fhir:NamingSystem.name [ fhir:value "BeNSNIHDIOrganization"];
   fhir:NamingSystem.status [ fhir:value "active"];
   fhir:NamingSystem.kind [ fhir:value "identifier"];
   fhir:NamingSystem.date [ fhir:value "2020-07-24"^^xsd:date];
-  fhir:NamingSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:NamingSystem.publisher [ fhir:value "mmm"];
   fhir:NamingSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [

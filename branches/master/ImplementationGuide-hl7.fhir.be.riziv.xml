@@ -3,24 +3,24 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.be.riziv"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>RIZIV-INAMI - Patient Summary Record Implementation Guide</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RIZIV_INAMI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv</pre><div><p>Patient RecordSandbox IG</p>
 </div></div>
   </text>
   <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv"/>
   <version value="0.1.0"/>
   <name value="RIZIV_INAMI"/>
-  <title value="RIZIV-INAMI Patient Record"/>
+  <title value="Sandbox content"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-17T12:04:48+00:00"/>
-  <publisher value="RIZIV-INAMI"/>
+  <date value="2021-07-17T12:10:51+00:00"/>
+  <publisher value="mmm"/>
   <contact>
     <telecom>
       <system value="url"/>
       <value value="http://somewhere.org"/>
     </telecom>
   </contact>
-  <description value="RIZIV-INAMI - Patient Summary Record Implementation Guide"/>
+  <description value="Patient RecordSandbox IG"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
