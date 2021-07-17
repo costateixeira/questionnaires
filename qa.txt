@@ -3,7 +3,7 @@
 
 err = 61, warn = 77, info = 3
 IG Publisher Version: 1.1.76
-Generated Tue Jun 29 20:42:59 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+Generated Sat Jul 17 12:02:00 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
 
  Build Errors : 102 / 10 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2
@@ -99,9 +99,9 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/exposure-risk.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/allergy-intolerance-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 161
-ERROR: /github/workspace/output/Questionnaire-mna-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 145
-ERROR: /github/workspace/output/Questionnaire-mkatz-questionnaire-form.html: unexpected non-end of element null::div  at line 213 column 147
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 161
+ERROR: /github/workspace/output/Questionnaire-mna-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 145
+ERROR: /github/workspace/output/Questionnaire-mkatz-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 147
 ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 424: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
 ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 199, column 862: The link 'Location/uz-gent' for "Location/uz-gent" cannot be resolved
 ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1036: The link 'Practitioner/practitioner1' for "Practitioner/practitioner1" cannot be resolved

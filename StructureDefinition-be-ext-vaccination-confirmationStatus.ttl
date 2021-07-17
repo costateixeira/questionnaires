@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeVaccinationConfirmationStatus"];
   fhir:StructureDefinition.title [ fhir:value "How certain is the vaccination information - confirmed, not confirmed"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-29T20:42:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-17T12:01:24+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
