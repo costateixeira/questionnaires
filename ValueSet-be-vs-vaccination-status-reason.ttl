@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BeVSVaccinationStatusReason"];
   fhir:ValueSet.title [ fhir:value "Vaccination status reason Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-07-17T12:03:11+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-07-17T12:04:48+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:ValueSet.contact [
      fhir:index 0;
