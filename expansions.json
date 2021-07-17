@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "24d9cce6-361b-4d65-84a0-539b94ba8f9b",
+  "id" : "6ca2a0fb-b477-45ea-9900-cd231ee16631",
   "meta" : {
-    "lastUpdated" : "2021-07-17T12:02:26.707+00:00"
+    "lastUpdated" : "2021-07-17T12:03:11.780+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -39,8 +39,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f14dfbe7-82eb-4623-b455-2b9b61874fe1",
-        "timestamp" : "2021-07-17T12:02:46+00:00",
+        "identifier" : "urn:uuid:bd070641-8d7a-46ac-897f-371001053433",
+        "timestamp" : "2021-07-17T12:03:42+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -102,8 +102,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ec016655-4ace-496b-b362-7c6f44e2e689",
-        "timestamp" : "2021-07-17T12:02:46+00:00",
+        "identifier" : "urn:uuid:4af54a6e-2526-40d9-a9f1-3f7f92cf0619",
+        "timestamp" : "2021-07-17T12:03:42+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -225,8 +225,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e66e4eb6-dad5-42db-abf7-4cd5b8ee4b7e",
-        "timestamp" : "2021-07-17T12:02:46+00:00",
+        "identifier" : "urn:uuid:ab925b5b-445b-4171-b264-aabc077580d8",
+        "timestamp" : "2021-07-17T12:03:42+00:00",
         "total" : 33,
         "parameter" : [{
           "name" : "excludeNested",
@@ -426,8 +426,8 @@
       "name" : "MiniNutritionalAssessmentFoodIntake",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:4d016137-73e4-47d6-88dd-a968ae4adb9d",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:92392927-ee11-4813-832f-c7a1b5d566a2",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -469,8 +469,8 @@
       "name" : "MiniNutritionalAssessmentWeightLoss",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:2916940e-9eb0-4ef3-b2f3-f29c593ed6db",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:5d7427d2-0e35-401b-9eca-2e7b7d11b9d5",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -517,8 +517,8 @@
       "name" : "MiniNutritionalAssessmentMobility",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:a123d0a7-b092-4fa4-81d3-3352de3d6ec1",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:5e4d8b8a-a480-4ef7-9cc7-3e27b121d8ec",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -560,8 +560,8 @@
       "name" : "MiniNutritionalAssessmentStress",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:4224d137-4ab7-4e37-9b29-3286506f1b5f",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:166077c2-e428-4fe2-9a4a-c2849daf6a1d",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -598,8 +598,8 @@
       "name" : "MiniNutritionalAssessmentNeuropsychological",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:89b35485-dc73-476e-9791-548b87c222ba",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:4fc69701-ad75-41d4-9c79-fb37b6bbcdf6",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -641,8 +641,8 @@
       "name" : "MiniNutritionalAssessmentBMI",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:d6032b48-3b6f-462c-a540-7f8761d2e306",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:f07701e4-8845-4385-978d-c71cd787c1f1",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -689,7 +689,7 @@
       "name" : "BeVSScoreCategory",
       "title" : "Score Category Value Set",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -709,8 +709,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bc1a3420-a256-4051-9207-3a8985abf3b9",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:61330ce3-688d-4589-83c2-35147bc855c9",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -756,7 +756,7 @@
       "name" : "BeVSVaccineAdministrationRoute",
       "title" : "Vaccine Administration Route",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -776,8 +776,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1a3c342b-a028-4e76-8ae7-d7a4da71230c",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:227fd3db-9052-43e5-bc75-01489dfd5f07",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -848,8 +848,8 @@
       "name" : "ModifiedKatzScaleBathing",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:503c54cc-39f2-4d6a-8fae-e64500b33855",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:aa653636-3c31-4a47-aaa3-e12e948cd69c",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -896,8 +896,8 @@
       "name" : "ModifiedKatzScaleDressing",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:a69daaab-1e3f-4d98-9bec-ec0689695004",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:a0f6e6ea-b108-4635-9df1-5b6a458098e1",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -944,8 +944,8 @@
       "name" : "ModifiedKatzScaleTransferring",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:cc4fff8b-ee4b-4997-9c06-1f487353fe20",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:1daa21e5-b0ec-4774-89e4-1d911dbef51f",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -992,8 +992,8 @@
       "name" : "ModifiedKatzScaleToileting",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:adb2a7d8-cc17-4f36-8988-6c4d664d03d4",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:2b7e24b9-5a6c-466f-9492-93f580d6e791",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1040,8 +1040,8 @@
       "name" : "ModifiedKatzScaleContinence",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:a965086c-cc56-49f9-9009-e64730e08f94",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:d18d65de-a001-4219-b8c4-2e9c575e8b11",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1088,8 +1088,8 @@
       "name" : "ModifiedKatzScaleFeeding",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:20568430-08e9-4744-b37d-e2a1061e63b3",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:1287b7c6-8b16-4830-b224-d35c3ca78ac0",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1136,7 +1136,7 @@
       "name" : "BeVSLaterality",
       "title" : "Laterality",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1156,8 +1156,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9e909af7-6621-4b69-9a86-99c74998aade",
-        "timestamp" : "2021-07-17T12:02:47+00:00",
+        "identifier" : "urn:uuid:9d4ee0fd-130b-43bb-ad62-3fb93dfba727",
+        "timestamp" : "2021-07-17T12:03:43+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1276,7 +1276,7 @@
       "name" : "BeVSVaccinationStatusReason",
       "title" : "Vaccination status reason Value Set",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1296,8 +1296,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:610bf9a1-7390-4341-880b-51cb36edce13",
-        "timestamp" : "2021-07-17T12:02:48+00:00",
+        "identifier" : "urn:uuid:7921388c-7598-41ab-810e-e65e3c049f77",
+        "timestamp" : "2021-07-17T12:03:44+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1363,7 +1363,7 @@
       "name" : "BeVSVaccinationConfirmationStatus",
       "title" : "Vaccination status Value Set",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1383,8 +1383,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ffed850e-8f68-4cf6-8b6c-1961b82b9e31",
-        "timestamp" : "2021-07-17T12:02:48+00:00",
+        "identifier" : "urn:uuid:67e0de62-b2a8-4c1d-9e07-d54b357ef5a0",
+        "timestamp" : "2021-07-17T12:03:44+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1426,7 +1426,7 @@
       "name" : "BeVSCareLocation",
       "title" : "Care Location Value Set",
       "status" : "draft",
-      "date" : "2021-07-17T12:02:26+00:00",
+      "date" : "2021-07-17T12:03:11+00:00",
       "publisher" : "RIZIV-INAMI",
       "contact" : [{
         "telecom" : [{
@@ -1446,8 +1446,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1817b873-6a26-4151-9841-0b65e1e128bc",
-        "timestamp" : "2021-07-17T12:02:49+00:00",
+        "identifier" : "urn:uuid:b92ba620-aaaf-42b1-87a3-198a7596d145",
+        "timestamp" : "2021-07-17T12:03:45+00:00",
         "total" : 23,
         "parameter" : [{
           "name" : "excludeNested",

@@ -3,9 +3,9 @@
 
 err = 61, warn = 77, info = 3
 IG Publisher Version: 1.1.76
-Generated Sat Jul 17 12:03:04 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+Generated Sat Jul 17 12:04:04 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
 
- Build Errors : 102 / 10 / 0
+ Build Errors : 100 / 10 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained : 7 / 4 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz : 2 / 0 / 1
@@ -133,8 +133,6 @@ ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.htm
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/a at Line 277, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/td/br/td/a at Line 284, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1' for "Updated Allergy Record" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
 ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 205, column 33: The link './Bundle-EB.html' for "Empty Bundle" cannot be resolved
-ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ExampleScenario-scenario-allergy.xml.html' for "XML" cannot be resolved
-ERROR: /github/workspace/output/ExampleScenario-scenario-allergy.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ExampleScenario-scenario-allergy.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'org-one-brussels' for "org-one-brussels" cannot be resolved
 ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 659: The link 'org-sanofi' for "org-sanofi" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-be-address-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 226, column 249: The link 'location.html#' for "Location" cannot be resolved
