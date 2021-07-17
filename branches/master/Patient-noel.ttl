@@ -1,0 +1,159 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Patient/noel> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "noel"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>nationality</b></p><p><b>value</b>: <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country BE}\">Belgium</span></p></blockquote><p><b>identifier</b>: Social Beneficiary Identifier: 80010112344 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Noël Joyeux (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:noel.joyeux@belgium.be\">noel.joyeux@belgium.be</a>, <a href=\"tel:+322476792981\">+322476792981</a>, <a href=\"tel:+3226718655\">+3226718655</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1980-01-10</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li></ul><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate 20}\">Married</span></p><p><b>generalPractitioner</b>: <span></span></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "code" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country" ];
+           fhir:Coding.code [ fhir:value "BE" ];
+           fhir:Coding.display [ fhir:value "Belgium" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "SB" ];
+         fhir:Coding.display [ fhir:value "Social Beneficiary Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+     fhir:Identifier.value [ fhir:value "80010112344" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Joyeux" ];
+     fhir:HumanName.given [
+       fhir:value "Noël";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "noel.joyeux@belgium.be" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+322476792981" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+3226718655" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1980-01-10"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/language" ];
+       fhir:Extension.valueCode [ fhir:value "nl" ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "Sloordelle 42, 1160 Oudergem" ];
+     fhir:Address.line [
+       fhir:value "Sloordelle 42";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Sloordelle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "42" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "Oudergem" ];
+     fhir:Address.postalCode [ fhir:value "1160" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/language" ];
+       fhir:Extension.valueCode [ fhir:value "fr" ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "42, Allee des Colzas, 1160 Auderghem" ];
+     fhir:Address.line [
+       fhir:value "42, Allee des Colzas";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Allee des Colzas" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "42" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "Auderghem" ];
+     fhir:Address.postalCode [ fhir:value "1160" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:Coding.code [ fhir:value "M" ];
+       fhir:Coding.display [ fhir:value "Married" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate" ];
+       fhir:Coding.code [ fhir:value "20" ];
+       fhir:Coding.display [ fhir:value "Married" ]
+     ]
+  ];
+  fhir:Patient.generalPractitioner [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "50010112345" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Patient/noel.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

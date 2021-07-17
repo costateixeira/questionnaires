@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-score-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">risk<a name="be-cs-score-category-risk"> </a></td><td>Risk score</td><td>Risk score</td></tr><tr><td style="white-space:nowrap">pain<a name="be-cs-score-category-pain"> </a></td><td>Pain score</td><td>Pain score</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>risk</td><td>Risk score</td><td>Risk score</td></tr><tr><td>pain</td><td>Pain Score</td><td>Pain Score</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category"/>
+  <version value="0.1.0"/>
+  <name value="BeCSScoreCategory"/>
+  <title value="Score Category"/>
+  <status value="draft"/>
+  <date value="2021-07-17T12:04:48+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Score Category"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="risk"/>
+    <display value="Risk score"/>
+    <definition value="Risk score"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Risk score"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Risk score"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="pain"/>
+    <display value="Pain score"/>
+    <definition value="Pain score"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pain Score"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Pain Score"/>
+    </designation>
+  </concept>
+</CodeSystem>

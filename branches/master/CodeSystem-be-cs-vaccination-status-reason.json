@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-vaccination-status-reason",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"be-cs-vaccination-status-reason-OTHER\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">ALLERGY<a name=\"be-cs-vaccination-status-reason-ALLERGY\"> </a></td><td>Allergy to vaccine ingredient</td></tr><tr><td style=\"white-space:nowrap\">OSTOCK<a name=\"be-cs-vaccination-status-reason-OSTOCK\"> </a></td><td>Out of stock or no vaccine available</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>OTHER</td><td>Autre</td><td>Andere</td></tr><tr><td>ALLERGY</td><td>Allergie</td><td>Allergie</td></tr><tr><td>OSTOCK</td><td>Hors Stock</td><td>Geen voorraad</td></tr></table></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
+  "version": "0.1.0",
+  "name": "BeCSStatusReason",
+  "title": "Vaccination status reason Code System.",
+  "status": "draft",
+  "date": "2021-07-17T12:04:48+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Vaccination reason status Code System.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "concept": [
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Autre"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Andere"
+        }
+      ]
+    },
+    {
+      "code": "ALLERGY",
+      "display": "Allergy to vaccine ingredient",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Allergie"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Allergie"
+        }
+      ]
+    },
+    {
+      "code": "OSTOCK",
+      "display": "Out of stock or no vaccine available",
+      "designation": [
+        {
+          "language": "fr-BE",
+          "value": "Hors Stock"
+        },
+        {
+          "language": "nl-BE",
+          "value": "Geen voorraad"
+        }
+      ]
+    }
+  ]
+}

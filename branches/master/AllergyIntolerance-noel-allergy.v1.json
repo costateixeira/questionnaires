@@ -1,0 +1,71 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "noel-allergy.v1",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification refuted}\">Refuted</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 373270004}\">Allergic to Penicillin antibacterial</span></p><p><b>patient</b>: <a href=\"Patient-noel.html\">Generated Summary: Social Beneficiary Identifier: 80010112344 (OFFICIAL); active; Noël Joyeux (OFFICIAL); noel.joyeux@belgium.be, Phone: +322476792981, Phone: +3226718655; gender: male; birthDate: 1980-01-10; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate 20}\">Married</span></a></p><p><b>onset</b>: 2020</p><p><b>recordedDate</b>: Feb 21, 2020, 3:58:00 AM</p><p><b>recorder</b>: <a href=\"Practitioner-lenoir.html\">Generated Summary: id: 60010112355 (OFFICIAL), id: 17535484332 (OFFICIAL); Katherine François (OFFICIAL); Phone: 022675198, katherine.pulaski@enterprisehospital.be; gender: female; birthDate: 1979-12-11</a></p><p><b>note</b>: test results 21/02/2020</p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 126485001}\">Urticaria</span></td></tr></table></div>"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "resolved"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "refuted"
+      }
+    ]
+  },
+  "type": "allergy",
+  "category": [
+    "medication"
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "373270004",
+        "display": "Penicillin antibacterial"
+      }
+    ],
+    "text": "Allergic to Penicillin antibacterial"
+  },
+  "patient": {
+    "reference": "Patient/noel"
+  },
+  "onsetDateTime": "2020",
+  "recordedDate": "2020-02-21T14:58:00+11:00",
+  "recorder": {
+    "reference": "Practitioner/lenoir"
+  },
+  "note": [
+    {
+      "text": "test results 21/02/2020"
+    }
+  ],
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "126485001",
+              "display": "Urticaria"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

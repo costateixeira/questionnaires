@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-mkatz"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://example.org/cs-mkatz defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">bathing-dep-0<a name="cs-mkatz-bathing-dep-0"> </a></td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td style="white-space:nowrap">bathing-dep-1<a name="cs-mkatz-bathing-dep-1"> </a></td><td>Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture</td></tr><tr><td style="white-space:nowrap">bathing-dep-2<a name="cs-mkatz-bathing-dep-2"> </a></td><td>Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style="white-space:nowrap">bathing-dep-3<a name="cs-mkatz-bathing-dep-3"> </a></td><td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style="white-space:nowrap">dressing-dep-0<a name="cs-mkatz-dressing-dep-0"> </a></td><td>Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide</td></tr><tr><td style="white-space:nowrap">dressing-dep-1<a name="cs-mkatz-dressing-dep-1"> </a></td><td>Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td></tr><tr><td style="white-space:nowrap">dressing-dep-2<a name="cs-mkatz-dressing-dep-2"> </a></td><td>Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style="white-space:nowrap">dressing-dep-3<a name="cs-mkatz-dressing-dep-3"> </a></td><td>Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style="white-space:nowrap">transferring-dep-0<a name="cs-mkatz-transferring-dep-0"> </a></td><td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td></tr><tr><td style="white-space:nowrap">transferring-dep-1<a name="cs-mkatz-transferring-dep-1"> </a></td><td>Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)</td></tr><tr><td style="white-space:nowrap">transferring-dep-2<a name="cs-mkatz-transferring-dep-2"> </a></td><td>Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements</td></tr><tr><td style="white-space:nowrap">transferring-dep-3<a name="cs-mkatz-transferring-dep-3"> </a></td><td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td></tr><tr><td style="white-space:nowrap">toileting-dep-0<a name="cs-mkatz-toileting-dep-0"> </a></td><td>Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer</td></tr><tr><td style="white-space:nowrap">toileting-dep-1<a name="cs-mkatz-toileting-dep-1"> </a></td><td>Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style="white-space:nowrap">toileting-dep-2<a name="cs-mkatz-toileting-dep-2"> </a></td><td>Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style="white-space:nowrap">toileting-dep-3<a name="cs-mkatz-toileting-dep-3"> </a></td><td>Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style="white-space:nowrap">continence-dep-0<a name="cs-mkatz-continence-dep-0"> </a></td><td>Le patient est continent pour l'urine et les selles</td></tr><tr><td style="white-space:nowrap">continence-dep-1<a name="cs-mkatz-continence-dep-1"> </a></td><td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td></tr><tr><td style="white-space:nowrap">continence-dep-2<a name="cs-mkatz-continence-dep-2"> </a></td><td>Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles</td></tr><tr><td style="white-space:nowrap">continence-dep-3<a name="cs-mkatz-continence-dep-3"> </a></td><td>Le patient est incontinent pour les urines et les selles</td></tr><tr><td style="white-space:nowrap">feeding-dep-0<a name="cs-mkatz-feeding-dep-0"> </a></td><td>Le patient est capable de manger et boire seul</td></tr><tr><td style="white-space:nowrap">feeding-dep-1<a name="cs-mkatz-feeding-dep-1"> </a></td><td>Le patient besoin d'une aide préalable pour manger ou boire</td></tr><tr><td style="white-space:nowrap">feeding-dep-2<a name="cs-mkatz-feeding-dep-2"> </a></td><td>Le patient a besoin d'une aide partielle pendant qu'il mange ou boit</td></tr><tr><td style="white-space:nowrap">feeding-dep-3<a name="cs-mkatz-feeding-dep-3"> </a></td><td>Le patient est totalement dépendant pour manger et boire</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (fr)</b></td></tr><tr><td>bathing-dep-0</td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td>bathing-dep-1</td><td>Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture</td></tr><tr><td>bathing-dep-2</td><td>Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>bathing-dep-3</td><td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>dressing-dep-0</td><td>Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide</td></tr><tr><td>dressing-dep-1</td><td>Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td></tr><tr><td>dressing-dep-2</td><td>Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>dressing-dep-3</td><td>Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>transferring-dep-0</td><td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td></tr><tr><td>transferring-dep-1</td><td>Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)</td></tr><tr><td>transferring-dep-2</td><td>Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements</td></tr><tr><td>transferring-dep-3</td><td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td></tr><tr><td>toileting-dep-0</td><td>Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer</td></tr><tr><td>toileting-dep-1</td><td>Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>toileting-dep-2</td><td>Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>toileting-dep-3</td><td>Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>continence-dep-0</td><td>Le patient est continent pour l'urine et les selles</td></tr><tr><td>continence-dep-1</td><td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td></tr><tr><td>continence-dep-2</td><td>Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles</td></tr><tr><td>continence-dep-3</td><td>Le patient est incontinent pour les urines et les selles</td></tr><tr><td>feeding-dep-0</td><td>Le patient est capable de manger et boire seul</td></tr><tr><td>feeding-dep-1</td><td>Le patient besoin d'une aide préalable pour manger ou boire</td></tr><tr><td>feeding-dep-2</td><td>Le patient a besoin d'une aide partielle pendant qu'il mange ou boit</td></tr><tr><td>feeding-dep-3</td><td>Le patient est totalement dépendant pour manger et boire</td></tr></table></div>
+  </text>
+  <url value="http://example.org/cs-mkatz"/>
+  <version value="0.1.0"/>
+  <name value="CSMKatzScale"/>
+  <title value="CodeSystem Modified Katz assessment scale"/>
+  <status value="active"/>
+  <date value="2021-02-12T12:13:57+01:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem Modified Katz assessment scale for independent living."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="bathing-dep-0"/>
+    <display value="Le patient est capable de se laver compl&#xE8;tement sans aucune aide"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est capable de se laver compl&#xE8;tement sans aucune aide"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="bathing-dep-1"/>
+    <display value="Le patient a besoin d&#39;une aide partielle pour se laver au dessus ou en dessous de la ceinture"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;une aide partielle pour se laver au dessus ou en dessous de la ceinture"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="bathing-dep-2"/>
+    <display value="Le patient a besoin d&#39;un aide partielle pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;un aide partielle pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="bathing-dep-3"/>
+    <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour se laver tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dressing-dep-0"/>
+    <display value="Le patient est capable de s&#39;habiller et de se d&#xE9;shabiller compl&#xE8;tement sans aucune aide"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est capable de s&#39;habiller et de se d&#xE9;shabiller compl&#xE8;tement sans aucune aide"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dressing-dep-1"/>
+    <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dressing-dep-2"/>
+    <display value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;une aide partielle pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dressing-dep-3"/>
+    <display value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient doit &#xEA;tre enti&#xE8;rement aid&#xE9; pour s&#39;habiller tant au-dessus qu&#39;en-dessous de la ceinture"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="transferring-dep-0"/>
+    <display value="Le patient est autonome pour le transfert et se d&#xE9;place de fa&#xE7;on enti&#xE8;rement ind&#xE9;pendante, sans auxiliaires m&#xE9;caniques, ni aide de tiers"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est autonome pour le transfert et se d&#xE9;place de fa&#xE7;on enti&#xE8;rement ind&#xE9;pendante, sans auxiliaires m&#xE9;caniques, ni aide de tiers"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="transferring-dep-1"/>
+    <display value="Le patient est autonome pour le transfert et ses d&#xE9;placements moyennant l&#39;utilisation d&#39;auxiliaires m&#xE9;caniques (b&#xE9;quilles, chaise roulante, &#x2026;)"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est autonome pour le transfert et ses d&#xE9;placements moyennant l&#39;utilisation d&#39;auxiliaires m&#xE9;caniques (b&#xE9;quilles, chaise roulante, &#x2026;)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="transferring-dep-2"/>
+    <display value="Le patient a absolument besoin de l&#39;aide d&#39;un tiers pour au moins un des transferts et/ou ses d&#xE9;placements"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a absolument besoin de l&#39;aide d&#39;un tiers pour au moins un des transferts et/ou ses d&#xE9;placements"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="transferring-dep-3"/>
+    <display value="Le patient est grabataire ou en chaise roulante et d&#xE9;pend enti&#xE8;rement des autres pour se d&#xE9;placer"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est grabataire ou en chaise roulante et d&#xE9;pend enti&#xE8;rement des autres pour se d&#xE9;placer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="toileting-dep-0"/>
+    <display value="Le patient est capable d&#39;aller seul &#xE0; la toilette, de s&#39;habiller ou de s&#39;essuyer"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est capable d&#39;aller seul &#xE0; la toilette, de s&#39;habiller ou de s&#39;essuyer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="toileting-dep-1"/>
+    <display value="Le patient a besoin d&#39;aide pour 1 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;aide pour 1 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="toileting-dep-2"/>
+    <display value="Le patient a besoin d&#39;aide pour 2 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;aide pour 2 des 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="toileting-dep-3"/>
+    <display value="Le patient a besoin d&#39;aide pour les 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;aide pour les 3 items : se d&#xE9;placer ou s&#39;habiller ou se s&#39;essuyer"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="continence-dep-0"/>
+    <display value="Le patient est continent pour l&#39;urine et les selles"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est continent pour l&#39;urine et les selles"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="continence-dep-1"/>
+    <display value="Le patient est accidentellement incontinent pour les urines et les selles (sonde v&#xE9;sicale ou anus artificiel compris)"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est accidentellement incontinent pour les urines et les selles (sonde v&#xE9;sicale ou anus artificiel compris)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="continence-dep-2"/>
+    <display value="Le patient est incontinent pour l&#39;urine (y compris exercices de miction) ou les selles"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est incontinent pour l&#39;urine (y compris exercices de miction) ou les selles"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="continence-dep-3"/>
+    <display value="Le patient est incontinent pour les urines et les selles"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est incontinent pour les urines et les selles"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="feeding-dep-0"/>
+    <display value="Le patient est capable de manger et boire seul"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est capable de manger et boire seul"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="feeding-dep-1"/>
+    <display value="Le patient besoin d&#39;une aide pr&#xE9;alable pour manger ou boire"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient besoin d&#39;une aide pr&#xE9;alable pour manger ou boire"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="feeding-dep-2"/>
+    <display value="Le patient a besoin d&#39;une aide partielle pendant qu&#39;il mange ou boit"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient a besoin d&#39;une aide partielle pendant qu&#39;il mange ou boit"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="feeding-dep-3"/>
+    <display value="Le patient est totalement d&#xE9;pendant pour manger et boire"/>
+    <designation>
+      <language value="fr"/>
+      <value value="Le patient est totalement d&#xE9;pendant pour manger et boire"/>
+    </designation>
+  </concept>
+</CodeSystem>

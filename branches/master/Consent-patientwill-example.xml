@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="patientwill-example"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>scope</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/consentscope treatment}">Treatment</span></p><p><b>category</b>: <span title="Codes: {https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category treatment}">Treatment</span></p><p><b>patient</b>: <span>Jane Fhirwoman</span></p><p><b>dateTime</b>: 2015-11-18</p><p><b>performer</b>: <span></span></p><p><b>policyRule</b>: <span title="Codes: ">Belgian policy</span></p><h3>Provisions</h3><table class="grid"><tr><td>-</td><td><b>Period</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>2020-10-06 --&gt; (ongoing)</td><td><span title="Codes: {https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code dnr1}">No resuscitation</span></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="treatment"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"/>
+      <code value="treatment"/>
+      <display value="Treatment"/>
+    </coding>
+  </category>
+  <patient>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="123456789"/>
+    </identifier>
+    <display value="Jane Fhirwoman"/>
+  </patient>
+  <dateTime value="2015-11-18"/>
+  <performer>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+      <value value="11530231003"/>
+    </identifier>
+  </performer>
+  <policyRule>
+    <text value="Belgian policy"/>
+  </policyRule>
+  <provision>
+    <period>
+      <start value="2020-10-06"/>
+    </period>
+    <code>
+      <coding>
+        <system value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+        <code value="dnr1"/>
+        <display value="Dnr1"/>
+      </coding>
+      <text value="No resuscitation"/>
+    </code>
+  </provision>
+</Consent>

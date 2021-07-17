@@ -1,0 +1,272 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire> a fhir:Questionnaire;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mkatz-questionnaire"];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> MKatzQuestionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> bathing</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Se laver</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html\">ModifiedKatzScaleBathing</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> dressing</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">S'habiller</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html\">ModifiedKatzScaleDressing</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> transferring</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Se déplacer</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html\">ModifiedKatzScaleTransferring</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> toileting</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Aller à la toilette</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html\">ModifiedKatzScaleToileting</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> continence</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">La continence</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html\">ModifiedKatzScaleContinence</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> feeding</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manger</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html\">ModifiedKatzScaleFeeding</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:ValueSet;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "vs-mkatz-bathing-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleBathing" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "bathing-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est capable de se laver complètement sans aucune aide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "bathing-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "bathing-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "bathing-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "vs-mkatz-dressing-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleDressing" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "dressing-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "dressing-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "dressing-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "dressing-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 2;
+     fhir:Resource.id [ fhir:value "vs-mkatz-transferring-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleTransferring" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "transferring-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "transferring-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "transferring-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "transferring-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 3;
+     fhir:Resource.id [ fhir:value "vs-mkatz-toileting-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleToileting" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "toileting-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "toileting-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "toileting-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "toileting-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 4;
+     fhir:Resource.id [ fhir:value "vs-mkatz-continence-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleContinence" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "continence-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est continent pour l'urine et les selles" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "continence-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "continence-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "continence-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est incontinent pour les urines et les selles" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 5;
+     fhir:Resource.id [ fhir:value "vs-mkatz-feeding-dep" ];
+     fhir:ValueSet.name [ fhir:value "ModifiedKatzScaleFeeding" ];
+     fhir:ValueSet.status [ fhir:value "draft" ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://example.org/cs-mkatz" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "feeding-dep-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est capable de manger et boire seul" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "feeding-dep-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient besoin d'une aide préalable pour manger ou boire" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "feeding-dep-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pendant qu'il mange ou boit" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "feeding-dep-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Le patient est totalement dépendant pour manger et boire" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Questionnaire.url [ fhir:value "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire"];
+  fhir:Questionnaire.version [ fhir:value "0.1.0"];
+  fhir:Questionnaire.name [ fhir:value "MKatzQuestionnaire"];
+  fhir:Questionnaire.title [ fhir:value "Modified Katz scale evaluation Questionnaire"];
+  fhir:Questionnaire.status [ fhir:value "draft"];
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:Questionnaire.date [ fhir:value "2021-07-17T12:04:48+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:Questionnaire.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:Questionnaire.item [
+     fhir:index 0;
+     fhir:Questionnaire.item.linkId [ fhir:value "bathing" ];
+     fhir:Questionnaire.item.text [ fhir:value "Se laver" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-bathing-dep" ]
+  ], [
+     fhir:index 1;
+     fhir:Questionnaire.item.linkId [ fhir:value "dressing" ];
+     fhir:Questionnaire.item.text [ fhir:value "S'habiller" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-dressing-dep" ]
+  ], [
+     fhir:index 2;
+     fhir:Questionnaire.item.linkId [ fhir:value "transferring" ];
+     fhir:Questionnaire.item.text [ fhir:value "Se déplacer" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-transferring-dep" ]
+  ], [
+     fhir:index 3;
+     fhir:Questionnaire.item.linkId [ fhir:value "toileting" ];
+     fhir:Questionnaire.item.text [ fhir:value "Aller à la toilette" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-toileting-dep" ]
+  ], [
+     fhir:index 4;
+     fhir:Questionnaire.item.linkId [ fhir:value "continence" ];
+     fhir:Questionnaire.item.text [ fhir:value "La continence" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-continence-dep" ]
+  ], [
+     fhir:index 5;
+     fhir:Questionnaire.item.linkId [ fhir:value "feeding" ];
+     fhir:Questionnaire.item.text [ fhir:value "Manger" ];
+     fhir:Questionnaire.item.type [ fhir:value "choice" ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.answerValueSet [ fhir:value "#vs-mkatz-feeding-dep" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

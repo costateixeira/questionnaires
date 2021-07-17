@@ -1,0 +1,374 @@
+﻿RIZIV_INAMI : Validation Results
+=========================================
+
+err = 61, warn = 77, info = 3
+IG Publisher Version: 1.1.76
+Generated Sat Jul 17 12:05:31 UTC 2021. FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = https://www.hl7belgium.org/fhir)
+
+ Build Errors : 100 / 10 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference : 6 / 4 / 2
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained : 7 / 4 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-mna : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-toto-hexa1 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-one-vaccination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire : 4 / 13 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-mkatz-questionnaire : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/Questionnaire-mna-questionnaire : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-administeredProduct : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-confirmationStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-scoreresult : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-vaccination : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-care-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-laterality : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-scorecategory : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason : 0 / 0 / 1
+ /github/workspace/input/examples/AllergyIntolerance-allergyintolerance1 : 3 / 2 / 1
+ /github/workspace/input/examples/AllergyIntolerance-allergyintolerance2 : 3 / 3 / 1
+ /github/workspace/input/examples/AllergyIntolerance-noel-allergy.v0 : 0 / 1 / 1
+ /github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1 : 0 / 2 / 1
+ /github/workspace/input/examples/Consent-patientwill-example : 0 / 2 / 1
+ /github/workspace/input/examples/Observation-scoreresult-findrisc : 0 / 0 / 1
+ /github/workspace/input/examples/Patient-noel : 0 / 1 / 4
+ /github/workspace/input/examples/Practitioner-durant : 0 / 0 / 2
+ /github/workspace/input/examples/Practitioner-lenoir : 0 / 0 / 2
+ /github/workspace/input/models/StructureDefinition-be-model-addiction : 0 / 0 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-patientwill : 0 / 0 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-problem : 1 / 8 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-referralprescription : 4 / 9 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-scoreresult : 0 / 0 / 1
+ /github/workspace/input/models/StructureDefinition-be-model-vaccination : 0 / 0 / 1
+ /github/workspace/input/profiles/StructureDefinition-be-patient : 2 / 3 / 1
+ /github/workspace/input/profiles/StructureDefinition-be-patientwill : 1 / 1 / 1
+ /github/workspace/input/profiles/StructureDefinition-be-practitioner : 2 / 0 / 1
+ /github/workspace/input/profiles/StructureDefinition-be-practitionerrole : 2 / 1 / 1
+ /github/workspace/input/resources/StructureDefinition-be-organization : 2 / 1 / 1
+ /github/workspace/input/resources/be-address : 2 / 1 / 1
+ /github/workspace/input/riziv : 1 / 0 / 1
+ /github/workspace/input/scenarios/ExampleScenario-scenario-allergy : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-bodysite : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-care-location : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-patientwill-category : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-patientwill-directive : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-problem-category : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-problem-origin-type : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-score : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-score-category : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-administration-route : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-confirmation-status : 0 / 0 / 1
+ /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-status-reason : 0 / 0 / 1
+ /github/workspace/input/vocabulary/ValueSet-be-vs-patientwill-category : 0 / 0 / 1
+ /github/workspace/input/vocabulary/ValueSet-be-vs-score : 0 / 0 / 1
+ /github/workspace/input/vocabulary/ValueSet-be-vs-score-patientwill-code : 0 / 0 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Consent/patientwill-example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/patientwill-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-addiction.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-patientwill.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-referralprescription.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-problem.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-scoreresult.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitionerrole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-organization.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-address.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mna-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent-contained.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mkatz-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/exposure-risk.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/allergy-intolerance-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-allergy-intolerance-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 161
+ERROR: /github/workspace/output/Questionnaire-mna-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 145
+ERROR: /github/workspace/output/Questionnaire-mkatz-questionnaire-form.html: unexpected non-end of element null::div  at line 219 column 147
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 424: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 199, column 862: The link 'Location/uz-gent' for "Location/uz-gent" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1036: The link 'Practitioner/practitioner1' for "Practitioner/practitioner1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1127: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 422: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 494: The link 'example-encounter-uzgent' for "example-encounter-uzgent" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 657: The link 'Practitioner/practitioner1' for "Practitioner/practitioner1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 748: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 577: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 724: The link 'Practitioner/practitioner1' for "Practitioner/practitioner1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 815: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 584: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 731: The link 'Practitioner/practitioner1' for "Practitioner/practitioner1" cannot be resolved
+ERROR: /github/workspace/output/AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 822: The link 'Patient/patient1' for "Patient/patient1" cannot be resolved
+ERROR: /github/workspace/output/Encounter-example-encounter-uzgent-contained.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 201, column 379: The link 'Location/uz-gent' for "Location/uz-gent" cannot be resolved
+ERROR: /github/workspace/output/Encounter-example-encounter-uzgent.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 201, column 379: The link 'Location/uz-gent' for "Location/uz-gent" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 175, column 36: The link 'versions.html#maturity' for "Status" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 177, column 36: The link 'versions.html#maturity' for "Experimental" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 179, column 36: The link 'versions.html#maturity' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 185, column 18: The link 'versions.html#maturity' for "Purpose" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 241, column 24: The link '#1' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/td/a at Line 248, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#EB' for "Empty Bundle" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/a at Line 250, column 24: The link '#2' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/td/a at Line 256, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0' for "Allergy Record" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/a at Line 259, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/td/a at Line 266, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0' for "Allergy Record" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/a at Line 268, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/td/a at Line 274, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1' for "Updated Allergy Record" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/a at Line 277, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/td/br/td/a at Line 284, column 27: The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1' for "Updated Allergy Record" cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])
+ERROR: /github/workspace/output/ExampleScenario-scenario-allergy-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 205, column 33: The link './Bundle-EB.html' for "Empty Bundle" cannot be resolved
+ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144: The link 'org-one-brussels' for "org-one-brussels" cannot be resolved
+ERROR: /github/workspace/output/Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 659: The link 'org-sanofi' for "org-sanofi" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-address-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 226, column 249: The link 'location.html#' for "Location" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-organization-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 907, column 249: The link 'location.html#' for "Location" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-patient-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 716, column 249: The link 'location.html#' for "Location" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-bmi.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-bmi.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-bmi.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-bmi.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-bmi.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-bmi.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-food-intake.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-food-intake.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-mobility.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-mobility.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-mobility.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-mobility.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-mobility.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-mobility.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-stress.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-stress.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-stress.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-stress.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-stress.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-stress.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.json.html' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-weight-loss.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.xml.html' for "XML" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-mna-questionnaire_vs-mna-weight-loss.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8: The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.json.html' for "JSON" cannot be resolved
+== /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json ==
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.clinicalStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.clinicalStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.verificationStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.patient: Unable to resolve resource 'Patient/patient1'
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.encounter: Unable to resolve resource 'example-encounter-uzgent'
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/practitioner1'
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/patient1'
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+== /github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json ==
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.contained[0].ofType(Encounter).location[0].location: Unable to resolve resource 'Location/uz-gent'
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.clinicalStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.clinicalStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.verificationStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.verificationStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.criticality: The value provided ('higher') is not in the value set http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1 (http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/allergy-intolerance-criticality#higher in http://hl7.org/fhir/allergy-intolerance-criticality)
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.patient: Unable to resolve resource 'Patient/patient1'
+INFORMATION: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.encounter: Details for #example-encounter-uzgent-contained matching against Profile http://hl7.org/fhir/StructureDefinition/Encounter
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/practitioner1'
+ERROR: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/patient1'
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+WARNING: AllergyIntolerance/allergyintolerance-encounterReference-contained: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json ==
+ERROR: CodeSystem.where(url = 'http://example.org/cs-mkatz'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz) does not match the URL (http://example.org/cs-mkatz)
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz: URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz vs http://example.org/cs-mkatz
+== /github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json ==
+ERROR: CodeSystem.where(url = 'http://example.org/cs-mna'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mna) does not match the URL (http://example.org/cs-mna)
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-mna: URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/cs-mna vs http://example.org/cs-mna
+== /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent.json ==
+ERROR: Encounter/example-encounter-uzgent: Encounter.location[0].location: Unable to resolve resource 'Location/uz-gent'
+== /github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained.json ==
+ERROR: Encounter/example-encounter-uzgent-contained: Encounter.location[0].location: Unable to resolve resource 'Location/uz-gent'
+== /github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json ==
+ERROR: Immunization/toto-hexa1: Immunization.extension[0].value.ofType(Reference): Unable to resolve resource 'org-one-brussels'
+WARNING: Immunization/toto-hexa1: Immunization.vaccineCode.coding[1]: A code with no system has no defined meaning. A system should be provided
+ERROR: Immunization/toto-hexa1: Immunization.manufacturer: Unable to resolve resource 'org-sanofi'
+== /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-code.json ==
+== /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization.json ==
+== /github/workspace/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional.json ==
+== /github/workspace/fsh-generated/resources/NamingSystem-be-ns-one-vaccination.json ==
+== /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer.json ==
+== /github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json ==
+ERROR: Questionnaire/allergy-intolerance-questionnaire: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed
+ERROR: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1]: que-1: 'Group items must have nested items, display items cannot have nested items' 'Group items must have nested items, display items cannot have nested items' ( (type: display; item: item=BackboneElement[7 children],item=BackboneElement[8 children]))
+ERROR: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1]: que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[1].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[1].item[1].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[2].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[2].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[3].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[3].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[3].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[3].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Questionnaire/allergy-intolerance-questionnaire: Questionnaire.item[7]: que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Rule 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed
+== /github/workspace/fsh-generated/resources/Questionnaire-mkatz-questionnaire.json ==
+== /github/workspace/fsh-generated/resources/Questionnaire-mna-questionnaire.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance.json ==
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.differential.element[5].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.differential.element[12].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation on element AllergyIntolerance.reaction.manifestation could not be resolved
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.differential.element[13].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute on element AllergyIntolerance.reaction.exposureRoute could not be resolved
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[15].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[29].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation on element AllergyIntolerance.reaction.manifestation could not be resolved
+WARNING: StructureDefinition/be-allergyintolerance: StructureDefinition.snapshot.element[33].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute on element AllergyIntolerance.reaction.exposureRoute could not be resolved
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-administeredProduct.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality.json ==
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder.json ==
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-confirmationStatus.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-location.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder.json ==
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-scoreresult.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-be-vaccination.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk.json ==
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-care-location.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-laterality.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-scorecategory.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status.json ==
+== /github/workspace/fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason.json ==
+== /github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml ==
+WARNING: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.patient: Unable to resolve resource 'Patient/patient1'
+ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/practitioner1'
+ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/patient1'
+WARNING: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+== /github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml ==
+WARNING: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.patient: Unable to resolve resource 'Patient/patient1'
+ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/practitioner1'
+ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/patient1'
+WARNING: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+WARNING: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.reaction[1].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+== /github/workspace/input/examples/AllergyIntolerance-noel-allergy.v0.xml ==
+WARNING: AllergyIntolerance/noel-allergy.v0: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+== /github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1.xml ==
+WARNING: AllergyIntolerance/noel-allergy.v1: AllergyIntolerance.code: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator
+WARNING: AllergyIntolerance/noel-allergy.v1: AllergyIntolerance.reaction[0].manifestation[0]: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator
+== /github/workspace/input/examples/Consent-patientwill-example.xml ==
+WARNING: Consent/patientwill-example: Consent.policyRule: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/consent-policy (http://hl7.org/fhir/ValueSet/consent-policy)
+WARNING: Consent/patientwill-example: Consent.meta.profile[0]: Profile reference 'https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== /github/workspace/input/examples/Observation-scoreresult-findrisc.xml ==
+== /github/workspace/input/examples/Patient-noel.xml ==
+INFORMATION: Patient/noel: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country' is unknown so the code cannot be validated
+INFORMATION: Patient/noel: Patient.maritalStatus.coding[1]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate' is unknown so the code cannot be validated
+WARNING: Patient/noel: Patient.maritalStatus: ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate not found by validator
+== /github/workspace/input/examples/Practitioner-durant.xml ==
+== /github/workspace/input/examples/Practitioner-lenoir.xml ==
+== /github/workspace/input/models/StructureDefinition-be-model-addiction.xml ==
+== /github/workspace/input/models/StructureDefinition-be-model-patientwill.xml ==
+== /github/workspace/input/models/StructureDefinition-be-model-problem.xml ==
+ERROR: StructureDefinition/be-model-problem: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[7].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[9].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[11].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.differential.element[15].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[9].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[13].binding: The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved
+WARNING: StructureDefinition/be-model-problem: StructureDefinition.snapshot.element[17].binding: The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved
+== /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription'): Conformance resource /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription)
+ERROR: StructureDefinition/be-model-referralprescription: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/be-model-referralprescription: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.snapshot.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.differential.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/be-model-referralprescription: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+ERROR: /github/workspace/input/models/StructureDefinition-be-model-referralprescription: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription
+== /github/workspace/input/models/StructureDefinition-be-model-scoreresult.xml ==
+== /github/workspace/input/models/StructureDefinition-be-model-vaccination.xml ==
+== /github/workspace/input/profiles/StructureDefinition-be-patient.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient'): Conformance resource /github/workspace/input/profiles/StructureDefinition-be-patient.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-patient) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient)
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element[22].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element[24].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson on element Patient.contact could not be resolved
+WARNING: StructureDefinition/be-patient: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved
+ERROR: /github/workspace/input/profiles/StructureDefinition-be-patient: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-patient vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+== /github/workspace/input/profiles/StructureDefinition-be-patientwill.json ==
+ERROR: StructureDefinition/be-patientwill: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+WARNING: StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill'): The Implementation Guide contains no examples for this profile
+== /github/workspace/input/profiles/StructureDefinition-be-practitioner.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner'): Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitioner.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner)
+ERROR: /github/workspace/input/profiles/StructureDefinition-be-practitioner: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
+== /github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole'): Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitionerrole) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole)
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/StructureDefinition-be-practitionerrole: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-practitionerrole vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole
+== /github/workspace/input/resources/StructureDefinition-be-organization.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization'): Conformance resource /github/workspace/input/resources/StructureDefinition-be-organization.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-organization) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization)
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/resources/StructureDefinition-be-organization: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-organization vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
+== /github/workspace/input/resources/be-address.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address'): Conformance resource /github/workspace/input/resources/be-address.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-address) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address)
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address'): The Implementation Guide contains no examples for this data type profile
+ERROR: /github/workspace/input/resources/be-address: URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-address vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+== /github/workspace/input/riziv.xml ==
+ERROR: ImplementationGuide/hl7.fhir.be.riziv: ImplementationGuide.definition: ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed
+== /github/workspace/input/scenarios/ExampleScenario-scenario-allergy.xml ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-bodysite.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-care-location.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-patientwill-category.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-patientwill-directive.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-problem-category.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-problem-origin-type.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-score.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-score-category.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-administration-route.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-confirmation-status.json ==
+== /github/workspace/input/vocabulary/CodeSystem-be-cs-vaccination-status-reason.json ==
+== /github/workspace/input/vocabulary/ValueSet-be-vs-patientwill-category.json ==
+== /github/workspace/input/vocabulary/ValueSet-be-vs-score.json ==
+== /github/workspace/input/vocabulary/ValueSet-be-vs-score-patientwill-code.json ==

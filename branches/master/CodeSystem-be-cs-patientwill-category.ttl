@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-cs-patientwill-category"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">advanced-care-directive<a name=\"be-cs-patientwill-category-advanced-care-directive\"> </a></td><td>Advanced Care Directive</td><td>General directives expressed voluntarily by the patient</td></tr><tr><td style=\"white-space:nowrap\">research<a name=\"be-cs-patientwill-category-research\"> </a></td><td>Research</td><td>Consent to participate in research protocols and / or share results</td></tr><tr><td style=\"white-space:nowrap\">treatment<a name=\"be-cs-patientwill-category-treatment\"> </a></td><td>Treatment</td><td>Specific treatments in the context of resuscitation and / or during hospitalization</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>advanced-care-directive</td><td>Volontés diverses</td><td>Verschillende wensen</td></tr><tr><td>research</td><td>Recherche</td><td>Onderzoek</td></tr><tr><td>treatment</td><td>Traitement</td><td>Behandeling</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BeCSPAtiwntWillCategory"];
+  fhir:CodeSystem.title [ fhir:value "Patient Will Category CodeSystem"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-07-17T12:04:48+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Body Site CodeSystem"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "advanced-care-directive" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Advanced Care Directive" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "General directives expressed voluntarily by the patient" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Volontés diverses" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Verschillende wensen" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "research" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Research" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consent to participate in research protocols and / or share results" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Recherche" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Onderzoek" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "treatment" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Specific treatments in the context of resuscitation and / or during hospitalization" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Traitement" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Behandeling" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

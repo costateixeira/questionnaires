@@ -1,0 +1,1371 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 87, errors = 61, warn = 77, info = 3 -->
+<head>
+  <title>RIZIV_INAMI : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for RIZIV_INAMI</h1>
+ <p>Generated Sat Jul 17 12:05:31 UTC 2021, FHIR version 4.0.1 for hl7.fhir.be.riziv#0.1.0 (canonical = <a href="https://www.hl7belgium.org/fhir">https://www.hl7belgium.org/fhir</a> (<a href="https://www.hl7belgium.org/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.76</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.riziv, Canonical = https://www.hl7belgium.org/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">4 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.riziv</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.hl7belgium.org/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.be.my.template#0.0.1 -&gt; hl7.be.fhir.template#0.0.1 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html"><span style="background-color: #ffcccc">1 issue</span></a></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.hl7belgium.org/fhir (Problem #1 with package-list.json at https://www.hl7belgium.org/fhir: https://hl7belgium.org/fhir/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 87, errors = 61, warn = 77, info = 3</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>100</b></td><td><b>10</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_AllergyIntolerance-allergyintolerance-encounterReference"><b>/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference</b></a></td><td><b>6</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_AllergyIntolerance-allergyintolerance-encounterReference-contained"><b>/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained</b></a></td><td><b>7</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-cs-mkatz"><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-cs-mna"><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-mna</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Encounter-example-encounter-uzgent"><b>/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Encounter-example-encounter-uzgent-contained"><b>/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-toto-hexa1"><b>/github/workspace/fsh-generated/resources/Immunization-toto-hexa1</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-allergy-intolerance-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire</b></a></td><td><b>4</b></td><td><b>13</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-allergyintolerance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-laterality"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-recorder"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-vaccination-originalorder"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-exposure-risk"><b>/github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_examples_AllergyIntolerance-allergyintolerance1"><b>/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1</b></a></td><td><b>3</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_examples_AllergyIntolerance-allergyintolerance2"><b>/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2</b></a></td><td><b>3</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_AllergyIntolerance-noel-allergy.v0"><b>/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v0</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_AllergyIntolerance-noel-allergy.v1"><b>/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_Consent-patientwill-example"><b>/github/workspace/input/examples/Consent-patientwill-example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_examples_Patient-noel"><b>/github/workspace/input/examples/Patient-noel</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_models_StructureDefinition-be-model-problem"><b>/github/workspace/input/models/StructureDefinition-be-model-problem</b></a></td><td><b>1</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_models_StructureDefinition-be-model-referralprescription"><b>/github/workspace/input/models/StructureDefinition-be-model-referralprescription</b></a></td><td><b>4</b></td><td><b>9</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_StructureDefinition-be-patient"><b>/github/workspace/input/profiles/StructureDefinition-be-patient</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_StructureDefinition-be-patientwill"><b>/github/workspace/input/profiles/StructureDefinition-be-patientwill</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_StructureDefinition-be-practitioner"><b>/github/workspace/input/profiles/StructureDefinition-be-practitioner</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_StructureDefinition-be-practitionerrole"><b>/github/workspace/input/profiles/StructureDefinition-be-practitionerrole</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_StructureDefinition-be-organization"><b>/github/workspace/input/resources/StructureDefinition-be-organization</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_be-address"><b>/github/workspace/input/resources/be-address</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_riziv"><b>/github/workspace/input/riziv</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[26].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Consent/patientwill-example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Consent/patientwill-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-addiction.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-patientwill.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-referralprescription.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-problem.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-model-scoreresult.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-practitionerrole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-organization.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/be-address.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mna-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent-contained.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/mkatz-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource AllergyIntolerance/allergyintolerance-encounterReference-contained.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example-encounter-uzgent.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example-encounter-uzgent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/exposure-risk.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/allergy-intolerance-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-allergy-intolerance-questionnaire-form.html">Questionnaire-allergy-intolerance-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 219 column 161</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-mna-questionnaire-form.html">Questionnaire-mna-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 219 column 145</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-mkatz-questionnaire-form.html">Questionnaire-mkatz-questionnaire-form.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 219 column 147</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html#102d2bd4-e110-45a3-91b7-7ef9d5a44a9f">AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 424</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html#9587fda7-e06c-431a-9320-2d9ae70bbc11">AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 199, column 862</a></b></td><td><b>error</b></td><td><b>The link 'Location/uz-gent' for &quot;Location/uz-gent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html#7ec6e127-52fd-4fea-8746-1ae25ddfa15b">AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1036</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner/practitioner1' for &quot;Practitioner/practitioner1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html#19faf909-e4ae-4a83-9e95-4d3a4f93fbbe">AllergyIntolerance-allergyintolerance-encounterReference-contained.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 1127</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference.html#67d3fff6-9d65-48f3-9bf0-9004bec65cbf">AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 422</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference.html#e19f9f3a-d2b2-4c54-bbd4-697488934d34">AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 494</a></b></td><td><b>error</b></td><td><b>The link 'example-encounter-uzgent' for &quot;example-encounter-uzgent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference.html#9c2e2d7a-73ec-4d56-8063-d135a6171d52">AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 657</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner/practitioner1' for &quot;Practitioner/practitioner1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance-encounterReference.html#6e6df3b8-a206-445b-90c1-3ce341d65337">AllergyIntolerance-allergyintolerance-encounterReference.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 748</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance1.html#4ad536af-7673-427a-9cfa-4daaf371ef51">AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 577</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance1.html#f7fcbc1d-6ecf-4959-b39d-50ab30b952a5">AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 724</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner/practitioner1' for &quot;Practitioner/practitioner1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance1.html#de4cba1f-d99a-46ad-b60e-b047fb018260">AllergyIntolerance-allergyintolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 815</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance2.html#0d6dc1d0-2060-40e6-9637-3af5c9b26017">AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 584</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance2.html#58152b5c-abfc-43b5-adbc-808370182f6f">AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 731</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner/practitioner1' for &quot;Practitioner/practitioner1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="AllergyIntolerance-allergyintolerance2.html#4441104c-812e-4362-ad86-9cb2e5c02a41">AllergyIntolerance-allergyintolerance2.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 822</a></b></td><td><b>error</b></td><td><b>The link 'Patient/patient1' for &quot;Patient/patient1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example-encounter-uzgent-contained.html#17581ee2-2098-4dc6-8b6f-c853477947d4">Encounter-example-encounter-uzgent-contained.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 201, column 379</a></b></td><td><b>error</b></td><td><b>The link 'Location/uz-gent' for &quot;Location/uz-gent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example-encounter-uzgent.html#524f5078-d7f0-4681-8328-63ef0b5cbe9a">Encounter-example-encounter-uzgent.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 201, column 379</a></b></td><td><b>error</b></td><td><b>The link 'Location/uz-gent' for &quot;Location/uz-gent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#c7ddb6bd-f1ae-4299-af49-13940a530afa">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 175, column 36</a></b></td><td><b>error</b></td><td><b>The link 'versions.html#maturity' for &quot;Status&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#c9d8a1e6-f156-4a0e-be62-6605354b8f76">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 177, column 36</a></b></td><td><b>error</b></td><td><b>The link 'versions.html#maturity' for &quot;Experimental&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#924285d8-7138-4616-8867-505c00bb3f16">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 179, column 36</a></b></td><td><b>error</b></td><td><b>The link 'versions.html#maturity' for &quot;Copyright&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#1870d3aa-c2c6-4e3a-82d3-4b6d66e014ea">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 185, column 18</a></b></td><td><b>error</b></td><td><b>The link 'versions.html#maturity' for &quot;Purpose&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#4bd196ed-f8b4-4697-bbe8-51534d2d9cc2">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 241, column 24</a></b></td><td><b>error</b></td><td><b>The link '#1' for &quot;&quot; cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#0cdcbbea-4f23-4f1e-b6d7-0c7b191dd49c">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/td/a at Line 248, column 27</a></b></td><td><b>error</b></td><td><b>The link 'ExampleScenario-scenario-allergy-resources.html#EB' for &quot;Empty Bundle&quot; cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#3139d236-353b-42c8-9e4d-da69ce8c8a3a">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/a at Line 250, column 24</a></b></td><td><b>error</b></td><td><b>The link '#2' for &quot;&quot; cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#9d61a1e4-b465-4a20-bb8e-ca48de939283">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/td/a at Line 256, column 27</a></b></td><td><b>error</b></td><td><b>The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0' for &quot;Allergy Record&quot; cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#57889e44-ea5f-4eab-b476-65a29ce2cc1e">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/a at Line 259, column 24</a></b></td><td><b>error</b></td><td><b>The link '#3' for &quot;&quot; cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#163925ae-9903-4f3e-a780-3a5904235e93">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/td/a at Line 266, column 27</a></b></td><td><b>error</b></td><td><b>The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v0' for &quot;Allergy Record&quot; cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#fa7c0f23-7dc2-46ca-9fc0-f11cb54447b6">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/a at Line 268, column 24</a></b></td><td><b>error</b></td><td><b>The link '#4' for &quot;&quot; cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#5c411280-9868-4334-ab7a-ea19f04fa4a2">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/td/a at Line 274, column 27</a></b></td><td><b>error</b></td><td><b>The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1' for &quot;Updated Allergy Record&quot; cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#5ef28ee7-50c7-460f-adc2-550566c5baa9">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/a at Line 277, column 24</a></b></td><td><b>error</b></td><td><b>The link '#5' for &quot;&quot; cannot be resolved (valid targets: [nullactors, p2, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, root, stripe, segment-footer, segment-navbar, segment-content, examplescenario-allergyscenario-description, segment-breadcrumb, flow])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-description.html#498cf320-3eb8-492c-a281-160963d02134">ExampleScenario-scenario-allergy-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/br/tr/td/br/tr/td/br/tr/td/br/tr/td/br/td/a at Line 284, column 27</a></b></td><td><b>error</b></td><td><b>The link 'ExampleScenario-scenario-allergy-resources.html#noel-allergy.v1' for &quot;Updated Allergy Record&quot; cannot be resolved (valid targets: [, project-logo, segment-header, allergyintolerance, project-nav, publish-box, segment-post-footer, resources, family-logo, family-nav, ig-status, root, stripe, segment-footer, examplescenario-allergyscenario-resources, segment-navbar, segment-content, segment-breadcrumb, bundle])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ExampleScenario-scenario-allergy-resources.html#6a52e94d-a0f3-4422-bd1e-3991afffc9cb">ExampleScenario-scenario-allergy-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 205, column 33</a></b></td><td><b>error</b></td><td><b>The link './Bundle-EB.html' for &quot;Empty Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Immunization-toto-hexa1.html#d2ac6609-c300-4e54-a1eb-3c745d157c72">Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 144</a></b></td><td><b>error</b></td><td><b>The link 'org-one-brussels' for &quot;org-one-brussels&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Immunization-toto-hexa1.html#98c32833-0777-4402-8038-01f438aa9d86">Immunization-toto-hexa1.html#/html/body/div/div/div/div/div/div/p/a at Line 199, column 659</a></b></td><td><b>error</b></td><td><b>The link 'org-sanofi' for &quot;org-sanofi&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-address-definitions.html#c61076c5-6335-4dab-bf17-8ff73a50429b">StructureDefinition-be-address-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 226, column 249</a></b></td><td><b>error</b></td><td><b>The link 'location.html#' for &quot;Location&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-organization-definitions.html#a46a5ab0-e9ed-404d-9feb-15857841aaa2">StructureDefinition-be-organization-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 907, column 249</a></b></td><td><b>error</b></td><td><b>The link 'location.html#' for &quot;Location&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-patient-definitions.html#ec6d62a8-e990-49e9-ae4c-6c64d761d532">StructureDefinition-be-patient-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 716, column 249</a></b></td><td><b>error</b></td><td><b>The link 'location.html#' for &quot;Location&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#b053130b-a88f-43ca-95be-2737fcfb4651">ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#f457e44f-6c2c-4a0b-ba5a-7c6fff6fa651">ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#ddcd091d-bb44-46c5-bf03-105f59ffc0ff">ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#17c30873-5a79-48a4-893d-601e93896792">ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-bathing-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#65cab3ca-7745-451e-a6c2-d78b6a2b83c0">ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#fac27493-e75f-486a-89e0-83f5c3d5d348">ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#27a7e04f-43e1-4ed2-9b5b-14f4602c7f46">ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#4485b673-5711-482b-810f-4d52fce62e88">ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-continence-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#dbf1a48e-6933-438c-b95a-36640544fd47">ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#b6fdbfab-d485-4269-9435-822a1451a1fe">ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#4a871b1f-fcc3-41bc-bed2-3e30e919e693">ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#8e00589e-f3ee-48cf-a5e4-096bb264a1df">ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-dressing-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#fc416575-6d43-4840-9cf6-b27301b5478a">ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#3d148bcc-5ec7-4da9-87be-df6dc630d2d1">ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#4f6aa314-f765-4513-abb8-f79876ca569d">ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#23ae1c89-115e-4b18-b2f6-960a4ca88a2a">ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-feeding-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#28b28a15-88f7-4917-8acc-e17e7b0c33f7">ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#de9a0523-a2da-44c0-9f2b-74130324b95c">ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#ac99257d-514a-4b38-9678-240f3fde337a">ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#85f97b8f-b55f-4e59-aa9d-7cb86edd01a2">ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-toileting-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#d8b5c62c-632c-445a-badc-e178638fa4ca">ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#485c27c5-0918-48e9-935e-8de211ee5314">ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#a8a58095-b8f0-4248-9634-17fb548f4a06">ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#130743f1-09b9-471b-963f-f42e3eba17e3">ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mkatz-questionnaire_vs-mkatz-transferring-dep.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#c82e4440-4775-4276-b72d-f653c051afb3">ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-bmi.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#5a5b4662-101c-4b04-9cd7-f4357f29c4b0">ValueSet-mna-questionnaire_vs-mna-bmi.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-bmi.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-bmi.html#5b778f67-68f4-431f-ac17-c5d79978beee">ValueSet-mna-questionnaire_vs-mna-bmi.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-bmi.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-bmi.html#62b14ef8-ad97-430b-9ad0-688eb8ad40e0">ValueSet-mna-questionnaire_vs-mna-bmi.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-bmi.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#826a0fbe-1d80-443f-9e0b-fba601970660">ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#cc302df1-98a3-43fd-9f9b-6886d56a8649">ValueSet-mna-questionnaire_vs-mna-food-intake.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-food-intake.html#531ed04f-a1a7-4645-932c-60f091d444e2">ValueSet-mna-questionnaire_vs-mna-food-intake.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-food-intake.html#edf6b702-b7f0-4169-abb0-dc72efd7d215">ValueSet-mna-questionnaire_vs-mna-food-intake.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-food-intake.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#ea62472c-91fe-46db-8453-c46833e26d8e">ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-mobility.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#e5299510-01ea-4b4f-9684-dfc0f2ed78d7">ValueSet-mna-questionnaire_vs-mna-mobility.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-mobility.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-mobility.html#61b457cc-3826-4c53-9b93-c6a856489f4f">ValueSet-mna-questionnaire_vs-mna-mobility.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-mobility.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-mobility.html#dc9b3eac-e7ba-468d-a4d8-64db47e1d6e4">ValueSet-mna-questionnaire_vs-mna-mobility.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-mobility.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#21d0ccf9-4c9a-4215-b48e-9c436b481f7e">ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#bac8793b-1927-4ac9-9e7e-fec47db0c7f7">ValueSet-mna-questionnaire_vs-mna-neuropsychological.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#a62ac6fb-f481-4e79-ab60-2b5db0a3b642">ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#dcae445a-54e3-4fcb-9f88-e594739d3d8e">ValueSet-mna-questionnaire_vs-mna-neuropsychological.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-neuropsychological.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#2aa65304-d9d9-4a56-89e0-4aefe4f89471">ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-stress.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#9ac69be1-37a1-4e63-9cbc-481a19bde498">ValueSet-mna-questionnaire_vs-mna-stress.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-stress.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-stress.html#225c45de-f2a9-4acd-bb8a-96afd029eb89">ValueSet-mna-questionnaire_vs-mna-stress.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-stress.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-stress.html#1157d08e-fd7d-4d5b-95af-a1fc8e45d1d9">ValueSet-mna-questionnaire_vs-mna-stress.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-stress.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#c68f2e33-e813-4016-932b-5bf230101e09">ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 174, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#54bad46c-2226-4ef3-957f-65abcc9399e8">ValueSet-mna-questionnaire_vs-mna-weight-loss.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 181, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-weight-loss.html#70f9dddd-afdb-488b-b86b-8e6301f16403">ValueSet-mna-questionnaire_vs-mna-weight-loss.html#/html/body/div/div/div/div/div/ul/li/a at Line 169, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-mna-questionnaire_vs-mna-weight-loss.html#bbc2278d-6e6d-404e-823f-06ee75ec0bb8">ValueSet-mna-questionnaire_vs-mna-weight-loss.html#/html/body/div/div/div/div/div/ul/li/a at Line 176, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-mna-questionnaire_vs-mna-weight-loss.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_AllergyIntolerance-allergyintolerance-encounterReference"> </a>
+<h2><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> and <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.clinicalStatus (l10/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.clinicalStatus.coding[0] (l11/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.verificationStatus (l17/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.verificationStatus.coding[0] (l18/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.patient (l38/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.encounter (l42/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'example-encounter-uzgent'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.recorder (l46/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.asserter (l49/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l29/c16)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[0].manifestation[0] (l59/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_AllergyIntolerance-allergyintolerance-encounterReference-contained"> </a>
+<h2><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> and <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a> (per meta)</li><li>AllergyIntolerance.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.contained[0].ofType(Encounter).location[0].location (l22/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.clinicalStatus (l32/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.clinicalStatus.coding[0] (l33/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.verificationStatus (l39/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_1_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.verificationStatus.coding[0] (l40/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.criticality (l49/c27)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('higher') is not in the value set http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1 (http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/allergy-intolerance-criticality#higher in http://hl7.org/fhir/allergy-intolerance-criticality)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.patient (l60/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">AllergyIntolerance.encounter (l64/c4)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for #example-encounter-uzgent-contained matching against Profile http://hl7.org/fhir/StructureDefinition/Encounter</b> <span id="sl127" class="flip" onclick="flip('l127')">Show Reasoning</span><div id="l127" style="display: none"><p>&nbsp;</p><ul><li>AllergyIntolerance.contained[0].ofType(Encounter).location[0].location: Unable to resolve resource 'Location/uz-gent'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.recorder (l68/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.asserter (l71/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l51/c16)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[0].manifestation[0] (l81/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-cs-mkatz"> </a>
+<h2><a href="CodeSystem-cs-mkatz.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.where(url = 'http://example.org/cs-mkatz')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz) does not match the URL (http://example.org/cs-mkatz)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz vs http://example.org/cs-mkatz</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-cs-mna"> </a>
+<h2><a href="CodeSystem-cs-mna.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.where(url = 'http://example.org/cs-mna')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mna) does not match the URL (http://example.org/cs-mna)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-mna</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/CodeSystem/cs-mna vs http://example.org/cs-mna</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Encounter-example-encounter-uzgent"> </a>
+<h2><a href="Encounter-example-encounter-uzgent.html">/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent.json</a></h2>
+ <ul style="font-size: 7px"><li>Encounter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.location[0].location (l13/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Encounter-example-encounter-uzgent-contained"> </a>
+<h2><a href="Encounter-example-encounter-uzgent-contained.html">/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained.json</a></h2>
+ <ul style="font-size: 7px"><li>Encounter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Encounter.location[0].location (l13/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-toto-hexa1"> </a>
+<h2><a href="Immunization-toto-hexa1.html">/github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json</a></h2>
+ <ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-be-vaccination.html">BEVaccination</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Immunization.extension[0].value.ofType(Reference) (l14/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'org-one-brussels'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.vaccineCode.coding[1] (l75/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Immunization.manufacturer (l48/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'org-sanofi'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-allergy-intolerance-questionnaire"> </a>
+<h2><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></h2>
+ <ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire</b></td><td><b>error</b></td><td title="que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed"><b>que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[1]</b></td><td><b>error</b></td><td title="que-1: 'Group items must have nested items, display items cannot have nested items' 'Group items must have nested items, display items cannot have nested items' ( (type: display; item: item=BackboneElement[7 children],item=BackboneElement[8 children]))"><b>que-1: 'Group items must have nested items, display items cannot have nested items' 'Group items must have nested items, display items cannot have nested items' ( (type: display; item: item=BackboneElement[7 children],item=BackboneElement[8 children]))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[1]</b></td><td><b>error</b></td><td title="que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed"><b>que-6: 'Required and repeat aren't permitted for display items' Rule 'Required and repeat aren't permitted for display items' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[0].answerOption[0].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[0].answerOption[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[0].answerOption[2].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[1].answerOption[0].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[1].answerOption[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[1].answerOption[2].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[1].item[1].answerOption[3].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[2].answerOption[0].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[2].answerOption[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[3].answerOption[0].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[3].answerOption[1].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[3].answerOption[2].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[3].answerOption[3].value.ofType(Coding)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[7]</b></td><td><b>error</b></td><td title="que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Rule 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed"><b>que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Rule 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-allergyintolerance"> </a>
+<h2><a href="StructureDefinition-be-allergyintolerance.html">/github/workspace/fsh-generated/resources/StructureDefinition-be-allergyintolerance.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[5].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[12].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation on element AllergyIntolerance.reaction.manifestation could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[13].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute on element AllergyIntolerance.reaction.exposureRoute could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[15].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode on element AllergyIntolerance.code could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[29].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation on element AllergyIntolerance.reaction.manifestation could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[33].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute on element AllergyIntolerance.reaction.exposureRoute could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-laterality"> </a>
+<h2><a href="StructureDefinition-be-ext-laterality.html">/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-laterality.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-recorder"> </a>
+<h2><a href="StructureDefinition-be-ext-recorder.html">/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-recorder.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-ext-vaccination-originalorder"> </a>
+<h2><a href="StructureDefinition-be-ext-vaccination-originalorder.html">/github/workspace/fsh-generated/resources/StructureDefinition-be-ext-vaccination-originalorder.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-exposure-risk"> </a>
+<h2><a href="StructureDefinition-exposure-risk.html">/github/workspace/fsh-generated/resources/StructureDefinition-exposure-risk.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_AllergyIntolerance-allergyintolerance1"> </a>
+<h2><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l23/c9)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.patient (l31/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.recorder (l36/c13)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.asserter (l39/c13)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[0].manifestation[0] (l47/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_AllergyIntolerance-allergyintolerance2"> </a>
+<h2><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l23/c9)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.patient (l31/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.recorder (l36/c13)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>AllergyIntolerance.asserter (l39/c13)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[0].manifestation[0] (l54/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[1].manifestation[0] (l72/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_AllergyIntolerance-noel-allergy.v0"> </a>
+<h2><a href="AllergyIntolerance-noel-allergy.v0.html">/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v0.xml</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l22/c9)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_AllergyIntolerance-noel-allergy.v1"> </a>
+<h2><a href="AllergyIntolerance-noel-allergy.v1.html">/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1.xml</a></h2>
+ <ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <i>this.</i><a href="StructureDefinition-be-allergyintolerance.html">Allergy Intolerance core BE profile</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.code (l21/c9)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>AllergyIntolerance.reaction[0].manifestation[0] (l41/c20)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_Consent-patientwill-example"> </a>
+<h2><a href="Consent-patientwill-example.html">/github/workspace/input/examples/Consent-patientwill-example.xml</a></h2>
+ <ul style="font-size: 7px"><li>Consent: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/consent.html">Consent</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Consent.policyRule (l34/c15)</b></td><td><b>warning</b></td><td title="Terminology_TX_Code_ValueSet_Ext"><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/consent-policy (http://hl7.org/fhir/ValueSet/consent-policy)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Consent.meta.profile[0] (l1/c38)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_examples_Patient-noel"> </a>
+<h2><a href="Patient-noel.html">/github/workspace/input/examples/Patient-noel.xml</a></h2>
+ <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-be-patient.html">BePatient</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0] (l9/c17)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.maritalStatus.coding[1] (l101/c13)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.maritalStatus (l95/c18)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_models_StructureDefinition-be-model-problem"> </a>
+<h2><a href="StructureDefinition-be-model-problem.html">/github/workspace/input/models/StructureDefinition-be-model-problem.xml</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[7].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[9].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[11].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[15].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[9].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category on element BeProblem.problemCategory could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[11].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type on element BeProblem.origin.type could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[13].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies on element BeProblem.problemCode could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[17].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite on element BeProblem.bodySite.site could not be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_models_StructureDefinition-be-model-referralprescription"> </a>
+<h2><a href="StructureDefinition-be-model-referralprescription.html">/github/workspace/input/models/StructureDefinition-be-model-referralprescription.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/models/StructureDefinition-be-model-referralprescription</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_StructureDefinition-be-patient"> </a>
+<h2><a href="StructureDefinition-be-patient.html">/github/workspace/input/profiles/StructureDefinition-be-patient.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-patient.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-patient) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[22].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[24].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson on element Patient.contact could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[54].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/profiles/StructureDefinition-be-patient</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-patient vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_StructureDefinition-be-patientwill"> </a>
+<h2><a href="StructureDefinition-be-patientwill.html">/github/workspace/input/profiles/StructureDefinition-be-patientwill.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE"><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_StructureDefinition-be-practitioner"> </a>
+<h2><a href="StructureDefinition-be-practitioner.html">/github/workspace/input/profiles/StructureDefinition-be-practitioner.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitioner.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/profiles/StructureDefinition-be-practitioner</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_StructureDefinition-be-practitionerrole"> </a>
+<h2><a href="StructureDefinition-be-practitionerrole.html">/github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitionerrole) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/profiles/StructureDefinition-be-practitionerrole</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-practitionerrole vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_StructureDefinition-be-organization"> </a>
+<h2><a href="StructureDefinition-be-organization.html">/github/workspace/input/resources/StructureDefinition-be-organization.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/StructureDefinition-be-organization.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-organization) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/resources/StructureDefinition-be-organization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-organization vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_be-address"> </a>
+<h2><a href="StructureDefinition-be-address.html">/github/workspace/input/resources/be-address.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/be-address.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-address) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/resources/be-address</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.hl7belgium.org/fhir/StructureDefinition/be-address vs https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_riziv"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.be.riziv.html">/github/workspace/input/riziv.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition</b></td><td><b>error</b></td><td title="ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed"><b>ig-1: 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Rule 'If a resource has a groupingId, it must refer to a grouping defined in the Implementation Guide' Failed</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>?pub-msg-2?</b></p><ul>
+ <li># # Reason</li>
+ <li># (And include comments like this justifying why)</li>
+ <li># Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+ <li># We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-cs-mkatz.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mkatz.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz) does not match the URL (http://example.org/cs-mkatz)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-cs-mna.html">/github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-mna.json - the canonical URL (https://www.hl7belgium.org/fhir/CodeSystem/cs-mna) does not match the URL (http://example.org/cs-mna)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-model-referralprescription.html">/github/workspace/input/models/StructureDefinition-be-model-referralprescription.json</a></td><td><b>Conformance resource /github/workspace/input/models/StructureDefinition-be-model-referralprescription.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-model-referralprescription) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-patient.html">/github/workspace/input/profiles/StructureDefinition-be-patient.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-patient.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-patient) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-practitioner.html">/github/workspace/input/profiles/StructureDefinition-be-practitioner.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitioner.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitioner) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-practitionerrole.html">/github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/StructureDefinition-be-practitionerrole.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-practitionerrole) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-organization.html">/github/workspace/input/resources/StructureDefinition-be-organization.json</a></td><td><b>Conformance resource /github/workspace/input/resources/StructureDefinition-be-organization.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-organization) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-address.html">/github/workspace/input/resources/be-address.json</a></td><td><b>Conformance resource /github/workspace/input/resources/be-address.json - the canonical URL (https://www.hl7belgium.org/fhir/StructureDefinition/be-address) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>Unable to resolve resource 'example-encounter-uzgent'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-example-encounter-uzgent.html">/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent.json</a></td><td><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Encounter-example-encounter-uzgent-contained.html">/github/workspace/fsh-generated/resources/Encounter-example-encounter-uzgent-contained.json</a></td><td><b>Unable to resolve resource 'Location/uz-gent'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Immunization-toto-hexa1.html">/github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json</a></td><td><b>Unable to resolve resource 'org-one-brussels'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Immunization-toto-hexa1.html">/github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json</a></td><td><b>Unable to resolve resource 'org-sanofi'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>Unable to resolve resource 'Patient/patient1'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Immunization-toto-hexa1.html">/github/workspace/fsh-generated/resources/Immunization-toto-hexa1.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-allergy-intolerance-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-allergy-intolerance-questionnaire.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-model-referralprescription.html">/github/workspace/input/models/StructureDefinition-be-model-referralprescription.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_IDENTIFIER_IETF_SYSTEM_VALUE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-be-patientwill.html">/github/workspace/input/profiles/StructureDefinition-be-patientwill.json</a></td><td><b>if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_Code_ValueSet_Ext"> </a>
+<h2>Terminology_TX_Code_ValueSet_Ext</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Consent-patientwill-example.html">/github/workspace/input/examples/Consent-patientwill-example.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/consent-policy (http://hl7.org/fhir/ValueSet/consent-policy)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>The value provided ('higher') is not in the value set http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1 (http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/allergy-intolerance-criticality#higher in http://hl7.org/fhir/allergy-intolerance-criticality)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-clinical), and a coding from this value set is required) (codes = null#active)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/allergyintolerance-verification|4.0.1 (http://hl7.org/fhir/ValueSet/allergyintolerance-verification), and a coding from this value set is required) (codes = null#confirmed)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-noel.html">/github/workspace/input/examples/Patient-noel.xml</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-noel.html">/github/workspace/input/examples/Patient-noel.xml</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference.json</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance-encounterReference-contained.html">/github/workspace/fsh-generated/resources/AllergyIntolerance-allergyintolerance-encounterReference-contained.json</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance1.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance1.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-allergyintolerance2.html">/github/workspace/input/examples/AllergyIntolerance-allergyintolerance2.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-noel-allergy.v0.html">/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v0.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-noel-allergy.v1.html">/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="AllergyIntolerance-noel-allergy.v1.html">/github/workspace/input/examples/AllergyIntolerance-noel-allergy.v1.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-noel.html">/github/workspace/input/examples/Patient-noel.xml</a></td><td><b>ValueSet https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Consent-patientwill-example.html">/github/workspace/input/examples/Consent-patientwill-example.xml</a></td><td><b>Profile reference 'https://www.ehealth.fgov.be/fhir/StructureDefinition/be-patientwill' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-laterality",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html\">http://hl7.org/fhir/ValueSet/bodystructure-relative-location</a></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality",
+  "version": "0.1.0",
+  "name": "BeVSLaterality",
+  "title": "Laterality",
+  "status": "draft",
+  "date": "2021-07-17T12:04:48+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Laterality",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
+        ]
+      }
+    ]
+  }
+}

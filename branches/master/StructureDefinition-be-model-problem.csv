@@ -1,0 +1,45 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeProblem","","","",0,*,"","","","","A record of a problem","A record of a problem - a risk, a condition, etc.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"BeProblem.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"BeProblem.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"BeProblem.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the problem entry","The business identifier(s) for the problem entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults.","","","","","","","","","",,,,,"",,,,"BeProblem.identifier",0,1,"",""
+"BeProblem.dateTime","","","",0,1,"","","","dateTime {[CanonicalType[http://hl7.org/fhir/StructureDefinition/dateTime]]} {[]}
+","The dateTime when the problem has been recorded","The date and/or time when the problem has been recorded in any system.","","","","","","","","","",,,,,"",,,,"BeProblem.dateTime",0,1,"",""
+"BeProblem.reporter","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner]]}
+","The professional that recorded the problem","The professional that recorded the problem.","","","","","","","","","",,,,,"",,,,"BeProblem.reporter",0,1,"",""
+"BeProblem.clinicalStatus","","","",0,1,"","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","The clinical status of the problem - whether it is active, resolved...","The clinical status of the problem - whether it is active, resolved...","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/condition-clinical","",,,,"BeProblem.clinicalStatus",0,1,"",""
+"BeProblem.status","","","",1,1,"","","","code {[CanonicalType[http://hl7.org/fhir/StructureDefinition/code]]} {[]}
+","The status of this problem record entry","The status of the problem record entry - whether it is active, entered in error, etc.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/condition-ver-status","",,,,"BeProblem.status",1,1,"",""
+"BeProblem.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
+","The person that has/had the addiction","The patient","","","","","","","","","",,,,,"",,,,"BeProblem.subject",1,1,"",""
+"BeProblem.problemCategory","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The category for the problem - diagnosis, risk, etc.","Supporting reason for status information.","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/CodeSystem/be-vs-problem-category","",,,,"BeProblem.problemCategory",0,1,"",""
+"BeProblem.origin","","","",0,1,"","","","BackboneElement {[]} {[]}
+","How the problem came to be recorded","How the problem came to be recorded - in a consult, etc.","","","","","","","","","",,,,,"",,,,"BeProblem.origin",0,1,"",""
+"BeProblem.origin.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A coded type of the problem record origin","A coded type of the problem record origin","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/ValueSet/be-vs-condition-origin-type","",,,,"BeProblem.origin.type",0,1,"",""
+"BeProblem.origin.reference","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner]]}
+","","","","","","","","","","","",,,,,"",,,,"BeProblem.origin.reference",0,1,"",""
+"BeProblem.problemCode","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/CodeSystem/be-vs-congenital-anomalies","",,,,"BeProblem.problemCode",0,1,"",""
+"BeProblem.started","","","",0,1,"","","","Period {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeProblem.started",0,1,"",""
+"BeProblem.resolved","","","",0,1,"","","","Period {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeProblem.resolved",0,1,"",""
+"BeProblem.bodySite","","","",0,1,"","","","BackboneElement {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"BeProblem.bodySite",0,1,"",""
+"BeProblem.bodySite.site","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/ValueSet/be-vs-bodysite","",,,,"BeProblem.bodySite.site",0,1,"",""
+"BeProblem.bodySite.laterality","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","","","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality","",,,,"BeProblem.bodySite.laterality",0,1,"",""
+"BeProblem.note","","","",0,1,"","","","Attachment {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Attachment]]} {[]}
+","Additional notes for the problem.","Additional notes for the problem","","","","","","","","","",,,,,"",,,,"BeProblem.note",0,1,"",""

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="durant"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 50010112345 (OFFICIAL), id: 18749704355 (OFFICIAL)</p><p><b>name</b>: Paul Durant (OFFICIAL)</p><p><b>telecom</b>: ph: 023544117(WORK), <a href="mailto:paul.durant@durantclinique.be">paul.durant@durantclinique.be</a></p><p><b>address</b>: Koning Albertstraat 32, 1785 Merchtem(HOME)</p><p><b>gender</b>: male</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+    <value value="50010112345"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+    <value value="18749704355"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Durant"/>
+    <given value="Paul"/>
+    <suffix value="MD"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="023544117"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="paul.durant@durantclinique.be"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="home"/>
+    <text value="Koning Albertstraat 32, 1785 Merchtem"/>
+    <line value="Koning Albertstraat 32">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Koning Albertstraat"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="32"/>
+      </extension>
+    </line>
+    <city value="Merchtem"/>
+    <postalCode value="1785"/>
+    <country value="BE"/>
+  </address>
+  <gender value="male"/>
+</Practitioner>

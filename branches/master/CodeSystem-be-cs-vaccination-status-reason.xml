@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-status-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">OTHER<a name="be-cs-vaccination-status-reason-OTHER"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">ALLERGY<a name="be-cs-vaccination-status-reason-ALLERGY"> </a></td><td>Allergy to vaccine ingredient</td></tr><tr><td style="white-space:nowrap">OSTOCK<a name="be-cs-vaccination-status-reason-OSTOCK"> </a></td><td>Out of stock or no vaccine available</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>OTHER</td><td>Autre</td><td>Andere</td></tr><tr><td>ALLERGY</td><td>Allergie</td><td>Allergie</td></tr><tr><td>OSTOCK</td><td>Hors Stock</td><td>Geen voorraad</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason"/>
+  <version value="0.1.0"/>
+  <name value="BeCSStatusReason"/>
+  <title value="Vaccination status reason Code System."/>
+  <status value="draft"/>
+  <date value="2021-07-17T12:04:48+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination reason status Code System."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="OTHER"/>
+    <display value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Andere"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ALLERGY"/>
+    <display value="Allergy to vaccine ingredient"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Allergie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Allergie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="OSTOCK"/>
+    <display value="Out of stock or no vaccine available"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Hors Stock"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Geen voorraad"/>
+    </designation>
+  </concept>
+</CodeSystem>

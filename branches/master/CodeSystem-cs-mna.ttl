@@ -1,0 +1,223 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/cs-mna> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-mna"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://example.org/cs-mna defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">food-intake-0<a name=\"cs-mna-food-intake-0\"> </a></td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td style=\"white-space:nowrap\">food-intake-1<a name=\"cs-mna-food-intake-1\"> </a></td><td>Légère baisse des prises alimentaires</td></tr><tr><td style=\"white-space:nowrap\">food-intake-2<a name=\"cs-mna-food-intake-2\"> </a></td><td>Pas de baisse des prises alimentaires</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-0<a name=\"cs-mna-weight-loss-0\"> </a></td><td>Perte de poids supérieure à 3 kg</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-1<a name=\"cs-mna-weight-loss-1\"> </a></td><td>Ne sait pas</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-2<a name=\"cs-mna-weight-loss-2\"> </a></td><td>Perte de poids entre 1 et 3 kg</td></tr><tr><td style=\"white-space:nowrap\">weight-loss-3<a name=\"cs-mna-weight-loss-3\"> </a></td><td>Pas de perte de poids</td></tr><tr><td style=\"white-space:nowrap\">mobility-0<a name=\"cs-mna-mobility-0\"> </a></td><td>Alité ou au fauteuil</td></tr><tr><td style=\"white-space:nowrap\">mobility-1<a name=\"cs-mna-mobility-1\"> </a></td><td>Autonome a l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td></tr><tr><td style=\"white-space:nowrap\">mobility-2<a name=\"cs-mna-mobility-2\"> </a></td><td>Sort du domicile</td></tr><tr><td style=\"white-space:nowrap\">stress-no<a name=\"cs-mna-stress-no\"> </a></td><td>Oui</td></tr><tr><td style=\"white-space:nowrap\">stress-yes<a name=\"cs-mna-stress-yes\"> </a></td><td>Non</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-0<a name=\"cs-mna-neuropsych-0\"> </a></td><td>Démence ou dépression sévère</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-1<a name=\"cs-mna-neuropsych-1\"> </a></td><td>Démence légère</td></tr><tr><td style=\"white-space:nowrap\">neuropsych-2<a name=\"cs-mna-neuropsych-2\"> </a></td><td>Pas de problème psychologique</td></tr><tr><td style=\"white-space:nowrap\">bmi-0<a name=\"cs-mna-bmi-0\"> </a></td><td>IMC &lt; 19 = Score 0</td></tr><tr><td style=\"white-space:nowrap\">bmi-1<a name=\"cs-mna-bmi-1\"> </a></td><td>19 &lt;= IMC &lt; 21 = Score 1</td></tr><tr><td style=\"white-space:nowrap\">bmi-2<a name=\"cs-mna-bmi-2\"> </a></td><td>21 &lt;= IMC &lt; 23 = Score 2</td></tr><tr><td style=\"white-space:nowrap\">bmi-3<a name=\"cs-mna-bmi-3\"> </a></td><td>IMC &gt;= 23 = Score 3</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (fr)</b></td></tr><tr><td>food-intake-0</td><td>Baisse sévère des prises alimentaires</td></tr><tr><td>food-intake-1</td><td>Légère baisse des prises alimentaires</td></tr><tr><td>food-intake-2</td><td>Pas de baisse des prises alimentaires</td></tr><tr><td>weight-loss-0</td><td>Perte de poids supérieure à 3 kg</td></tr><tr><td>weight-loss-1</td><td>Ne sait pas</td></tr><tr><td>weight-loss-2</td><td>Perte de poids entre 1 et 3 kg</td></tr><tr><td>weight-loss-3</td><td>Pas de perte de poids</td></tr><tr><td>mobility-0</td><td>Alité ou au fauteuil</td></tr><tr><td>mobility-1</td><td>Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)</td></tr><tr><td>mobility-2</td><td>Sort du domicile</td></tr><tr><td>stress-no</td><td>Oui</td></tr><tr><td>stress-yes</td><td>Non</td></tr><tr><td>neuropsych-0</td><td>Démence ou dépression sévère</td></tr><tr><td>neuropsych-1</td><td>Démence légère</td></tr><tr><td>neuropsych-2</td><td>Pas de problème psychologique</td></tr><tr><td>bmi-0</td><td>IMC &lt; 19 = Score 0</td></tr><tr><td>bmi-1</td><td>19 &lt;= IMC &lt; 21 = Score 1</td></tr><tr><td>bmi-2</td><td>21 &lt;= IMC &lt; 23 = Score 2</td></tr><tr><td>bmi-3</td><td>IMC &gt;= 23 = Score 3</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://example.org/cs-mna"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CSMNAScale"];
+  fhir:CodeSystem.title [ fhir:value "CodeSystem Mini Nutritional Assessment scale"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-02-12T12:13:57+01:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem Mini Nutritional Assessment."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "food-intake-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est capable de se laver complètement sans aucune aide" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Baisse sévère des prises alimentaires" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "food-intake-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Légère baisse des prises alimentaires" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Légère baisse des prises alimentaires" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "food-intake-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pas de baisse des prises alimentaires" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de baisse des prises alimentaires" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "weight-loss-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perte de poids supérieure à 3 kg" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Perte de poids supérieure à 3 kg" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "weight-loss-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ne sait pas" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ne sait pas" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "weight-loss-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perte de poids entre 1 et 3 kg" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Perte de poids entre 1 et 3 kg" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "weight-loss-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pas de perte de poids" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de perte de poids" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "mobility-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alité ou au fauteuil" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Alité ou au fauteuil" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "mobility-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Autonome a l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Autonome à l'intérieur (peut sortir du lit ou de son fauteuil, mais ne sort pas de son domicile)" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "mobility-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sort du domicile" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Sort du domicile" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "stress-no" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oui" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oui" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "stress-yes" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Non" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "neuropsych-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Démence ou dépression sévère" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Démence ou dépression sévère" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "neuropsych-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Démence légère" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Démence légère" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "neuropsych-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pas de problème psychologique" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pas de problème psychologique" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "bmi-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IMC < 19 = Score 0" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "IMC < 19 = Score 0" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "bmi-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "19 <= IMC < 21 = Score 1" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "19 <= IMC < 21 = Score 1" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "bmi-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "21 <= IMC < 23 = Score 2" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "21 <= IMC < 23 = Score 2" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "bmi-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IMC >= 23 = Score 3" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "IMC >= 23 = Score 3" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/cs-mna.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

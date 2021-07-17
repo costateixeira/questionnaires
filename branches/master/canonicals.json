@@ -1,0 +1,380 @@
+[
+  {
+    "id": "cs-mkatz",
+    "type": "CodeSystem",
+    "url": "http://example.org/cs-mkatz",
+    "version": "0.1.0",
+    "name": "CSMKatzScale"
+  },
+  {
+    "id": "cs-mna",
+    "type": "CodeSystem",
+    "url": "http://example.org/cs-mna",
+    "version": "0.1.0",
+    "name": "CSMNAScale"
+  },
+  {
+    "id": "be-address",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address",
+    "version": "0.1.0",
+    "name": "BeAddress"
+  },
+  {
+    "id": "be-model-referralprescription",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-model-referralprescription",
+    "version": "0.1.0",
+    "name": "BeReferralPrescription"
+  },
+  {
+    "id": "be-organization",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
+    "version": "0.1.0",
+    "name": "BeOrganization"
+  },
+  {
+    "id": "be-patient",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+    "version": "0.1.0",
+    "name": "BePatient"
+  },
+  {
+    "id": "be-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+    "version": "0.1.0",
+    "name": "BePractitioner"
+  },
+  {
+    "id": "be-practitionerrole",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+    "version": "0.1.0",
+    "name": "BePractitionerRole"
+  },
+  {
+    "id": "be-cs-bodysite",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite",
+    "version": "0.1.0",
+    "name": "BeCSBodySite"
+  },
+  {
+    "id": "be-cs-care-location",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-care-location",
+    "version": "0.1.0",
+    "name": "BeCSCareLocation"
+  },
+  {
+    "id": "be-cs-patientwill-category",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-category",
+    "version": "0.1.0",
+    "name": "BeCSPAtiwntWillCategory"
+  },
+  {
+    "id": "be-cs-patientwill-code",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code",
+    "version": "0.1.0",
+    "name": "BeCSPAtientWillCode"
+  },
+  {
+    "id": "be-cs-problem-category",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-category",
+    "version": "0.1.0",
+    "name": "BeCSProblemCategory"
+  },
+  {
+    "id": "be-cs-problem-origin-type",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-problem-origin-type",
+    "version": "0.1.0",
+    "name": "BeCSProblemOriginType"
+  },
+  {
+    "id": "be-cs-score",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score",
+    "version": "0.1.0",
+    "name": "BeCSScore"
+  },
+  {
+    "id": "be-cs-score-category",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-score-category",
+    "version": "0.1.0",
+    "name": "BeCSScoreCategory"
+  },
+  {
+    "id": "be-cs-vaccination-administration-route",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-administration-route",
+    "version": "0.1.0",
+    "name": "BeCSVaccineAdministrationRoute"
+  },
+  {
+    "id": "be-cs-vaccination-confirmation-status",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-confirmation-status",
+    "version": "0.1.0",
+    "name": "BeCSVaccinationConfirmationStatus"
+  },
+  {
+    "id": "be-cs-vaccination-status-reason",
+    "type": "CodeSystem",
+    "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-vaccination-status-reason",
+    "version": "0.1.0",
+    "name": "BeCSStatusReason"
+  },
+  {
+    "id": "scenario-allergy",
+    "type": "ExampleScenario",
+    "url": "https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy",
+    "version": "0.1.0",
+    "name": "AllergyScenario"
+  },
+  {
+    "id": "hl7.fhir.be.riziv",
+    "type": "ImplementationGuide",
+    "url": "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.fhir.be.riziv",
+    "version": "0.1.0",
+    "name": "RIZIV_INAMI"
+  },
+  {
+    "id": "be-ns-cnk-code",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-cnk-code",
+    "version": "0.1.0",
+    "name": "BeNSCNK"
+  },
+  {
+    "id": "be-ns-nihdi-organization",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-organization",
+    "version": "0.1.0",
+    "name": "BeNSNIHDIOrganization"
+  },
+  {
+    "id": "be-ns-nihdi-professional",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-professional",
+    "version": "0.1.0",
+    "name": "BeNSNIHDIProfessional"
+  },
+  {
+    "id": "be-ns-one-vaccination",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-one-vaccination",
+    "version": "0.1.0",
+    "name": "BeNSONEVaccination"
+  },
+  {
+    "id": "be-ns-product-manufacturer",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-product-manufacturer",
+    "version": "0.1.0",
+    "name": "BeNSManufacturer"
+  },
+  {
+    "id": "allergy-intolerance-questionnaire",
+    "type": "Questionnaire",
+    "url": "https://www.hl7belgium.org/fhir/Questionnaire/allergy-intolerance-questionnaire",
+    "version": "0.1.0",
+    "name": "AllergyIntoleranceQuestionnaire"
+  },
+  {
+    "id": "mkatz-questionnaire",
+    "type": "Questionnaire",
+    "url": "https://www.hl7belgium.org/fhir/Questionnaire/mkatz-questionnaire",
+    "version": "0.1.0",
+    "name": "MKatzQuestionnaire"
+  },
+  {
+    "id": "mna-questionnaire",
+    "type": "Questionnaire",
+    "url": "https://www.hl7belgium.org/fhir/Questionnaire/mna-questionnaire",
+    "version": "0.1.0",
+    "name": "MNAQuestionnaire"
+  },
+  {
+    "id": "be-allergyintolerance",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance",
+    "version": "0.1.0",
+    "name": "BeAllergyIntolerance"
+  },
+  {
+    "id": "be-ext-administeredProduct",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-administeredProduct",
+    "version": "0.1.0",
+    "name": "BeAdministeredProduct"
+  },
+  {
+    "id": "be-ext-laterality",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-laterality",
+    "version": "0.1.0",
+    "name": "BeLaterality"
+  },
+  {
+    "id": "be-ext-recorder",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-recorder",
+    "version": "0.1.0",
+    "name": "BeRecorder"
+  },
+  {
+    "id": "be-ext-vaccination-confirmationStatus",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-confirmationStatus",
+    "version": "0.1.0",
+    "name": "BeVaccinationConfirmationStatus"
+  },
+  {
+    "id": "be-ext-vaccination-location",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-location",
+    "version": "0.1.0",
+    "name": "BeVaccinationLocation"
+  },
+  {
+    "id": "be-ext-vaccination-originalorder",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-ext-vaccination-originalorder",
+    "version": "0.1.0",
+    "name": "BeVaccinationOriginalOrder"
+  },
+  {
+    "id": "be-model-addiction",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-addiction",
+    "version": "0.1.0",
+    "name": "BEAddiction"
+  },
+  {
+    "id": "be-model-patientwill",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-patientwill",
+    "version": "0.1.0",
+    "name": "BEPatientWill"
+  },
+  {
+    "id": "be-model-problem",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-problem",
+    "version": "0.1.0",
+    "name": "BeProblem"
+  },
+  {
+    "id": "be-model-scoreresult",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-scoreresult",
+    "version": "0.1.0",
+    "name": "BeScoreResult"
+  },
+  {
+    "id": "be-model-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-vaccination",
+    "version": "0.1.0",
+    "name": "BEVaccination"
+  },
+  {
+    "id": "be-patientwill",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-patientwill",
+    "version": "0.1.0",
+    "name": "BEPatientWill"
+  },
+  {
+    "id": "be-scoreresult",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-scoreresult",
+    "version": "0.1.0",
+    "name": "BeScoreResult"
+  },
+  {
+    "id": "be-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-vaccination",
+    "version": "0.1.0",
+    "name": "BeVaccination"
+  },
+  {
+    "id": "exposure-risk",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/exposure-risk",
+    "version": "0.1.0",
+    "name": "ExposureRisk"
+  },
+  {
+    "id": "be-vs-care-location",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-care-location",
+    "version": "0.1.0",
+    "name": "BeVSCareLocation"
+  },
+  {
+    "id": "be-vs-laterality",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-laterality",
+    "version": "0.1.0",
+    "name": "BeVSLaterality"
+  },
+  {
+    "id": "be-vs-patientwill-category",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-category",
+    "version": "0.1.0",
+    "name": "BeVSPatientWillCategory"
+  },
+  {
+    "id": "be-vs-patientwill-code",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-patientwill-code",
+    "version": "0.1.0",
+    "name": "BeVSScore"
+  },
+  {
+    "id": "be-vs-score",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-score",
+    "version": "0.1.0",
+    "name": "BeVSScore"
+  },
+  {
+    "id": "be-vs-scorecategory",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-scorecategory",
+    "version": "0.1.0",
+    "name": "BeVSScoreCategory"
+  },
+  {
+    "id": "be-vs-vaccination-administration-route",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-administration-route",
+    "version": "0.1.0",
+    "name": "BeVSVaccineAdministrationRoute"
+  },
+  {
+    "id": "be-vs-vaccination-confirmation-status",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-confirmation-status",
+    "version": "0.1.0",
+    "name": "BeVSVaccinationConfirmationStatus"
+  },
+  {
+    "id": "be-vs-vaccination-status-reason",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason",
+    "version": "0.1.0",
+    "name": "BeVSVaccinationStatusReason"
+  }
+]

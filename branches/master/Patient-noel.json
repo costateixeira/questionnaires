@@ -1,0 +1,162 @@
+{
+  "resourceType": "Patient",
+  "id": "noel",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>nationality</b></p><p><b>value</b>: <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country BE}\">Belgium</span></p></blockquote><p><b>identifier</b>: Social Beneficiary Identifier: 80010112344 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Noël Joyeux (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:noel.joyeux@belgium.be\">noel.joyeux@belgium.be</a>, <a href=\"tel:+322476792981\">+322476792981</a>, <a href=\"tel:+3226718655\">+3226718655</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1980-01-10</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li></ul><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate 20}\">Married</span></p><p><b>generalPractitioner</b>: <span></span></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-fed-country",
+                "code": "BE",
+                "display": "Belgium"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SB",
+            "display": "Social Beneficiary Identifier"
+          }
+        ]
+      },
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "80010112344"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Joyeux",
+      "given": [
+        "Noël"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "noel.joyeux@belgium.be"
+    },
+    {
+      "system": "phone",
+      "value": "+322476792981",
+      "use": "mobile"
+    },
+    {
+      "system": "phone",
+      "value": "+3226718655",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-01-10",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "nl"
+        }
+      ],
+      "use": "home",
+      "type": "both",
+      "text": "Sloordelle 42, 1160 Oudergem",
+      "line": [
+        "Sloordelle 42"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Sloordelle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "42"
+            }
+          ]
+        }
+      ],
+      "city": "Oudergem",
+      "postalCode": "1160",
+      "country": "BE"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "fr"
+        }
+      ],
+      "use": "home",
+      "type": "both",
+      "text": "42, Allee des Colzas, 1160 Auderghem",
+      "line": [
+        "42, Allee des Colzas"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Allee des Colzas"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "42"
+            }
+          ]
+        }
+      ],
+      "city": "Auderghem",
+      "postalCode": "1160",
+      "country": "BE"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "code": "M",
+        "display": "Married"
+      },
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate",
+        "code": "20",
+        "display": "Married"
+      }
+    ]
+  },
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+        "value": "50010112345"
+      }
+    }
+  ]
+}

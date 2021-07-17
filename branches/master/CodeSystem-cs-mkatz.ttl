@@ -1,0 +1,268 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-mkatz"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://example.org/cs-mkatz defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">bathing-dep-0<a name=\"cs-mkatz-bathing-dep-0\"> </a></td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td style=\"white-space:nowrap\">bathing-dep-1<a name=\"cs-mkatz-bathing-dep-1\"> </a></td><td>Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture</td></tr><tr><td style=\"white-space:nowrap\">bathing-dep-2<a name=\"cs-mkatz-bathing-dep-2\"> </a></td><td>Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style=\"white-space:nowrap\">bathing-dep-3<a name=\"cs-mkatz-bathing-dep-3\"> </a></td><td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style=\"white-space:nowrap\">dressing-dep-0<a name=\"cs-mkatz-dressing-dep-0\"> </a></td><td>Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide</td></tr><tr><td style=\"white-space:nowrap\">dressing-dep-1<a name=\"cs-mkatz-dressing-dep-1\"> </a></td><td>Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td></tr><tr><td style=\"white-space:nowrap\">dressing-dep-2<a name=\"cs-mkatz-dressing-dep-2\"> </a></td><td>Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style=\"white-space:nowrap\">dressing-dep-3<a name=\"cs-mkatz-dressing-dep-3\"> </a></td><td>Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td style=\"white-space:nowrap\">transferring-dep-0<a name=\"cs-mkatz-transferring-dep-0\"> </a></td><td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td></tr><tr><td style=\"white-space:nowrap\">transferring-dep-1<a name=\"cs-mkatz-transferring-dep-1\"> </a></td><td>Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)</td></tr><tr><td style=\"white-space:nowrap\">transferring-dep-2<a name=\"cs-mkatz-transferring-dep-2\"> </a></td><td>Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements</td></tr><tr><td style=\"white-space:nowrap\">transferring-dep-3<a name=\"cs-mkatz-transferring-dep-3\"> </a></td><td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td></tr><tr><td style=\"white-space:nowrap\">toileting-dep-0<a name=\"cs-mkatz-toileting-dep-0\"> </a></td><td>Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer</td></tr><tr><td style=\"white-space:nowrap\">toileting-dep-1<a name=\"cs-mkatz-toileting-dep-1\"> </a></td><td>Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style=\"white-space:nowrap\">toileting-dep-2<a name=\"cs-mkatz-toileting-dep-2\"> </a></td><td>Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style=\"white-space:nowrap\">toileting-dep-3<a name=\"cs-mkatz-toileting-dep-3\"> </a></td><td>Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td style=\"white-space:nowrap\">continence-dep-0<a name=\"cs-mkatz-continence-dep-0\"> </a></td><td>Le patient est continent pour l'urine et les selles</td></tr><tr><td style=\"white-space:nowrap\">continence-dep-1<a name=\"cs-mkatz-continence-dep-1\"> </a></td><td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td></tr><tr><td style=\"white-space:nowrap\">continence-dep-2<a name=\"cs-mkatz-continence-dep-2\"> </a></td><td>Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles</td></tr><tr><td style=\"white-space:nowrap\">continence-dep-3<a name=\"cs-mkatz-continence-dep-3\"> </a></td><td>Le patient est incontinent pour les urines et les selles</td></tr><tr><td style=\"white-space:nowrap\">feeding-dep-0<a name=\"cs-mkatz-feeding-dep-0\"> </a></td><td>Le patient est capable de manger et boire seul</td></tr><tr><td style=\"white-space:nowrap\">feeding-dep-1<a name=\"cs-mkatz-feeding-dep-1\"> </a></td><td>Le patient besoin d'une aide préalable pour manger ou boire</td></tr><tr><td style=\"white-space:nowrap\">feeding-dep-2<a name=\"cs-mkatz-feeding-dep-2\"> </a></td><td>Le patient a besoin d'une aide partielle pendant qu'il mange ou boit</td></tr><tr><td style=\"white-space:nowrap\">feeding-dep-3<a name=\"cs-mkatz-feeding-dep-3\"> </a></td><td>Le patient est totalement dépendant pour manger et boire</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (fr)</b></td></tr><tr><td>bathing-dep-0</td><td>Le patient est capable de se laver complètement sans aucune aide</td></tr><tr><td>bathing-dep-1</td><td>Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture</td></tr><tr><td>bathing-dep-2</td><td>Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>bathing-dep-3</td><td>Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>dressing-dep-0</td><td>Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide</td></tr><tr><td>dressing-dep-1</td><td>Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)</td></tr><tr><td>dressing-dep-2</td><td>Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>dressing-dep-3</td><td>Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture</td></tr><tr><td>transferring-dep-0</td><td>Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers</td></tr><tr><td>transferring-dep-1</td><td>Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)</td></tr><tr><td>transferring-dep-2</td><td>Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements</td></tr><tr><td>transferring-dep-3</td><td>Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer</td></tr><tr><td>toileting-dep-0</td><td>Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer</td></tr><tr><td>toileting-dep-1</td><td>Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>toileting-dep-2</td><td>Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>toileting-dep-3</td><td>Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer</td></tr><tr><td>continence-dep-0</td><td>Le patient est continent pour l'urine et les selles</td></tr><tr><td>continence-dep-1</td><td>Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)</td></tr><tr><td>continence-dep-2</td><td>Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles</td></tr><tr><td>continence-dep-3</td><td>Le patient est incontinent pour les urines et les selles</td></tr><tr><td>feeding-dep-0</td><td>Le patient est capable de manger et boire seul</td></tr><tr><td>feeding-dep-1</td><td>Le patient besoin d'une aide préalable pour manger ou boire</td></tr><tr><td>feeding-dep-2</td><td>Le patient a besoin d'une aide partielle pendant qu'il mange ou boit</td></tr><tr><td>feeding-dep-3</td><td>Le patient est totalement dépendant pour manger et boire</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://example.org/cs-mkatz"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CSMKatzScale"];
+  fhir:CodeSystem.title [ fhir:value "CodeSystem Modified Katz assessment scale"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-02-12T12:13:57+01:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "RIZIV-INAMI"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://somewhere.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem Modified Katz assessment scale for independent living."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BE" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "bathing-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est capable de se laver complètement sans aucune aide" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est capable de se laver complètement sans aucune aide" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "bathing-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'une aide partielle pour se laver au dessus ou en dessous de la ceinture" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "bathing-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'un aide partielle pour se laver tant au-dessus qu'en-dessous de la ceinture" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "bathing-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient doit être entièrement aidé pour se laver tant au-dessus qu'en-dessous de la ceinture" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "dressing-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est capable de s'habiller et de se déshabiller complètement sans aucune aide" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "dressing-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller au dessus ou en dessous de la ceinture (sans tenir compte des lacets)" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "dressing-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'une aide partielle pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "dressing-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient doit être entièrement aidé pour s'habiller tant au-dessus qu'en-dessous de la ceinture" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "transferring-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est autonome pour le transfert et se déplace de façon entièrement indépendante, sans auxiliaires mécaniques, ni aide de tiers" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "transferring-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est autonome pour le transfert et ses déplacements moyennant l'utilisation d'auxiliaires mécaniques (béquilles, chaise roulante, …)" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "transferring-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a absolument besoin de l'aide d'un tiers pour au moins un des transferts et/ou ses déplacements" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "transferring-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est grabataire ou en chaise roulante et dépend entièrement des autres pour se déplacer" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "toileting-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est capable d'aller seul à la toilette, de s'habiller ou de s'essuyer" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "toileting-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'aide pour 1 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "toileting-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'aide pour 2 des 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "toileting-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'aide pour les 3 items : se déplacer ou s'habiller ou se s'essuyer" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "continence-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est continent pour l'urine et les selles" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est continent pour l'urine et les selles" ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "continence-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est accidentellement incontinent pour les urines et les selles (sonde vésicale ou anus artificiel compris)" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "continence-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est incontinent pour l'urine (y compris exercices de miction) ou les selles" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "continence-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est incontinent pour les urines et les selles" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est incontinent pour les urines et les selles" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "feeding-dep-0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est capable de manger et boire seul" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est capable de manger et boire seul" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "feeding-dep-1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient besoin d'une aide préalable pour manger ou boire" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient besoin d'une aide préalable pour manger ou boire" ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "feeding-dep-2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient a besoin d'une aide partielle pendant qu'il mange ou boit" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a besoin d'une aide partielle pendant qu'il mange ou boit" ]
+     ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "feeding-dep-3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Le patient est totalement dépendant pour manger et boire" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est totalement dépendant pour manger et boire" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/CodeSystem/cs-mkatz.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

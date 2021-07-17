@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-cs-bodysite",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"be-cs-bodysite-IM\"> </a></td><td>Intramuscular</td></tr></table></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/CodeSystem/be-cs-bodysite",
+  "version": "0.1.0",
+  "name": "BeCSBodySite",
+  "title": "Body Site CodeSystem",
+  "status": "draft",
+  "date": "2021-07-17T12:04:48+00:00",
+  "publisher": "RIZIV-INAMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://somewhere.org"
+        }
+      ]
+    }
+  ],
+  "description": "Body Site CodeSystem",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "IM",
+      "display": "Intramuscular"
+    }
+  ]
+}

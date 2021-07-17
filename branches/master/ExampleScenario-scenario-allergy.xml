@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="scenario-allergy"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: AllergyScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: RIZIV-INAMI</p><p><b>contact</b>: <a href="http://somewhere.org">http://somewhere.org</a></p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}, {urn:iso:std:iso:3166 BE}">Belgium (BEL)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: GP</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Durant\n(GP)</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: SPEC</p><p><b>type</b>: person</p><p><b>name</b>: Dr. Lenoir\n(Specialist)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v0</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Allergy Record</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: noel-allergy.v1</p><p><b>resourceType</b>: AllergyIntolerance</p><p><b>name</b>: Updated Allergy Record</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Allergy Intolerance Use Case</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient.</p><p><b>postConditions</b>: The patient's allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record).</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>EB</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Create new Allergy record entry</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Update Allergy record</p><p><b>initiator</b>: SPEC</p><p><b>receiver</b>: VAULT</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 5</p><p><b>name</b>: Get patient's allergies</p><p><b>initiator</b>: GP</p><p><b>receiver</b>: VAULT</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>noel-allergy.v1</td></tr></table></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/ExampleScenario/scenario-allergy"/>
+  <version value="0.1.0"/>
+  <name value="AllergyScenario"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-09-11T00:00:00.000+01:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <actor>
+    <actorId value="GP"/>
+    <type value="person"/>
+    <name value="Dr. Durant\n(GP)"/>
+  </actor>
+  <actor>
+    <actorId value="VAULT"/>
+    <type value="entity"/>
+    <name value="Vault"/>
+  </actor>
+  <actor>
+    <actorId value="SPEC"/>
+    <type value="person"/>
+    <name value="Dr. Lenoir\n(Specialist)"/>
+  </actor>
+  <instance>
+    <resourceId value="noel-allergy.v0"/>
+    <resourceType value="AllergyIntolerance"/>
+    <name value="Allergy Record"/>
+  </instance>
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+  <instance>
+    <resourceId value="noel-allergy.v1"/>
+    <resourceType value="AllergyIntolerance"/>
+    <name value="Updated Allergy Record"/>
+  </instance>
+  <process>
+    <title value="Allergy Intolerance Use Case"/>
+    <description value="description"/>
+    <preConditions value="The patient visits their GP and shows signs of inflammation. The GP will check for possible allergies, while presently there are no allergies registered for the patient."/>
+    <postConditions value="The patient&#39;s allergy information in the central vault is updated with a refuted allergy (which may or not be shown in the patient record)."/>
+    <step>
+      <operation>
+        <number value="1"/>
+        <name value="Get patient&#39;s allergies"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <response>
+          <resourceId value="EB"/>
+        </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="2"/>
+        <name value="Create new Allergy record entry"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="noel-allergy.v0"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="3"/>
+        <name value="Get patient&#39;s allergies"/>
+        <initiator value="SPEC"/>
+        <receiver value="VAULT"/>
+        <response>
+          <resourceId value="noel-allergy.v0"/>
+        </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="4"/>
+        <name value="Update Allergy record"/>
+        <initiator value="SPEC"/>
+        <receiver value="VAULT"/>
+        <request>
+          <resourceId value="noel-allergy.v1"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="5"/>
+        <name value="Get patient&#39;s allergies"/>
+        <initiator value="GP"/>
+        <receiver value="VAULT"/>
+        <response>
+          <resourceId value="noel-allergy.v1"/>
+        </response>
+      </operation>
+    </step>
+  </process>
+</ExampleScenario>

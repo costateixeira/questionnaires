@@ -1,0 +1,39 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeScoreResult","","","",0,*,"","","","","The score result","A record of a calculated or determined score.","","","","","","","","","",,,,,"",,,,"Resource",0,*,"","","Entity. Role, or Act"
+"BeScoreResult.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"BeScoreResult.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeScoreResult.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeScoreResult.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"BeScoreResult.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","The business identifier(s) for this score result","The business identifier(s) for this score result - This is an optional attribute, used for example to track a score result throughout its lifecycle, or across vaults.","","","","","","","","","",,,,,"",,,,"BeScoreResult.identifier",0,*,"",""
+"BeScoreResult.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
+","The person for which the score has been assessed","The patient","","","","","","","","","",,,,,"",,,,"BeScoreResult.subject",1,1,"",""
+"BeScoreResult.category","","","",0,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The score category","Here the grouping of score categories - for example 'Pain' or 'Risk'. The actual score code is in the attribute 'code'. This is a grouping or categorization.","","","","","","","","","",,,,,"",,,,"BeScoreResult.category",0,1,"",""
+"BeScoreResult.bodySite","","","",0,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The body site that the score refers to. Includes laterality","The body site that the score refers to. Includes laterality.","","","","","","","","","",,,,,"",,,,"BeScoreResult.bodySite",0,1,"",""
+"BeScoreResult.code","","","",1,1,"","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CodeableConcept]]} {[]}
+","The score that has been calculated","This is code for the score (e.g. DOLOPLUS, FINDRISC, APGAR)","","","","","","","","","",,"required","","https://www.hl7belgium.org/fhir/ValueSet/be-vs-score","",,,,"BeScoreResult.code",1,1,"",""
+"BeScoreResult.period","","","",1,1,"","","","Period {[]} {[]}
+","The date or time interval that the score refers to.","The date or time interval that the score refers to.","","","","","","","","","",,,,,"",,,,"BeScoreResult.period",1,1,"",""
+"BeScoreResult.recordedDate","","","",1,1,"","","","dateTime {[]} {[]}
+","The date when the score is being recorded or updated","The date when the score is being recorded or updated","","","","","","","","","",,,,,"",,,,"BeScoreResult.recordedDate",1,1,"",""
+"BeScoreResult.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Quantity {[]} {[]}Ratio {[]} {[]}boolean {[]} {[]}string {[]} {[]}","The result of the score - the actual score of the patient","The result of the score - the actual score of the patient , e.g. '10' or 'high risk'","","","","","","","","","",,,,,"",,,,"BeScoreResult.value[x]",1,1,"",""
+"BeScoreResult.interpretation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","What the score means or implies, e.g. 'high risk, must follow up'.","What the score means or implies, e.g. 'high risk, must follow up'.","","","","","","","","","",,,,,"",,,,"BeScoreResult.interpretation",0,1,"",""
+"BeScoreResult.referenceRange","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The reference evaluation ranges for the score, e.g. '1 to 2 = low risk', etc.","The reference evaluation ranges for the score, e.g. '1 to 2 = low risk', etc.","","","","","","","","","",,,,,"",,,,"BeScoreResult.referenceRange",0,*,"",""
+"BeScoreResult.referenceRange.range","","","",0,1,"","","","Range {[]} {[]}
+","The range of values for the score","The range of values for the score","","","","","","","","","",,,,,"",,,,"BeScoreResult.referenceRange.range",0,1,"",""
+"BeScoreResult.referenceRange.meaning","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The reference meaning or interpretation for the range","The reference meaning or interpretation for the range","","","","","","","","","",,,,,"",,,,"BeScoreResult.referenceRange.meaning",0,1,"",""
+"BeScoreResult.derivedFrom","","","",0,*,"","","","Reference {[]} {[]}
+","The data source that this result derives from, e.g. a response to a questionnaire, or a clinical document.. '.","The data source that this result derives from, e.g. a response to a questionnaire, or a clinical document.. '.","","","","","","","","","",,,,,"",,,,"BeScoreResult.derivedFrom",0,*,"",""

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-patientwill-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">euthanasia-request<a name="be-cs-patientwill-code-euthanasia-request"> </a></td><td>Euthanasia Request</td><td>Euthanasia request</td></tr><tr><td style="white-space:nowrap">intubation-refusal<a name="be-cs-patientwill-code-intubation-refusal"> </a></td><td>Intubation Refusal</td><td>Intubation refusal</td></tr><tr><td style="white-space:nowrap">organ-donation-consent<a name="be-cs-patientwill-code-organ-donation-consent"> </a></td><td>Organ Donation Consent</td><td>Organ donation consent</td></tr><tr><td style="white-space:nowrap">vaccination-refusal<a name="be-cs-patientwill-code-vaccination-refusal"> </a></td><td>Vaccination Refusal</td><td>Vaccination refusal</td></tr><tr><td style="white-space:nowrap">omission-medical-data<a name="be-cs-patientwill-code-omission-medical-data"> </a></td><td>Omission Of Medical Data</td><td>Omission of medical data (crf annexes)</td></tr><tr><td style="white-space:nowrap">blood-transfusion-tefusal<a name="be-cs-patientwill-code-blood-transfusion-tefusal"> </a></td><td>Blood Transfusion Refusal</td><td>Refusal of blood transfusion</td></tr><tr><td style="white-space:nowrap">clinical-participation-consent<a name="be-cs-patientwill-code-clinical-participation-consent"> </a></td><td>clinical Participation Consent</td><td>Consent to participate in clinical trials</td></tr><tr><td style="white-space:nowrap">datareuse-clinicalresearch<a name="be-cs-patientwill-code-datareuse-clinicalresearch"> </a></td><td>Data reuse for clinical research consent</td><td>Consent for data reuse for clinical research</td></tr><tr><td style="white-space:nowrap">datareuse-clinicaltrials<a name="be-cs-patientwill-code-datareuse-clinicaltrials"> </a></td><td>Data reuse for clinical trials consent</td><td>Consent for data reuse for clinical trials</td></tr><tr><td style="white-space:nowrap">dnr0<a name="be-cs-patientwill-code-dnr0"> </a></td><td>Dnr0</td><td>No therapeutic limitations</td></tr><tr><td style="white-space:nowrap">dnr1<a name="be-cs-patientwill-code-dnr1"> </a></td><td>Dnr1</td><td>Do not resuscitate</td></tr><tr><td style="white-space:nowrap">dnr2<a name="be-cs-patientwill-code-dnr2"> </a></td><td>Dnr2</td><td>Do not resuscitate or extend therapy</td></tr><tr><td style="white-space:nowrap">dnr3<a name="be-cs-patientwill-code-dnr3"> </a></td><td>Dnr3</td><td>Do not resuscitate and progressively reduce the therapy</td></tr><tr><td style="white-space:nowrap">hos1<a name="be-cs-patientwill-code-hos1"> </a></td><td>Hos1</td><td>No hospitalization</td></tr><tr><td style="white-space:nowrap">hos2<a name="be-cs-patientwill-code-hos2"> </a></td><td>Hos2</td><td>Hospitalization only in specific situations (cfr annexes)</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>euthanasia-request</td><td>Euthanasie</td><td>TO DO</td></tr><tr><td>intubation-refusal</td><td>Pas d’intubation</td><td>TO DO</td></tr><tr><td>organ-donation-consent</td><td>Consentement aux dons d’organes</td><td>TO DO</td></tr><tr><td>vaccination-refusal</td><td>Pas de vaccination</td><td>TO DO</td></tr><tr><td>omission-medical-data</td><td>Omission de données médicales (cfr annexes)</td><td>TO DO</td></tr><tr><td>blood-transfusion-tefusal</td><td>Pas de transfusion sanguine</td><td>TO DO</td></tr><tr><td>clinical-participation-consent</td><td>Consentement à la participation à des essais cliniques</td><td>TO DO</td></tr><tr><td>datareuse-clinicalresearch</td><td>Consentement à la réutilisation des données à la recherche clinique</td><td>TO DO</td></tr><tr><td>datareuse-clinicaltrials</td><td>Consentement de réutilisation des données à des essais cliniques</td><td>TO DO</td></tr><tr><td>dnr0</td><td>Pas de limitations thérapeutiques</td><td>TO DO</td></tr><tr><td>dnr1</td><td>Pas de réanimation</td><td>TO DO</td></tr><tr><td>dnr2</td><td>Pas de réanimation et ne pas étendre la thérapie en cours</td><td>TO DO</td></tr><tr><td>dnr3</td><td>Pas de réanimation et diminuer progressivement la thérapie en cours</td><td>TO DO</td></tr><tr><td>hos1</td><td>Pas d’hospitalisation</td><td>TO DO</td></tr><tr><td>hos2</td><td>Hospitalisation uniquement dans des situations spécifiques (cfr annexes)</td><td>TO DO</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.org/fhir/CodeSystem/be-cs-patientwill-code"/>
+  <version value="0.1.0"/>
+  <name value="BeCSPAtientWillCode"/>
+  <title value="Patient Will Directive CodeSystem"/>
+  <status value="draft"/>
+  <date value="2021-07-17T12:04:48+00:00"/>
+  <publisher value="RIZIV-INAMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://somewhere.org"/>
+    </telecom>
+  </contact>
+  <description value="Patient Will Directive CodeSystem"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="euthanasia-request"/>
+    <display value="Euthanasia Request"/>
+    <definition value="Euthanasia request"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Euthanasie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="intubation-refusal"/>
+    <display value="Intubation Refusal"/>
+    <definition value="Intubation refusal"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas d&#x2019;intubation"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="organ-donation-consent"/>
+    <display value="Organ Donation Consent"/>
+    <definition value="Organ donation consent"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consentement aux dons d&#x2019;organes"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="vaccination-refusal"/>
+    <display value="Vaccination Refusal"/>
+    <definition value="Vaccination refusal"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de vaccination"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="omission-medical-data"/>
+    <display value="Omission Of Medical Data"/>
+    <definition value="Omission of medical data (crf annexes)"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Omission de donn&#xE9;es m&#xE9;dicales (cfr annexes)"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="blood-transfusion-tefusal"/>
+    <display value="Blood Transfusion Refusal"/>
+    <definition value="Refusal of blood transfusion"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de transfusion sanguine"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="clinical-participation-consent"/>
+    <display value="clinical Participation Consent"/>
+    <definition value="Consent to participate in clinical trials"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consentement &#xE0; la participation &#xE0; des essais cliniques"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="datareuse-clinicalresearch"/>
+    <display value="Data reuse for clinical research consent"/>
+    <definition value="Consent for data reuse for clinical research"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consentement &#xE0; la r&#xE9;utilisation des donn&#xE9;es &#xE0; la recherche clinique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="datareuse-clinicaltrials"/>
+    <display value="Data reuse for clinical trials consent"/>
+    <definition value="Consent for data reuse for clinical trials"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Consentement de r&#xE9;utilisation des donn&#xE9;es &#xE0; des essais cliniques"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dnr0"/>
+    <display value="Dnr0"/>
+    <definition value="No therapeutic limitations"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de limitations th&#xE9;rapeutiques"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dnr1"/>
+    <display value="Dnr1"/>
+    <definition value="Do not resuscitate"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de r&#xE9;animation"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dnr2"/>
+    <display value="Dnr2"/>
+    <definition value="Do not resuscitate or extend therapy"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de r&#xE9;animation et ne pas &#xE9;tendre la th&#xE9;rapie en cours"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="dnr3"/>
+    <display value="Dnr3"/>
+    <definition value="Do not resuscitate and progressively reduce the therapy"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas de r&#xE9;animation et diminuer progressivement la th&#xE9;rapie en cours"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="hos1"/>
+    <display value="Hos1"/>
+    <definition value="No hospitalization"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pas d&#x2019;hospitalisation"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="hos2"/>
+    <display value="Hos2"/>
+    <definition value="Hospitalization only in specific situations (cfr annexes)"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Hospitalisation uniquement dans des situations sp&#xE9;cifiques (cfr annexes)"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="TO DO"/>
+    </designation>
+  </concept>
+</CodeSystem>

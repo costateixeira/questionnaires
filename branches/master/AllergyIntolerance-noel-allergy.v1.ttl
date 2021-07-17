@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/AllergyIntolerance/noel-allergy.v1> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "noel-allergy.v1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.org/fhir/StructureDefinition/be-allergyintolerance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification refuted}\">Refuted</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 373270004}\">Allergic to Penicillin antibacterial</span></p><p><b>patient</b>: <a href=\"Patient-noel.html\">Generated Summary: Social Beneficiary Identifier: 80010112344 (OFFICIAL); active; Noël Joyeux (OFFICIAL); noel.joyeux@belgium.be, Phone: +322476792981, Phone: +3226718655; gender: male; birthDate: 1980-01-10; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/be-civilstate 20}\">Married</span></a></p><p><b>onset</b>: 2020</p><p><b>recordedDate</b>: Feb 21, 2020, 3:58:00 AM</p><p><b>recorder</b>: <a href=\"Practitioner-lenoir.html\">Generated Summary: id: 60010112355 (OFFICIAL), id: 17535484332 (OFFICIAL); Katherine François (OFFICIAL); Phone: 022675198, katherine.pulaski@enterprisehospital.be; gender: female; birthDate: 1979-12-11</a></p><p><b>note</b>: test results 21/02/2020</p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 126485001}\">Urticaria</span></td></tr></table></div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.code [ fhir:value "resolved" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ];
+       fhir:Coding.code [ fhir:value "refuted" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:373270004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "373270004" ];
+       fhir:Coding.display [ fhir:value "Penicillin antibacterial" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Allergic to Penicillin antibacterial" ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <https://www.hl7belgium.org/fhir/Patient/noel>;
+     fhir:Reference.reference [ fhir:value "Patient/noel" ]
+  ];
+  fhir:AllergyIntolerance.onsetDateTime [ fhir:value "2020"^^xsd:gYear];
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2020-02-21T14:58:00+11:00"^^xsd:dateTime];
+  fhir:AllergyIntolerance.recorder [
+     fhir:link <https://www.hl7belgium.org/fhir/Practitioner/lenoir>;
+     fhir:Reference.reference [ fhir:value "Practitioner/lenoir" ]
+  ];
+  fhir:AllergyIntolerance.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "test results 21/02/2020" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:126485001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "126485001" ];
+         fhir:Coding.display [ fhir:value "Urticaria" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/AllergyIntolerance/noel-allergy.v1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
