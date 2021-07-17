@@ -26,20 +26,36 @@
     
  
     <script>
+  
+    // Load the valueset expansions
+
+    var exps = $.getJSON("./expansions.json");
+
+
     // Define a FHIR Questionnaire
     var fhirQ = {% include {{[type]}}-{{[id]}}.json %}
-    
+
+    // find the valuesets contained and replace them with the expanded version
+      fhirQ.contained.forEach(function (contained, i) {
+        if (contained.resourceType == 'ValueSet'){
+          vset = contained;
+          contained = exps.entry.find(e => e.resource.id === vset.id).resource;
+          fhirQ.contained[i] = contained
+        }
+      });
+
+      // to do: find the other valuesets and replace them wiht the expanded version
+
      
-    // Add the form to the page
-    LForms.Util.addFormToPage(fhirQ, 'formContainer');
-    
-    
-    // Define the function for showing the QuestionnaireResponse
-    function showQR() {
-      var qr = LForms.Util.getFormFHIRData('QuestionnaireResponse', 'R4');
-      window.alert(JSON.stringify(qr, null, 2));
-    }
-    
+      // Add the form to the page
+      LForms.Util.addFormToPage(fhirQ, 'formContainer');
+      
+      // Define the function for showing the QuestionnaireResponse
+      function showQR() {
+        var qr = LForms.Util.getFormFHIRData('QuestionnaireResponse', 'R4');
+        window.alert(JSON.stringify(qr, null, 2));
+      }
+   
     
     </script>
     
