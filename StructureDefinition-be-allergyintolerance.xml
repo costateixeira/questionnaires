@@ -59,7 +59,7 @@ A note on this level SHOULD be avoided when not absolutely necessary. Preferably
   <name value="BeAllergyIntolerance"/>
   <title value="Allergy Intolerance core BE profile"/>
   <status value="active"/>
-  <date value="2021-07-17T12:02:14+00:00"/>
+  <date value="2021-07-17T12:02:26+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>

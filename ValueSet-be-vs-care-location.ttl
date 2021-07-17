@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BeVSCareLocation"];
   fhir:ValueSet.title [ fhir:value "Care Location Value Set"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-07-17T12:02:14+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-07-17T12:02:26+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "RIZIV-INAMI"];
   fhir:ValueSet.contact [
      fhir:index 0;

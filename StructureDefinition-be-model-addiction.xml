@@ -30,7 +30,7 @@ It SHOULD be expressed in a codified way (Valueset will be delivered by NIHDI)."
   <version value="0.1.0"/>
   <name value="BEAddiction"/>
   <status value="draft"/>
-  <date value="2021-07-17T12:02:14+00:00"/>
+  <date value="2021-07-17T12:02:26+00:00"/>
   <publisher value="RIZIV-INAMI"/>
   <contact>
     <telecom>

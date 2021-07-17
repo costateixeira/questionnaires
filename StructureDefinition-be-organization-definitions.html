@@ -896,7 +896,7 @@ Used to categorize the organization.
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="StructureDefinition-be-address.html" title="[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address]]">BeAddress</a>)</td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of the organization's addresses for contacting, billing or reporting requirements.</p>
 </td></tr>
-  <tr><td>Comments</td><td><p><a name="23cf5c85-5ff3-4b2b-8409-0583e1b4a016">​</a>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the <a href="location.html#">Location</a> resource).</p>
+  <tr><td>Comments</td><td><p><a name="8617fbde-982e-46dd-90ed-5797a8e6b7b2">​</a>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the <a href="location.html#">Location</a> resource).</p>
 <p>Special remarks for KMEHR users:</p>
 <p>Note when .use and .type are used they SHALL use the FHIR defined valuesets as per their required binding level in the FHIR specification. In a KMEHR address, the use was defined by CD-ADDRESS but those values can be found in the FHIR valueset.
 KMEHR values 'careadress', 'other' and 'vacation' are not directly present in the FHIR address-use table but can be mapped to the value 'temp' in FHIR. In those cases, it is RECOMMENDED to also add a .period.
