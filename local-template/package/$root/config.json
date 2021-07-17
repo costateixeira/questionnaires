@@ -21,13 +21,18 @@
       "base": "{{[type]}}-{{[id]}}.html",
       "desc": "{{[type]}}-{{[id]}}-description.html",
       "resources": "{{[type]}}-{{[id]}}-resources.html",
-      "template-format": ""
+      "template-format": "template/layouts/layout-instance-format.html"
     },
     "Questionnaire": {
       "template-base": "template/layouts/layout-questionnaire.html",
       "template-form": "template/layouts/layout-questionnaire-form.html",
       "base": "{{[type]}}-{{[id]}}.html",
-      "form": "{{[type]}}-{{[id]}}-form.html"
+      "form": "{{[type]}}-{{[id]}}-form.html",
+
+      "template-format": "template/layouts/layout-questionnaire-format.html",
+      "format": "{{[type]}}-{{[id]}}.{{[fmt]}}.html"
+
+
     }
   }
 }
