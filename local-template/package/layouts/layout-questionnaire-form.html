@@ -30,8 +30,13 @@
     // Load the valueset expansions
 
     var exps = $.getJSON("./expansions.json");
+    $.getJSON("test.json", function(data){
+        exps = data;
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
 
-
+      
     // Define a FHIR Questionnaire
     var fhirQ = {% include {{[type]}}-{{[id]}}.json %}
 
