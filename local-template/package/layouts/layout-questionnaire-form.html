@@ -28,9 +28,9 @@
     <script>
   
     // Load the valueset expansions
-
-    var exps = $.getJSON("./expansions.json");
-    $.getJSON("test.json", function(data){
+      
+    var exps = {};
+    $.getJSON("expansions.json", function(data){
         exps = data;
         }).fail(function(){
             console.log("An error has occurred.");
