@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeVaccination"];
   fhir:StructureDefinition.title [ fhir:value "BEVaccination"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-18T09:42:27+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-18T09:54:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "mmm"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

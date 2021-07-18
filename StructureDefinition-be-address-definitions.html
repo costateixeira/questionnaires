@@ -215,7 +215,7 @@
   <tr><td>Definition</td><td><p>An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td>Comments</td><td><p><a name="ef2925bb-6219-421d-ae06-9ca32c1f1f82">​</a>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the <a href="location.html#">Location</a> resource).</p>
+  <tr><td>Comments</td><td><p><a name="37f630ae-a656-4f9f-8d13-5efef187ede5">​</a>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the <a href="location.html#">Location</a> resource).</p>
 <p>Special remarks for KMEHR users:</p>
 <p>Note when .use and .type are used they SHALL use the FHIR defined valuesets as per their required binding level in the FHIR specification. In a KMEHR address, the use was defined by CD-ADDRESS but those values can be found in the FHIR valueset.
 KMEHR values 'careadress', 'other' and 'vacation' are not directly present in the FHIR address-use table but can be mapped to the value 'temp' in FHIR. In those cases, it is RECOMMENDED to also add a .period.
@@ -544,7 +544,7 @@ As that 2-letter format is also the standard in a KMEHR address, it is hence REC
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://somewhere.org">mmm</a>.  Package hl7.fhir.be.riziv#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 18, 2021 09:42+0000">2021-07-18</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://somewhere.org">mmm</a>.  Package hl7.fhir.be.riziv#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 18, 2021 09:54+0000">2021-07-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
