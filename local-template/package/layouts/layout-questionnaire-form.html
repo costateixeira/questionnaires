@@ -33,15 +33,40 @@
         var fhirQ = {% include {{[type]}}-{{[id]}}.json %}
 
         // find the valuesets contained and replace them with the expanded version
-        fhirQ.contained.forEach(function (contained, i) {
-          if (contained.resourceType == 'ValueSet'){
-            vset = contained;
-            contained = exps.entry.find(e => e.resource.id === vset.id).resource;
-            fhirQ.contained[i] = contained
-          }
-        });
+        if(fhirQ.hasOwnProperty('contained')){
+          fhirQ.contained.forEach(function (contained, i) {
+            if (contained.resourceType == 'ValueSet'){
+              vset = contained;
+              contained = exps.entry.find(e => e.resource.id === vset.id).resource;
+              fhirQ.contained[i] = contained
+            }
+          });
+        }  
 
-        // to do: find the other valuesets and replace them wiht the expanded version
+        // to do: find the other valuesets and replace them with the expanded version
+        function findValueSet(o, id) {
+          var found = [];	
+          //Early return
+          if( o.hasOwnProperty('answerValueSet')){
+            url = o['answerValueSet'];
+            found.push(url);
+            return found
+          }
+          var result, p; 
+//          for (p in o) {
+              if( o.hasOwnProperty('item') && typeof o['item'] === 'object' ) {
+                  found = findValueSet(oo['item'], id);
+                  if(found){
+                    return found
+                  }
+              }
+//          }
+          return found
+        }
+
+        console.log(found);        
+
+
         // Add the form to the page
         LForms.Util.addFormToPage(fhirQ, 'formContainer');
         
