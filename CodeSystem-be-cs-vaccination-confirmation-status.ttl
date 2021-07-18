@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BeCSVaccinationConfirmationStatus"];
   fhir:CodeSystem.title [ fhir:value "Vaccination status Code System."];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-07-18T09:54:28+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-07-18T21:34:51+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "mmm"];
   fhir:CodeSystem.contact [
      fhir:index 0;
