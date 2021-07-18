@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BeCSCareLocation"];
   fhir:CodeSystem.title [ fhir:value "Care Location Code System"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-07-17T18:05:25+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-07-18T09:42:27+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "mmm"];
   fhir:CodeSystem.contact [
      fhir:index 0;
