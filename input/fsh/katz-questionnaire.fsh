@@ -11,6 +11,7 @@ Usage: #definition
 * date = "2021-02-12T12:13:57+01:00"
 * description = "CodeSystem Modified Katz assessment scale for independent living."
 * content = #complete
+* language = fr-BE
 
 * concept[+].code = #bathing-dep-0
 * concept[=].display = "Le patient est capable de se laver complètement sans aucune aide"
